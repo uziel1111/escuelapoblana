@@ -1,0 +1,225 @@
+.margintop10{
+  margin-top: 10px;
+}
+/******************************************************************************** TAGs */
+textarea{
+  resize: none;
+}
+/******************************************************************************** TABLES */
+.td_blue{
+  background : #428bca;
+  width: "100%";
+  /*font-weight: bold;*/
+  color: #FFFFFF;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.td_red{
+  background : #d9534f;
+  width: "100%";
+  /*font-weight: bold;*/
+  color: #FFFFFF;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/******************************************************************************** MODAL */
+.modal_head{
+  /*background-color: #36BA78 !important;*/
+  background-color: #225D99 !important;
+  color: #FFFFFF !important;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3vh;
+  /*text-transform: uppercase;*/
+  text-transform:none;
+  /*border-bottom: rgba(73,155,234,1) 2px solid;*/
+  border-radius: 4px 4px 0px 0px;
+
+  /*
+  background: rgba(73,155,234,1);
+  background: -moz-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(32,124,229,1)));
+  background: -webkit-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+  background: -o-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+  background: -ms-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+  background: linear-gradient(to bottom, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=0 );
+  */
+}
+
+.modal80{
+  width: 80% !important;
+}
+
+/******************************************************************************** PANEL */
+.panel_content{
+  border: 1px solid #59ACFF !important;
+}
+.panel_head{
+  /*background-color: #0277BD !important;*/
+  background-color: #59ACFF !important;
+  font-weight: bold !important;
+  color: #FFFFFF !important;
+  text-align: center !important;
+}
+
+/******************************************************************************** DETALLES */
+.margin_top_7{
+  margin-top: 7px !important;
+}
+
+.bold_white{
+
+  color: white !important;
+  font-size: 3vh !important;
+  font-weight: bold !important;
+  z-index: 1000 !important;
+  opacity: 1 !important;
+}
+
+.img_icono{
+  width: 20px;
+}
+.div_fixed_top{
+  top:auto !important;
+  position: fixed !important;
+  width:100% !important;
+  height:auto !important;
+  background-color:#ffffff !important;
+  /*border: 2px solid #ccc;*/
+  padding: 10px !important;
+  /*margin: 10px;*/
+}
+/**************************************************************************** Radio button BÚSQUEDA DE ESCUELAS */
+.radiobtn {
+  display: none;
+}
+.buttons {
+  /*margin-left: -40px;*/
+}
+.buttons li {
+  display: block;
+}
+.buttons li label{
+  padding-left: 30px;
+  position: relative;
+  left: -25px;
+  text-transform: none;
+}
+.buttons li label:hover {
+  cursor: pointer;
+
+  color: #04C3C2;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.buttons li span {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  border: 2px solid #ccc;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+}
+.radiobtn:checked + span::before{
+  content: '';
+  border: 2px solid #fff;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  /*background-color: #c3e3fc;*/
+  background-color: #04C3C2;
+}
+.radiobtn:hover{
+  background-color : #F98000;
+  border: #F98000 1px solid;
+  font-weight: bold;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+
+/*************************************************************** ESTILO PARA EL LOADER DENTRO DEL SWWET ALERT 2*/
+.loader {
+  color: #5DADE2;
+  font-size: 14px;
+  margin: 10px auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-animation: load4 1.3s infinite linear;
+  animation: load4 1.3s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+@-webkit-keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+@keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+.ft-responsive-modal{
+  font-size: 2vh;
+}
+.ft-responsive-modal-sm{
+  font-size: 1.5vh;
+}
+
+/* FOOTER */
+footer{
+}

@@ -1,0 +1,907 @@
+  
+.contents { width: 988px; margin: 0pt auto; position: relative; padding-top: 15px; color: black; }
+
+/** Estilos de tabla principal */
+#celda_cct{
+  
+  width: 5%;
+
+}
+
+#tabla_escuelas{
+  width: 70%;
+
+}
+
+#definicion_indicador{
+  text-align: left;
+}
+
+#tabla_es{
+  text-align: center;
+  width: 75%;
+}
+#tabla_estatus{
+  width: 50%;
+}
+
+#mis_td_estatus{
+  
+  text-align: left;
+  width: 45%;
+
+}
+
+
+table{
+  width: 100%;
+}
+
+#mis_td{
+  text-align: left;
+}
+
+#fuentes{
+  text-align: left;
+  font-size: 11px;
+  color: black;
+}
+
+/*Estilo para pies de tabla*/
+#fuentes_pie{
+  margin-left: 40px;
+  padding-top: 10px;
+  text-align: left;
+  font-size: 11px;
+  color: white;
+}
+
+input{
+  width: 380px; /* ancho de primer formulario*/
+  display: inline-block;
+  float: left;
+    clear: right;
+    padding: 7px;
+  text-align: center;
+
+}
+
+
+  
+
+}
+label{
+    display: inline-block;
+    float: center;
+    clear: left;
+    width: 350px;
+    text-align: left;
+}
+
+#formulario{
+  font-family: Times;
+  background-color: ;
+  width: 960px;
+  height: 500px;
+}
+
+#well{
+  text-align: center;
+  font-family: Arial;
+  text-decoration: none;
+  
+
+}
+
+
+#a_indicador, #indicador_permanencia{
+  text-align: center;
+  font-family: Arial;
+  text-decoration: none;
+  color: black;
+}
+
+
+#baner_inferior{
+  text-align: center;
+}
+.table{
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 0px;
+  border: 2px solid #0191B3;
+}
+
+
+.table th, .table td{
+  border-right:  1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.table th{
+  color:white;
+  background-color: #0191B3;
+}
+
+.table .thtd_right{
+  border-right: 0px solid #E6E6E6;
+}
+
+.table .thtd_bottom{
+  border-bottom: 0px solid #E6E6E6;
+}
+
+.table .leftRadiusEdgeBottom{
+  border-bottom-left-radius: 7px;
+}
+
+.table .leftRadiusEdgeTop{
+  border-top-left-radius: 7px;
+}
+
+.table .rightRadiusEdgeTop{
+  border-top-right-radius: 7px;
+}
+
+#color-total{
+  background-color: #2E9AFE;
+  font-weight: bold;
+}
+
+#inicial,#especial,
+#preescolar,#primaria,
+#secundaria,#bachillerato,
+#superior,#prees,
+#prim,#secu,#bachi,
+#prees_perma,#prim_perma,
+#secu_perma,#bachi_perma,
+#total, #inic, #preesc, #espe,
+#secun, #primari, #media, #super, 
+#supe, #planea_indicador, #planea_indicadorprim, #planea_indicadorsec,
+#tres, #seis, #doce, #quince, #dieciocho,
+#analfabe{
+  font-weight: bold;
+  color: black;
+  background-color: #FFFFFF;
+}
+
+/* Dejamos sin color de fondo a #mis_td, #show */
+#show, #mis_td{
+  font-weight: bold;
+  color: black;
+}
+
+/*Pie de tabla*/
+#pie_tabla{
+  width:310px;
+  height:40px;
+  margin-left: 648px;
+  border-top-left-radius:3px;
+  border-top-right-radius:0px;
+  border-bottom-left-radius:20px;
+  border-bottom-right-radius:20px;
+  background-color: #0191B3;
+}
+
+#totales{
+  font-weight: bold;
+  color: black;
+  background-color: #58ACFA ;
+}
+
+/*quitamos de arriba */
+#total{
+  font-weight: bold;
+  color: black;
+}
+
+#nombre_nivel{
+  font-weight: bold;
+  color: black;
+  background-color: ;
+}
+
+#derecha{
+  text-align: left;
+}
+.informa{
+  background-color: #0191B3; /*#505050*/
+  color: white;
+  font-weight: bold;
+}
+
+/*Damos un color de fondo a impares*/
+tr#total, tr#ini, tr#pri, tr#med, tr#total2, tr#ini2, 
+tr#pri2, tr#med2, tr#total3, tr#ini3, tr#pri3, tr#med3,
+tr#prees, tr#secu, tr#supe, tr#prim_perma, tr#bachi_perma,
+tr#planea_indicadorprim, tr#planea_indicador, tr#tres, tr#doce, tr#dieciocho{
+    background: #FFFFFF;
+}
+
+/*Damos un color de fondo a pares*/
+tr#esp, tr#pre, tr#sec, tr#sup, tr#esp2, tr#pre2, tr#sec2, 
+tr#sup2, tr#esp3, tr#pre3, tr#sec3, tr#sup3, tr#prim, tr#bachi,
+tr#secu_perma, tr#planea_indicadorsec, tr#seis, tr#quince{
+    background: #C9E7F1;
+}
+
+#contenedor_divs{
+  width: 990px;
+  height: 50px;
+  float: left;
+  
+  
+}
+#select_1{
+  width: 300px;
+  margin-left: 10px;
+  float: left;
+}
+#select_2{
+  width: 300px;
+  margin-leftdi: 10px;
+  float: right;
+}
+.table_region{
+  text-align: center;
+  background-color:#E6E6E6;
+  width: 350px;
+  height: 80px;
+  margin-left: 1050px;
+  top: 20px;
+}
+
+p{
+  text-align: justify;
+}
+#alinear_fuente{
+  text-align: justify;
+}
+
+td{
+  width:15px; 
+  height:15px;
+}
+
+#region{
+  font-weight: bold;
+  color: black;
+  background-color: #FFFFFF;
+}
+#Nivel{
+  color: black;
+  background-color: white;
+}
+
+#gn2{
+  border-left: 10px;
+}
+
+/* Estilos para escuelas particulares */
+
+
+/* Menu principal: Escuelas particulares*/
+.menuep{
+  padding-top: 20px;
+  padding-left: 160px;
+}
+
+
+
+#btn1_ep{
+  margin-left: 15px;
+  color: white; /*#E6E6E6; #0A2229;*/
+  display: inline-block;
+  width: 630px; 
+  height: 130px;
+  border-radius: 1em;
+  box-shadow: 10px 10px 5px #888888;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#btn2_ep, #btn3_ep, #btn4_ep{
+  margin-top: 10px;
+  margin-left: 15px;
+  color: white; /*#E6E6E6; #0A2229;*/
+  display: inline-block;
+  width: 200px; 
+  height: 150px;
+  border-radius: 1em;
+  box-shadow: 10px 10px 5px #888888;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#btn5_ep{
+  margin-left: 15px;
+  color: white; /*#E6E6E6; #0A2229;*/
+  display: inline-block;
+  width: 200px; 
+  height: 50px;
+  border-radius: 1em;
+  box-shadow: 10px 10px 5px #d3d3d3;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#btn6_ep{
+  margin-left: 15px;
+  color: white; /*#E6E6E6; #0A2229;*/
+  display: inline-block;
+  width: 200px; 
+  height: 50px;
+  border-radius: 1em;
+  box-shadow: 10px 10px 5px #d3d3d3;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#btn7_ep{
+  margin-left: 15px;
+  color: white; /*#E6E6E6; #0A2229;*/
+  display: inline-block;
+  width: 200px; 
+  height: 50px;
+  border-radius: 1em;
+  box-shadow: 10px 10px 5px #d3d3d3;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#btn8_ep{
+  margin-left: 15px;
+  color: white; /*#E6E6E6; #0A2229;*/
+  display: inline-block;
+  width: 630px; 
+  height: 50px;
+  border-radius: 1em;
+  box-shadow: 10px 10px 5px #d3d3d3;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+#btn1_ep{
+  font-size: 1.2em;
+  position:relative;
+  background-color:#004E7D; 
+}
+
+#btn2_ep{
+  font-size: 1.2em;
+  position:relative;
+  background-color:#FCD12C;
+}
+
+#btn3_ep{
+  font-size: 1.2em;
+  position:relative;
+  background-color:#EB7923;
+}
+
+#btn4_ep{
+  font-size: 1.2em;
+  position:relative;
+  background-color:#0092B3;
+}
+
+#btn5_ep{
+  font-size: 1.2em;
+  position:relative;
+  background-color:#B0B0B0; 
+}
+#btn6_ep{
+  font-size: 1.2em;
+  position:relative;
+  background-color:#D9D9D9; 
+}
+
+#btn7_ep{
+  font-size: 1.2em;
+  position:relative;
+  background-color:#B0B0B0; 
+}
+
+#btn8_ep{
+  font-size: 1.2em;
+  position:relative;
+  background-color:#B0B0B0; 
+}
+
+#titulo_btn1{
+  position:absolute;
+  top:57px;
+  left:20px;
+  right:20px;
+
+}
+
+#titulo_btn2{
+  position:absolute;
+  top:47px;
+  left:15px;
+  right:15px;
+}
+
+#titulo_btn3{
+  position:absolute;
+  top:57px;
+  left:10px;
+  right:10px;
+}
+
+#titulo_btn4{
+  position:absolute;
+  top:30px;
+  left:20px;
+  right:20px;
+}
+
+
+#titulo_btn5{
+  position:absolute;
+  top:15px;
+  left:10px;
+  right:10px;
+
+}
+
+#titulo_btn6{
+  position:absolute;
+  top:15px;
+  left:10px;
+  right:10px;
+
+}
+
+#titulo_btn7{
+  position:absolute;
+  top:8px;
+  left:10px;
+  right:10px;
+
+}
+#titulo_btn8{
+  position:absolute;
+  top:15px;
+  left:10px;
+  right:10px;
+
+}
+
+/*boteones para supervisores*/
+
+.menueps{
+  padding-top: 20px;
+  padding-left: 250px;
+}
+
+
+
+#btn1_eps, #btn2_eps, #btn3_eps, #btn4_eps{
+  margin-top: 10px;
+  margin-left: 15px;
+  color: white; /*#E6E6E6; #0A2229;*/
+  display: inline-block;
+  width: 200px; 
+  height: 150px;
+  border-radius: 1em;
+  box-shadow: 10px 10px 5px #888888;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+
+
+#btn1_eps{
+  font-size: 1.2em;
+  position:relative;
+  background-color:#004E7D; 
+}
+
+#btn2_eps{
+  font-size: 1.2em;
+  position:relative;
+  background-color:#FCD12C;
+}
+
+#btn3_eps{
+  font-size: 1.2em;
+  position:relative;
+  background-color:#EB7923;
+}
+
+#btn4_eps{
+  font-size: 1.2em;
+  position:relative;
+  background-color:#0092B3;
+}
+
+
+
+#titulo_btn1s{
+  position:absolute;
+  top:57px;
+  left:20px;
+  right:20px;
+
+}
+
+#titulo_btn2s{
+  position:absolute;
+  top:63px;
+  left:15px;
+  right:15px;
+}
+
+#titulo_btn3s{
+  position:absolute;
+  top:47px;
+  left:10px;
+  right:10px;
+}
+
+#titulo_btn4s{
+  position:absolute;
+  top:37px;
+  left:25px;
+  right:25px;
+}
+
+
+
+
+
+
+/* Normatividad: Escuelas Particulares */
+.menunep{
+  margin-top: 60px;
+  margin-left: 140px;
+  
+}
+
+#btn1_nep, #btn2_nep, #btn3_nep, #btn4_nep, #btn5_nep, #btn6_nep, #btn7_nep {
+  margin-left: 15px;
+  color: white;
+  display: inline-block;
+  width: 200px; 
+  height: 165px;
+  border-radius: 1em;
+  box-shadow: 10px 10px 5px #888888;
+  font-size: 1.2em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#btn1_nep{
+  position: relative;
+  background-color:#004E7D;
+}
+
+#btn2_nep{
+  position: relative;
+  background-color:#0092B3;
+}
+
+#btn3_nep{
+  position: relative;
+  background-color:#EB7923;
+}
+
+#btn4_nep{
+  position: relative;
+  margin-top: 30px;
+  background-color:#0092B3;
+}
+
+#btn5_nep{
+  position: relative;
+  margin-top: 30px;
+  background-color:#d3d3d3;
+}
+
+#btn6_nep{
+  position: relative;
+  margin-top: 30px;
+  background-color:#EB7923;
+}
+
+#btn7_nep{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 233px;
+  background-color:#FCD12C;
+}
+
+
+
+#titulo1_nep{
+  position:absolute;
+  top: 65px;
+  left:50px;
+  right:50px;;
+}
+
+#titulo2_nep{
+  position:absolute;
+  top: 40px;
+  left:30px;
+  right:30px;
+}
+
+#titulo3_nep{
+  position:absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+}
+
+#titulo4_nep{
+  position:absolute;
+  top:57px;
+  left:20px;
+  right:20px;
+}
+
+#titulo5_nep{
+  position:absolute;
+  top:60px;
+  left:40px;
+  right:30px;
+}
+
+#titulo6_nep{
+  position:absolute;
+  top:60px;
+  left:50px;
+  right:50px;
+}
+
+
+#titulo7_nep{
+  position:absolute;
+  top:50px;
+  left:50px;
+  right:50px;
+}
+
+
+/* MENU PRINCIPAL: TRAMITAPUE*/
+.menutpep{
+  margin-top:80px;
+  margin-left:140px;
+}
+
+#btn1_tpep, #btn2_tpep, #btn3_tpep{
+  margin-left: 15px;
+  color: white; 
+  display: inline-block;
+  width: 200px; 
+  height: 165px;
+  border-radius: 1em;
+  box-shadow: 10px 10px 5px #888888;
+  font-size: 1.2em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#btn1_tpep{
+  position:relative;
+  background-color:#00BFFF; 
+}
+
+#btn2_tpep{
+  position:relative;
+  background-color:#DF7401;
+}
+
+#btn3_tpep{
+  position:relative;
+  background-color:#045FB4;
+}
+
+#titulo1_tp{
+  position:absolute;
+  top:60px;
+  left:80px;
+}
+
+#titulo2_tp{
+  position:absolute;
+  top:30px;
+  left:30px;
+  right:30px;
+}
+
+#titulo3_tp{
+  position:absolute;
+  top:20px;
+  left:30px;
+  right:30px;
+}
+
+/*--------------- Escuelas2 btn_reportar_anomalias --------------------------*/
+#btn_reportar_anomalias{
+  padding-top:10px;
+  width:500px;
+  height:30px;
+  color:white;
+  background-color:#DF7401;
+  position: absolute;
+  top:460px;
+  left:250px;
+  border-radius: .8em;
+  border: 1px solid black;
+}
+
+#link_reportar_anomalias{
+  
+}
+
+#btn_reportar{
+  display: inline-block;
+  width:100px;
+  height:20px;
+  color:white;
+  background-color:#DF7401;
+  border-radius: .5em;
+  border: 1px solid black;
+}
+
+#btn_regresar{
+  display: inline-block;
+  width:100px;
+  height:20px;
+  color:white;
+  background-color:#045FB4;
+  border-radius: .5em;
+  border: 1px solid black;
+}
+
+/* estilos select rvoes */
+#select_rvoe{
+  margin-top:80px;
+}
+
+#label_rvoe{
+  display: inline;
+  font-size: 1.1em;
+  color:black;
+  margin-right: 20px;
+}
+
+#tabla_n1, #tabla_n2, #tabla_n3, #tabla_n4
+{
+  width: 100%; /*950px;*/
+  border-spacing: 0px;
+}
+
+#tabla_n1, #tabla_n1 th, #tabla_n1 td, 
+#tabla_n2, #tabla_n2 th, #tabla_n2 td,
+#tabla_n3, #tabla_n3 th, #tabla_n3 td,
+#tabla_n4, #tabla_n4 th, #tabla_n4 td
+{
+  padding:5px;
+}
+
+#tabla_n1, #tabla_n1 td, 
+#tabla_n2, #tabla_n2 td,
+#tabla_n3, #tabla_n3 td,
+#tabla_n4, #tabla_n4 td
+{
+  border: 1px solid #959999;
+  border-collapse: collapse;
+}
+
+.row_izqT2 {
+  width: 48%;
+}
+
+.row_derT2{
+  width: 52%;
+}
+
+.row_izqT3 {
+  width: 48%;
+}
+
+.row_derT3{
+  width: 52%;
+}
+
+.row_izqT4 {
+  width: 48%;
+}
+
+.row_derT4{
+  width: 52%;
+}
+
+table#tabla_n1 tr:nth-child(even) {
+    background-color: #8FA8CC;
+}
+table#tabla_n1 tr:nth-child(odd) {
+   background-color:  #fff;
+}
+
+table#tabla_n2 tr:nth-child(even) {
+    background-color: #99CFDD;
+}
+table#tabla_n2 tr:nth-child(odd) {
+   background-color:  #fff;
+}
+table#tabla_n3 tr:nth-child(even) {
+    background-color: #F9BF8C;
+}
+table#tabla_n3 tr:nth-child(odd) {
+   background-color:  #fff;
+}
+
+table#tabla_n4 tr:nth-child(even) {
+    background-color: #FCE795;
+}
+table#tabla_n4 tr:nth-child(odd) {
+   background-color:  #fff;
+}
+
+/* estilo parrafos normatividad */
+.parrafoN{
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.divN{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.tituloN{
+  margin-top: 30px;
+}
+
+/* background selects search*/
+#divSearchMunicipio, #divSearchZona, #divSearchZonaCCTZ{
+  padding-top: 5px;
+  width:285px;
+  height: 30px;
+  float: left;
+  font-size: 1.1em;
+}
+
+#divSearchMunicipio{
+  color:white;
+  background-color: #0191B3;
+  border-top-left-radius: 5px;
+
+}
+
+#divSearchZona, #divSearchZonaCCTZ{
+  background-color: #C9E7F1;
+  float: left;
+}
+#divSearchZonaCCTZ{
+  border-top-right-radius: 5px;
+
+}
+
+#contenedorGrupoOpciones{
+  width: 855px;
+  height: 220px; /*35px*/
+  border: 2px solid #0191B3;
+  border-radius: 8px;
+  margin-left: 50px;
+}

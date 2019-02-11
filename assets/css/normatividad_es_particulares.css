@@ -1,0 +1,114 @@
+
+    /* Normatividad: Escuelas Particulares */
+    .menunep{
+    	/*margin-top: 60px;*/
+    	/*margin-left: 140px;*/
+      background-color:#FFF;
+      padding: 45px;
+      margin: 30px;
+    }
+
+    #btn1_nep, #btn2_nep, #btn3_nep, #btn4_nep, #btn5_nep, #btn6_nep, #btn7_nep {
+    	/*margin-left: 15px;*/
+    	color: white;
+    	display: inline-block;
+    	width: 200px;
+    	height: 165px;
+    	border-radius: 1em;
+    	box-shadow: 10px 10px 5px #888888;
+    	font-size: 1.2em;
+    	cursor: pointer;
+    	font-weight: bold;
+    }
+
+    #btn1_nep{
+    	position: relative;
+    	background-color:#004E7D;
+    }
+
+    #btn2_nep{
+    	position: relative;
+    	background-color:#0092B3;
+    }
+
+    #btn3_nep{
+    	position: relative;
+    	background-color:#EB7923;
+    }
+
+    #btn4_nep{
+    	position: relative;
+    	/*margin-top: 30px;*/
+    	background-color:#0092B3;
+    }
+
+    #btn5_nep{
+    	position: relative;
+    	/*margin-top: 30px;*/
+    	background-color:#d3d3d3;
+    }
+
+    #btn6_nep{
+    	position: relative;
+    	/*margin-top: 30px;*/
+    	background-color:#EB7923;
+    }
+
+    #btn7_nep{
+    	position: relative;
+    	/*margin-top: 30px;*/
+    	/*margin-left: 233px;*/
+    	background-color:#FCD12C;
+    }
+
+
+
+    #titulo1_nep{
+     	position:absolute;
+     	top: 65px;
+    	left:50px;
+    	right:50px;;
+    }
+
+    #titulo2_nep{
+    	position:absolute;
+    	top: 40px;
+    	left:30px;
+    	right:30px;
+    }
+
+    #titulo3_nep{
+    	position:absolute;
+    	top: 30px;
+    	left: 30px;
+    	right: 30px;
+    }
+
+    #titulo4_nep{
+    	position:absolute;
+    	top:57px;
+    	left:20px;
+    	right:20px;
+    }
+
+    #titulo5_nep{
+    	position:absolute;
+    	top:60px;
+    	left:40px;
+    	right:30px;
+    }
+
+    #titulo6_nep{
+    	position:absolute;
+    	top:60px;
+    	left:50px;
+    	right:50px;
+    }
+
+
+    #titulo7_nep{
+    	position:absolute;
+    	top:50px;
+    	left:50px;
+    	right:50px;
+    }
