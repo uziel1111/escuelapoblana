@@ -58,7 +58,7 @@
   </div>
 
   <div class="footer_div_blue grises">
-    Algunos derechos reservados © escuelapoblana.org 2017
+    Algunos derechos reservados © escuelapoblana.org 2019
   </div>
 </footer>
 

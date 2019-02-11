@@ -266,16 +266,19 @@ BODY{
                                     </a>
                                     <ul class="dropdown-menu grises">
                                         <!-- <li><a href="http://dsate.mx/cursos/" target="_blank">Oferta de formación continua</a></li> -->
-                                        <li><a href="http://spdpuebla.net/" target="_blank">Servicio Profesional Docente</a></li>
-                                        <li><a href="<?php echo site_url('supervision/index'); ?>">Supervisión</a></li>
-                                        <li><a href="http://escuelapoblana.org/escuelas_particulares/">Escuelas  particulares</a></li>
+                                        <!-- href="http://spdpuebla.net/" target="_blank"-->
+                                        <!-- href="http://escuelapoblana.org/escuelas_particulares/"-->
+                                        <!-- href="<?php echo site_url('supervision/index'); ?>"-->
+                                        <li><a >Servicio Profesional Docente</a></li>
+                                        <li><a  >Supervisión</a></li>
+                                        <li><a  >Escuelas  particulares</a></li>
                                         <!-- http://escuelapoblana.org/escuelas_particulares/ -->
                                         <!-- <li><a href="http://sisep.puebla.gob.mx/sicepconsulta/" target="_blank">Consulta calificaciones y certificados</a></li> -->
 
                                     </ul>
                                 </li>
 
-                                <li class=" col-xs-12 col-sm-12 col-md-3 col-lg-3 dropdown">
+                                <!-- <li class=" col-xs-12 col-sm-12 col-md-3 col-lg-3 dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Información
                                         <span class="caret"></span>
                                     </a>
@@ -286,7 +289,7 @@ BODY{
                                         <li><a type="button" href="http://pueblaconvive.mx/" target="_blank" >Puebla Convive</a></li>
                                         <li><a type="button" href="http://www.primerainfanciapuebla.mx/" target="_blank" >Primera Infancia</a></li> -->
                                     </ul>
-                                </li>
+                                </li> -->
                                 <!-- <li class="col-xs-12 col-sm-12 col-md-2 col-lg-2 dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-users"></i> Comunidad educativa
                                         <span class="caret"></span>
@@ -409,8 +412,8 @@ BODY{
                 </div>
                 <div class="modal-body">
 
-                        <a href="#" id="cal185" ><p>- Calendario escolar 2017-2018 185 días.</p></a>
-                        <a href="#" id="cal195" ><p>- Calendario escolar 2017-2018 195 días.</p></a>
+                        <a href="#" id="cal185" ><p>- Calendario escolar 2018-2019 185 días.</p></a>
+                        <a href="#" id="cal195" ><p>- Calendario escolar 2018-2019 195 días.</p></a>
                 </div><!-- modal body -->
               </div>
               </div>

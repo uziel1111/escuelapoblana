@@ -200,7 +200,7 @@ $("#pdtcl_clase").click(function(e){
 $("#cal185").click(function(e){
             e.preventDefault();
             $("#modal_din_cal").modal("hide");
-            var dom = '<iframe src="http://escuelapoblana.org/escuelapoblana_pdfs/calendarios/2017-2018_calendario_185_dias.pdf" width="100%" height="500" style="border: none;"></iframe>';
+            var dom = '<iframe src="http://escuelapoblana.org/escuelapoblana_pdfs/calendarios/2018-2019_calendario_185_dias.pdf" width="100%" height="500" style="border: none;"></iframe>';
             $('#RA_modal_visorpdf .modal-body').empty();
                 $('#RA_modal_visorpdf .modal-body').html(dom);
 
@@ -210,7 +210,7 @@ $("#cal185").click(function(e){
           $("#cal195").click(function(e){
                       e.preventDefault();
                       $("#modal_din_cal").modal("hide");
-                      var dom = '<iframe src="http://escuelapoblana.org/escuelapoblana_pdfs/calendarios/2017-2018_calendario_185_dias.pdf" width="100%" height="500" style="border: none;"></iframe>';
+                      var dom = '<iframe src="http://escuelapoblana.org/escuelapoblana_pdfs/calendarios/2018-2019_calendario_185_dias.pdf" width="100%" height="500" style="border: none;"></iframe>';
                       $('#RA_modal_visorpdf .modal-body').empty();
                           $('#RA_modal_visorpdf .modal-body').html(dom);
 
