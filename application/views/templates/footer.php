@@ -35,23 +35,31 @@
         <center>
         <h3 style="font-size:1.9vw;">Sentlamachtilistli Tlayekanko</h3>
         <h4 style="font-size:1.3vw;">Secretaría de Educación Pública de Puebla</h4>
-          <p style="font-size:1.1vw;">
-              Calle Jesús Reyes Heroles S/N entre 35 y 37 Norte
-              Col. Nueva Aurora
-              Puebla, Pue.
-            </p>
+
       </center>
       </div>
-      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
         <center>
 
       </center>
       </div>
-      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+      <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5" style="color:white;">
         <center>
-          <a href="http://www.sep.pue.gob.mx/" target="_blank">
-        <!-- <img src="<?php echo base_url('assets/img/sep_pueblablue.png'); ?>" alt="..." class="img-responsive footer_img"> -->
-      </a>
+          <h4 style="font-size:0.8vw;">Contacto</h4>
+
+            <p style="font-size:0.5vw;">
+              Av. Jesús Reyes Heroles s/n Col. Nueva Aurora, Puebla, Pue.
+              </p>
+              <p style="font-size:0.5vw;">
+                CP. 72070
+                </p>
+                <p style="font-size:0.5vw;">
+                Teléfono: (222)229-69-00
+                  </p>
+                  <p style="font-size:0.5vw;">
+                    Atención a la ciudadanía: (01800) 714 7108. Horario de Atención de 8.00 a 19:00 horas.
+                    </p>
+                    <a href="http://sep.puebla.gob.mx/index.php/sep-escucha" target="_blank" style="color:white;">SEP Escucha</a>
       </center>
       </div>
     </div>
