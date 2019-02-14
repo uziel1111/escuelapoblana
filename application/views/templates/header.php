@@ -398,6 +398,25 @@ BODY{
                   </div>
                   </div>
                 </div>
+                <div id="modal_din_spd" class="modal fade modal100 grises" role="dialog" >
+              <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header modal_head">
+                  <button type="button"  id="RA_modal_visorpdf_btnsalir" class="close bold_white "  aria-label="Close"  data-dismiss="modal">
+                    X
+                  </button>
+                <h4 class="modal-title titulo_none" id="title_din">
+                  Servicio Profesional Docente.
+                </h4>
+                </div>
+                <div class="modal-body">
+                  <a  href="https://www.inee.edu.mx/images/stories/2019/spd/Calendario-SPD2019.pdf" target="_blank"><img src="assets/img/calendario_2019.png" class="img-responsive" alt="Cinque Terre"></a>
+                        <a href="#" id="enlaces" ><p>- Directorio de servicios.</p></a>
+                        <a href="#" id="eami" ><p>- Enlace de interés.</p></a>
+                </div><!-- modal body -->
+              </div>
+              </div>
+            </div>
 
                 <div id="modal_din_cal" class="modal fade modal100 grises" role="dialog" >
               <div class="modal-dialog modal-lg">

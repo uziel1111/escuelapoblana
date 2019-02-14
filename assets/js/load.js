@@ -145,6 +145,14 @@ $("#pdtcl_clase").click(function(e){
                           e.preventDefault();
                           $("#md_construc").modal("show");
               });
+              $("#btn_spd").click(function(e){
+                                    e.preventDefault();
+                                    $("#modal_din_spd").modal("show");
+                        });
+                        $("#btn_spd1").click(function(e){
+                                              e.preventDefault();
+                                              $("#modal_din_spd").modal("show");
+                                  });
 
     $("#btn_calendarios").click(function(e){
                           e.preventDefault();
@@ -196,7 +204,24 @@ $("#pdtcl_clase").click(function(e){
 
                                                   $('#RA_modal_visorpdf').modal("show");
                                             });
+$("#enlaces").click(function(e){
+            e.preventDefault();
+            $("#modal_din_spd").modal("hide");
+            var dom = '<iframe src="http://escuelapoblana.org/escuelapoblana_pdfs/index/enlaces_SPD.pdf" width="100%" height="500" style="border: none;"></iframe>';
+            $('#RA_modal_visorpdf .modal-body').empty();
+                $('#RA_modal_visorpdf .modal-body').html(dom);
 
+                $('#RA_modal_visorpdf').modal("show");
+          });
+          $("#eami").click(function(e){
+                      e.preventDefault();
+                      $("#modal_din_spd").modal("hide");
+                      var dom = '<iframe src="http://escuelapoblana.org/escuelapoblana_pdfs/index/PPI_EAMI_2019_OK.pdf" width="100%" height="500" style="border: none;"></iframe>';
+                      $('#RA_modal_visorpdf .modal-body').empty();
+                          $('#RA_modal_visorpdf .modal-body').html(dom);
+
+                          $('#RA_modal_visorpdf').modal("show");
+                    });
 $("#cal185").click(function(e){
             e.preventDefault();
             $("#modal_din_cal").modal("hide");
