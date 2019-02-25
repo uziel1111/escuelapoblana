@@ -943,24 +943,41 @@ function EsteIndGen(){
 
     this.gettablas4 = function(municipioid, municipionomb, nivelid, nivelnomb, sostenimientonomb, modalidadnomb, ciclonomb){
        // console.log(ciclonomb);    
-      if(ciclonomb=="2014-2015-INICIO"){
-        concat = " 2014-2015";
-      }
-      if (ciclonomb=="2015-2016-INICIO"){
-        concat = " 2015-2016";
-      }
-      if (ciclonomb=="2016-2017-INICIO"){
-        concat = " 2016-2017";
-      }
-      if (ciclonomb=="2017-2018"){
-        concat = " 2016-2017";
-      }
-      if (ciclonomb=="FIN-2017-2018"){
-        concat = " 2016-2017";
-      }
-      if (ciclonomb=="INICIO-2018-2019"){
-        concat = " 2016-2017";
-      }
+      switch(ciclonomb)
+        {
+          case '2014-2015-INICIO': 
+            concat = " 2014-2015";
+          break;
+
+          case '2014-2015-FIN':
+            concat = " 2014-2015";
+          break;
+
+          case '2015-2016-INICIO': 
+            concat = "2015-2016";
+          break;
+
+          case '2015-2016-FIN':
+            concat = "2015-2016";
+          break;
+
+          case '2016-2017-INICIO':
+            concat = "2016-2017";
+          break;
+
+          case '2017-2018': 
+            concat = "2016-2017";
+          break;
+
+          case 'FIN-2017-2018':
+            concat = "2016-2017";
+          break;
+
+          case 'INICIO-2018-2019': 
+            concat = "2016-2017";
+          break;
+
+        }
 
       
       $("#ind_asist_lb").empty();
@@ -987,25 +1004,41 @@ function EsteIndGen(){
 
     this.gettablas5 = function(municipioid, municipionomb, nivelid, nivelnomb, sostenimientonomb, modalidadnomb, ciclonomb){
       // console.log(ciclonomb);
-      if(ciclonomb=="2014-2015-INICIO"){
-        concat = " 2015-2016";
-      }
-      if (ciclonomb=="2015-2016-INICIO"){
-        concat = " 2015-2016";
-      }
-      if (ciclonomb=="2016-2017-INICIO"){
-        concat = " 2015-2016";
-      }
-      if (ciclonomb=="2017-2018"){
-        concat = " 2015-2016";
-      }
-      if (ciclonomb=="FIN-2017-2018"){
-        concat = " 2015-2016";
-      }
-      if (ciclonomb=="INICIO-2018-2019"){
-        concat = " 2015-2016";
-      }
-      // concat=ciclonomb;
+      switch(ciclonomb)
+        {
+          case '2014-2015-INICIO': 
+            concat = " 2014-2015";
+          break;
+
+          case '2014-2015-FIN':
+            concat = " 2014-2015";
+          break;
+
+          case '2015-2016-INICIO': 
+            concat = "2015-2016";
+          break;
+          
+          case '2015-2016-FIN':
+            concat = "2015-2016";
+          break;
+
+          case '2016-2017-INICIO':
+            concat = "2016-2017";
+          break;
+
+          case '2017-2018': 
+            concat = "2016-2017";
+          break;
+
+          case 'FIN-2017-2018':
+            concat = "2016-2017";
+          break;
+
+          case 'INICIO-2018-2019': 
+            concat = "2016-2017";
+          break;
+
+        }
 
       $("#ind_perma_lb").empty();
       $("#ind_perma_lb").append(concat);
