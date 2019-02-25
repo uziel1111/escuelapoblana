@@ -8,10 +8,10 @@ class Estadistica_model extends CI_Model {
 
      function get_all_municipio_ei()
      {
-       // $str_query = "SELECT m.id_municipio, m.nombre_municipio FROM estadistica_e_indicadoresxesc m WHERE m.nombre_municipio !='SAN ANTONIO CA?ADA' AND m.nombre_municipio !='CA?ADA MORELOS'GROUP BY m.nombre_municipio";
+       $str_query = "SELECT m.id_municipio, m.nombre_municipio FROM estadistica_e_indicadoresxesc m WHERE m.nombre_municipio !='SAN ANTONIO CA?ADA' AND m.nombre_municipio !='CA?ADA MORELOS'GROUP BY m.nombre_municipio";
      	//querys nuevos
      	//Eloisa HA.
-     	$str_query="SELECT id_municipio, nombre_municipio from municipio group by nombre_municipio"; 
+     	// $str_query="SELECT id_municipio, nombre_municipio from municipio group by nombre_municipio"; 
        return $this->db->query($str_query)->result_array();
      }// get_all_municipio_ei()
 
@@ -19,18 +19,17 @@ class Estadistica_model extends CI_Model {
      {
 
 
-			// $query = "
-   //    SELECT DISTINCT cct_zona_escolar FROM estadistica_e_indicadoresxesc
-   //    WHERE cct_zona_escolar!='No aplica zona escolar' AND cct_zona_escolar!='Zona sin asignar'
-   //    AND num_nivel='".$nivelid."' AND sostenimiento_desagregado='".$sostenimientoid."'AND num_zona_escolar='".$num_ze."'
+		$query = "SELECT DISTINCT cct_zona_escolar FROM estadistica_e_indicadoresxesc
+      				WHERE cct_zona_escolar!='No aplica zona escolar' AND cct_zona_escolar!='Zona sin asignar'
+      				AND num_nivel='".$nivelid."' AND sostenimiento_desagregado='".$sostenimientoid."'AND num_zona_escolar='".$num_ze."'
 
 			// ";
-     	$query="SELECT s.cct_supervision cct_zona_escolar from escuela e
-     			inner join supervision s on s.cct_supervision=e.cct_supervision
-     			inner join sostenimiento sos on sos.id_sostenimiento=e.id_sostenimiento
-     			where s.zona!=999 and id_nivel={$nivelid} and sos.nombre_sostenimiento='{$sostenimientoid}'
-     			and s.zona={$num_ze}
-     			group by e.cct_supervision";
+     	// $query="SELECT s.cct_supervision cct_zona_escolar from escuela e
+     	// 		inner join supervision s on s.cct_supervision=e.cct_supervision
+     	// 		inner join sostenimiento sos on sos.id_sostenimiento=e.id_sostenimiento
+     	// 		where s.zona!=999 and id_nivel={$nivelid} and sos.nombre_sostenimiento='{$sostenimientoid}'
+     	// 		and s.zona={$num_ze}
+     	// 		group by e.cct_supervision";
       // echo $query;
       //die();
       return $this->db->query($query)->result_array();
@@ -40,21 +39,20 @@ class Estadistica_model extends CI_Model {
      {
 
 
-			// $query = "
-   //    SELECT DISTINCT num_zona_escolar FROM estadistica_e_indicadoresxesc
-   //    WHERE
-   //    num_zona_escolar!='No aplica zona escolar' AND num_zona_escolar!='Zona sin asignar'
-   //    AND cct_zona_escolar!='No aplica zona escolar' AND cct_zona_escolar!='Zona sin asignar' AND cct_zona_escolar!=''
-   //    AND num_nivel='".$nivelid."' AND sostenimiento_desagregado='".$sostenimientoid."'
-   //    ORDER BY num_zona_escolar+0
-			// ";
+			$query = "SELECT DISTINCT num_zona_escolar 
+			FROM estadistica_e_indicadoresxesc
+      		WHERE num_zona_escolar!='No aplica zona escolar' AND num_zona_escolar!='Zona sin asignar'
+      		AND cct_zona_escolar!='No aplica zona escolar' AND cct_zona_escolar!='Zona sin asignar' AND cct_zona_escolar!=''
+      		AND num_nivel='".$nivelid."' AND sostenimiento_desagregado='".$sostenimientoid."'
+      		ORDER BY num_zona_escolar+0
+			";
 
      	//nuevo query Eloisa HA
-     	$query="SELECT s.zona num_zona_escolar from escuela e
-     			inner join supervision s on s.cct_supervision=e.cct_supervision
-     			inner join sostenimiento sos on sos.id_sostenimiento=e.id_sostenimiento
-     			where s.zona!=999 and id_nivel={$nivelid} and sos.nombre_sostenimiento='{$sostenimientoid}'
-     			group by s.zona";
+     	// $query="SELECT s.zona num_zona_escolar from escuela e
+     	// 		inner join supervision s on s.cct_supervision=e.cct_supervision
+     	// 		inner join sostenimiento sos on sos.id_sostenimiento=e.id_sostenimiento
+     	// 		where s.zona!=999 and id_nivel={$nivelid} and sos.nombre_sostenimiento='{$sostenimientoid}'
+     	// 		group by s.zona";
       // echo $query;
       // die();
       return $this->db->query($query)->result_array();
@@ -64,24 +62,26 @@ class Estadistica_model extends CI_Model {
      {
 
        	if($id_municipio==0){
-			// $query = "SELECT num_nivel ,nivel FROM estadistica_e_indicadoresxesc
-   //     					WHERE nivel!='CAPACITACION PARA EL TRABAJO' AND nivel!='ADULTOS'
-   //   					GROUP BY num_nivel";
+			$query = "SELECT num_nivel ,nivel FROM estadistica_e_indicadoresxesc
+       					WHERE nivel!='CAPACITACION PARA EL TRABAJO' AND nivel!='ADULTOS' and num_nivel!=0
+     					GROUP BY num_nivel";
        		//nuevo query
        		//Eloisa HA.
-     		$query = "SELECT n.id_nivel  num_nivel,n.nombre_nivel nivel FROM escuela e
-     					INNER JOIN nivel n on n.id_nivel=e.id_nivel
-       					WHERE n.nombre_nivel!='CAPACITACION PARA EL TRABAJO' AND n.nombre_nivel!='ADULTOS'
-     					GROUP BY n.id_nivel";
+     		// $query = "SELECT n.id_nivel  num_nivel,n.nombre_nivel nivel FROM escuela e
+     		// 			INNER JOIN nivel n on n.id_nivel=e.id_nivel
+       // 					WHERE n.nombre_nivel!='CAPACITACION PARA EL TRABAJO' AND n.nombre_nivel!='ADULTOS'
+     		// 			GROUP BY n.id_nivel";
 		}else{
-			// $query = "SELECT num_nivel ,nivel FROM estadistica_e_indicadoresxesc WHERE id_municipio=".$id_municipio." AND nivel!='CAPACITACION PARA EL TRABAJO' AND nivel!='ADULTOS' GROUP BY num_nivel";
+			$query = "SELECT num_nivel ,nivel FROM estadistica_e_indicadoresxesc 
+					WHERE id_municipio=".$id_municipio." AND nivel!='CAPACITACION PARA EL TRABAJO' and num_nivel!=0
+					AND nivel!='ADULTOS' GROUP BY num_nivel";
 			//nuevo query
 			//Eloisa HA.
-			$query = "SELECT n.id_nivel  num_nivel,n.nombre_nivel nivel FROM escuela e
-     					INNER JOIN nivel n on n.id_nivel=e.id_nivel
-       					WHERE n.nombre_nivel!='CAPACITACION PARA EL TRABAJO' AND n.nombre_nivel!='ADULTOS'
-       					AND e.id_municipio={$id_municipio}
-     					GROUP BY n.id_nivel";
+			// $query = "SELECT n.id_nivel  num_nivel,n.nombre_nivel nivel FROM escuela e
+   //   					INNER JOIN nivel n on n.id_nivel=e.id_nivel
+   //     					WHERE n.nombre_nivel!='CAPACITACION PARA EL TRABAJO' AND n.nombre_nivel!='ADULTOS'
+   //     					AND e.id_municipio={$id_municipio}
+   //   					GROUP BY n.id_nivel";
 		}
 
 		// echo $query;
@@ -92,14 +92,14 @@ class Estadistica_model extends CI_Model {
      function getNiveles_ze()
      {
 
-		// $query = "SELECT num_nivel ,nivel FROM estadistica_e_indicadoresxesc
-		// 			WHERE num_nivel!=1 AND num_nivel!=2 AND nivel!='CAPACITACION PARA EL TRABAJO' AND nivel!='ADULTOS'
-  //     				GROUP BY num_nivel";
+		$query = "SELECT num_nivel ,nivel FROM estadistica_e_indicadoresxesc
+					WHERE num_nivel!=1 AND num_nivel!=2 and num_nivel!=0 AND nivel!='CAPACITACION PARA EL TRABAJO' AND nivel!='ADULTOS'
+      				GROUP BY num_nivel";
      	//query nuevo Eloisa HA
-     	$query="SELECT n.id_nivel  num_nivel,n.nombre_nivel nivel FROM escuela e
-     			INNER JOIN nivel n on n.id_nivel=e.id_nivel
-       			WHERE n.id_nivel!=1 AND n.id_nivel!=2 and n.nombre_nivel!='CAPACITACION PARA EL TRABAJO' AND n.nombre_nivel!='ADULTOS'
-     			GROUP BY n.id_nivel";
+     	// $query="SELECT n.id_nivel  num_nivel,n.nombre_nivel nivel FROM escuela e
+     	// 		INNER JOIN nivel n on n.id_nivel=e.id_nivel
+      //  			WHERE n.id_nivel!=1 AND n.id_nivel!=2 and n.nombre_nivel!='CAPACITACION PARA EL TRABAJO' AND n.nombre_nivel!='ADULTOS'
+     	// 		GROUP BY n.id_nivel";
      	// echo $query;
      	// die();
 
@@ -111,21 +111,21 @@ class Estadistica_model extends CI_Model {
      {
        $concat = "";
        if($id_municipio!="0" || $id_municipio!=0){
-   			$concat .= " AND e.id_municipio = {$id_municipio}";
+   			$concat .= " AND id_municipio = {$id_municipio}";
    		}
    		if($id_nivel!="TODOS" || $id_nivel!=0){
-   			$concat .= " AND e.id_nivel = {$id_nivel}";
+   			$concat .= " AND num_nivel = {$id_nivel}";
    		}
 
-			// $query = "SELECT sostenimiento 
-			// 		FROM estadistica_e_indicadoresxesc 
-			// 		WHERE 1= 1 {$concat}
-   //    				GROUP BY sostenimiento";
+			$query = "SELECT sostenimiento 
+					FROM estadistica_e_indicadoresxesc 
+					WHERE 1= 1 {$concat}
+      				GROUP BY sostenimiento";
    			//query nuevo Eloisa HA.
-   			$query="SELECT s.nombre_sostenimiento sostenimiento from escuela e
-   					inner join sostenimiento s on s.id_sostenimiento=e.id_sostenimiento
-   					where 1=1 {$concat} 
-   					group by s.nombre_sostenimiento";
+   			// $query="SELECT s.nombre_sostenimiento sostenimiento from escuela e
+   			// 		inner join sostenimiento s on s.id_sostenimiento=e.id_sostenimiento
+   			// 		where 1=1 {$concat} 
+   			// 		group by s.nombre_sostenimiento";
 
       return $this->db->query($query)->result_array();
      }// get_xmunicipio_xnivel_ei()
@@ -135,16 +135,17 @@ class Estadistica_model extends CI_Model {
        	$concat = "";
    		$concat .= " AND e.id_nivel = {$id_nivel}";
 
-		// $query = "SELECT sostenimiento_desagregado FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat}
-  //     AND num_zona_escolar!='No aplica zona escolar' AND num_zona_escolar!='Zona sin asignar'
-  //     AND cct_zona_escolar!='No aplica zona escolar' AND cct_zona_escolar!='Zona sin asignar' AND cct_zona_escolar!=''
-  //     GROUP BY sostenimiento_desagregado
-		// 	";
-   		$query="SELECT s.nombre_sostenimiento sostenimiento_desagregado from escuela e
-   				inner join sostenimiento s on s.id_sostenimiento=e.id_sostenimiento
-   				inner join supervision su on su.cct_supervision=e.cct_supervision
-   				where 1=1 {$concat}  and su.zona!=999
-   				group by s.nombre_sostenimiento";
+		$query = "SELECT sostenimiento_desagregado 
+				FROM estadistica_e_indicadoresxesc 
+				WHERE 1= 1 {$concat} AND num_zona_escolar!='No aplica zona escolar' 
+				AND num_zona_escolar!='Zona sin asignar' AND cct_zona_escolar!='No aplica zona escolar' 
+				AND cct_zona_escolar!='Zona sin asignar' AND cct_zona_escolar!=''
+      			GROUP BY sostenimiento_desagregado";
+   		// $query="SELECT s.nombre_sostenimiento sostenimiento_desagregado from escuela e
+   		// 		inner join sostenimiento s on s.id_sostenimiento=e.id_sostenimiento
+   		// 		inner join supervision su on su.cct_supervision=e.cct_supervision
+   		// 		where 1=1 {$concat}  and su.zona!=999
+   		// 		group by s.nombre_sostenimiento";
       return $this->db->query($query)->result_array();
      }// get_sostenimeinto_ze()
 
@@ -152,24 +153,24 @@ class Estadistica_model extends CI_Model {
      {
        	$concat = "";
        	if($id_municipio!="0" || $id_municipio!=0){
-   			$concat .= " AND e.id_municipio = {$id_municipio}";
+   			$concat .= " AND id_municipio = {$id_municipio}";
    		}
    		if($id_nivel!="TODOS" || $id_nivel!=0){
-   			$concat .= " AND e.id_nivel = {$id_nivel}";
+   			$concat .= " AND num_nivel = {$id_nivel}";
    		}
       	if($id_sostenimiento!="TODOS" || $id_sostenimiento!=0){
-   			$concat .= " AND s.nombre_sostenimiento = '{$id_sostenimiento}'";
+   			$concat .= " AND sostenimiento = '{$id_sostenimiento}'";
    		}
 
-		// $query = "SELECT modalidad FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat}
-  //     				GROUP BY modalidad";
+		$query = "SELECT modalidad FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat}
+      				GROUP BY modalidad";
 			// nuevo query Eloisa HA.
-      	$query="SELECT m.nombre_modalidad modalidad 
-      			from escuela e
-      			inner join modalidad m on m.id_modalidad=e.id_modalidad
-      			inner join sostenimiento s on s.id_sostenimiento=e.id_sostenimiento
-      			where 1=1 {$concat}
-      			group by e.id_modalidad";
+      	// $query="SELECT m.nombre_modalidad modalidad 
+      	// 		from escuela e
+      	// 		inner join modalidad m on m.id_modalidad=e.id_modalidad
+      	// 		inner join sostenimiento s on s.id_sostenimiento=e.id_sostenimiento
+      	// 		where 1=1 {$concat}
+      	// 		group by e.id_modalidad";
       	// echo $query;
       	// die();
 
@@ -192,9 +193,11 @@ class Estadistica_model extends CI_Model {
    			$concat .= " AND modalidad = '{$id_modalidad}'";
    		}
 
-			$query = "SELECT if(ciclo='INICIO-2018-2019','2018-2019-INICIO',ciclo)ciclo FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} and ciclo!='FIN-2017-2018'
-					 and ciclo!='2015-2016-FIN' and ciclo!='2014-2015-FIN'
-						GROUP BY ciclo";
+			$query = "SELECT if(ciclo='INICIO-2018-2019','2018-2019-INICIO',ciclo)ciclo 
+						FROM estadistica_e_indicadoresxesc 
+						WHERE 1= 1 {$concat} and ciclo!='FIN-2017-2018'
+					 	and ciclo!='2015-2016-FIN' and ciclo!='2014-2015-FIN'
+					GROUP BY ciclo";
    			// nuevo query Eloisa HA.
    			// $query="SELECT ciclo FROM estadistica_e_indicadoresxesc
    			// 	";
@@ -311,6 +314,8 @@ class Estadistica_model extends CI_Model {
 				END AS Sostenimiento_X,
 				CASE modalidad
         WHEN 'CONAFE (COMUNITARIA)' 				THEN 'CONAFE (COMUNITARIA)'
+        WHEN 'ND' 				THEN 'ND'
+        WHEN 'CONAFE' 				THEN 'CONAFE'
         WHEN 'USAER' 				THEN 'USAER'
         WHEN 'CAM' 				THEN 'CAM'
         WHEN 'TECNICA' 				THEN 'Técnica'
@@ -319,6 +324,8 @@ class Estadistica_model extends CI_Model {
         WHEN 'ESCOLARIZADA' 				THEN 'Escolarizada'
         WHEN 'NO ESCOLARIZADA' 				THEN 'No Escolarizada'
         WHEN 'NO ESCOLARIZADO' 				THEN 'No Escolarizada'
+        WHEN 'INICIAL NO ESCOLARIZADA' 		THEN 'Inicial No Escolarizada'
+        WHEN 'INICIAL ESCOLARIZADA' 		THEN 'Inicial Escolarizada'
         WHEN 'INDIGENA' 					THEN 'Indígena'
         WHEN 'GENERAL' 						THEN 'General'
         WHEN 'TECNICA INDUSTRIAL' 			THEN 'Técnica Industrial'
@@ -358,7 +365,7 @@ class Estadistica_model extends CI_Model {
 			ORDER BY FIELD(Nivel_X,'Especial','Inicial','Preescolar','Primaria','Secundaria','Media Superior','Superior', 'Capacitacion para el trabajo', 'Adultos'),
 			FIELD(Sostenimiento_X,'Público','Autónomo','Privado'),
 			FIELD(Modalidad_X,'Total','CAM','USAER','CENDI','Escolarizada','General','Tecnica','Técnica Industrial','Técnica Agropecuaria',
-			'Para Trabajadores','Telesecundaria','No Escolarizada','Indígena','CONAFE (COMUNITARIA)','Bachillerato General',
+			'Para Trabajadores','Telesecundaria','No Escolarizada','Inicial No Escolarizada','Inicial Escolarizada','Indígena','CONAFE (COMUNITARIA)','CONAFE','ND','Bachillerato General',
 			'Bachillerato Tecnológico','Profesional Técnico','Universitaria','Normal','Comunitario','Para adultos', 'Administrativo')
 			";
       // echo $query;
@@ -613,6 +620,8 @@ class Estadistica_model extends CI_Model {
 				END AS Sostenimiento_X,
 				CASE modalidad
         WHEN 'CONAFE (COMUNITARIA)' 				THEN 'CONAFE (COMUNITARIA)'
+        WHEN 'CONAFE' 				THEN 'CONAFE'
+        WHEN 'ND' 				THEN 'ND'
         WHEN 'USAER' 				THEN 'USAER'
         WHEN 'CAM' 				THEN 'CAM'
         WHEN 'TECNICA' 				THEN 'Técnica'
@@ -621,6 +630,8 @@ class Estadistica_model extends CI_Model {
         WHEN 'ESCOLARIZADA' 				THEN 'Escolarizada'
         WHEN 'NO ESCOLARIZADA' 				THEN 'No Escolarizada'
         WHEN 'NO ESCOLARIZADO' 				THEN 'No Escolarizada'
+        WHEN 'INICIAL NO ESCOLARIZADA'  THEN 'Inicial No Escolarizada'
+		WHEN 'INICIAL ESCOLARIZADA' 	THEN 'Inicial Escolarizada'
         WHEN 'INDIGENA' 					THEN 'Indígena'
         WHEN 'GENERAL' 						THEN 'General'
         WHEN 'TECNICA INDUSTRIAL' 			THEN 'Técnica Industrial'
@@ -660,7 +671,7 @@ class Estadistica_model extends CI_Model {
 			ORDER BY FIELD(Nivel_X,'Especial','Inicial','Preescolar','Primaria','Secundaria','Media Superior','Superior'),
 			FIELD(Sostenimiento_X,'Público','Autónomo','Privado'),
 			FIELD(Modalidad_X,'Total','CAM','USAER','CENDI','Escolarizada','General','Tecnica','Técnica Industrial','Técnica Agropecuaria',
-			'Para Trabajadores','Telesecundaria','No Escolarizada','Indígena','CONAFE (COMUNITARIA)','Bachillerato General',
+			'Para Trabajadores','Telesecundaria','No Escolarizada','Inicial No Escolarizada','Inicial Escolarizada','Indígena','CONAFE (COMUNITARIA)','ND','CONAFE','Bachillerato General',
 			'Bachillerato Tecnológico','Profesional Técnico','Universitaria','Normal','Comunitario','Para adultos', 'Administrativo')
 			";
       // echo $query;
@@ -916,6 +927,8 @@ class Estadistica_model extends CI_Model {
        CASE modalidad
        WHEN 'CONAFE (COMUNITARIA)' 				THEN 'CONAFE (COMUNITARIA)'
        WHEN 'USAER' 				THEN 'USAER'
+       WHEN 'CONAFE' 				THEN 'CONAFE'
+       WHEN 'ND' 				THEN 'ND'
        WHEN 'CAM' 				THEN 'CAM'
        WHEN 'TECNICA' 				THEN 'Técnica'
        WHEN 'CENDI' 				THEN 'CENDI'
@@ -923,6 +936,8 @@ class Estadistica_model extends CI_Model {
        WHEN 'ESCOLARIZADA' 				THEN 'Escolarizada'
        WHEN 'NO ESCOLARIZADA' 				THEN 'No Escolarizada'
        WHEN 'NO ESCOLARIZADO' 				THEN 'No Escolarizada'
+       WHEN 'INICIAL NO ESCOLARIZADA'  THEN 'Inicial No Escolarizada'
+	   WHEN 'INICIAL ESCOLARIZADA' 	THEN 'Inicial Escolarizada'
        WHEN 'INDIGENA' 					THEN 'Indígena'
        WHEN 'GENERAL' 						THEN 'General'
        WHEN 'TECNICA INDUSTRIAL' 			THEN 'Técnica Industrial'
@@ -963,7 +978,7 @@ class Estadistica_model extends CI_Model {
      ORDER BY FIELD(Nivel_X,'Especial','Inicial','Preescolar','Primaria','Secundaria','Media Superior','Superior', 'Capacitacion para el trabajo', 'Adultos'),
      FIELD(Sostenimiento_X,'Público','Autónomo','Privado'),
      FIELD(Modalidad_X,'Total','CAM','USAER','CENDI','Escolarizada','General','Tecnica','Técnica Industrial','Técnica Agropecuaria',
-     'Para Trabajadores','Telesecundaria','No Escolarizada','Indígena','CONAFE (COMUNITARIA)','Bachillerato General',
+     'Para Trabajadores','Telesecundaria','No Escolarizada','Inicial No Escolarizada','Inicial Escolarizada','Indígena','CONAFE (COMUNITARIA)','CONAFE','ND','Bachillerato General',
      'Bachillerato Tecnológico','Profesional Técnico','Universitaria','Normal','Comunitario','Para adultos', 'Administrativo')
      ";
      // echo $query;
@@ -1496,6 +1511,8 @@ function get_llenado_tabla1_0_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
    CASE modalidad
      WHEN 'CONAFE (COMUNITARIA)' 				THEN 'CONAFE (COMUNITARIA)'
      WHEN 'USAER' 				THEN 'USAER'
+     WHEN 'CONAFE' 				THEN 'CONAFE'
+     WHEN 'ND' 				THEN 'ND'
      WHEN 'CAM' 				THEN 'CAM'
      WHEN 'TECNICA' 				THEN 'Técnica'
      WHEN 'INICIAL' 				THEN 'Escolarizada'
@@ -1504,6 +1521,8 @@ function get_llenado_tabla1_0_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
      WHEN 'NO ESCOLARIZADO' 				THEN 'No Escolarizada'
      WHEN 'INDIGENA' 					THEN 'Indígena'
      WHEN 'GENERAL' 						THEN 'General'
+	WHEN 'INICIAL NO ESCOLARIZADA'  THEN 'Inicial No Escolarizada'
+	WHEN 'INICIAL ESCOLARIZADA' 	THEN 'Inicial Escolarizada'
      WHEN 'TECNICA INDUSTRIAL' 			THEN 'Técnica Industrial'
      WHEN 'TECNICA AGROPECUARIA' 		THEN 'Técnica Agropecuaria'
      WHEN 'PARA TRABAJADORES' 			THEN 'Para Trabajadores'
@@ -1533,7 +1552,7 @@ function get_llenado_tabla1_0_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
  ORDER BY FIELD(Nivel_X,'Especial','Inicial','Preescolar','Primaria','Secundaria','Media Superior','Superior'),
  FIELD(Sostenimiento_X,'Público','Autónomo','Privado'),
  FIELD(Modalidad_X,'Total','CAM','USAER','Escolarizada','General','Técnica Industrial','Técnica Agropecuaria',
- 'Para Trabajadores','Telesecundaria','No Escolarizada','Indígena','CONAFE (COMUNITARIA)','Bachillerato General',
+ 'Para Trabajadores','Telesecundaria','No Escolarizada','Inicial No Escolarizada','Inicial Escolarizada','Indígena','CONAFE (COMUNITARIA)','CONAFE','ND','Bachillerato General',
  'Bachillerato Tecnológico','Profesional Técnico','Universitaria','Normal')
  ";
  // echo $query;
@@ -1776,11 +1795,15 @@ function get_llenado_tabla2_0_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
      WHEN 'CONAFE (COMUNITARIA)' 				THEN 'CONAFE (COMUNITARIA)'
      WHEN 'USAER' 				THEN 'USAER'
      WHEN 'CAM' 				THEN 'CAM'
+     WHEN 'CONAFE' 				THEN 'CONAFE'
+     WHEN 'ND' 				THEN 'ND'
      WHEN 'TECNICA' 				THEN 'Técnica'
      WHEN 'INICIAL' 				THEN 'Escolarizada'
      WHEN 'ESCOLARIZADA' 				THEN 'Escolarizada'
      WHEN 'NO ESCOLARIZADA' 				THEN 'No Escolarizada'
      WHEN 'NO ESCOLARIZADO' 				THEN 'No Escolarizada'
+     WHEN 'INICIAL NO ESCOLARIZADA'  THEN 'Inicial No Escolarizada'
+	 WHEN 'INICIAL ESCOLARIZADA' 	THEN 'Inicial Escolarizada'
      WHEN 'INDIGENA' 					THEN 'Indígena'
      WHEN 'GENERAL' 						THEN 'General'
      WHEN 'TECNICA INDUSTRIAL' 			THEN 'Técnica Industrial'
@@ -1812,7 +1835,7 @@ function get_llenado_tabla2_0_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
  ORDER BY FIELD(Nivel_X,'Especial','Inicial','Preescolar','Primaria','Secundaria','Media Superior','Superior'),
  FIELD(Sostenimiento_X,'Público','Autónomo','Privado'),
  FIELD(Modalidad_X,'Total','CAM','USAER','Escolarizada','General','Técnica Industrial','Técnica Agropecuaria',
- 'Para Trabajadores','Telesecundaria','No Escolarizada','Indígena','CONAFE (COMUNITARIA)','Bachillerato General',
+ 'Para Trabajadores','Telesecundaria','No Escolarizada','Inicial No Escolarizada','Inicial Escolarizada','Indígena','CONAFE (COMUNITARIA)','CONAFE','ND','Bachillerato General',
  'Bachillerato Tecnológico','Profesional Técnico','Universitaria','Normal')
  ";
  // echo $query;
@@ -2057,12 +2080,16 @@ SELECT
   CASE modalidad
     WHEN 'CONAFE (COMUNITARIA)' 				THEN 'CONAFE (COMUNITARIA)'
     WHEN 'USAER' 				THEN 'USAER'
+    WHEN 'CONAFE' 				THEN 'CONAFE'
+    WHEN 'ND' 				THEN 'ND'
     WHEN 'CAM' 				THEN 'CAM'
     WHEN 'TECNICA' 				THEN 'Técnica'
     WHEN 'INICIAL' 				THEN 'Escolarizada'
     WHEN 'ESCOLARIZADA' 				THEN 'Escolarizada'
     WHEN 'NO ESCOLARIZADA' 				THEN 'No Escolarizada'
     WHEN 'NO ESCOLARIZADO' 				THEN 'No Escolarizada'
+    WHEN 'INICIAL NO ESCOLARIZADA'  THEN 'Inicial No Escolarizada'
+	WHEN 'INICIAL ESCOLARIZADA' 	THEN 'Inicial Escolarizada'
     WHEN 'INDIGENA' 					THEN 'Indígena'
     WHEN 'GENERAL' 						THEN 'General'
     WHEN 'TECNICA INDUSTRIAL' 			THEN 'Técnica Industrial'
@@ -2095,7 +2122,7 @@ GROUP BY nivel, sostenimiento, modalidad
 ORDER BY FIELD(Nivel_X,'Especial','Inicial','Preescolar','Primaria','Secundaria','Media Superior','Superior'),
 FIELD(Sostenimiento_X,'Público','Autónomo','Privado'),
 FIELD(Modalidad_X,'Total','CAM','USAER','Escolarizada','General','Técnica Industrial','Técnica Agropecuaria',
-'Para Trabajadores','Telesecundaria','No Escolarizada','Indígena','CONAFE (COMUNITARIA)','Bachillerato General',
+'Para Trabajadores','Telesecundaria','No Escolarizada','Inicial No Escolarizada','Inicial Escolarizada','Indígena','CONAFE (COMUNITARIA)','CONAFE','ND','Bachillerato General',
 'Bachillerato Tecnológico','Profesional Técnico','Universitaria','Normal')
 ";
 // echo $query;

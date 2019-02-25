@@ -1191,25 +1191,21 @@ function EsteIndGen(){
                         case 'TODOS':
                               // Desplegamos hijos y nietos
                               $("#esppub, #esp2pub2, #esp3pub3").css("display","");
-                                    $("#esppubcam, #esp2pub2cam2, #esp3pub3cam3").css("display","");
-                                    $("#esppubusa, #esp2pub2usa2, #esp3pub3usa3").css("display","");
+                              $("#esppubcam, #esp2pub2cam2, #esp3pub3cam3").css("display","");
+                              $("#esppubusa, #esp2pub2usa2, #esp3pub3usa3").css("display","");
                               $("#esppri, #esp2pri2, #esp3pri3").css("display","");
-                                    $("#esppricam, #esp2pri2cam2, #esp3pri3cam3").css("display","");
+                              $("#esppricam, #esp2pri2cam2, #esp3pri3cam3").css("display","");
                               // Pintamos de color las filas para resaltar la seleccion realizada.
-
-                              		$("#esppub #mis_td, #esp2pub2 #mis_td, #esp3pub3 #mis_td").css("background-color","#FAAC58");
-                                    $("#esppub #show, #esp2pub2 #show, #esp3pub3 #show").css("background-color","#FAAC58");
-                                          $("#esppubcam #mis_td, #esp2pub2cam2 #mis_td, #esp3pub3cam3 #mis_td").css("background-color","#F5D0A9");
-                                          $("#esppubcam #show, #esp2pub2cam2 #show, #esp3pub3cam3 #show").css("background-color","#F5D0A9");
-                                          $("#esppubusa #mis_td, #esp2pub2usa2 #mis_td, #esp3pub3usa3 #mis_td").css("background-color","#F5D0A9");
-                                          $("#esppubusa #show, #esp2pub2usa2 #show, #esp3pub3usa3 #show").css("background-color","#F5D0A9");
-                                    $("#esppri #mis_td, #esp2pri2 #mis_td, #esp3pri3 #mis_td").css("background-color","#FAAC58");
-                                    $("#esppri #show, #esp2pri2 #show, #esp3pri3 #show").css("background-color","#FAAC58");
-                                          $("#esppricam #mis_td, #esp2pri2cam2 #mis_td, #esp3pri3cam3 #mis_td").css("background-color","#F5D0A9");
-                                          $("#esppricam #show, #esp2pri2cam2 #show, #esp3pri3cam3 #show").css("background-color","#F5D0A9");
-
-
-
+                              $("#esppub #mis_td, #esp2pub2 #mis_td, #esp3pub3 #mis_td").css("background-color","#FAAC58");
+                              $("#esppub #show, #esp2pub2 #show, #esp3pub3 #show").css("background-color","#FAAC58");
+                              $("#esppubcam #mis_td, #esp2pub2cam2 #mis_td, #esp3pub3cam3 #mis_td").css("background-color","#F5D0A9");
+                              $("#esppubcam #show, #esp2pub2cam2 #show, #esp3pub3cam3 #show").css("background-color","#F5D0A9");
+                              $("#esppubusa #mis_td, #esp2pub2usa2 #mis_td, #esp3pub3usa3 #mis_td").css("background-color","#F5D0A9");
+                              $("#esppubusa #show, #esp2pub2usa2 #show, #esp3pub3usa3 #show").css("background-color","#F5D0A9");
+                              $("#esppri #mis_td, #esp2pri2 #mis_td, #esp3pri3 #mis_td").css("background-color","#FAAC58");
+                              $("#esppri #show, #esp2pri2 #show, #esp3pri3 #show").css("background-color","#FAAC58");
+                              $("#esppricam #mis_td, #esp2pri2cam2 #mis_td, #esp3pri3cam3 #mis_td").css("background-color","#F5D0A9");
+                              $("#esppricam #show, #esp2pri2cam2 #show, #esp3pri3cam3 #show").css("background-color","#F5D0A9");
                         break;
 
                         case 'PUBLICO':
@@ -1222,49 +1218,88 @@ function EsteIndGen(){
                               {
                                     case 'TODOS':
                                           // Desplegamos hijos y nietos
-                                          $("#esppub, #esp2pub2, #esp3pub3").css("display","");
-                                                $("#esppubcam, #esp2pub2cam2, #esp3pub3cam3").css("display","");
-                                                $("#esppubusa, #esp2pub2usa2, #esp3pub3usa3").css("display","");
-                                          $("#esppri, #esp2pri2, #esp3pri3").css("display","");
-                                                //$("#esppricam").css("display","");
-                                          // Pintamos de color las filas para resaltar la seleccion realizada.
-                                          $("#esppubcam #mis_td, #esp2pub2cam2 #mis_td, #esp3pub3cam3 #mis_td").css("background-color","#F5D0A9");
-                                          $("#esppubcam #show, #esp2pub2cam2 #show, #esp3pub3cam3 #show").css("background-color","#F5D0A9");
-                                          $("#esppubusa #mis_td, #esp2pub2usa2 #mis_td, #esp3pub3usa3 #mis_td").css("background-color","#F5D0A9");
-                                          $("#esppubusa #show, #esp2pub2usa2 #show, #esp3pub3usa3 #show").css("background-color","#F5D0A9");
-
-
+                                      $("#esppub, #esp2pub2, #esp3pub3").css("display","");
+                                      $("#esppubcam, #esp2pub2cam2, #esp3pub3cam3").css("display","");
+                                      $("#esppubusa, #esp2pub2usa2, #esp3pub3usa3").css("display","");
+                                      $("#esppri, #esp2pri2, #esp3pri3").css("display","");
+                                      //$("#esppricam").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#esppubcam #mis_td, #esp2pub2cam2 #mis_td, #esp3pub3cam3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#esppubcam #show, #esp2pub2cam2 #show, #esp3pub3cam3 #show").css("background-color","#F5D0A9");
+                                      $("#esppubusa #mis_td, #esp2pub2usa2 #mis_td, #esp3pub3usa3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#esppubusa #show, #esp2pub2usa2 #show, #esp3pub3usa3 #show").css("background-color","#F5D0A9");
                                     break;
 
                                     case 'CAM':
-
-                                          // Desplegamos hijos y nietos
-                                          $("#esppub, #esp2pub2, #esp3pub3").css("display","");
-                                                $("#esppubcam, #esp2pub2cam2, #esp3pub3cam3").css("display","");
-                                                $("#esppubusa, #esp2pub2usa2, #esp3pub3usa3").css("display","");
-                                          $("#esppri, #esp2pri2, #esp3pri3").css("display","");
-                                                //$("#esppricam").css("display","");
-                                          // Pintamos de color las filas para resaltar la seleccion realizada.
-                                          $("#esppubcam #mis_td, #esp2pub2cam2 #mis_td, #esp3pub3cam3 #mis_td").css("background-color","#F5D0A9");
-                                          $("#esppubcam #show, #esp2pub2cam2 #show, #esp3pub3cam3 #show").css("background-color","#F5D0A9");
-
-
-
+                                      // Desplegamos hijos y nietos
+                                      $("#esppub, #esp2pub2, #esp3pub3").css("display","");
+                                      $("#esppubcam, #esp2pub2cam2, #esp3pub3cam3").css("display","");
+                                      $("#esppubusa, #esp2pub2usa2, #esp3pub3usa3").css("display","");
+                                      $("#esppri, #esp2pri2, #esp3pri3").css("display","");
+                                      //$("#esppricam").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#esppubcam #mis_td, #esp2pub2cam2 #mis_td, #esp3pub3cam3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#esppubcam #show, #esp2pub2cam2 #show, #esp3pub3cam3 #show").css("background-color","#F5D0A9");
                                     break;
 
                                     case 'USAER':
+                                      // Desplegamos hijos y nietos
+                                      $("#esppub, #esp2pub2, #esp3pub3").css("display","");
+                                      $("#esppubcam, #esp2pub2cam2, #esp3pub3cam3").css("display","");
+                                      $("#esppubusa, #esp2pub2usa2, #esp3pub3usa3").css("display","");
+                                      $("#esppri, #esp2pri2, #esp3pri3").css("display","");
+                                      //$("#esppricam").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#esppubusa #mis_td, #esp2pub2usa2 #mis_td, #esp3pub3usa3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#esppubusa #show, #esp2pub2usa2 #show, #esp3pub3usa3 #show").css("background-color","#F5D0A9");
+                                    break;
 
-                                          // Desplegamos hijos y nietos
-                                          $("#esppub, #esp2pub2, #esp3pub3").css("display","");
-                                                $("#esppubcam, #esp2pub2cam2, #esp3pub3cam3").css("display","");
-                                                $("#esppubusa, #esp2pub2usa2, #esp3pub3usa3").css("display","");
-                                          $("#esppri, #esp2pri2, #esp3pri3").css("display","");
-                                                //$("#esppricam").css("display","");
-                                          // Pintamos de color las filas para resaltar la seleccion realizada.
-                                          $("#esppubusa #mis_td, #esp2pub2usa2 #mis_td, #esp3pub3usa3 #mis_td").css("background-color","#F5D0A9");
-                                          $("#esppubusa #show, #esp2pub2usa2 #show, #esp3pub3usa3 #show").css("background-color","#F5D0A9");
+                                    case 'CONAFE':
+                                      // Desplegamos hijos y nietos
+                                      $("#esppub, #esp2pub2, #esp3pub3").css("display","");
+                                      $("#esppubcam, #esp2pub2cam2, #esp3pub3cam3").css("display","");
+                                      $("#esppubusa, #esp2pub2usa2, #esp3pub3usa3").css("display","");
+                                      $("#esppri, #esp2pri2, #esp3pri3").css("display","");
+                                      //$("#esppricam").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#esppubusa #mis_td, #esp2pub2usa2 #mis_td, #esp3pub3usa3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#esppubusa #show, #esp2pub2usa2 #show, #esp3pub3usa3 #show").css("background-color","#F5D0A9");
+                                    break;
 
+                                    case 'ND':
+                                      // Desplegamos hijos y nietos
+                                      $("#esppub, #esp2pub2, #esp3pub3").css("display","");
+                                      $("#esppubcam, #esp2pub2cam2, #esp3pub3cam3").css("display","");
+                                      $("#esppubusa, #esp2pub2usa2, #esp3pub3usa3").css("display","");
+                                      $("#esppri, #esp2pri2, #esp3pri3").css("display","");
+                                      //$("#esppricam").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#esppubusa #mis_td, #esp2pub2usa2 #mis_td, #esp3pub3usa3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#esppubusa #show, #esp2pub2usa2 #show, #esp3pub3usa3 #show").css("background-color","#F5D0A9");
+                                    break;
 
+                                    case 'INICIAL NO ESCOLARIZADA':
+                                      // Desplegamos hijos y nietos
+                                      $("#esppub, #esp2pub2, #esp3pub3").css("display","");
+                                      $("#esppubcam, #esp2pub2cam2, #esp3pub3cam3").css("display","");
+                                      $("#esppubusa, #esp2pub2usa2, #esp3pub3usa3").css("display","");
+                                      $("#esppri, #esp2pri2, #esp3pri3").css("display","");
+                                      //$("#esppricam").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#esppubusa #mis_td, #esp2pub2usa2 #mis_td, #esp3pub3usa3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#esppubusa #show, #esp2pub2usa2 #show, #esp3pub3usa3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'INICIAL ESCOLARIZADA':
+                                      // Desplegamos hijos y nietos
+                                      $("#esppub, #esp2pub2, #esp3pub3").css("display","");
+                                      $("#esppubcam, #esp2pub2cam2, #esp3pub3cam3").css("display","");
+                                      $("#esppubusa, #esp2pub2usa2, #esp3pub3usa3").css("display","");
+                                      $("#esppri, #esp2pri2, #esp3pri3").css("display","");
+                                            //$("#esppricam").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#esppubusa #mis_td, #esp2pub2usa2 #mis_td, #esp3pub3usa3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#esppubusa #show, #esp2pub2usa2 #show, #esp3pub3usa3 #show").css("background-color","#F5D0A9");
                                     break;
                               }
 
@@ -1283,31 +1318,87 @@ function EsteIndGen(){
                                     case 'TODOS':
 
                                     case 'CAM':
+                                      // Desplegamos hijos y nietos
+                                      $("#esppub, #esp2pub2, #esp3pub3").css("display","");
+                                      //$("#esppubcam, #esp2pub2cam2, #esp3pub3cam3").css("display","");
+                                      //$("#esppubusa").css("display","none");
+                                      $("#esppri, #esp2pri2, #esp3pri3").css("display","");
+                                      $("#esppricam, #esp2pri2cam2, #esp3pri3cam3").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#esppricam #mis_td, #esp2pri2cam2 #mis_td, #esp3pri3cam3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#esppricam #show, #esp2pri2cam2 #show, #esp3pri3cam3 #show").css("background-color","#F5D0A9");
+                                      $("#esppub #mis_td, #esp2pub2 #mis_td, #esp3pub3 #mis_td").fadeIn(2000);
+                                    	$("#esppub #show, #esp2pub2 #show, #esp3pub3 #show").fadeIn(2000);
+                                      $("#esppricam #mis_td, #esp2pri2cam2 #mis_td, #esp3pri3cam3 #mis_td").fadeIn(2000);
+                                      $("#esppricam #show, #esp2pri2cam2 #show, #esp3pri3cam3 #show").fadeIn(2000);
+                                    break;
 
+                                    case 'ND':
+                                      // Desplegamos hijos y nietos
+                                      $("#esppub, #esp2pub2, #esp3pub3").css("display","");
+                                      //$("#esppubcam, #esp2pub2cam2, #esp3pub3cam3").css("display","");
+                                      //$("#esppubusa").css("display","none");
+                                      $("#esppri, #esp2pri2, #esp3pri3").css("display","");
+                                      $("#esppricam, #esp2pri2cam2, #esp3pri3cam3").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#esppricam #mis_td, #esp2pri2cam2 #mis_td, #esp3pri3cam3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#esppricam #show, #esp2pri2cam2 #show, #esp3pri3cam3 #show").css("background-color","#F5D0A9");
+                                      $("#esppub #mis_td, #esp2pub2 #mis_td, #esp3pub3 #mis_td").fadeIn(2000);
+                                      $("#esppub #show, #esp2pub2 #show, #esp3pub3 #show").fadeIn(2000);
+                                      $("#esppricam #mis_td, #esp2pri2cam2 #mis_td, #esp3pri3cam3 #mis_td").fadeIn(2000);
+                                      $("#esppricam #show, #esp2pri2cam2 #show, #esp3pri3cam3 #show").fadeIn(2000);
+                                    break;
+
+                                    case 'CONAFE':
+                                      // Desplegamos hijos y nietos
+                                      $("#esppub, #esp2pub2, #esp3pub3").css("display","");
+                                      //$("#esppubcam, #esp2pub2cam2, #esp3pub3cam3").css("display","");
+                                      //$("#esppubusa").css("display","none");
+                                      $("#esppri, #esp2pri2, #esp3pri3").css("display","");
+                                      $("#esppricam, #esp2pri2cam2, #esp3pri3cam3").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#esppricam #mis_td, #esp2pri2cam2 #mis_td, #esp3pri3cam3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#esppricam #show, #esp2pri2cam2 #show, #esp3pri3cam3 #show").css("background-color","#F5D0A9");
+                                      $("#esppub #mis_td, #esp2pub2 #mis_td, #esp3pub3 #mis_td").fadeIn(2000);
+                                      $("#esppub #show, #esp2pub2 #show, #esp3pub3 #show").fadeIn(2000);
+                                      $("#esppricam #mis_td, #esp2pri2cam2 #mis_td, #esp3pri3cam3 #mis_td").fadeIn(2000);
+                                      $("#esppricam #show, #esp2pri2cam2 #show, #esp3pri3cam3 #show").fadeIn(2000);
+                                    break;
+
+                                    case 'INICIAL NO ESCOLARIZADA':
                                           // Desplegamos hijos y nietos
-                                          $("#esppub, #esp2pub2, #esp3pub3").css("display","");
-                                                //$("#esppubcam, #esp2pub2cam2, #esp3pub3cam3").css("display","");
-                                                //$("#esppubusa").css("display","none");
-                                          $("#esppri, #esp2pri2, #esp3pri3").css("display","");
-                                                $("#esppricam, #esp2pri2cam2, #esp3pri3cam3").css("display","");
-                                          // Pintamos de color las filas para resaltar la seleccion realizada.
-                                          $("#esppricam #mis_td, #esp2pri2cam2 #mis_td, #esp3pri3cam3 #mis_td").css("background-color","#F5D0A9");
-                                          $("#esppricam #show, #esp2pri2cam2 #show, #esp3pri3cam3 #show").css("background-color","#F5D0A9");
+                                      $("#esppub, #esp2pub2, #esp3pub3").css("display","");
+                                      //$("#esppubcam, #esp2pub2cam2, #esp3pub3cam3").css("display","");
+                                      //$("#esppubusa").css("display","none");
+                                      $("#esppri, #esp2pri2, #esp3pri3").css("display","");
+                                      $("#esppricam, #esp2pri2cam2, #esp3pri3cam3").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#esppricam #mis_td, #esp2pri2cam2 #mis_td, #esp3pri3cam3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#esppricam #show, #esp2pri2cam2 #show, #esp3pri3cam3 #show").css("background-color","#F5D0A9");
+                                      $("#esppub #mis_td, #esp2pub2 #mis_td, #esp3pub3 #mis_td").fadeIn(2000);
+                                      $("#esppub #show, #esp2pub2 #show, #esp3pub3 #show").fadeIn(2000);
+                                      $("#esppricam #mis_td, #esp2pri2cam2 #mis_td, #esp3pri3cam3 #mis_td").fadeIn(2000);
+                                      $("#esppricam #show, #esp2pri2cam2 #show, #esp3pri3cam3 #show").fadeIn(2000);
+                                    break;
 
-                                          $("#esppub #mis_td, #esp2pub2 #mis_td, #esp3pub3 #mis_td").fadeIn(2000);
-                                    		$("#esppub #show, #esp2pub2 #show, #esp3pub3 #show").fadeIn(2000);
-
-
-                                          $("#esppricam #mis_td, #esp2pri2cam2 #mis_td, #esp3pri3cam3 #mis_td").fadeIn(2000);
-                                          $("#esppricam #show, #esp2pri2cam2 #show, #esp3pri3cam3 #show").fadeIn(2000);
-
+                                    case 'INICIAL ESCOLARIZADA':
+                                      // Desplegamos hijos y nietos
+                                      $("#esppub, #esp2pub2, #esp3pub3").css("display","");
+                                      //$("#esppubcam, #esp2pub2cam2, #esp3pub3cam3").css("display","");
+                                      //$("#esppubusa").css("display","none");
+                                      $("#esppri, #esp2pri2, #esp3pri3").css("display","");
+                                      $("#esppricam, #esp2pri2cam2, #esp3pri3cam3").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#esppricam #mis_td, #esp2pri2cam2 #mis_td, #esp3pri3cam3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#esppricam #show, #esp2pri2cam2 #show, #esp3pri3cam3 #show").css("background-color","#F5D0A9");
+                                      $("#esppub #mis_td, #esp2pub2 #mis_td, #esp3pub3 #mis_td").fadeIn(2000);
+                                      $("#esppub #show, #esp2pub2 #show, #esp3pub3 #show").fadeIn(2000);
+                                      $("#esppricam #mis_td, #esp2pri2cam2 #mis_td, #esp3pri3cam3 #mis_td").fadeIn(2000);
+                                      $("#esppricam #show, #esp2pri2cam2 #show, #esp3pri3cam3 #show").fadeIn(2000);
                                     break;
                               }
-
-
                         break;
                   }
-
 
             break;
 
@@ -1470,6 +1561,86 @@ function EsteIndGen(){
                                           $("#inipubcendi #show, #ini2pub2cendi2 #show, #ini3pub3cendi3 #show").css("background-color","#F5D0A9");
 
                                     break;
+
+                                    case 'ND':
+
+                                          // Desplegamos hijos y nietos
+                                          $("#inipub, #ini2pub2, #ini3pub3").css("display","");
+                                          $("#inipubesc, #ini2pub2esc2, #ini3pub3esc3").css("display","");
+                                          $("#inipubnes, #ini2pub2nes2, #ini3pub3nes3").css("display","");
+                                          $("#inipubind, #ini2pub2ind2, #ini3pub3ind3").css("display","");
+                                          $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
+                                          $("#iniautesc, #ini2aut2esc2, #ini3aut3esc3").css("display","");
+                                          $("#inipri, #ini2pri2, #ini3pri3").css("display","");
+                                          $("#inipriesc, #ini2pri2esc2, #ini3pri3esc3").css("display","");
+
+                                          $("#inipubcendi, #ini2pub2cendi2, #ini3pub3cendi3").css("display","");
+                                                //$("#esppricam").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#inipubcendi #mis_td, #ini2pub2cendi2 #mis_td, #ini3pub3cendi3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#inipubcendi #show, #ini2pub2cendi2 #show, #ini3pub3cendi3 #show").css("background-color","#F5D0A9");
+
+                                    break;
+
+                                    case 'CONAFE':
+
+                                          // Desplegamos hijos y nietos
+                                          $("#inipub, #ini2pub2, #ini3pub3").css("display","");
+                                          $("#inipubesc, #ini2pub2esc2, #ini3pub3esc3").css("display","");
+                                          $("#inipubnes, #ini2pub2nes2, #ini3pub3nes3").css("display","");
+                                          $("#inipubind, #ini2pub2ind2, #ini3pub3ind3").css("display","");
+                                          $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
+                                          $("#iniautesc, #ini2aut2esc2, #ini3aut3esc3").css("display","");
+                                          $("#inipri, #ini2pri2, #ini3pri3").css("display","");
+                                          $("#inipriesc, #ini2pri2esc2, #ini3pri3esc3").css("display","");
+
+                                          $("#inipubcendi, #ini2pub2cendi2, #ini3pub3cendi3").css("display","");
+                                                //$("#esppricam").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#inipubcendi #mis_td, #ini2pub2cendi2 #mis_td, #ini3pub3cendi3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#inipubcendi #show, #ini2pub2cendi2 #show, #ini3pub3cendi3 #show").css("background-color","#F5D0A9");
+
+                                    break;
+
+                                    case 'INICIAL NO ESCOLARIZADA':
+
+                                          // Desplegamos hijos y nietos
+                                          $("#inipub, #ini2pub2, #ini3pub3").css("display","");
+                                          $("#inipubesc, #ini2pub2esc2, #ini3pub3esc3").css("display","");
+                                          $("#inipubnes, #ini2pub2nes2, #ini3pub3nes3").css("display","");
+                                          $("#inipubind, #ini2pub2ind2, #ini3pub3ind3").css("display","");
+                                          $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
+                                          $("#iniautesc, #ini2aut2esc2, #ini3aut3esc3").css("display","");
+                                          $("#inipri, #ini2pri2, #ini3pri3").css("display","");
+                                          $("#inipriesc, #ini2pri2esc2, #ini3pri3esc3").css("display","");
+
+                                          $("#inipubcendi, #ini2pub2cendi2, #ini3pub3cendi3").css("display","");
+                                                //$("#esppricam").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#inipubcendi #mis_td, #ini2pub2cendi2 #mis_td, #ini3pub3cendi3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#inipubcendi #show, #ini2pub2cendi2 #show, #ini3pub3cendi3 #show").css("background-color","#F5D0A9");
+
+                                    break;
+
+                                    case 'INICIAL ESCOLARIZADA':
+
+                                          // Desplegamos hijos y nietos
+                                          $("#inipub, #ini2pub2, #ini3pub3").css("display","");
+                                          $("#inipubesc, #ini2pub2esc2, #ini3pub3esc3").css("display","");
+                                          $("#inipubnes, #ini2pub2nes2, #ini3pub3nes3").css("display","");
+                                          $("#inipubind, #ini2pub2ind2, #ini3pub3ind3").css("display","");
+                                          $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
+                                          $("#iniautesc, #ini2aut2esc2, #ini3aut3esc3").css("display","");
+                                          $("#inipri, #ini2pri2, #ini3pri3").css("display","");
+                                          $("#inipriesc, #ini2pri2esc2, #ini3pri3esc3").css("display","");
+
+                                          $("#inipubcendi, #ini2pub2cendi2, #ini3pub3cendi3").css("display","");
+                                                //$("#esppricam").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#inipubcendi #mis_td, #ini2pub2cendi2 #mis_td, #ini3pub3cendi3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#inipubcendi #show, #ini2pub2cendi2 #show, #ini3pub3cendi3 #show").css("background-color","#F5D0A9");
+
+                                    break;
                               }
 
 
@@ -1482,57 +1653,102 @@ function EsteIndGen(){
 
                               switch(modalidad)
                               {
-                                    case 'TODOS':
-                                    // Desplegamos hijos y nietos
-                                    $("#inipub, #ini2pub2, #ini3pub3").css("display","");
-                                    $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
-                                          //$("#inipubesc, #ini2pub2esc2, #ini3pub3esc3").css("display","");
-                                          //$("#esppubusa").css("display","none");
-                                    $("#inipri, #ini2pri2, #ini3pri3").css("display","");
-                                          $("#inipriesc, #ini2pri2esc2, #ini3pri3esc3").css("display","");
-                                    // Pintamos de color las filas para resaltar la seleccion realizada.
-                                    $("#inipriesc #mis_td, #ini2pri2esc2 #mis_td, #ini3pri3esc3 #mis_td").css("background-color","#F5D0A9");
-                                    $("#inipriesc #show, #ini2pri2esc2 #show, #ini3pri3esc3 #show").css("background-color","#F5D0A9");
-
-                                    $("#inipricendi, #ini2pri2cendi2, #ini3pri3cendi3").css("display","");
-                              // Pintamos de color las filas para resaltar la seleccion realizada.
-                              $("#inipricendi #mis_td, #ini2pri2cendi2 #mis_td, #ini3pri3cendi3 #mis_td").css("background-color","#F5D0A9");
-                              $("#inipricendi #show, #ini2pri2cendi2 #show, #ini3pri3cendi3 #show").css("background-color","#F5D0A9");
+                                case 'TODOS':
+                                  // Desplegamos hijos y nietos
+                                  $("#inipub, #ini2pub2, #ini3pub3").css("display","");
+                                  $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
+                                  //$("#inipubesc, #ini2pub2esc2, #ini3pub3esc3").css("display","");
+                                  //$("#esppubusa").css("display","none");
+                                  $("#inipri, #ini2pri2, #ini3pri3").css("display","");
+                                  $("#inipriesc, #ini2pri2esc2, #ini3pri3esc3").css("display","");
+                                  // Pintamos de color las filas para resaltar la seleccion realizada.
+                                  $("#inipriesc #mis_td, #ini2pri2esc2 #mis_td, #ini3pri3esc3 #mis_td").css("background-color","#F5D0A9");
+                                  $("#inipriesc #show, #ini2pri2esc2 #show, #ini3pri3esc3 #show").css("background-color","#F5D0A9");
+                                  $("#inipricendi, #ini2pri2cendi2, #ini3pri3cendi3").css("display","");
+                                  // Pintamos de color las filas para resaltar la seleccion realizada.
+                                  $("#inipricendi #mis_td, #ini2pri2cendi2 #mis_td, #ini3pri3cendi3 #mis_td").css("background-color","#F5D0A9");
+                                  $("#inipricendi #show, #ini2pri2cendi2 #show, #ini3pri3cendi3 #show").css("background-color","#F5D0A9");
 
 
                               break;
-
                                     case 'INICIAL':
-
-                                          // Desplegamos hijos y nietos
-                                          $("#inipub, #ini2pub2, #ini3pub3").css("display","");
-                                          $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
-                                                //$("#inipubesc, #ini2pub2esc2, #ini3pub3esc3").css("display","");
-                                                //$("#esppubusa").css("display","none");
-                                          $("#inipri, #ini2pri2, #ini3pri3").css("display","");
-                                                $("#inipriesc, #ini2pri2esc2, #ini3pri3esc3").css("display","");
-                                          // Pintamos de color las filas para resaltar la seleccion realizada.
-                                          $("#inipriesc #mis_td, #ini2pri2esc2 #mis_td, #ini3pri3esc3 #mis_td").css("background-color","#F5D0A9");
-                                          $("#inipriesc #show, #ini2pri2esc2 #show, #ini3pri3esc3 #show").css("background-color","#F5D0A9");
-
+                                      // Desplegamos hijos y nietos
+                                      $("#inipub, #ini2pub2, #ini3pub3").css("display","");
+                                      $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
+                                      //$("#inipubesc, #ini2pub2esc2, #ini3pub3esc3").css("display","");
+                                      //$("#esppubusa").css("display","none");
+                                      $("#inipri, #ini2pri2, #ini3pri3").css("display","");
+                                      $("#inipriesc, #ini2pri2esc2, #ini3pri3esc3").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#inipriesc #mis_td, #ini2pri2esc2 #mis_td, #ini3pri3esc3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#inipriesc #show, #ini2pri2esc2 #show, #ini3pri3esc3 #show").css("background-color","#F5D0A9");
                                     break;
 
                                     case 'CENDI':
+                                      // Desplegamos hijos y nietos
+                                      $("#inipub, #ini2pub2, #ini3pub3").css("display","");
+                                      $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
+                                      //$("#inipubesc, #ini2pub2esc2, #ini3pub3esc3").css("display","");
+                                      //$("#esppubusa").css("display","none");
+                                      $("#inipri, #ini2pri2, #ini3pri3").css("display","");
+                                      $("#inipricendi, #ini2pri2cendi2, #ini3pri3cendi3").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#inipricendi #mis_td, #ini2pri2cendi2 #mis_td, #ini3pri3cendi3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#inipricendi #show, #ini2pri2cendi2 #show, #ini3pri3cendi3 #show").css("background-color","#F5D0A9");
+                                    break;
 
-                                          // Desplegamos hijos y nietos
-                                          $("#inipub, #ini2pub2, #ini3pub3").css("display","");
-                                          $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
-                                                //$("#inipubesc, #ini2pub2esc2, #ini3pub3esc3").css("display","");
-                                                //$("#esppubusa").css("display","none");
-                                          $("#inipri, #ini2pri2, #ini3pri3").css("display","");
-                                                $("#inipricendi, #ini2pri2cendi2, #ini3pri3cendi3").css("display","");
-                                          // Pintamos de color las filas para resaltar la seleccion realizada.
-                                          $("#inipricendi #mis_td, #ini2pri2cendi2 #mis_td, #ini3pri3cendi3 #mis_td").css("background-color","#F5D0A9");
-                                          $("#inipricendi #show, #ini2pri2cendi2 #show, #ini3pri3cendi3 #show").css("background-color","#F5D0A9");
+                                    case 'ND':
+                                      // Desplegamos hijos y nietos
+                                      $("#inipub, #ini2pub2, #ini3pub3").css("display","");
+                                      $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
+                                      //$("#inipubesc, #ini2pub2esc2, #ini3pub3esc3").css("display","");
+                                      //$("#esppubusa").css("display","none");
+                                      $("#inipri, #ini2pri2, #ini3pri3").css("display","");
+                                      $("#inipricendi, #ini2pri2cendi2, #ini3pri3cendi3").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#inipricendi #mis_td, #ini2pri2cendi2 #mis_td, #ini3pri3cendi3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#inipricendi #show, #ini2pri2cendi2 #show, #ini3pri3cendi3 #show").css("background-color","#F5D0A9");
+                                    break;
 
+                                    case 'CONAFE':
+                                      // Desplegamos hijos y nietos
+                                      $("#inipub, #ini2pub2, #ini3pub3").css("display","");
+                                      $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
+                                      //$("#inipubesc, #ini2pub2esc2, #ini3pub3esc3").css("display","");
+                                      //$("#esppubusa").css("display","none");
+                                      $("#inipri, #ini2pri2, #ini3pri3").css("display","");
+                                      $("#inipricendi, #ini2pri2cendi2, #ini3pri3cendi3").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#inipricendi #mis_td, #ini2pri2cendi2 #mis_td, #ini3pri3cendi3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#inipricendi #show, #ini2pri2cendi2 #show, #ini3pri3cendi3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'INICIAL NO ESCOLARIZADA':
+                                      // Desplegamos hijos y nietos
+                                      $("#inipub, #ini2pub2, #ini3pub3").css("display","");
+                                      $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
+                                      //$("#inipubesc, #ini2pub2esc2, #ini3pub3esc3").css("display","");
+                                      //$("#esppubusa").css("display","none");
+                                      $("#inipri, #ini2pri2, #ini3pri3").css("display","");
+                                      $("#inipricendi, #ini2pri2cendi2, #ini3pri3cendi3").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#inipricendi #mis_td, #ini2pri2cendi2 #mis_td, #ini3pri3cendi3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#inipricendi #show, #ini2pri2cendi2 #show, #ini3pri3cendi3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'INICIAL ESCOLARIZADA':
+                                      // Desplegamos hijos y nietos
+                                      $("#inipub, #ini2pub2, #ini3pub3").css("display","");
+                                      $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
+                                      //$("#inipubesc, #ini2pub2esc2, #ini3pub3esc3").css("display","");
+                                      //$("#esppubusa").css("display","none");
+                                      $("#inipri, #ini2pri2, #ini3pri3").css("display","");
+                                      $("#inipricendi, #ini2pri2cendi2, #ini3pri3cendi3").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#inipricendi #mis_td, #ini2pri2cendi2 #mis_td, #ini3pri3cendi3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#inipricendi #show, #ini2pri2cendi2 #show, #ini3pri3cendi3 #show").css("background-color","#F5D0A9");
                                     break;
                               }
-
 
                         break;
 
@@ -1544,50 +1760,85 @@ function EsteIndGen(){
                               switch(modalidad)
                               {
                                     case 'TODOS':
-
-                                    // Desplegamos hijos y nietos
-                                    $("#inipub, #ini2pub2, #ini3pub3").css("display","");
-                                    $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
-                                    $("#iniautesc, #ini2aut2esc2, #ini3aut3esc3").css("display","");
-                                    $("#inipri, #ini2pri2, #ini3pri3").css("display","");
-                                    // Pintamos de color las filas para resaltar la seleccion realizada.
-                                    $("#iniautesc #mis_td, #ini2aut2esc2 #mis_td, #ini3aut3esc3 #mis_td").css("background-color","#F5D0A9");
-                                    $("#iniautesc #show, #ini2aut2esc2 #show, #ini3aut3esc3 #show").css("background-color","#F5D0A9");
-
-                                    $("#iniautcendi, #ini2aut2cendi2, #ini3aut3cendi3").css("display","");
-$("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css("background-color","#F5D0A9");
-                                    $("#iniautcendi #show, #ini2aut2cendi2 #show, #ini3aut3cendi3 #show").css("background-color","#F5D0A9");
-
+                                      // Desplegamos hijos y nietos
+                                      $("#inipub, #ini2pub2, #ini3pub3").css("display","");
+                                      $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
+                                      $("#iniautesc, #ini2aut2esc2, #ini3aut3esc3").css("display","");
+                                      $("#inipri, #ini2pri2, #ini3pri3").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#iniautesc #mis_td, #ini2aut2esc2 #mis_td, #ini3aut3esc3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#iniautesc #show, #ini2aut2esc2 #show, #ini3aut3esc3 #show").css("background-color","#F5D0A9");
+                                      $("#iniautcendi, #ini2aut2cendi2, #ini3aut3cendi3").css("display","");
+                                      $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#iniautcendi #show, #ini2aut2cendi2 #show, #ini3aut3cendi3 #show").css("background-color","#F5D0A9");
                                     break;
 
                                     case 'INICIAL':
-
-                                          // Desplegamos hijos y nietos
-                                          $("#inipub, #ini2pub2, #ini3pub3").css("display","");
-                                          $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
-                                          $("#iniautesc, #ini2aut2esc2, #ini3aut3esc3").css("display","");
-                                          $("#inipri, #ini2pri2, #ini3pri3").css("display","");
-                                          // Pintamos de color las filas para resaltar la seleccion realizada.
-                                          $("#iniautesc #mis_td, #ini2aut2esc2 #mis_td, #ini3aut3esc3 #mis_td").css("background-color","#F5D0A9");
-                                          $("#iniautesc #show, #ini2aut2esc2 #show, #ini3aut3esc3 #show").css("background-color","#F5D0A9");
-
+                                      // Desplegamos hijos y nietos
+                                      $("#inipub, #ini2pub2, #ini3pub3").css("display","");
+                                      $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
+                                      $("#iniautesc, #ini2aut2esc2, #ini3aut3esc3").css("display","");
+                                      $("#inipri, #ini2pri2, #ini3pri3").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#iniautesc #mis_td, #ini2aut2esc2 #mis_td, #ini3aut3esc3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#iniautesc #show, #ini2aut2esc2 #show, #ini3aut3esc3 #show").css("background-color","#F5D0A9");
                                     break;
 
                                     case 'CENDI':
+                                      // Desplegamos hijos y nietos
+                                      $("#inipub, #ini2pub2, #ini3pub3").css("display","");
+                                      $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
+                                      $("#iniautcendi, #ini2aut2cendi2, #ini3aut3cendi3").css("display","");
+                                      $("#inipri, #ini2pri2, #ini3pri3").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#iniautcendi #show, #ini2aut2cendi2 #show, #ini3aut3cendi3 #show").css("background-color","#F5D0A9");
+                                    break;
 
-                                          // Desplegamos hijos y nietos
-                                          $("#inipub, #ini2pub2, #ini3pub3").css("display","");
-                                          $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
-                                          $("#iniautcendi, #ini2aut2cendi2, #ini3aut3cendi3").css("display","");
-                                          $("#inipri, #ini2pri2, #ini3pri3").css("display","");
-                                          // Pintamos de color las filas para resaltar la seleccion realizada.
-                                          $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css("background-color","#F5D0A9");
-                                          $("#iniautcendi #show, #ini2aut2cendi2 #show, #ini3aut3cendi3 #show").css("background-color","#F5D0A9");
+                                    case 'ND':
+                                      // Desplegamos hijos y nietos
+                                      $("#inipub, #ini2pub2, #ini3pub3").css("display","");
+                                      $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
+                                      $("#iniautcendi, #ini2aut2cendi2, #ini3aut3cendi3").css("display","");
+                                      $("#inipri, #ini2pri2, #ini3pri3").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#iniautcendi #show, #ini2aut2cendi2 #show, #ini3aut3cendi3 #show").css("background-color","#F5D0A9");
+                                    break;
 
+                                    case 'CONAFE':
+                                      // Desplegamos hijos y nietos
+                                      $("#inipub, #ini2pub2, #ini3pub3").css("display","");
+                                      $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
+                                      $("#iniautcendi, #ini2aut2cendi2, #ini3aut3cendi3").css("display","");
+                                      $("#inipri, #ini2pri2, #ini3pri3").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#iniautcendi #show, #ini2aut2cendi2 #show, #ini3aut3cendi3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'INICIAL NO ESCOLARIZADA':
+                                      // Desplegamos hijos y nietos
+                                      $("#inipub, #ini2pub2, #ini3pub3").css("display","");
+                                      $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
+                                      $("#iniautcendi, #ini2aut2cendi2, #ini3aut3cendi3").css("display","");
+                                      $("#inipri, #ini2pri2, #ini3pri3").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#iniautcendi #show, #ini2aut2cendi2 #show, #ini3aut3cendi3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'INICIAL ESCOLARIZADA':
+                                      // Desplegamos hijos y nietos
+                                      $("#inipub, #ini2pub2, #ini3pub3").css("display","");
+                                      $("#iniaut, #ini2aut2, #ini3aut3").css("display","");
+                                      $("#iniautcendi, #ini2aut2cendi2, #ini3aut3cendi3").css("display","");
+                                      $("#inipri, #ini2pri2, #ini3pri3").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+                                      $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#iniautcendi #show, #ini2aut2cendi2 #show, #ini3aut3cendi3 #show").css("background-color","#F5D0A9");
                                     break;
                               }
-
-
                         break;
                   }
             break;
@@ -1715,6 +1966,80 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#prepubind #show, #pre2pub2ind2 #show, #pre3pub3ind3 #show").css("background-color","#F5D0A9");
 
                                     break;
+
+                                    case 'ND':
+
+                                         $("#prepub, #pre2pub2, #pre3pub3").css("display","");
+                                          $("#prepubcon, #pre2pub2con2, #pre3pub3con3").css("display","");
+                                          $("#prepubgen, #pre2pub2gen2, #pre3pub3gen3").css("display","");
+                                          $("#prepubind, #pre2pub2ind2, #pre3pub3ind3").css("display","");
+                                          $("#prepri, #pre2pri2, #pre3pri3").css("display","");
+                                          $("#preaut, #pre2aut2, #pre3aut3").css("display","");
+                                                //$("#preprigen, #pre2pri2gen2, #pre3pri3gen3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+
+                                          $("#prepub #mis_td, #pre2pub2 #mis_td, #pre3pub3 #mis_td").css("background-color","#FAAC58");
+                                          $("#prepub #show, #pre2pub2 #show, #pre3pub3 #show").css("background-color","#FAAC58");
+
+                                          $("#prepubind #mis_td, #pre2pub2ind2 #mis_td, #pre3pub3ind3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#prepubind #show, #pre2pub2ind2 #show, #pre3pub3ind3 #show").css("background-color","#F5D0A9");
+
+                                    break;
+
+                                    case 'CONAFE':
+
+                                         $("#prepub, #pre2pub2, #pre3pub3").css("display","");
+                                          $("#prepubcon, #pre2pub2con2, #pre3pub3con3").css("display","");
+                                          $("#prepubgen, #pre2pub2gen2, #pre3pub3gen3").css("display","");
+                                          $("#prepubind, #pre2pub2ind2, #pre3pub3ind3").css("display","");
+                                          $("#prepri, #pre2pri2, #pre3pri3").css("display","");
+                                          $("#preaut, #pre2aut2, #pre3aut3").css("display","");
+                                                //$("#preprigen, #pre2pri2gen2, #pre3pri3gen3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+
+                                          $("#prepub #mis_td, #pre2pub2 #mis_td, #pre3pub3 #mis_td").css("background-color","#FAAC58");
+                                          $("#prepub #show, #pre2pub2 #show, #pre3pub3 #show").css("background-color","#FAAC58");
+
+                                          $("#prepubind #mis_td, #pre2pub2ind2 #mis_td, #pre3pub3ind3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#prepubind #show, #pre2pub2ind2 #show, #pre3pub3ind3 #show").css("background-color","#F5D0A9");
+
+                                    break;
+
+                                    case 'INICIAL NO ESCOLARIZADA':
+                                         $("#prepub, #pre2pub2, #pre3pub3").css("display","");
+                                          $("#prepubcon, #pre2pub2con2, #pre3pub3con3").css("display","");
+                                          $("#prepubgen, #pre2pub2gen2, #pre3pub3gen3").css("display","");
+                                          $("#prepubind, #pre2pub2ind2, #pre3pub3ind3").css("display","");
+                                          $("#prepri, #pre2pri2, #pre3pri3").css("display","");
+                                          $("#preaut, #pre2aut2, #pre3aut3").css("display","");
+                                                //$("#preprigen, #pre2pri2gen2, #pre3pri3gen3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+
+                                          $("#prepub #mis_td, #pre2pub2 #mis_td, #pre3pub3 #mis_td").css("background-color","#FAAC58");
+                                          $("#prepub #show, #pre2pub2 #show, #pre3pub3 #show").css("background-color","#FAAC58");
+
+                                          $("#prepubind #mis_td, #pre2pub2ind2 #mis_td, #pre3pub3ind3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#prepubind #show, #pre2pub2ind2 #show, #pre3pub3ind3 #show").css("background-color","#F5D0A9");
+
+                                    break;
+
+                                    case 'INICIAL ESCOLARIZADA':
+                                          $("#prepub, #pre2pub2, #pre3pub3").css("display","");
+                                          $("#prepubcon, #pre2pub2con2, #pre3pub3con3").css("display","");
+                                          $("#prepubgen, #pre2pub2gen2, #pre3pub3gen3").css("display","");
+                                          $("#prepubind, #pre2pub2ind2, #pre3pub3ind3").css("display","");
+                                          $("#prepri, #pre2pri2, #pre3pri3").css("display","");
+                                          $("#preaut, #pre2aut2, #pre3aut3").css("display","");
+                                                //$("#preprigen, #pre2pri2gen2, #pre3pri3gen3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+
+                                          $("#prepub #mis_td, #pre2pub2 #mis_td, #pre3pub3 #mis_td").css("background-color","#FAAC58");
+                                          $("#prepub #show, #pre2pub2 #show, #pre3pub3 #show").css("background-color","#FAAC58");
+
+                                          $("#prepubind #mis_td, #pre2pub2ind2 #mis_td, #pre3pub3ind3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#prepubind #show, #pre2pub2ind2 #show, #pre3pub3ind3 #show").css("background-color","#F5D0A9");
+
+                                    break;
                               }
 
 
@@ -1727,24 +2052,84 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
 
                               switch(modalidad)
                               {
-                                    case 'TODOS':
 
-                                    case 'GENERAL':
+                                case 'TODOS':
 
+                                case 'GENERAL':
                                           // Desplegamos hijos y nietos
-                              $("#prepub, #pre2pub2, #pre3pub3").css("display","");
-                              $("#prepri, #pre2pri2, #pre3pri3").css("display","");
-                              $("#preprigen, #pre2pri2gen2, #pre3pri3gen3").css("display","");
-                              $("#preaut, #pre2aut2, #pre3aut3").css("display","");
-                              // Pintamos de color las filas para resaltar la seleccion realizada.
+                                  $("#prepub, #pre2pub2, #pre3pub3").css("display","");
+                                  $("#prepri, #pre2pri2, #pre3pri3").css("display","");
+                                  $("#preprigen, #pre2pri2gen2, #pre3pri3gen3").css("display","");
+                                  $("#preaut, #pre2aut2, #pre3aut3").css("display","");
+                                  // Pintamos de color las filas para resaltar la seleccion realizada.
 
+                                  $("#prepri #mis_td, #pre2pri2 #mis_td, #pre3pri3 #mis_td").css("background-color","#FAAC58");
+                                  $("#prepri #show, #pre2pri2 #show, #pre3pri3 #show").css("background-color","#FAAC58");
+                                  $("#preprigen #mis_td, #pre2pri2gen2 #mis_td, #pre3pri3gen3 #mis_td").css("background-color","#F5D0A9");
+                                  $("#preprigen #show, #pre2pri2gen2 #show, #pre3pri3gen3 #show").css("background-color","#F5D0A9");
 
-                              $("#prepri #mis_td, #pre2pri2 #mis_td, #pre3pri3 #mis_td").css("background-color","#FAAC58");
-                              $("#prepri #show, #pre2pri2 #show, #pre3pri3 #show").css("background-color","#FAAC58");
-                              $("#preprigen #mis_td, #pre2pri2gen2 #mis_td, #pre3pri3gen3 #mis_td").css("background-color","#F5D0A9");
-                              $("#preprigen #show, #pre2pri2gen2 #show, #pre3pri3gen3 #show").css("background-color","#F5D0A9");
+                                  break;
+
+                                  case 'ND':
+                                          // Desplegamos hijos y nietos
+                                    $("#prepub, #pre2pub2, #pre3pub3").css("display","");
+                                    $("#prepri, #pre2pri2, #pre3pri3").css("display","");
+                                    $("#preprigen, #pre2pri2gen2, #pre3pri3gen3").css("display","");
+                                    $("#preaut, #pre2aut2, #pre3aut3").css("display","");
+                                    // Pintamos de color las filas para resaltar la seleccion realizada.
+
+                                    $("#prepri #mis_td, #pre2pri2 #mis_td, #pre3pri3 #mis_td").css("background-color","#FAAC58");
+                                    $("#prepri #show, #pre2pri2 #show, #pre3pri3 #show").css("background-color","#FAAC58");
+                                    $("#preprigen #mis_td, #pre2pri2gen2 #mis_td, #pre3pri3gen3 #mis_td").css("background-color","#F5D0A9");
+                                    $("#preprigen #show, #pre2pri2gen2 #show, #pre3pri3gen3 #show").css("background-color","#F5D0A9");
 
                                     break;
+
+                                    case 'CONAFE':
+                                          // Desplegamos hijos y nietos
+                                      $("#prepub, #pre2pub2, #pre3pub3").css("display","");
+                                      $("#prepri, #pre2pri2, #pre3pri3").css("display","");
+                                      $("#preprigen, #pre2pri2gen2, #pre3pri3gen3").css("display","");
+                                      $("#preaut, #pre2aut2, #pre3aut3").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+
+
+                                      $("#prepri #mis_td, #pre2pri2 #mis_td, #pre3pri3 #mis_td").css("background-color","#FAAC58");
+                                      $("#prepri #show, #pre2pri2 #show, #pre3pri3 #show").css("background-color","#FAAC58");
+                                      $("#preprigen #mis_td, #pre2pri2gen2 #mis_td, #pre3pri3gen3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#preprigen #show, #pre2pri2gen2 #show, #pre3pri3gen3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'INICIAL NO ESCOLARIZADA':
+                                          // Desplegamos hijos y nietos
+                                    $("#prepub, #pre2pub2, #pre3pub3").css("display","");
+                                    $("#prepri, #pre2pri2, #pre3pri3").css("display","");
+                                    $("#preprigen, #pre2pri2gen2, #pre3pri3gen3").css("display","");
+                                    $("#preaut, #pre2aut2, #pre3aut3").css("display","");
+                                    // Pintamos de color las filas para resaltar la seleccion realizada.
+
+                                    $("#prepri #mis_td, #pre2pri2 #mis_td, #pre3pri3 #mis_td").css("background-color","#FAAC58");
+                                    $("#prepri #show, #pre2pri2 #show, #pre3pri3 #show").css("background-color","#FAAC58");
+                                    $("#preprigen #mis_td, #pre2pri2gen2 #mis_td, #pre3pri3gen3 #mis_td").css("background-color","#F5D0A9");
+                                    $("#preprigen #show, #pre2pri2gen2 #show, #pre3pri3gen3 #show").css("background-color","#F5D0A9");
+
+                                    break;
+
+                                    case 'INICIAL ESCOLARIZADA':
+                                          // Desplegamos hijos y nietos
+                                      $("#prepub, #pre2pub2, #pre3pub3").css("display","");
+                                      $("#prepri, #pre2pri2, #pre3pri3").css("display","");
+                                      $("#preprigen, #pre2pri2gen2, #pre3pri3gen3").css("display","");
+                                      $("#preaut, #pre2aut2, #pre3aut3").css("display","");
+                                      // Pintamos de color las filas para resaltar la seleccion realizada.
+
+
+                                      $("#prepri #mis_td, #pre2pri2 #mis_td, #pre3pri3 #mis_td").css("background-color","#FAAC58");
+                                      $("#prepri #show, #pre2pri2 #show, #pre3pri3 #show").css("background-color","#FAAC58");
+                                      $("#preprigen #mis_td, #pre2pri2gen2 #mis_td, #pre3pri3gen3 #mis_td").css("background-color","#F5D0A9");
+                                      $("#preprigen #show, #pre2pri2gen2 #show, #pre3pri3gen3 #show").css("background-color","#F5D0A9");
+                                    break;
+
                               }
 
 
@@ -1757,25 +2142,75 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
 
                               switch(modalidad)
                               {
-                                    case 'TODOS':
+                                case 'TODOS':
 
-                                    case 'GENERAL':
-
+                                case 'GENERAL':
                                           // Desplegamos hijos y nietos
-                              $("#prepub, #pre2pub2, #pre3pub3").css("display","");
-                              $("#prepri, #pre2pri2, #pre3pri3").css("display","");
+                                  $("#prepub, #pre2pub2, #pre3pub3").css("display","");
+                                  $("#prepri, #pre2pri2, #pre3pri3").css("display","");
 
-                              $("#preaut, #pre2aut2, #pre3aut3").css("display","");
-                              $("#preautgen, #pre2aut2gen2, #pre3aut3gen3").css("display","");
-                              // Pintamos de color las filas para resaltar la seleccion realizada.
+                                  $("#preaut, #pre2aut2, #pre3aut3").css("display","");
+                                  $("#preautgen, #pre2aut2gen2, #pre3aut3gen3").css("display","");
+                                  // Pintamos de color las filas para resaltar la seleccion realizada.
 
+                                  $("#preaut #mis_td, #pre2aut2 #mis_td, #pre3aut3 #mis_td").css("background-color","#FAAC58");
+                                  $("#preaut #show, #pre2aut2 #show, #pre3aut3 #show").css("background-color","#FAAC58");
+                                  $("#preautgen #mis_td, #pre2aut2gen2 #mis_td, #pre3aut3gen3 #mis_td").css("background-color","#F5D0A9");
+                                  $("#preautgen #show, #pre2aut2gen2 #show, #pre3aut3gen3 #show").css("background-color","#F5D0A9");
+                                  break;
 
-                              $("#preaut #mis_td, #pre2aut2 #mis_td, #pre3aut3 #mis_td").css("background-color","#FAAC58");
-                              $("#preaut #show, #pre2aut2 #show, #pre3aut3 #show").css("background-color","#FAAC58");
-                              $("#preautgen #mis_td, #pre2aut2gen2 #mis_td, #pre3aut3gen3 #mis_td").css("background-color","#F5D0A9");
-                              $("#preautgen #show, #pre2aut2gen2 #show, #pre3aut3gen3 #show").css("background-color","#F5D0A9");
+                                case 'ND':
+                                  $("#prepub, #pre2pub2, #pre3pub3").css("display","");
+                                  $("#prepri, #pre2pri2, #pre3pri3").css("display","");
 
-                                    break;
+                                  $("#preaut, #pre2aut2, #pre3aut3").css("display","");
+                                  $("#preautgen, #pre2aut2gen2, #pre3aut3gen3").css("display","");
+                                  // Pintamos de color las filas para resaltar la seleccion realizada.
+
+                                  $("#preaut #mis_td, #pre2aut2 #mis_td, #pre3aut3 #mis_td").css("background-color","#FAAC58");
+                                  $("#preaut #show, #pre2aut2 #show, #pre3aut3 #show").css("background-color","#FAAC58");
+                                  $("#preautgen #mis_td, #pre2aut2gen2 #mis_td, #pre3aut3gen3 #mis_td").css("background-color","#F5D0A9");
+                                  $("#preautgen #show, #pre2aut2gen2 #show, #pre3aut3gen3 #show").css("background-color","#F5D0A9");
+                                  break;
+
+                                case 'CONAFE':
+                                  $("#prepub, #pre2pub2, #pre3pub3").css("display","");
+                                  $("#prepri, #pre2pri2, #pre3pri3").css("display","");
+                                  $("#preaut, #pre2aut2, #pre3aut3").css("display","");
+                                  $("#preautgen, #pre2aut2gen2, #pre3aut3gen3").css("display","");
+                                  // Pintamos de color las filas para resaltar la seleccion realizada.
+                                  $("#preaut #mis_td, #pre2aut2 #mis_td, #pre3aut3 #mis_td").css("background-color","#FAAC58");
+                                  $("#preaut #show, #pre2aut2 #show, #pre3aut3 #show").css("background-color","#FAAC58");
+                                  $("#preautgen #mis_td, #pre2aut2gen2 #mis_td, #pre3aut3gen3 #mis_td").css("background-color","#F5D0A9");
+                                  $("#preautgen #show, #pre2aut2gen2 #show, #pre3aut3gen3 #show").css("background-color","#F5D0A9");
+                                  break;
+
+                                case 'INICIAL NO ESCOLARIZADA':
+                                  $("#prepub, #pre2pub2, #pre3pub3").css("display","");
+                                  $("#prepri, #pre2pri2, #pre3pri3").css("display","");
+
+                                  $("#preaut, #pre2aut2, #pre3aut3").css("display","");
+                                  $("#preautgen, #pre2aut2gen2, #pre3aut3gen3").css("display","");
+                                  // Pintamos de color las filas para resaltar la seleccion realizada.
+
+                                  $("#preaut #mis_td, #pre2aut2 #mis_td, #pre3aut3 #mis_td").css("background-color","#FAAC58");
+                                  $("#preaut #show, #pre2aut2 #show, #pre3aut3 #show").css("background-color","#FAAC58");
+                                  $("#preautgen #mis_td, #pre2aut2gen2 #mis_td, #pre3aut3gen3 #mis_td").css("background-color","#F5D0A9");
+                                  $("#preautgen #show, #pre2aut2gen2 #show, #pre3aut3gen3 #show").css("background-color","#F5D0A9");
+                                  break;
+
+                                case 'INICIAL ESCOLARIZADA':
+                                  $("#prepub, #pre2pub2, #pre3pub3").css("display","");
+                                  $("#prepri, #pre2pri2, #pre3pri3").css("display","");
+                                  $("#preaut, #pre2aut2, #pre3aut3").css("display","");
+                                  $("#preautgen, #pre2aut2gen2, #pre3aut3gen3").css("display","");
+                                  // Pintamos de color las filas para resaltar la seleccion realizada.
+                                  $("#preaut #mis_td, #pre2aut2 #mis_td, #pre3aut3 #mis_td").css("background-color","#FAAC58");
+                                  $("#preaut #show, #pre2aut2 #show, #pre3aut3 #show").css("background-color","#FAAC58");
+                                  $("#preautgen #mis_td, #pre2aut2gen2 #mis_td, #pre3aut3gen3 #mis_td").css("background-color","#F5D0A9");
+                                  $("#preautgen #show, #pre2aut2gen2 #show, #pre3aut3gen3 #show").css("background-color","#F5D0A9");
+                                  break;
+
                               }
 
 
@@ -1800,26 +2235,25 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                               $("#priprigen, #pri2pri2gen2, #pri3pri3gen3").css("display","");
                               // Pintamos de color las filas para resaltar la seleccion realizada.
 
-                                    $("#pripub #mis_td, #pri2pub2 #mis_td, #pri3pub3 #mis_td").css("background-color","#FAAC58");
-                                    $("#pripub #show, #pri2pub2 #show, #pri3pub3 #show").css("background-color","#FAAC58");
-                                    $("#pripubcon #mis_td, #pri2pub2con2 #mis_td, #pri3pub3con3 #mis_td").css("background-color","#F5D0A9");
-                                    $("#pripubcon #show, #pri2pub2con2 #show, #pri3pub3con3 #show").css("background-color","#F5D0A9");
-                                    $("#pripubgen #mis_td, #pri2pub2gen2 #mis_td, #pri3pub3gen3 #mis_td").css("background-color","#F5D0A9");
-                                    $("#pripubgen #show, #pri2pub2gen2 #show, #pri3pub3gen3 #show").css("background-color","#F5D0A9");
-                                    $("#pripubind #mis_td, #pri2pub2ind2 #mis_td, #pri3pub3ind3 #mis_td").css("background-color","#F5D0A9");
-                                    $("#pripubind #show, #pri2pub2ind2 #show, #pri3pub3ind3 #show").css("background-color","#F5D0A9");
-                                    $("#pripri #mis_td, #pri2pri2 #mis_td, #pri3pri3 #mis_td").css("background-color","#FAAC58");
-                                    $("#pripri #show, #pri2pri2 #show, #pri3pri3 #show").css("background-color","#FAAC58");
-                                    $("#priprigen #mis_td, #pri2pri2gen2 #mis_td, #pri3pri3gen3 #mis_td").css("background-color","#F5D0A9");
-                                    $("#priprigen #show, #pri2pri2gen2 #show, #pri3pri3gen3 #show").css("background-color","#F5D0A9");
+                              $("#pripub #mis_td, #pri2pub2 #mis_td, #pri3pub3 #mis_td").css("background-color","#FAAC58");
+                              $("#pripub #show, #pri2pub2 #show, #pri3pub3 #show").css("background-color","#FAAC58");
+                              $("#pripubcon #mis_td, #pri2pub2con2 #mis_td, #pri3pub3con3 #mis_td").css("background-color","#F5D0A9");
+                              $("#pripubcon #show, #pri2pub2con2 #show, #pri3pub3con3 #show").css("background-color","#F5D0A9");
+                              $("#pripubgen #mis_td, #pri2pub2gen2 #mis_td, #pri3pub3gen3 #mis_td").css("background-color","#F5D0A9");
+                              $("#pripubgen #show, #pri2pub2gen2 #show, #pri3pub3gen3 #show").css("background-color","#F5D0A9");
+                              $("#pripubind #mis_td, #pri2pub2ind2 #mis_td, #pri3pub3ind3 #mis_td").css("background-color","#F5D0A9");
+                              $("#pripubind #show, #pri2pub2ind2 #show, #pri3pub3ind3 #show").css("background-color","#F5D0A9");
+                              $("#pripri #mis_td, #pri2pri2 #mis_td, #pri3pri3 #mis_td").css("background-color","#FAAC58");
+                              $("#pripri #show, #pri2pri2 #show, #pri3pri3 #show").css("background-color","#FAAC58");
+                              $("#priprigen #mis_td, #pri2pri2gen2 #mis_td, #pri3pri3gen3 #mis_td").css("background-color","#F5D0A9");
+                              $("#priprigen #show, #pri2pri2gen2 #show, #pri3pri3gen3 #show").css("background-color","#F5D0A9");
+                              $("#pripubpad, #pri2pub2pad2, #pri3pub3pad3").css("display","");
+                              $("#pripripad, #pri2pri2pad2, #pri3pri3pad3").css("display","");
 
-                                    $("#pripubpad, #pri2pub2pad2, #pri3pub3pad3").css("display","");
-                                    $("#pripripad, #pri2pri2pad2, #pri3pri3pad3").css("display","");
-
-                                                $("#pripubpad #mis_td, #pri2pub2pad2 #mis_td, #pri3pub3pad3 #mis_td").css("background-color","#F5D0A9");
-                                                $("#pripubpad #show, #pri2pub2pad2 #show, #pri3pub3pad3 #show").css("background-color","#F5D0A9");
-                                                $("#pripripad #mis_td, #pri2pri2pad2 #mis_td, #pri3pri3pad3 #mis_td").css("background-color","#F5D0A9");
-                                                $("#pripripad #show, #pri2pri2pad2 #show, #pri3pri3pad3 #show").css("background-color","#F5D0A9");
+                              $("#pripubpad #mis_td, #pri2pub2pad2 #mis_td, #pri3pub3pad3 #mis_td").css("background-color","#F5D0A9");
+                              $("#pripubpad #show, #pri2pub2pad2 #show, #pri3pub3pad3 #show").css("background-color","#F5D0A9");
+                              $("#pripripad #mis_td, #pri2pri2pad2 #mis_td, #pri3pri3pad3 #mis_td").css("background-color","#F5D0A9");
+                              $("#pripripad #show, #pri2pri2pad2 #show, #pri3pri3pad3 #show").css("background-color","#F5D0A9");
                         break;
 
                         case 'PUBLICO':
@@ -1832,25 +2266,23 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                     case 'TODOS':
                                           // Desplegamos hijos y nietos
                                           $("#pripub, #pri2pub2, #pri3pub3").css("display","");
-                                                $("#pripubcon, #pri2pub2con2, #pri3pub3con3").css("display","");
-                                                $("#pripubgen, #pri2pub2gen2, #pri3pub3gen3").css("display","");
-                                                $("#pripubind, #pri2pub2ind2, #pri3pub3ind3").css("display","");
+                                          $("#pripubcon, #pri2pub2con2, #pri3pub3con3").css("display","");
+                                          $("#pripubgen, #pri2pub2gen2, #pri3pub3gen3").css("display","");
+                                          $("#pripubind, #pri2pub2ind2, #pri3pub3ind3").css("display","");
                                           $("#pripri, #pri2pri2, #pri3pri3").css("display","");
                                           $("#pripubpad, #pri2pub2pad2, #pri3pub3pad3").css("display","");
                                                 //$("#priprigen, #pri2pri2gen2, #pri3pri3gen3").css("display","");
                                           // Pintamos de color las filas para resaltar la seleccion realizada.
-
-                                                $("#pripub #mis_td, #pri2pub2 #mis_td, #pri3pub3 #mis_td").css("background-color","#FAAC58");
-                                                $("#pripub #show, #pri2pub2 #show, #pri3pub3 #show").css("background-color","#FAAC58");
-                                                      $("#pripubcon #mis_td, #pri2pub2con2 #mis_td, #pri3pub3con3 #mis_td").css("background-color","#F5D0A9");
-                                                      $("#pripubcon #show, #pri2pub2con2 #show, #pri3pub3con3 #show").css("background-color","#F5D0A9");
-                                                      $("#pripubgen #mis_td, #pri2pub2gen2 #mis_td, #pri3pub3gen3 #mis_td").css("background-color","#F5D0A9");
-                                                      $("#pripubgen #show, #pri2pub2gen2 #show, #pri3pub3gen3 #show").css("background-color","#F5D0A9");
-                                                      $("#pripubind #mis_td, #pri2pub2ind2 #mis_td, #pri3pub3ind3 #mis_td").css("background-color","#F5D0A9");
-                                                      $("#pripubind #show, #pri2pub2ind2 #show, #pri3pub3ind3 #show").css("background-color","#F5D0A9");
-
-                                                      $("#pripubpad #mis_td, #pri2pub2pad2 #mis_td, #pri3pub3pad3 #mis_td").css("background-color","#F5D0A9");
-                                                      $("#pripubpad #show, #pri2pub2pad2 #show, #pri3pub3pad3 #show").css("background-color","#F5D0A9");
+                                          $("#pripub #mis_td, #pri2pub2 #mis_td, #pri3pub3 #mis_td").css("background-color","#FAAC58");
+                                          $("#pripub #show, #pri2pub2 #show, #pri3pub3 #show").css("background-color","#FAAC58");
+                                          $("#pripubcon #mis_td, #pri2pub2con2 #mis_td, #pri3pub3con3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#pripubcon #show, #pri2pub2con2 #show, #pri3pub3con3 #show").css("background-color","#F5D0A9");
+                                          $("#pripubgen #mis_td, #pri2pub2gen2 #mis_td, #pri3pub3gen3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#pripubgen #show, #pri2pub2gen2 #show, #pri3pub3gen3 #show").css("background-color","#F5D0A9");
+                                          $("#pripubind #mis_td, #pri2pub2ind2 #mis_td, #pri3pub3ind3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#pripubind #show, #pri2pub2ind2 #show, #pri3pub3ind3 #show").css("background-color","#F5D0A9");
+                                          $("#pripubpad #mis_td, #pri2pub2pad2 #mis_td, #pri3pub3pad3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#pripubpad #show, #pri2pub2pad2 #show, #pri3pub3pad3 #show").css("background-color","#F5D0A9");
 
 
                                     break;
@@ -1858,77 +2290,131 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                     case 'CONAFE (COMUNITARIA)':
 
                                           $("#pripub, #pri2pub2, #pri3pub3").css("display","");
-                                                $("#pripubcon, #pri2pub2con2, #pri3pub3con3").css("display","");
-                                                $("#pripubgen, #pri2pub2gen2, #pri3pub3gen3").css("display","");
-                                                $("#pripubind, #pri2pub2ind2, #pri3pub3ind3").css("display","");
+                                          $("#pripubcon, #pri2pub2con2, #pri3pub3con3").css("display","");
+                                          $("#pripubgen, #pri2pub2gen2, #pri3pub3gen3").css("display","");
+                                          $("#pripubind, #pri2pub2ind2, #pri3pub3ind3").css("display","");
                                           $("#pripri, #pri2pri2, #pri3pri3").css("display","");
                                           $("#pripubpad, #pri2pub2pad2, #pri3pub3pad3").css("display","");
                                                 //$("#priprigen, #pri2pri2gen2, #pri3pri3gen3").css("display","");
                                           // Pintamos de color las filas para resaltar la seleccion realizada.
-
-                                                $("#pripub #mis_td, #pri2pub2 #mis_td, #pri3pub3 #mis_td").css("background-color","#FAAC58");
-                                                $("#pripub #show, #pri2pub2 #show, #pri3pub3 #show").css("background-color","#FAAC58");
-                                                      $("#pripubcon #mis_td, #pri2pub2con2 #mis_td, #pri3pub3con3 #mis_td").css("background-color","#F5D0A9");
-                                                      $("#pripubcon #show, #pri2pub2con2 #show, #pri3pub3con3 #show").css("background-color","#F5D0A9");
-
+                                          $("#pripub #mis_td, #pri2pub2 #mis_td, #pri3pub3 #mis_td").css("background-color","#FAAC58");
+                                          $("#pripub #show, #pri2pub2 #show, #pri3pub3 #show").css("background-color","#FAAC58");
+                                          $("#pripubcon #mis_td, #pri2pub2con2 #mis_td, #pri3pub3con3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#pripubcon #show, #pri2pub2con2 #show, #pri3pub3con3 #show").css("background-color","#F5D0A9");
                                     break;
+
+
 
                                     case 'GENERAL':
 
                                           $("#pripub, #pri2pub2, #pri3pub3").css("display","");
-                                                $("#pripubcon, #pri2pub2con2, #pri3pub3con3").css("display","");
-                                                $("#pripubgen, #pri2pub2gen2, #pri3pub3gen3").css("display","");
-                                                $("#pripubind, #pri2pub2ind2, #pri3pub3ind3").css("display","");
+                                          $("#pripubcon, #pri2pub2con2, #pri3pub3con3").css("display","");
+                                          $("#pripubgen, #pri2pub2gen2, #pri3pub3gen3").css("display","");
+                                          $("#pripubind, #pri2pub2ind2, #pri3pub3ind3").css("display","");
                                           $("#pripri, #pri2pri2, #pri3pri3").css("display","");
                                           $("#pripubpad, #pri2pub2pad2, #pri3pub3pad3").css("display","");
                                                 //$("#priprigen, #pri2pri2gen2, #pri3pri3gen3").css("display","");
                                           // Pintamos de color las filas para resaltar la seleccion realizada.
-
-                                                $("#pripub #mis_td, #pri2pub2 #mis_td, #pri3pub3 #mis_td").css("background-color","#FAAC58");
-                                                $("#pripub #show, #pri2pub2 #show, #pri3pub3 #show").css("background-color","#FAAC58");
-
-                                                      $("#pripubgen #mis_td, #pri2pub2gen2 #mis_td, #pri3pub3gen3 #mis_td").css("background-color","#F5D0A9");
-                                                      $("#pripubgen #show, #pri2pub2gen2 #show, #pri3pub3gen3 #show").css("background-color","#F5D0A9");
-
-
+                                          $("#pripub #mis_td, #pri2pub2 #mis_td, #pri3pub3 #mis_td").css("background-color","#FAAC58");
+                                          $("#pripub #show, #pri2pub2 #show, #pri3pub3 #show").css("background-color","#FAAC58");
+                                          $("#pripubgen #mis_td, #pri2pub2gen2 #mis_td, #pri3pub3gen3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#pripubgen #show, #pri2pub2gen2 #show, #pri3pub3gen3 #show").css("background-color","#F5D0A9");
                                     break;
 
                                     case 'INDIGENA':
 
                                           $("#pripub, #pri2pub2, #pri3pub3").css("display","");
-                                                $("#pripubcon, #pri2pub2con2, #pri3pub3con3").css("display","");
-                                                $("#pripubgen, #pri2pub2gen2, #pri3pub3gen3").css("display","");
-                                                $("#pripubind, #pri2pub2ind2, #pri3pub3ind3").css("display","");
+                                          $("#pripubcon, #pri2pub2con2, #pri3pub3con3").css("display","");
+                                          $("#pripubgen, #pri2pub2gen2, #pri3pub3gen3").css("display","");
+                                          $("#pripubind, #pri2pub2ind2, #pri3pub3ind3").css("display","");
                                           $("#pripri, #pri2pri2, #pri3pri3").css("display","");
                                           $("#pripubpad, #pri2pub2pad2, #pri3pub3pad3").css("display","");
                                                 //$("#priprigen, #pri2pri2gen2, #pri3pri3gen3").css("display","");
                                           // Pintamos de color las filas para resaltar la seleccion realizada.
-
-                                                $("#pripub #mis_td, #pri2pub2 #mis_td, #pri3pub3 #mis_td").css("background-color","#FAAC58");
-                                                $("#pripub #show, #pri2pub2 #show, #pri3pub3 #show").css("background-color","#FAAC58");
-
-                                                      $("#pripubind #mis_td, #pri2pub2ind2 #mis_td, #pri3pub3ind3 #mis_td").css("background-color","#F5D0A9");
-                                                      $("#pripubind #show, #pri2pub2ind2 #show, #pri3pub3ind3 #show").css("background-color","#F5D0A9");
+                                          $("#pripub #mis_td, #pri2pub2 #mis_td, #pri3pub3 #mis_td").css("background-color","#FAAC58");
+                                          $("#pripub #show, #pri2pub2 #show, #pri3pub3 #show").css("background-color","#FAAC58");
+                                          $("#pripubind #mis_td, #pri2pub2ind2 #mis_td, #pri3pub3ind3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#pripubind #show, #pri2pub2ind2 #show, #pri3pub3ind3 #show").css("background-color","#F5D0A9");
 
                                     break;
 
                                     case 'PARA ADULTOS':
 
                                           $("#pripub, #pri2pub2, #pri3pub3").css("display","");
-                                                $("#pripubcon, #pri2pub2con2, #pri3pub3con3").css("display","");
-                                                $("#pripubgen, #pri2pub2gen2, #pri3pub3gen3").css("display","");
-                                                $("#pripubind, #pri2pub2ind2, #pri3pub3ind3").css("display","");
-                                                $("#pripubpad, #pri2pub2pad2, #pri3pub3pad3").css("display","");
+                                          $("#pripubcon, #pri2pub2con2, #pri3pub3con3").css("display","");
+                                          $("#pripubgen, #pri2pub2gen2, #pri3pub3gen3").css("display","");
+                                          $("#pripubind, #pri2pub2ind2, #pri3pub3ind3").css("display","");
+                                          $("#pripubpad, #pri2pub2pad2, #pri3pub3pad3").css("display","");
                                           $("#pripri, #pri2pri2, #pri3pri3").css("display","");
                                                 //$("#priprigen, #pri2pri2gen2, #pri3pri3gen3").css("display","");
                                           // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#pripub #mis_td, #pri2pub2 #mis_td, #pri3pub3 #mis_td").css("background-color","#FAAC58");
+                                          $("#pripub #show, #pri2pub2 #show, #pri3pub3 #show").css("background-color","#FAAC58");
+                                          $("#pripubpad #mis_td, #pri2pub2pad2 #mis_td, #pri3pub3pad3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#pripubpad #show, #pri2pub2pad2 #show, #pri3pub3pad3 #show").css("background-color","#F5D0A9");
 
-                                                $("#pripub #mis_td, #pri2pub2 #mis_td, #pri3pub3 #mis_td").css("background-color","#FAAC58");
-                                                $("#pripub #show, #pri2pub2 #show, #pri3pub3 #show").css("background-color","#FAAC58");
+                                    break;
 
-                                                      $("#pripubpad #mis_td, #pri2pub2pad2 #mis_td, #pri3pub3pad3 #mis_td").css("background-color","#F5D0A9");
-                                                      $("#pripubpad #show, #pri2pub2pad2 #show, #pri3pub3pad3 #show").css("background-color","#F5D0A9");
+                                    case 'CONAFE':
+                                          $("#pripub, #pri2pub2, #pri3pub3").css("display","");
+                                          $("#pripubcon, #pri2pub2con2, #pri3pub3con3").css("display","");
+                                          $("#pripubgen, #pri2pub2gen2, #pri3pub3gen3").css("display","");
+                                          $("#pripubind, #pri2pub2ind2, #pri3pub3ind3").css("display","");
+                                          $("#pripri, #pri2pri2, #pri3pri3").css("display","");
+                                          $("#pripubpad, #pri2pub2pad2, #pri3pub3pad3").css("display","");
+                                                //$("#priprigen, #pri2pri2gen2, #pri3pri3gen3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#pripub #mis_td, #pri2pub2 #mis_td, #pri3pub3 #mis_td").css("background-color","#FAAC58");
+                                          $("#pripub #show, #pri2pub2 #show, #pri3pub3 #show").css("background-color","#FAAC58");
+                                          $("#pripubgen #mis_td, #pri2pub2gen2 #mis_td, #pri3pub3gen3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#pripubgen #show, #pri2pub2gen2 #show, #pri3pub3gen3 #show").css("background-color","#F5D0A9");
+                                    break;
 
+                                    case 'ND':
+
+                                          $("#pripub, #pri2pub2, #pri3pub3").css("display","");
+                                          $("#pripubcon, #pri2pub2con2, #pri3pub3con3").css("display","");
+                                          $("#pripubgen, #pri2pub2gen2, #pri3pub3gen3").css("display","");
+                                          $("#pripubind, #pri2pub2ind2, #pri3pub3ind3").css("display","");
+                                          $("#pripri, #pri2pri2, #pri3pri3").css("display","");
+                                          $("#pripubpad, #pri2pub2pad2, #pri3pub3pad3").css("display","");
+                                                //$("#priprigen, #pri2pri2gen2, #pri3pri3gen3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#pripub #mis_td, #pri2pub2 #mis_td, #pri3pub3 #mis_td").css("background-color","#FAAC58");
+                                          $("#pripub #show, #pri2pub2 #show, #pri3pub3 #show").css("background-color","#FAAC58");
+                                          $("#pripubgen #mis_td, #pri2pub2gen2 #mis_td, #pri3pub3gen3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#pripubgen #show, #pri2pub2gen2 #show, #pri3pub3gen3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'INICIAL NO ESCOLARIZADA':
+                                          $("#pripub, #pri2pub2, #pri3pub3").css("display","");
+                                          $("#pripubcon, #pri2pub2con2, #pri3pub3con3").css("display","");
+                                          $("#pripubgen, #pri2pub2gen2, #pri3pub3gen3").css("display","");
+                                          $("#pripubind, #pri2pub2ind2, #pri3pub3ind3").css("display","");
+                                          $("#pripri, #pri2pri2, #pri3pri3").css("display","");
+                                          $("#pripubpad, #pri2pub2pad2, #pri3pub3pad3").css("display","");
+                                                //$("#priprigen, #pri2pri2gen2, #pri3pri3gen3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#pripub #mis_td, #pri2pub2 #mis_td, #pri3pub3 #mis_td").css("background-color","#FAAC58");
+                                          $("#pripub #show, #pri2pub2 #show, #pri3pub3 #show").css("background-color","#FAAC58");
+                                          $("#pripubgen #mis_td, #pri2pub2gen2 #mis_td, #pri3pub3gen3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#pripubgen #show, #pri2pub2gen2 #show, #pri3pub3gen3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'INICIAL ESCOLARIZADA':
+
+                                          $("#pripub, #pri2pub2, #pri3pub3").css("display","");
+                                          $("#pripubcon, #pri2pub2con2, #pri3pub3con3").css("display","");
+                                          $("#pripubgen, #pri2pub2gen2, #pri3pub3gen3").css("display","");
+                                          $("#pripubind, #pri2pub2ind2, #pri3pub3ind3").css("display","");
+                                          $("#pripri, #pri2pri2, #pri3pri3").css("display","");
+                                          $("#pripubpad, #pri2pub2pad2, #pri3pub3pad3").css("display","");
+                                                //$("#priprigen, #pri2pri2gen2, #pri3pri3gen3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#pripub #mis_td, #pri2pub2 #mis_td, #pri3pub3 #mis_td").css("background-color","#FAAC58");
+                                          $("#pripub #show, #pri2pub2 #show, #pri3pub3 #show").css("background-color","#FAAC58");
+                                          $("#pripubgen #mis_td, #pri2pub2gen2 #mis_td, #pri3pub3gen3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#pripubgen #show, #pri2pub2gen2 #show, #pri3pub3gen3 #show").css("background-color","#F5D0A9");
                                     break;
                               }
 
@@ -1947,49 +2433,84 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                     $("#pripripad, #pri2pri2pad2, #pri3pri3pad3").css("display","");
                                     $("#pripripad #mis_td, #pri2pri2pad2 #mis_td, #pri3pri3pad3 #mis_td").css("background-color","#F5D0A9");
                                     $("#pripripad #show, #pri2pri2pad2 #show, #pri3pri3pad3 #show").css("background-color","#F5D0A9");
-
                                     $("#pripub, #pri2pub2, #pri3pub3").css("display","");
-
                                     $("#pripri, #pri2pri2, #pri3pri3").css("display","");
-                                          $("#priprigen, #pri2pri2gen2, #pri3pri3gen3").css("display","");
+                                    $("#priprigen, #pri2pri2gen2, #pri3pri3gen3").css("display","");
                                     // Pintamos de color las filas para resaltar la seleccion realizada.
+                                    $("#pripri #show, #pri2pri2 #show, #pri3pri3 #show").css("background-color","#FAAC58");
+                                    $("#priprigen #mis_td, #pri2pri2gen2 #mis_td, #pri3pri3gen3 #mis_td").css("background-color","#F5D0A9");
+                                    $("#priprigen #show, #pri2pri2gen2 #show, #pri3pri3gen3 #show").css("background-color","#F5D0A9");
 
-
-                                          $("#pripri #show, #pri2pri2 #show, #pri3pri3 #show").css("background-color","#FAAC58");
-                                                $("#priprigen #mis_td, #pri2pri2gen2 #mis_td, #pri3pri3gen3 #mis_td").css("background-color","#F5D0A9");
-                                                $("#priprigen #show, #pri2pri2gen2 #show, #pri3pri3gen3 #show").css("background-color","#F5D0A9");
-
-                                          break;
+                                    break;
 
                                     case 'GENERAL':
 
                                           // Desplegamos hijos y nietos
-                              $("#pripub, #pri2pub2, #pri3pub3").css("display","");
-
-                              $("#pripri, #pri2pri2, #pri3pri3").css("display","");
+                                    $("#pripub, #pri2pub2, #pri3pub3").css("display","");
+                                    $("#pripri, #pri2pri2, #pri3pri3").css("display","");
                                     $("#priprigen, #pri2pri2gen2, #pri3pri3gen3").css("display","");
                                     $("#pripripad, #pri2pri2pad2, #pri3pri3pad3").css("display","");
                               // Pintamos de color las filas para resaltar la seleccion realizada.
-
-
                                     $("#pripri #show, #pri2pri2 #show, #pri3pri3 #show").css("background-color","#FAAC58");
-                                          $("#priprigen #mis_td, #pri2pri2gen2 #mis_td, #pri3pri3gen3 #mis_td").css("background-color","#F5D0A9");
-                                          $("#priprigen #show, #pri2pri2gen2 #show, #pri3pri3gen3 #show").css("background-color","#F5D0A9");
+                                    $("#priprigen #mis_td, #pri2pri2gen2 #mis_td, #pri3pri3gen3 #mis_td").css("background-color","#F5D0A9");
+                                    $("#priprigen #show, #pri2pri2gen2 #show, #pri3pri3gen3 #show").css("background-color","#F5D0A9");
 
                                     break;
 
                                     case 'PARA ADULTOS':
-
                                           // Desplegamos hijos y nietos
-                              $("#pripub, #pri2pub2, #pri3pub3").css("display","");
+                                    $("#pripub, #pri2pub2, #pri3pub3").css("display","");
+                                    $("#pripri, #pri2pri2, #pri3pri3").css("display","");
+                                    $("#pripri #show, #pri2pri2 #show, #pri3pri3 #show").css("background-color","#FAAC58");
+                                    $("#pripripad, #pri2pri2pad2, #pri3pri3pad3").css("display","");
+                                    $("#priprigen, #pri2pri2gen2, #pri3pri3gen3").css("display","");
+                                    $("#pripripad #mis_td, #pri2pri2pad2 #mis_td, #pri3pri3pad3 #mis_td").css("background-color","#F5D0A9");
+                                    $("#pripripad #show, #pri2pri2pad2 #show, #pri3pri3pad3 #show").css("background-color","#F5D0A9");
 
-                              $("#pripri, #pri2pri2, #pri3pri3").css("display","");
-                              $("#pripri #show, #pri2pri2 #show, #pri3pri3 #show").css("background-color","#FAAC58");
-                              $("#pripripad, #pri2pri2pad2, #pri3pri3pad3").css("display","");
-                              $("#priprigen, #pri2pri2gen2, #pri3pri3gen3").css("display","");
-                              $("#pripripad #mis_td, #pri2pri2pad2 #mis_td, #pri3pri3pad3 #mis_td").css("background-color","#F5D0A9");
-                              $("#pripripad #show, #pri2pri2pad2 #show, #pri3pri3pad3 #show").css("background-color","#F5D0A9");
+                                    break;
 
+                                    case 'ND':
+                                          // Desplegamos hijos y nietos
+                                    $("#pripub, #pri2pub2, #pri3pub3").css("display","");
+                                    $("#pripri, #pri2pri2, #pri3pri3").css("display","");
+                                    $("#pripri #show, #pri2pri2 #show, #pri3pri3 #show").css("background-color","#FAAC58");
+                                    $("#pripripad, #pri2pri2pad2, #pri3pri3pad3").css("display","");
+                                    $("#priprigen, #pri2pri2gen2, #pri3pri3gen3").css("display","");
+                                    $("#pripripad #mis_td, #pri2pri2pad2 #mis_td, #pri3pri3pad3 #mis_td").css("background-color","#F5D0A9");
+                                    $("#pripripad #show, #pri2pri2pad2 #show, #pri3pri3pad3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'CONAFE':
+                                          // Desplegamos hijos y nietos
+                                    $("#pripub, #pri2pub2, #pri3pub3").css("display","");
+                                    $("#pripri, #pri2pri2, #pri3pri3").css("display","");
+                                    $("#pripri #show, #pri2pri2 #show, #pri3pri3 #show").css("background-color","#FAAC58");
+                                    $("#pripripad, #pri2pri2pad2, #pri3pri3pad3").css("display","");
+                                    $("#priprigen, #pri2pri2gen2, #pri3pri3gen3").css("display","");
+                                    $("#pripripad #mis_td, #pri2pri2pad2 #mis_td, #pri3pri3pad3 #mis_td").css("background-color","#F5D0A9");
+                                    $("#pripripad #show, #pri2pri2pad2 #show, #pri3pri3pad3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'INICIAL NO ESCOLARIZADA':
+                                          // Desplegamos hijos y nietos
+                                    $("#pripub, #pri2pub2, #pri3pub3").css("display","");
+                                    $("#pripri, #pri2pri2, #pri3pri3").css("display","");
+                                    $("#pripri #show, #pri2pri2 #show, #pri3pri3 #show").css("background-color","#FAAC58");
+                                    $("#pripripad, #pri2pri2pad2, #pri3pri3pad3").css("display","");
+                                    $("#priprigen, #pri2pri2gen2, #pri3pri3gen3").css("display","");
+                                    $("#pripripad #mis_td, #pri2pri2pad2 #mis_td, #pri3pri3pad3 #mis_td").css("background-color","#F5D0A9");
+                                    $("#pripripad #show, #pri2pri2pad2 #show, #pri3pri3pad3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'INICIAL ESCOLARIZADA':
+                                          // Desplegamos hijos y nietos
+                                    $("#pripub, #pri2pub2, #pri3pub3").css("display","");
+                                    $("#pripri, #pri2pri2, #pri3pri3").css("display","");
+                                    $("#pripri #show, #pri2pri2 #show, #pri3pri3 #show").css("background-color","#FAAC58");
+                                    $("#pripripad, #pri2pri2pad2, #pri3pri3pad3").css("display","");
+                                    $("#priprigen, #pri2pri2gen2, #pri3pri3gen3").css("display","");
+                                    $("#pripripad #mis_td, #pri2pri2pad2 #mis_td, #pri3pri3pad3 #mis_td").css("background-color","#F5D0A9");
+                                    $("#pripripad #show, #pri2pri2pad2 #show, #pri3pri3pad3 #show").css("background-color","#F5D0A9");
                                     break;
                               }
 
@@ -2109,10 +2630,6 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
 
                                           $("#secpubpad #mis_td, #sec2pub2pad2 #mis_td, #sec3pub3pad3 #mis_td").css("background-color","#F5D0A9");
                                           $("#secpubpad #show, #sec2pub2pad2 #show, #sec3pub3pad3 #show").css("background-color","#F5D0A9");
-
-
-
-
                                     break;
 
                                     case 'CONAFE (COMUNITARIA)':
@@ -2138,7 +2655,6 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#secpubcon #mis_td, #sec2pub2con2 #mis_td, #sec3pub3con3 #mis_td").css("background-color","#F5D0A9");
                                           $("#secpubcon #show, #sec2pub2con2 #show, #sec3pub3con3 #show").css("background-color","#F5D0A9");
 
-
                                     break;
 
                                     case 'GENERAL':
@@ -2162,9 +2678,6 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#secpub #show, #sec2pub2 #show, #sec3pub3 #show").css("background-color","#FAAC58");
                                           $("#secpubgen #mis_td, #sec2pub2gen2 #mis_td, #sec3pub3gen3 #mis_td").css("background-color","#F5D0A9");
                                           $("#secpubgen #show, #sec2pub2gen2 #show, #sec3pub3gen3 #show").css("background-color","#F5D0A9");
-
-
-
 
                                     break;
 
@@ -2191,7 +2704,6 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#secpubptr #mis_td, #sec2pub2ptr2 #mis_td, #sec3pub3ptr3 #mis_td").css("background-color","#F5D0A9");
                                           $("#secpubptr #show, #sec2pub2ptr2 #show, #sec3pub3ptr3 #show").css("background-color","#F5D0A9");
 
-
                                     break;
 
                                     case 'TECNICA INDUSTRIAL':
@@ -2216,7 +2728,6 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
 
                                           $("#secpubtin #mis_td, #sec2pub2tin2 #mis_td, #sec3pub3tin3 #mis_td").css("background-color","#F5D0A9");
                                           $("#secpubtin #show, #sec2pub2tin2 #show, #sec3pub3tin3 #show").css("background-color","#F5D0A9");
-
 
                                     break;
 
@@ -2343,6 +2854,93 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#secpubcomu #show, #sec2pub2comu2 #show, #sec3pub3comu3 #show").css("background-color","#F5D0A9");
 
                                     break;
+
+                                    case 'CONAFE':
+                                          // Desplegamos hijos y nietos
+                                          $("#secpub, #sec2pub2, #sec3pub3").css("display","");
+                                          $("#secpubgen, #sec2pub2gen2, #sec3pub3gen3").css("display","");
+                                          $("#secpubtin, #sec2pub2tin2, #sec3pub3tin3").css("display","");
+                                          $("#secpubtag, #sec2pub2tag2, #sec3pub3tag3").css("display","");
+                                          $("#secpubptr, #sec2pub2ptr2, #sec3pub3ptr3").css("display","");
+                                          $("#secpubtel, #sec2pub2tel2, #sec3pub3tel3").css("display","");
+                                          $("#secpubcon, #sec2pub2con2, #sec3pub3con3").css("display","");
+                                          $("#secpri, #sec2pri2, #sec3pri3").css("display","");
+                                          $("#secpubtec, #sec2pub2tec2, #sec3pub3tec3").css("display","");
+                                          $("#secpubcomu, #sec2pub2comu2, #sec3pub3comu3").css("display","");
+                                          $("#secpubpad, #sec2pub2pad2, #sec3pub3pad3").css("display","");
+
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+
+                                          $("#secpub #mis_td, #sec2pub2 #mis_td, #sec3pub3 #mis_td").css("background-color","#FAAC58");
+                                          $("#secpub #show, #sec2pub2 #show, #sec3pub3 #show").css("background-color","#FAAC58");
+
+                                          $("#secpubcon #mis_td, #sec2pub2con2 #mis_td, #sec3pub3con3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#secpubcon #show, #sec2pub2con2 #show, #sec3pub3con3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'ND':
+                                          // Desplegamos hijos y nietos
+                                          $("#secpub, #sec2pub2, #sec3pub3").css("display","");
+                                          $("#secpubgen, #sec2pub2gen2, #sec3pub3gen3").css("display","");
+                                          $("#secpubtin, #sec2pub2tin2, #sec3pub3tin3").css("display","");
+                                          $("#secpubtag, #sec2pub2tag2, #sec3pub3tag3").css("display","");
+                                          $("#secpubptr, #sec2pub2ptr2, #sec3pub3ptr3").css("display","");
+                                          $("#secpubtel, #sec2pub2tel2, #sec3pub3tel3").css("display","");
+                                          $("#secpubcon, #sec2pub2con2, #sec3pub3con3").css("display","");
+                                          $("#secpri, #sec2pri2, #sec3pri3").css("display","");
+                                          $("#secpubtec, #sec2pub2tec2, #sec3pub3tec3").css("display","");
+                                          $("#secpubcomu, #sec2pub2comu2, #sec3pub3comu3").css("display","");
+                                          $("#secpubpad, #sec2pub2pad2, #sec3pub3pad3").css("display","");
+
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+
+                                          $("#secpub #mis_td, #sec2pub2 #mis_td, #sec3pub3 #mis_td").css("background-color","#FAAC58");
+                                          $("#secpub #show, #sec2pub2 #show, #sec3pub3 #show").css("background-color","#FAAC58");
+
+                                          $("#secpubcon #mis_td, #sec2pub2con2 #mis_td, #sec3pub3con3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#secpubcon #show, #sec2pub2con2 #show, #sec3pub3con3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'INICIAL NO ESCOLARIZADA':
+                                          // Desplegamos hijos y nietos
+                                          $("#secpub, #sec2pub2, #sec3pub3").css("display","");
+                                          $("#secpubgen, #sec2pub2gen2, #sec3pub3gen3").css("display","");
+                                          $("#secpubtin, #sec2pub2tin2, #sec3pub3tin3").css("display","");
+                                          $("#secpubtag, #sec2pub2tag2, #sec3pub3tag3").css("display","");
+                                          $("#secpubptr, #sec2pub2ptr2, #sec3pub3ptr3").css("display","");
+                                          $("#secpubtel, #sec2pub2tel2, #sec3pub3tel3").css("display","");
+                                          $("#secpubcon, #sec2pub2con2, #sec3pub3con3").css("display","");
+                                          $("#secpri, #sec2pri2, #sec3pri3").css("display","");
+                                          $("#secpubtec, #sec2pub2tec2, #sec3pub3tec3").css("display","");
+                                          $("#secpubcomu, #sec2pub2comu2, #sec3pub3comu3").css("display","");
+                                          $("#secpubpad, #sec2pub2pad2, #sec3pub3pad3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#secpub #mis_td, #sec2pub2 #mis_td, #sec3pub3 #mis_td").css("background-color","#FAAC58");
+                                          $("#secpub #show, #sec2pub2 #show, #sec3pub3 #show").css("background-color","#FAAC58");
+                                          $("#secpubcon #mis_td, #sec2pub2con2 #mis_td, #sec3pub3con3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#secpubcon #show, #sec2pub2con2 #show, #sec3pub3con3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'INICIAL ESCOLARIZADA':
+                                          // Desplegamos hijos y nietos
+                                          $("#secpub, #sec2pub2, #sec3pub3").css("display","");
+                                          $("#secpubgen, #sec2pub2gen2, #sec3pub3gen3").css("display","");
+                                          $("#secpubtin, #sec2pub2tin2, #sec3pub3tin3").css("display","");
+                                          $("#secpubtag, #sec2pub2tag2, #sec3pub3tag3").css("display","");
+                                          $("#secpubptr, #sec2pub2ptr2, #sec3pub3ptr3").css("display","");
+                                          $("#secpubtel, #sec2pub2tel2, #sec3pub3tel3").css("display","");
+                                          $("#secpubcon, #sec2pub2con2, #sec3pub3con3").css("display","");
+                                          $("#secpri, #sec2pri2, #sec3pri3").css("display","");
+                                          $("#secpubtec, #sec2pub2tec2, #sec3pub3tec3").css("display","");
+                                          $("#secpubcomu, #sec2pub2comu2, #sec3pub3comu3").css("display","");
+                                          $("#secpubpad, #sec2pub2pad2, #sec3pub3pad3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#secpub #mis_td, #sec2pub2 #mis_td, #sec3pub3 #mis_td").css("background-color","#FAAC58");
+                                          $("#secpub #show, #sec2pub2 #show, #sec3pub3 #show").css("background-color","#FAAC58");
+                                          $("#secpubcon #mis_td, #sec2pub2con2 #mis_td, #sec3pub3con3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#secpubcon #show, #sec2pub2con2 #show, #sec3pub3con3 #show").css("background-color","#F5D0A9");
+                                    break;
+
                               }
 
 
@@ -2460,6 +3058,66 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#secpritec #mis_td, #sec2pri2tec2 #mis_td, #sec3pri3tec3 #mis_td").css("background-color","#F5D0A9");
                                           $("#secpritec #show, #sec2pri2tec2 #show, #sec3pri3tec3 #show").css("background-color","#F5D0A9");
 
+                                    break;
+
+                                    case 'ND':
+                                          // Desplegamos hijos y nietos
+                                          $("#secpub, #sec2pub2, #sec3pub3").css("display","");
+                                          $("#secpri, #sec2pri2, #sec3pri3").css("display","");
+                                          $("#secprigen, #sec2pri2gen2, #sec3pri3gen3").css("display","");
+                                          $("#secpritin, #sec2pri2tin2, #sec3pri3tin3").css("display","");
+                                          $("#secpritag, #sec2pri2tag2, #sec3pri3tag3").css("display","");
+                                          $("#secpritec, #sec2pri2tec2, #sec3pri3tec3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#secpri #mis_td, #sec2pri2 #mis_td, #sec3pri3 #mis_td").css("background-color","#FAAC58");
+                                          $("#secpri #show, #sec2pri2 #show, #sec3pri3 #show").css("background-color","#FAAC58");
+                                          $("#secprigen #mis_td, #sec2pri2gen2 #mis_td, #sec3pri3gen3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#secprigen #show, #sec2pri2gen2 #show, #sec3pri3gen3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'CONAFE':
+                                          // Desplegamos hijos y nietos
+                                          $("#secpub, #sec2pub2, #sec3pub3").css("display","");
+                                          $("#secpri, #sec2pri2, #sec3pri3").css("display","");
+                                          $("#secprigen, #sec2pri2gen2, #sec3pri3gen3").css("display","");
+                                          $("#secpritin, #sec2pri2tin2, #sec3pri3tin3").css("display","");
+                                          $("#secpritag, #sec2pri2tag2, #sec3pri3tag3").css("display","");
+                                          $("#secpritec, #sec2pri2tec2, #sec3pri3tec3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#secpri #mis_td, #sec2pri2 #mis_td, #sec3pri3 #mis_td").css("background-color","#FAAC58");
+                                          $("#secpri #show, #sec2pri2 #show, #sec3pri3 #show").css("background-color","#FAAC58");
+                                          $("#secprigen #mis_td, #sec2pri2gen2 #mis_td, #sec3pri3gen3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#secprigen #show, #sec2pri2gen2 #show, #sec3pri3gen3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'INICIAL NO ESCOLARIZADA':
+                                          // Desplegamos hijos y nietos
+                                          $("#secpub, #sec2pub2, #sec3pub3").css("display","");
+                                          $("#secpri, #sec2pri2, #sec3pri3").css("display","");
+                                          $("#secprigen, #sec2pri2gen2, #sec3pri3gen3").css("display","");
+                                          $("#secpritin, #sec2pri2tin2, #sec3pri3tin3").css("display","");
+                                          $("#secpritag, #sec2pri2tag2, #sec3pri3tag3").css("display","");
+                                          $("#secpritec, #sec2pri2tec2, #sec3pri3tec3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#secpri #mis_td, #sec2pri2 #mis_td, #sec3pri3 #mis_td").css("background-color","#FAAC58");
+                                          $("#secpri #show, #sec2pri2 #show, #sec3pri3 #show").css("background-color","#FAAC58");
+                                          $("#secprigen #mis_td, #sec2pri2gen2 #mis_td, #sec3pri3gen3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#secprigen #show, #sec2pri2gen2 #show, #sec3pri3gen3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'INICIAL ESCOLARIZADA':
+                                          // Desplegamos hijos y nietos
+                                          $("#secpub, #sec2pub2, #sec3pub3").css("display","");
+                                          $("#secpri, #sec2pri2, #sec3pri3").css("display","");
+                                          $("#secprigen, #sec2pri2gen2, #sec3pri3gen3").css("display","");
+                                          $("#secpritin, #sec2pri2tin2, #sec3pri3tin3").css("display","");
+                                          $("#secpritag, #sec2pri2tag2, #sec3pri3tag3").css("display","");
+                                          $("#secpritec, #sec2pri2tec2, #sec3pri3tec3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#secpri #mis_td, #sec2pri2 #mis_td, #sec3pri3 #mis_td").css("background-color","#FAAC58");
+                                          $("#secpri #show, #sec2pri2 #show, #sec3pri3 #show").css("background-color","#FAAC58");
+                                          $("#secprigen #mis_td, #sec2pri2gen2 #mis_td, #sec3pri3gen3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#secprigen #show, #sec2pri2gen2 #show, #sec3pri3gen3 #show").css("background-color","#F5D0A9");
                                     break;
                               }
 
@@ -2741,6 +3399,68 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#bacpubadm #show, #bac2pub2adm2 #show, #bac3pub3adm3 #show").css("background-color","#F5D0A9");
 
                                     break;
+
+                                    case 'ND':
+                                         // Desplegamos hijos y nietos
+                                          $("#bacpub, #bac2pub2, #bac3pub3").css("display","");
+                                          $("#bacpubbte, #bac2pub2bte2, #bac3pub3bte3").css("display","");
+                                          $("#bacpubpte, #bac2pub2pte2, #bac3pub3pte3").css("display","");
+                                          $("#bacpubgen, #bac2pub2gen2, #bac3pub3gen3").css("display","");
+                                          $("#bacpubcomu, #bac2pub2comu2, #bac3pub3comu3").css("display","");
+                                          $("#bacpubadm, #bac2pub2adm2, #bac3pub3adm3").css("display","");
+                                          $("#bacpri, #bac2pri2, #bac3pri3").css("display","");
+                                          $("#bacaut, #bac2aut2, #bac3aut3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#bacpubadm #mis_td, #bac2pub2adm2 #mis_td, #bac3pub3adm3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#bacpubadm #show, #bac2pub2adm2 #show, #bac3pub3adm3 #show").css("background-color","#F5D0A9");
+
+                                    break;
+
+                                    case 'CONAFE':
+                                         // Desplegamos hijos y nietos
+                                          $("#bacpub, #bac2pub2, #bac3pub3").css("display","");
+                                          $("#bacpubbte, #bac2pub2bte2, #bac3pub3bte3").css("display","");
+                                          $("#bacpubpte, #bac2pub2pte2, #bac3pub3pte3").css("display","");
+                                          $("#bacpubgen, #bac2pub2gen2, #bac3pub3gen3").css("display","");
+                                          $("#bacpubcomu, #bac2pub2comu2, #bac3pub3comu3").css("display","");
+                                          $("#bacpubadm, #bac2pub2adm2, #bac3pub3adm3").css("display","");
+                                          $("#bacpri, #bac2pri2, #bac3pri3").css("display","");
+                                          $("#bacaut, #bac2aut2, #bac3aut3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#bacpubadm #mis_td, #bac2pub2adm2 #mis_td, #bac3pub3adm3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#bacpubadm #show, #bac2pub2adm2 #show, #bac3pub3adm3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'INICIAL NO ESCOLARIZADA':
+                                         // Desplegamos hijos y nietos
+                                          $("#bacpub, #bac2pub2, #bac3pub3").css("display","");
+                                          $("#bacpubbte, #bac2pub2bte2, #bac3pub3bte3").css("display","");
+                                          $("#bacpubpte, #bac2pub2pte2, #bac3pub3pte3").css("display","");
+                                          $("#bacpubgen, #bac2pub2gen2, #bac3pub3gen3").css("display","");
+                                          $("#bacpubcomu, #bac2pub2comu2, #bac3pub3comu3").css("display","");
+                                          $("#bacpubadm, #bac2pub2adm2, #bac3pub3adm3").css("display","");
+                                          $("#bacpri, #bac2pri2, #bac3pri3").css("display","");
+                                          $("#bacaut, #bac2aut2, #bac3aut3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#bacpubadm #mis_td, #bac2pub2adm2 #mis_td, #bac3pub3adm3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#bacpubadm #show, #bac2pub2adm2 #show, #bac3pub3adm3 #show").css("background-color","#F5D0A9");
+
+                                    break;
+
+                                    case 'INICIAL ESCOLARIZADA':
+                                         // Desplegamos hijos y nietos
+                                          $("#bacpub, #bac2pub2, #bac3pub3").css("display","");
+                                          $("#bacpubbte, #bac2pub2bte2, #bac3pub3bte3").css("display","");
+                                          $("#bacpubpte, #bac2pub2pte2, #bac3pub3pte3").css("display","");
+                                          $("#bacpubgen, #bac2pub2gen2, #bac3pub3gen3").css("display","");
+                                          $("#bacpubcomu, #bac2pub2comu2, #bac3pub3comu3").css("display","");
+                                          $("#bacpubadm, #bac2pub2adm2, #bac3pub3adm3").css("display","");
+                                          $("#bacpri, #bac2pri2, #bac3pri3").css("display","");
+                                          $("#bacaut, #bac2aut2, #bac3aut3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#bacpubadm #mis_td, #bac2pub2adm2 #mis_td, #bac3pub3adm3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#bacpubadm #show, #bac2pub2adm2 #show, #bac3pub3adm3 #show").css("background-color","#F5D0A9");
+                                    break;
                               }
 
 
@@ -2765,9 +3485,6 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#bacaut, #bac2aut2, #bac3aut3").css("display","");
 
                                           // Pintamos de color las filas para resaltar la seleccion realizada.
-
-
-
                                           $("#bacpribge #mis_td, #bac2pri2bge2 #mis_td, #bac3pri3bge3 #mis_td").css("background-color","#F5D0A9");
                                           $("#bacpribge #show, #bac2pri2bge2 #show, #bac3pri3bge3 #show").css("background-color","#F5D0A9");
                                           $("#bacpribte #mis_td, #bac2pri2bte2 #mis_td, #bac3pri3bte3 #mis_td").css("background-color","#F5D0A9");
@@ -2785,15 +3502,9 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#bacpribte #show, #bac2pri2bte2 #show, #bac3pri3bte3 #show").css("background-color","#F5D0A9");
                                           $("#bacpriadm #mis_td, #bac2pri2adm2 #mis_td, #bac3pri3adm3 #mis_td").css("background-color","#F5D0A9");
                                           $("#bacpriadm #show, #bac2pri2adm2 #show, #bac3pri3adm3 #show").css("background-color","#F5D0A9");
-
-
-
-
-
                                     break;
 
                                     case 'BACHILLERATO GENERAL':
-
                                           // Desplegamos hijos y nietos
                                           $("#bacpub, #bac2pub2, #bac3pub3").css("display","");
 
@@ -2804,26 +3515,14 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#bacprigen, #bac2pri2gen2, #bac3pri3gen3").css("display","");
                                           $("#bacpribte, #bac2pri2bte2, #bac3pri3bte3").css("display","");
                                           $("#bacpriadm, #bac2pri2adm2, #bac3pri3adm3").css("display","");
-
                                           $("#bacaut, #bac2aut2, #bac3aut3").css("display","");
-
                                           // Pintamos de color las filas para resaltar la seleccion realizada.
-
-
-
                                           $("#bacpribge #mis_td, #bac2pri2bge2 #mis_td, #bac3pri3bge3 #mis_td").css("background-color","#F5D0A9");
                                           $("#bacpribge #show, #bac2pri2bge2 #show, #bac3pri3bge3 #show").css("background-color","#F5D0A9");
-
-
-
-
                                     break;
-
                                     case 'BACHILLERATO TECNOLOGICO':
-
                                           // Desplegamos hijos y nietos
                                           $("#bacpub, #bac2pub2, #bac3pub3").css("display","");
-
                                           $("#bacpri, #bac2pri2, #bac3pri3").css("display","");
                                           $("#bacpribge, #bac2pri2bge2, #bac3pri3bge3").css("display","");
                                           $("#bacpribte, #bac2pri2bte2, #bac3pri3bte3").css("display","");
@@ -2831,24 +3530,16 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#bacprigen, #bac2pri2gen2, #bac3pri3gen3").css("display","");
                                           $("#bacpribte, #bac2pri2bte2, #bac3pri3bte3").css("display","");
                                           $("#bacpriadm, #bac2pri2adm2, #bac3pri3adm3").css("display","");
-
                                           $("#bacaut, #bac2aut2, #bac3aut3").css("display","");
-
                                           // Pintamos de color las filas para resaltar la seleccion realizada.
-
-
-
-
                                           $("#bacpribte #mis_td, #bac2pri2bte2 #mis_td, #bac3pri3bte3 #mis_td").css("background-color","#F5D0A9");
                                           $("#bacpribte #show, #bac2pri2bte2 #show, #bac3pri3bte3 #show").css("background-color","#F5D0A9");
 
                                     break;
 
                                     case 'PROFESIONAL TECNICO':
-
                                           // Desplegamos hijos y nietos
                                           $("#bacpub, #bac2pub2, #bac3pub3").css("display","");
-
                                           $("#bacpri, #bac2pri2, #bac3pri3").css("display","");
                                           $("#bacpribge, #bac2pri2bge2, #bac3pri3bge3").css("display","");
                                           $("#bacpribte, #bac2pri2bte2, #bac3pri3bte3").css("display","");
@@ -2856,21 +3547,16 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#bacprigen, #bac2pri2gen2, #bac3pri3gen3").css("display","");
                                           $("#bacpribte, #bac2pri2bte2, #bac3pri3bte3").css("display","");
                                           $("#bacpriadm, #bac2pri2adm2, #bac3pri3adm3").css("display","");
-
                                           $("#bacaut, #bac2aut2, #bac3aut3").css("display","");
-
                                           // Pintamos de color las filas para resaltar la seleccion realizada.
-
                                           $("#bacpripte #mis_td, #bac2pri2pte2 #mis_td, #bac3pri3pte3 #mis_td").css("background-color","#F5D0A9");
                                           $("#bacpripte #show, #bac2pri2pte2 #show, #bac3pri3pte3 #show").css("background-color","#F5D0A9");
 
                                     break;
 
                                     case 'GENERAL':
-
                                           // Desplegamos hijos y nietos
                                           $("#bacpub, #bac2pub2, #bac3pub3").css("display","");
-
                                           $("#bacpri, #bac2pri2, #bac3pri3").css("display","");
                                           $("#bacpribge, #bac2pri2bge2, #bac3pri3bge3").css("display","");
                                           $("#bacpribte, #bac2pri2bte2, #bac3pri3bte3").css("display","");
@@ -2878,20 +3564,15 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#bacprigen, #bac2pri2gen2, #bac3pri3gen3").css("display","");
                                           $("#bacpribte, #bac2pri2bte2, #bac3pri3bte3").css("display","");
                                           $("#bacpriadm, #bac2pri2adm2, #bac3pri3adm3").css("display","");
-
                                           $("#bacaut, #bac2aut2, #bac3aut3").css("display","");
-
                                           // Pintamos de color las filas para resaltar la seleccion realizada.
-
                                           $("#bacprigen #mis_td, #bac2pri2gen2 #mis_td, #bac3pri3gen3 #mis_td").css("background-color","#F5D0A9");
                                           $("#bacprigen #show, #bac2pri2gen2 #show, #bac3pri3gen3 #show").css("background-color","#F5D0A9");
                                     break;
 
                                     case 'ADMINISTRATIVO':
-
                                           // Desplegamos hijos y nietos
                                           $("#bacpub, #bac2pub2, #bac3pub3").css("display","");
-
                                           $("#bacpri, #bac2pri2, #bac3pri3").css("display","");
                                           $("#bacpribge, #bac2pri2bge2, #bac3pri3bge3").css("display","");
                                           $("#bacpribte, #bac2pri2bte2, #bac3pri3bte3").css("display","");
@@ -2899,20 +3580,15 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#bacprigen, #bac2pri2gen2, #bac3pri3gen3").css("display","");
                                           $("#bacpribte, #bac2pri2bte2, #bac3pri3bte3").css("display","");
                                           $("#bacpriadm, #bac2pri2adm2, #bac3pri3adm3").css("display","");
-
                                           $("#bacaut, #bac2aut2, #bac3aut3").css("display","");
-
                                           // Pintamos de color las filas para resaltar la seleccion realizada.
-
                                           $("#bacpriadm #mis_td, #bac2pri2adm2 #mis_td, #bac3pri3adm3 #mis_td").css("background-color","#F5D0A9");
                                           $("#bacpriadm #show, #bac2pri2adm2 #show, #bac3pri3adm3 #show").css("background-color","#F5D0A9");
                                     break;
 
                                     case 'TECNOLOGICO':
-
                                           // Desplegamos hijos y nietos
                                           $("#bacpub, #bac2pub2, #bac3pub3").css("display","");
-
                                           $("#bacpri, #bac2pri2, #bac3pri3").css("display","");
                                           $("#bacpribge, #bac2pri2bge2, #bac3pri3bge3").css("display","");
                                           $("#bacpribte, #bac2pri2bte2, #bac3pri3bte3").css("display","");
@@ -2920,18 +3596,81 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#bacprigen, #bac2pri2gen2, #bac3pri3gen3").css("display","");
                                           $("#bacpribte, #bac2pri2bte2, #bac3pri3bte3").css("display","");
                                           $("#bacpriadm, #bac2pri2adm2, #bac3pri3adm3").css("display","");
-
                                           $("#bacaut, #bac2aut2, #bac3aut3").css("display","");
-
                                           // Pintamos de color las filas para resaltar la seleccion realizada.
-
-
-
-
                                           $("#bacpribte #mis_td, #bac2pri2bte2 #mis_td, #bac3pri3bte3 #mis_td").css("background-color","#F5D0A9");
                                           $("#bacpribte #show, #bac2pri2bte2 #show, #bac3pri3bte3 #show").css("background-color","#F5D0A9");
 
                                     break;
+
+                                    case 'ND':
+
+                                          // Desplegamos hijos y nietos
+                                          $("#bacpub, #bac2pub2, #bac3pub3").css("display","");
+                                          $("#bacpri, #bac2pri2, #bac3pri3").css("display","");
+                                          $("#bacpribge, #bac2pri2bge2, #bac3pri3bge3").css("display","");
+                                          $("#bacpribte, #bac2pri2bte2, #bac3pri3bte3").css("display","");
+                                          $("#bacpripte, #bac2pri2pte2, #bac3pri3pte3").css("display","");
+                                          $("#bacprigen, #bac2pri2gen2, #bac3pri3gen3").css("display","");
+                                          $("#bacpribte, #bac2pri2bte2, #bac3pri3bte3").css("display","");
+                                          $("#bacpriadm, #bac2pri2adm2, #bac3pri3adm3").css("display","");
+                                          $("#bacaut, #bac2aut2, #bac3aut3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#bacpribte #mis_td, #bac2pri2bte2 #mis_td, #bac3pri3bte3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#bacpribte #show, #bac2pri2bte2 #show, #bac3pri3bte3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'CONAFE':
+
+                                          // Desplegamos hijos y nietos
+                                          $("#bacpub, #bac2pub2, #bac3pub3").css("display","");
+                                          $("#bacpri, #bac2pri2, #bac3pri3").css("display","");
+                                          $("#bacpribge, #bac2pri2bge2, #bac3pri3bge3").css("display","");
+                                          $("#bacpribte, #bac2pri2bte2, #bac3pri3bte3").css("display","");
+                                          $("#bacpripte, #bac2pri2pte2, #bac3pri3pte3").css("display","");
+                                          $("#bacprigen, #bac2pri2gen2, #bac3pri3gen3").css("display","");
+                                          $("#bacpribte, #bac2pri2bte2, #bac3pri3bte3").css("display","");
+                                          $("#bacpriadm, #bac2pri2adm2, #bac3pri3adm3").css("display","");
+                                          $("#bacaut, #bac2aut2, #bac3aut3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#bacpribte #mis_td, #bac2pri2bte2 #mis_td, #bac3pri3bte3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#bacpribte #show, #bac2pri2bte2 #show, #bac3pri3bte3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'INICIAL NO ESCOLARIZADA':
+
+                                          // Desplegamos hijos y nietos
+                                          $("#bacpub, #bac2pub2, #bac3pub3").css("display","");
+                                          $("#bacpri, #bac2pri2, #bac3pri3").css("display","");
+                                          $("#bacpribge, #bac2pri2bge2, #bac3pri3bge3").css("display","");
+                                          $("#bacpribte, #bac2pri2bte2, #bac3pri3bte3").css("display","");
+                                          $("#bacpripte, #bac2pri2pte2, #bac3pri3pte3").css("display","");
+                                          $("#bacprigen, #bac2pri2gen2, #bac3pri3gen3").css("display","");
+                                          $("#bacpribte, #bac2pri2bte2, #bac3pri3bte3").css("display","");
+                                          $("#bacpriadm, #bac2pri2adm2, #bac3pri3adm3").css("display","");
+                                          $("#bacaut, #bac2aut2, #bac3aut3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#bacpribte #mis_td, #bac2pri2bte2 #mis_td, #bac3pri3bte3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#bacpribte #show, #bac2pri2bte2 #show, #bac3pri3bte3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'INICIAL ESCOLARIZADA':
+
+                                          // Desplegamos hijos y nietos
+                                          $("#bacpub, #bac2pub2, #bac3pub3").css("display","");
+                                          $("#bacpri, #bac2pri2, #bac3pri3").css("display","");
+                                          $("#bacpribge, #bac2pri2bge2, #bac3pri3bge3").css("display","");
+                                          $("#bacpribte, #bac2pri2bte2, #bac3pri3bte3").css("display","");
+                                          $("#bacpripte, #bac2pri2pte2, #bac3pri3pte3").css("display","");
+                                          $("#bacprigen, #bac2pri2gen2, #bac3pri3gen3").css("display","");
+                                          $("#bacpribte, #bac2pri2bte2, #bac3pri3bte3").css("display","");
+                                          $("#bacpriadm, #bac2pri2adm2, #bac3pri3adm3").css("display","");
+                                          $("#bacaut, #bac2aut2, #bac3aut3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#bacpribte #mis_td, #bac2pri2bte2 #mis_td, #bac3pri3bte3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#bacpribte #show, #bac2pri2bte2 #show, #bac3pri3bte3 #show").css("background-color","#F5D0A9");
+                                    break;
+
                               }
 
 
@@ -3080,6 +3819,69 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#bacautbte #show, #bac2aut2bte2 #show, #bac3aut3bte3 #show").css("background-color","#F5D0A9");
 
                                     break;
+
+                                    case 'CONAFE':
+                                          // Desplegamos hijos y nietos
+                                          $("#bacpub, #bac2pub2, #bac3pub3").css("display","");
+                                          $("#bacpri, #bac2pri2, #bac3pri3").css("display","");
+                                          $("#bacaut, #bac2aut2, #bac3aut3").css("display","");
+                                          $("#bacautbge, #bac2aut2bge2, #bac3aut3bge3").css("display","");
+                                          $("#bacautpte, #bac2aut2pte2, #bac3aut3pte3").css("display","");
+                                          $("#bacautgen, #bac2aut2gen2, #bac3aut3gen3").css("display","");
+                                          $("#bacautadm, #bac2aut2adm2, #bac3aut3adm3").css("display","");
+                                          $("#bacautbte, #bac2aut2bte2, #bac3aut3bte3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada
+                                          $("#bacautbte #mis_td, #bac2aut2bte2 #mis_td, #bac3aut3bte3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#bacautbte #show, #bac2aut2bte2 #show, #bac3aut3bte3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'ND':
+
+                                          // Desplegamos hijos y nietos
+                                          $("#bacpub, #bac2pub2, #bac3pub3").css("display","");
+                                          $("#bacpri, #bac2pri2, #bac3pri3").css("display","");
+                                          $("#bacaut, #bac2aut2, #bac3aut3").css("display","");
+                                          $("#bacautbge, #bac2aut2bge2, #bac3aut3bge3").css("display","");
+                                          $("#bacautpte, #bac2aut2pte2, #bac3aut3pte3").css("display","");
+                                          $("#bacautgen, #bac2aut2gen2, #bac3aut3gen3").css("display","");
+                                          $("#bacautadm, #bac2aut2adm2, #bac3aut3adm3").css("display","");
+                                          $("#bacautbte, #bac2aut2bte2, #bac3aut3bte3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada
+                                          $("#bacautbte #mis_td, #bac2aut2bte2 #mis_td, #bac3aut3bte3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#bacautbte #show, #bac2aut2bte2 #show, #bac3aut3bte3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'INICIAL NO ESCOLARIZADA':
+                                          // Desplegamos hijos y nietos
+                                          $("#bacpub, #bac2pub2, #bac3pub3").css("display","");
+                                          $("#bacpri, #bac2pri2, #bac3pri3").css("display","");
+                                          $("#bacaut, #bac2aut2, #bac3aut3").css("display","");
+                                          $("#bacautbge, #bac2aut2bge2, #bac3aut3bge3").css("display","");
+                                          $("#bacautpte, #bac2aut2pte2, #bac3aut3pte3").css("display","");
+                                          $("#bacautgen, #bac2aut2gen2, #bac3aut3gen3").css("display","");
+                                          $("#bacautadm, #bac2aut2adm2, #bac3aut3adm3").css("display","");
+                                          $("#bacautbte, #bac2aut2bte2, #bac3aut3bte3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada
+                                          $("#bacautbte #mis_td, #bac2aut2bte2 #mis_td, #bac3aut3bte3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#bacautbte #show, #bac2aut2bte2 #show, #bac3aut3bte3 #show").css("background-color","#F5D0A9");
+                                    break;
+
+                                    case 'INICIAL ESCOLARIZADA':
+
+                                          // Desplegamos hijos y nietos
+                                          $("#bacpub, #bac2pub2, #bac3pub3").css("display","");
+                                          $("#bacpri, #bac2pri2, #bac3pri3").css("display","");
+                                          $("#bacaut, #bac2aut2, #bac3aut3").css("display","");
+                                          $("#bacautbge, #bac2aut2bge2, #bac3aut3bge3").css("display","");
+                                          $("#bacautpte, #bac2aut2pte2, #bac3aut3pte3").css("display","");
+                                          $("#bacautgen, #bac2aut2gen2, #bac3aut3gen3").css("display","");
+                                          $("#bacautadm, #bac2aut2adm2, #bac3aut3adm3").css("display","");
+                                          $("#bacautbte, #bac2aut2bte2, #bac3aut3bte3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada
+                                          $("#bacautbte #mis_td, #bac2aut2bte2 #mis_td, #bac3aut3bte3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#bacautbte #show, #bac2aut2bte2 #show, #bac3aut3bte3 #show").css("background-color","#F5D0A9");
+                                    break;
+
                               }
 
 
@@ -3178,22 +3980,14 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#supuytpub #mis_td, #sup2uyt2pub2 #mis_td, #sup3uyt3pub3 #mis_td").css("background-color","#F5D0A9");
                                           $("#supuytpub #show, #sup2uyt2pub2 #show, #sup3uyt3pub3 #show").css("background-color","#F5D0A9");
 
-
                                           $("#supnor #mis_td, #sup2nor2 #mis_td, #sup3nor3 #mis_td").css("background-color","#FAAC58");
                                           $("#supnor #show, #sup2nor2 #show, #sup3nor3 #show").css("background-color","#FAAC58");
                                           $("#supnorpub #mis_td, #sup2nor2pub2 #mis_td, #sup3nor3pub3 #mis_td").css("background-color","#F5D0A9");
                                           $("#supnorpub #show, #sup2nor2pub2 #show, #sup3nor3pub3 #show").css("background-color","#F5D0A9");
-
-
                                           $("#suppos #mis_td, #sup2pos2 #mis_td, #sup3pos3 #mis_td").css("background-color","#FAAC58");
                                           $("#suppos #show, #sup2pos2 #show, #sup3pos3 #show").css("background-color","#FAAC58");
                                           $("#suppospub #mis_td, #sup2pos2pub2 #mis_td, #sup3pos3pub3 #mis_td").css("background-color","#F5D0A9");
                                           $("#suppospub #show, #sup2pos2pub2 #show, #sup3pos3pub3 #show").css("background-color","#F5D0A9");
-
-
-
-
-
                                     break;
 
                                     case 'UNIVERSITARIO Y TECNOLOGICO':
@@ -3205,11 +3999,8 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#supuytpubfed, #sup2uyt2pub2fed2, #sup3uyt3pub3fed3").css("display","");
                                           $("#supuytpri, #sup2uyt2pri2, #sup3uyt3pri3").css("display","");
                                           $("#supuytaut, #sup2uyt2aut2, #sup3uyt3aut3").css("display","");
-
                                           $("#supnor, #sup2nor2, #sup3nor3").css("display","");
-
                                           $("#suppos, #sup2pos2, #sup3pos3").css("display","");
-
 
                                           // Pintamos de color las filas para resaltar la seleccion realizada.
                                           $("#supuyt #mis_td, #sup2uyt2 #mis_td, #sup3uyt3 #mis_td").css("background-color","#FAAC58");
@@ -3217,31 +4008,19 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#supuytpub #mis_td, #sup2uyt2pub2 #mis_td, #sup3uyt3pub3 #mis_td").css("background-color","#F5D0A9");
                                           $("#supuytpub #show, #sup2uyt2pub2 #show, #sup3uyt3pub3 #show").css("background-color","#F5D0A9");
 
-
-
-
-
-
-
-
                                     break;
 
                                     case 'NORMAL':
 
                                           // Desplegamos hijos y nietos
                                           $("#supuyt, #sup2uyt2, #sup3uyt3").css("display","");
-
-
                                           $("#supnor, #sup2nor2, #sup3nor3").css("display","");
                                           $("#supnorpub, #sup2nor2pub2, #sup3nor3pub3").css("display","");
                                           $("#supnorpubest, #sup2nor2pub2est2, #sup3nor3pub3est3").css("display","");
                                           $("#supnorpubfed, #sup2nor2pub2fed2, #sup3nor3pub3fed3").css("display","");
                                           $("#supnorpri, #sup2nor2pri2, #sup3nor3pri3").css("display","");
-
                                           $("#suppos, #sup2pos2, #sup3pos3").css("display","");
-
                                           // Pintamos de color las filas para resaltar la seleccion realizada.
-
                                           $("#supnor #mis_td, #sup2nor2 #mis_td, #sup3nor3 #mis_td").css("background-color","#FAAC58");
                                           $("#supnor #show, #sup2nor2 #show, #sup3nor3 #show").css("background-color","#FAAC58");
                                           $("#supnorpub #mis_td, #sup2nor2pub2 #mis_td, #sup3nor3pub3 #mis_td").css("background-color","#F5D0A9");
@@ -3252,19 +4031,15 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                     break;
 
                                     case 'POSGRADO':
-
                                           // Desplegamos hijos y nietos
                                           $("#supuyt, #sup2uyt2, #sup3uyt3").css("display","");
-
                                           $("#supnor, #sup2nor2, #sup3nor3").css("display","");
-
                                           $("#suppos, #sup2pos2, #sup3pos3").css("display","");
                                           $("#suppospub, #sup2pos2pub2, #sup3pos3pub3").css("display","");
                                           $("#suppospubest, #sup2pos2pub2est2, #sup3pos3pub3est3").css("display","");
                                           $("#suppospubfed, #sup2pos2pub2fed2, #sup3pos3pub3fed3").css("display","");
                                           $("#suppospri, #sup2pos2pri2, #sup3pos3pri3").css("display","");
                                           $("#supposaut, #sup2pos2aut2, #sup3pos3aut3").css("display","");
-
                                           // Pintamos de color las filas para resaltar la seleccion realizada.
                                           $("#suppos #mis_td, #sup2pos2 #mis_td, #sup3pos3 #mis_td").css("background-color","#FAAC58");
                                           $("#suppos #show, #sup2pos2 #show, #sup3pos3 #show").css("background-color","#FAAC58");
@@ -3338,8 +4113,6 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#supuyt #show, #sup2uyt2 #show, #sup3uyt3 #show").css("background-color","#FAAC58");
                                           $("#supuytpri #mis_td, #sup2uyt2pri2 #mis_td, #sup3uyt3pri3 #mis_td").css("background-color","#F5D0A9");
                                           $("#supuytpri #show, #sup2uyt2pri2 #show, #sup3uyt3pri3 #show").css("background-color","#F5D0A9");
-
-
 
                                     break;
 
@@ -3425,9 +4198,6 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#suppos #show, #sup2pos2 #show, #sup3pos3 #show").css("background-color","#FAAC58");
                                           $("#supposaut #mis_td, #sup2pos2aut2 #mis_td, #sup3pos3aut3 #mis_td").css("background-color","#F5D0A9");
                                           $("#supposaut #show, #sup2pos2aut2 #show, #sup3pos3aut3 #show").css("background-color","#F5D0A9");
-
-
-
                                     break;
 
                                     case 'UNIVERSITARIO Y TECNOLOGICO':
@@ -3447,8 +4217,6 @@ $("#iniautcendi #mis_td, #ini2aut2cendi2 #mis_td, #ini3aut3cendi3 #mis_td").css(
                                           $("#supuyt #show, #sup2uyt2 #show, #sup3uyt3 #show").css("background-color","#FAAC58");
                                           $("#supuytaut #mis_td, #sup2uyt2aut2 #mis_td, #sup3uyt3aut3 #mis_td").css("background-color","#F5D0A9");
                                           $("#supuytaut #show, #sup2uyt2aut2 #show, #sup3uyt3aut3 #show").css("background-color","#F5D0A9");
-
-
                                     break;
 
 
