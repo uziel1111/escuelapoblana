@@ -8,8 +8,10 @@ class Estadistica_model extends CI_Model {
 
      function get_all_municipio_ei()
      {
-       $str_query = "SELECT m.id_municipio, m.nombre_municipio FROM estadistica_e_indicadoresxesc m WHERE m.nombre_municipio !='SAN ANTONIO CA?ADA' AND m.nombre_municipio !='CA?ADA MORELOS'
-GROUP BY m.nombre_municipio";
+       // $str_query = "SELECT m.id_municipio, m.nombre_municipio FROM estadistica_e_indicadoresxesc m WHERE m.nombre_municipio !='SAN ANTONIO CA?ADA' AND m.nombre_municipio !='CA?ADA MORELOS'GROUP BY m.nombre_municipio";
+     	//querys nuevos
+     	//Eloisa HA.
+     	$str_query="SELECT id_municipio, nombre_municipio from municipio group by nombre_municipio"; 
        return $this->db->query($str_query)->result_array();
      }// get_all_municipio_ei()
 
@@ -17,12 +19,18 @@ GROUP BY m.nombre_municipio";
      {
 
 
-			$query = "
-      SELECT DISTINCT cct_zona_escolar FROM estadistica_e_indicadoresxesc
-      WHERE cct_zona_escolar!='No aplica zona escolar' AND cct_zona_escolar!='Zona sin asignar'
-      AND num_nivel='".$nivelid."' AND sostenimiento_desagregado='".$sostenimientoid."'AND num_zona_escolar='".$num_ze."'
+			// $query = "
+   //    SELECT DISTINCT cct_zona_escolar FROM estadistica_e_indicadoresxesc
+   //    WHERE cct_zona_escolar!='No aplica zona escolar' AND cct_zona_escolar!='Zona sin asignar'
+   //    AND num_nivel='".$nivelid."' AND sostenimiento_desagregado='".$sostenimientoid."'AND num_zona_escolar='".$num_ze."'
 
-			";
+			// ";
+     	$query="SELECT s.cct_supervision cct_zona_escolar from escuela e
+     			inner join supervision s on s.cct_supervision=e.cct_supervision
+     			inner join sostenimiento sos on sos.id_sostenimiento=e.id_sostenimiento
+     			where s.zona!=999 and id_nivel={$nivelid} and sos.nombre_sostenimiento='{$sostenimientoid}'
+     			and s.zona={$num_ze}
+     			group by e.cct_supervision";
       // echo $query;
       //die();
       return $this->db->query($query)->result_array();
@@ -32,46 +40,69 @@ GROUP BY m.nombre_municipio";
      {
 
 
-			$query = "
-      SELECT DISTINCT num_zona_escolar FROM estadistica_e_indicadoresxesc
-      WHERE
-      num_zona_escolar!='No aplica zona escolar' AND num_zona_escolar!='Zona sin asignar'
-      AND cct_zona_escolar!='No aplica zona escolar' AND cct_zona_escolar!='Zona sin asignar' AND cct_zona_escolar!=''
-      AND num_nivel='".$nivelid."' AND sostenimiento_desagregado='".$sostenimientoid."'
-      ORDER BY num_zona_escolar+0
-			";
+			// $query = "
+   //    SELECT DISTINCT num_zona_escolar FROM estadistica_e_indicadoresxesc
+   //    WHERE
+   //    num_zona_escolar!='No aplica zona escolar' AND num_zona_escolar!='Zona sin asignar'
+   //    AND cct_zona_escolar!='No aplica zona escolar' AND cct_zona_escolar!='Zona sin asignar' AND cct_zona_escolar!=''
+   //    AND num_nivel='".$nivelid."' AND sostenimiento_desagregado='".$sostenimientoid."'
+   //    ORDER BY num_zona_escolar+0
+			// ";
+
+     	//nuevo query Eloisa HA
+     	$query="SELECT s.zona num_zona_escolar from escuela e
+     			inner join supervision s on s.cct_supervision=e.cct_supervision
+     			inner join sostenimiento sos on sos.id_sostenimiento=e.id_sostenimiento
+     			where s.zona!=999 and id_nivel={$nivelid} and sos.nombre_sostenimiento='{$sostenimientoid}'
+     			group by s.zona";
       // echo $query;
-      //die();
+      // die();
       return $this->db->query($query)->result_array();
      }// getze()
 
      function getNiveles_ei($id_municipio)
      {
 
-       if($id_municipio==0){
-			$query = "
-      SELECT num_nivel ,nivel FROM estadistica_e_indicadoresxesc
-       WHERE nivel!='CAPACITACION PARA EL TRABAJO' AND nivel!='ADULTOS'
-      GROUP BY num_nivel
-			";
+       	if($id_municipio==0){
+			// $query = "SELECT num_nivel ,nivel FROM estadistica_e_indicadoresxesc
+   //     					WHERE nivel!='CAPACITACION PARA EL TRABAJO' AND nivel!='ADULTOS'
+   //   					GROUP BY num_nivel";
+       		//nuevo query
+       		//Eloisa HA.
+     		$query = "SELECT n.id_nivel  num_nivel,n.nombre_nivel nivel FROM escuela e
+     					INNER JOIN nivel n on n.id_nivel=e.id_nivel
+       					WHERE n.nombre_nivel!='CAPACITACION PARA EL TRABAJO' AND n.nombre_nivel!='ADULTOS'
+     					GROUP BY n.id_nivel";
 		}else{
-			$query = "
-      SELECT num_nivel ,nivel FROM estadistica_e_indicadoresxesc WHERE id_municipio=".$id_municipio." AND nivel!='CAPACITACION PARA EL TRABAJO' AND nivel!='ADULTOS'
-      GROUP BY num_nivel
-			";
+			// $query = "SELECT num_nivel ,nivel FROM estadistica_e_indicadoresxesc WHERE id_municipio=".$id_municipio." AND nivel!='CAPACITACION PARA EL TRABAJO' AND nivel!='ADULTOS' GROUP BY num_nivel";
+			//nuevo query
+			//Eloisa HA.
+			$query = "SELECT n.id_nivel  num_nivel,n.nombre_nivel nivel FROM escuela e
+     					INNER JOIN nivel n on n.id_nivel=e.id_nivel
+       					WHERE n.nombre_nivel!='CAPACITACION PARA EL TRABAJO' AND n.nombre_nivel!='ADULTOS'
+       					AND e.id_municipio={$id_municipio}
+     					GROUP BY n.id_nivel";
 		}
-      return $this->db->query($query)->result_array();
+
+		// echo $query;
+		// die();
+      	return $this->db->query($query)->result_array();
      }// getNiveles_ei()
 
      function getNiveles_ze()
      {
 
+		// $query = "SELECT num_nivel ,nivel FROM estadistica_e_indicadoresxesc
+		// 			WHERE num_nivel!=1 AND num_nivel!=2 AND nivel!='CAPACITACION PARA EL TRABAJO' AND nivel!='ADULTOS'
+  //     				GROUP BY num_nivel";
+     	//query nuevo Eloisa HA
+     	$query="SELECT n.id_nivel  num_nivel,n.nombre_nivel nivel FROM escuela e
+     			INNER JOIN nivel n on n.id_nivel=e.id_nivel
+       			WHERE n.id_nivel!=1 AND n.id_nivel!=2 and n.nombre_nivel!='CAPACITACION PARA EL TRABAJO' AND n.nombre_nivel!='ADULTOS'
+     			GROUP BY n.id_nivel";
+     	// echo $query;
+     	// die();
 
-			$query = "
-      SELECT num_nivel ,nivel FROM estadistica_e_indicadoresxesc
-WHERE num_nivel!=1 AND num_nivel!=2 AND nivel!='CAPACITACION PARA EL TRABAJO' AND nivel!='ADULTOS'
-      GROUP BY num_nivel
-			";
 
       return $this->db->query($query)->result_array();
     }// getNiveles_ze()
@@ -80,55 +111,67 @@ WHERE num_nivel!=1 AND num_nivel!=2 AND nivel!='CAPACITACION PARA EL TRABAJO' AN
      {
        $concat = "";
        if($id_municipio!="0" || $id_municipio!=0){
-   			$concat .= " AND id_municipio = {$id_municipio}";
+   			$concat .= " AND e.id_municipio = {$id_municipio}";
    		}
    		if($id_nivel!="TODOS" || $id_nivel!=0){
-   			$concat .= " AND num_nivel = {$id_nivel}";
+   			$concat .= " AND e.id_nivel = {$id_nivel}";
    		}
 
-			$query = "
-      SELECT sostenimiento FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat}
-      GROUP BY sostenimiento
-			";
+			// $query = "SELECT sostenimiento 
+			// 		FROM estadistica_e_indicadoresxesc 
+			// 		WHERE 1= 1 {$concat}
+   //    				GROUP BY sostenimiento";
+   			//query nuevo Eloisa HA.
+   			$query="SELECT s.nombre_sostenimiento sostenimiento from escuela e
+   					inner join sostenimiento s on s.id_sostenimiento=e.id_sostenimiento
+   					where 1=1 {$concat} 
+   					group by s.nombre_sostenimiento";
 
       return $this->db->query($query)->result_array();
      }// get_xmunicipio_xnivel_ei()
 
      function get_sostenimeinto_ze($id_nivel)
      {
-       $concat = "";
+       	$concat = "";
+   		$concat .= " AND e.id_nivel = {$id_nivel}";
 
-
-   			$concat .= " AND num_nivel = {$id_nivel}";
-
-
-			$query = "
-      SELECT sostenimiento_desagregado FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat}
-      AND num_zona_escolar!='No aplica zona escolar' AND num_zona_escolar!='Zona sin asignar'
-      AND cct_zona_escolar!='No aplica zona escolar' AND cct_zona_escolar!='Zona sin asignar' AND cct_zona_escolar!=''
-      GROUP BY sostenimiento_desagregado
-			";
-
+		// $query = "SELECT sostenimiento_desagregado FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat}
+  //     AND num_zona_escolar!='No aplica zona escolar' AND num_zona_escolar!='Zona sin asignar'
+  //     AND cct_zona_escolar!='No aplica zona escolar' AND cct_zona_escolar!='Zona sin asignar' AND cct_zona_escolar!=''
+  //     GROUP BY sostenimiento_desagregado
+		// 	";
+   		$query="SELECT s.nombre_sostenimiento sostenimiento_desagregado from escuela e
+   				inner join sostenimiento s on s.id_sostenimiento=e.id_sostenimiento
+   				inner join supervision su on su.cct_supervision=e.cct_supervision
+   				where 1=1 {$concat}  and su.zona!=999
+   				group by s.nombre_sostenimiento";
       return $this->db->query($query)->result_array();
      }// get_sostenimeinto_ze()
 
      function get_xmunicipio_xnivel_xsostenimiento($id_municipio, $id_nivel, $id_sostenimiento)
      {
-       $concat = "";
-       if($id_municipio!="0" || $id_municipio!=0){
-   			$concat .= " AND id_municipio = {$id_municipio}";
+       	$concat = "";
+       	if($id_municipio!="0" || $id_municipio!=0){
+   			$concat .= " AND e.id_municipio = {$id_municipio}";
    		}
    		if($id_nivel!="TODOS" || $id_nivel!=0){
-   			$concat .= " AND num_nivel = {$id_nivel}";
+   			$concat .= " AND e.id_nivel = {$id_nivel}";
    		}
-      if($id_sostenimiento!="TODOS" || $id_sostenimiento!=0){
-   			$concat .= " AND sostenimiento = '{$id_sostenimiento}'";
+      	if($id_sostenimiento!="TODOS" || $id_sostenimiento!=0){
+   			$concat .= " AND s.nombre_sostenimiento = '{$id_sostenimiento}'";
    		}
 
-			$query = "
-      SELECT modalidad FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat}
-      GROUP BY modalidad
-			";
+		// $query = "SELECT modalidad FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat}
+  //     				GROUP BY modalidad";
+			// nuevo query Eloisa HA.
+      	$query="SELECT m.nombre_modalidad modalidad 
+      			from escuela e
+      			inner join modalidad m on m.id_modalidad=e.id_modalidad
+      			inner join sostenimiento s on s.id_sostenimiento=e.id_sostenimiento
+      			where 1=1 {$concat}
+      			group by e.id_modalidad";
+      	// echo $query;
+      	// die();
 
       return $this->db->query($query)->result_array();
      }// get_xmunicipio_xnivel_xsostenimiento()
@@ -149,10 +192,13 @@ WHERE num_nivel!=1 AND num_nivel!=2 AND nivel!='CAPACITACION PARA EL TRABAJO' AN
    			$concat .= " AND modalidad = '{$id_modalidad}'";
    		}
 
-			$query = "
-      SELECT ciclo FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat}
-      GROUP BY ciclo
-			";
+			$query = "SELECT ciclo FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat}
+						GROUP BY ciclo";
+   			// nuevo query Eloisa HA.
+   			// $query="SELECT ciclo FROM estadistica_e_indicadoresxesc
+   			// 	";
+			// echo $query;
+			// die();
 
       return $this->db->query($query)->result_array();
      }// get_xmunicipio_xnivel_xsostenimiento_xmodalidad()
@@ -1046,6 +1092,9 @@ WHERE num_nivel!=1 AND num_nivel!=2 AND nivel!='CAPACITACION PARA EL TRABAJO' AN
      elseif ($ciclonomb=="2017-2018"){
         $concat .=  " AND Ciclo_escolar = 'Inicio_2016-2017'";
       }
+      elseif ($ciclonomb=="2018-2019"){
+        $concat .=  " AND Ciclo_escolar = 'Inicio_2016-2017'";
+      }
 
 
     $query = "
@@ -1059,8 +1108,8 @@ WHERE num_nivel!=1 AND num_nivel!=2 AND nivel!='CAPACITACION PARA EL TRABAJO' AN
 				WHERE 1= 1 {$concat}
         AND nivel!='Preescolar' AND nivel!='Superior' AND nivel!='Superior con Posgrado'
     ";
-     //echo $query;
-     //die();
+     // echo $query;
+     // die();
     return $this->db->query($query)->result_array();
   }// get_llenado_tabla4()
 
@@ -1102,8 +1151,8 @@ eficiencia_terminal_media_superior
 WHERE id_municip=$municipioid
 
    ";
-    //echo $query;
-    //die();
+    // echo $query;
+    // die();
    return $this->db->query($query)->result_array();
  }// get_llenado_tabla5()
 
@@ -1150,8 +1199,8 @@ WHERE id_municip=$municipioid
 		ORDER BY FIELD(Nivel,'Primaria','Secundaria','Media Superior')
 
   ";
-   //echo $query;
-   //die();
+   // echo $query;
+   // die();
   return $this->db->query($query)->result_array();
 }// get_llenado_tabla6()
 
@@ -1219,8 +1268,8 @@ function get_llenado_tabla7($municipioid, $municipionomb, $nivelid, $nivelnomb, 
 				WHERE 1= 1 {$concat} and periodo='2015'
 
  ";
-  //echo $query;
-  //die();
+  // echo $query;
+  // die();
  return $this->db->query($query)->result_array();
 }// get_llenado_tabla7()
 
@@ -1288,8 +1337,8 @@ function get_llenado_tabla8($municipioid, $municipionomb, $nivelid, $nivelnomb, 
 				WHERE 1= 1 {$concat} and periodo='2015'
 
  ";
-  //echo $query;
-  //die();
+  // echo $query;
+  // die();
  return $this->db->query($query)->result_array();
 }// get_llenado_tabla8()
 
@@ -1721,8 +1770,8 @@ function get_llenado_tabla2_0_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
  'Para Trabajadores','Telesecundaria','No Escolarizada','Indígena','CONAFE (COMUNITARIA)','Bachillerato General',
  'Bachillerato Tecnológico','Profesional Técnico','Universitaria','Normal')
  ";
- // echo $query;
- // die();
+ echo $query;
+ die();
  return $this->db->query($query)->result_array();
 }// get_llenado_tabla2_0_ze()
 

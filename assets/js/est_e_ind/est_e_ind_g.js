@@ -105,7 +105,7 @@ $(function() {
              var sostenimientoid =  $("#le_select_sostenimiento_ei").val();
              if (sostenimientoid=='TODOS') {
                var municipioid =  $("#le_select_idmunicipio_ei").val();
-               var nivelid =  'TODOS';
+               // var nivelid =  'TODOS';
                var sostenimientoid =  'TODOS';
                var modalidadid =  'TODOS';
                $('#div_ciclo').css("display","");
@@ -134,6 +134,7 @@ $(function() {
              var sostenimientonomb =  $("#le_select_sostenimiento_ei").val();
              var modalidadnomb =  $("#le_select_modalidad_ei").val();
              var ciclonomb =  $("#ciclo").val();
+             // console.log($("#ciclo").val());
              $('#btn_gen_excel').css("display","");
              $('#contenedor_tablas').css("display","");
              obj_estadistica.gettablas1(municipioid, municipionomb, nivelid, nivelnomb, sostenimientonomb, modalidadnomb, ciclonomb);
@@ -830,6 +831,11 @@ function EsteIndGen(){
     }// getModalidad()
 
     this.getCiclo = function(id_municipio, id_nivel, id_sostenimiento, id_modalidad){
+        console.log("id_municipio:"+id_municipio);
+        console.log("id_nivel:"+id_nivel);
+        console.log("id_sostenimiento:"+id_sostenimiento);
+        console.log("id_modalidad:"+id_modalidad);
+
             var ruta = base_url+"Estadistica/get_xmunicipio_xnivel_xsostenimiento_xmodalidad";
             $.ajax({
               url: ruta,
@@ -936,8 +942,8 @@ function EsteIndGen(){
     }// gettablas3()
 
     this.gettablas4 = function(municipioid, municipionomb, nivelid, nivelnomb, sostenimientonomb, modalidadnomb, ciclonomb){
-           
-            if(ciclonomb=="2014-2015-INICIO"){
+       // console.log(ciclonomb);    
+      if(ciclonomb=="2014-2015-INICIO"){
         concat = " 2014-2015";
       }
       if (ciclonomb=="2015-2016-INICIO"){
@@ -949,6 +955,14 @@ function EsteIndGen(){
       if (ciclonomb=="2017-2018"){
         concat = " 2016-2017";
       }
+      if (ciclonomb=="FIN-2017-2018"){
+        concat = " 2016-2017";
+      }
+      if (ciclonomb=="INICIO-2018-2019"){
+        concat = " 2016-2017";
+      }
+
+      
       $("#ind_asist_lb").empty();
       $("#ind_asist_lb").append(concat);
             var ruta = base_url+"Estadistica/get_llenado_tablas4";
@@ -972,6 +986,7 @@ function EsteIndGen(){
     }// gettablas4()
 
     this.gettablas5 = function(municipioid, municipionomb, nivelid, nivelnomb, sostenimientonomb, modalidadnomb, ciclonomb){
+      // console.log(ciclonomb);
       if(ciclonomb=="2014-2015-INICIO"){
         concat = " 2015-2016";
       }
@@ -984,6 +999,14 @@ function EsteIndGen(){
       if (ciclonomb=="2017-2018"){
         concat = " 2015-2016";
       }
+      if (ciclonomb=="FIN-2017-2018"){
+        concat = " 2015-2016";
+      }
+      if (ciclonomb=="INICIO-2018-2019"){
+        concat = " 2015-2016";
+      }
+      // concat=ciclonomb;
+
       $("#ind_perma_lb").empty();
       $("#ind_perma_lb").append(concat);
 
