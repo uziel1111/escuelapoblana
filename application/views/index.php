@@ -632,8 +632,8 @@
                   </div>
 
                   <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                    <!-- <a href="http://spdpuebla.net/" target="_blank"> -->
-                    <a type="button" href="#" id="btn_spd1">
+                    <a href="http://sep.puebla.gob.mx/2019-02-19-17-24-35/evaluacion-del-desempeno" target="_blank">
+                    <!-- <a type="button" href="#" id="btn_spd1"> -->
                     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 div_herramientas_turquesa grises">
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
                           <img src="<?php echo base_url('assets/img/briefcase.svg'); ?>" alt="..." class="img_icon" />

@@ -45,21 +45,21 @@
       </div>
       <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5" style="color:white;">
         <center>
-          <h4 style="font-size:0.8vw;">Contacto</h4>
+          <h4 style="font-size:1vw;">Contacto</h4>
 
-            <p style="font-size:0.5vw;">
-              Av. Jesús Reyes Heroles s/n Col. Nueva Aurora, Puebla, Pue.
+            <p style="font-size:0.9vw;">
+              Av. Jesús Reyes Heroles s/n Col. Nueva Aurora, Puebla, Pue. CP. 72070
               </p>
-              <p style="font-size:0.5vw;">
+              <!-- <p style="font-size:0.9vw;">
                 CP. 72070
-                </p>
-                <p style="font-size:0.5vw;">
+                </p> -->
+                <p style="font-size:0.9vw;">
                 Teléfono: (222)229-69-00
                   </p>
-                  <p style="font-size:0.5vw;">
+                  <p style="font-size:0.9vw;">
                     Atención a la ciudadanía: (01800) 714 7108. Horario de Atención de 8.00 a 19:00 horas.
                     </p>
-                    <a href="http://sep.puebla.gob.mx/index.php/sep-escucha" target="_blank" style="color:white;">SEP Escucha</a>
+                    <a href="http://sep.puebla.gob.mx/index.php/sep-escucha" target="_blank" style="font-size:0.9vw; color:white;">SEP Escucha</a>
       </center>
       </div>
     </div>
