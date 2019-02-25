@@ -21,9 +21,7 @@ class Estadistica_model extends CI_Model {
 
 		$query = "SELECT DISTINCT cct_zona_escolar FROM estadistica_e_indicadoresxesc
       				WHERE cct_zona_escolar!='No aplica zona escolar' AND cct_zona_escolar!='Zona sin asignar'
-      				AND num_nivel='".$nivelid."' AND sostenimiento_desagregado='".$sostenimientoid."'AND num_zona_escolar='".$num_ze."'
-
-			// ";
+      				 AND num_nivel='".$nivelid."'  AND sostenimiento_desagregado='".$sostenimientoid."' AND num_zona_escolar='".$num_ze."' ";
      	// $query="SELECT s.cct_supervision cct_zona_escolar from escuela e
      	// 		inner join supervision s on s.cct_supervision=e.cct_supervision
      	// 		inner join sostenimiento sos on sos.id_sostenimiento=e.id_sostenimiento
@@ -133,7 +131,7 @@ class Estadistica_model extends CI_Model {
      function get_sostenimeinto_ze($id_nivel)
      {
        	$concat = "";
-   		$concat .= " AND e.id_nivel = {$id_nivel}";
+   		$concat .= " AND num_nivel = {$id_nivel}";
 
 		$query = "SELECT sostenimiento_desagregado 
 				FROM estadistica_e_indicadoresxesc 
