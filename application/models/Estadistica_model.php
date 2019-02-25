@@ -192,7 +192,8 @@ class Estadistica_model extends CI_Model {
    			$concat .= " AND modalidad = '{$id_modalidad}'";
    		}
 
-			$query = "SELECT ciclo FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat}
+			$query = "SELECT if(ciclo='INICIO-2018-2019','2018-2019-INICIO',ciclo)ciclo FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} and ciclo!='FIN-2017-2018'
+					 and ciclo!='2015-2016-FIN' and ciclo!='2014-2015-FIN'
 						GROUP BY ciclo";
    			// nuevo query Eloisa HA.
    			// $query="SELECT ciclo FROM estadistica_e_indicadoresxesc
@@ -209,7 +210,13 @@ class Estadistica_model extends CI_Model {
        if($municipioid!="0" || $municipioid!=0){
          $concat .= " AND id_municipio = {$municipioid}";
        }
-       $concat .= " AND ciclo = '{$ciclonomb}'";
+
+       if($ciclonomb='2018-2019-INICIO'){
+       		$concat .= " AND ciclo = 'INICIO-2018-2019'";
+       }else{
+       		$concat .= " AND ciclo = '{$ciclonomb}'";
+       }
+       
 
 			$query = "
       SELECT
@@ -365,7 +372,13 @@ class Estadistica_model extends CI_Model {
        if($municipioid!="0" || $municipioid!=0){
          $concat .= " AND id_municipio = {$municipioid}";
        }
-       $concat .= " AND ciclo = '{$ciclonomb}'";
+
+        if($ciclonomb='2018-2019-INICIO'){
+       		$concat .= " AND ciclo = 'INICIO-2018-2019'";
+       }else{
+       		$concat .= " AND ciclo = '{$ciclonomb}'";
+       }
+       
 
 			$query = "
       SELECT
@@ -499,7 +512,13 @@ class Estadistica_model extends CI_Model {
        if($municipioid!="0" || $municipioid!=0){
          $concat .= " AND id_municipio = {$municipioid}";
        }
-       $concat .= " AND ciclo = '{$ciclonomb}'";
+
+        if($ciclonomb='2018-2019-INICIO'){
+       		$concat .= " AND ciclo = 'INICIO-2018-2019'";
+       }else{
+       		$concat .= " AND ciclo = '{$ciclonomb}'";
+       }
+
 
 			$query = "
       SELECT
@@ -655,7 +674,13 @@ class Estadistica_model extends CI_Model {
        if($municipioid!="0" || $municipioid!=0){
          $concat .= " AND id_municipio = {$municipioid}";
        }
-       $concat .= " AND ciclo = '{$ciclonomb}'";
+
+       if($ciclonomb='2018-2019-INICIO'){
+       		$concat .= " AND ciclo = 'INICIO-2018-2019'";
+       }else{
+       		$concat .= " AND ciclo = '{$ciclonomb}'";
+       }
+
 
 			$query = "
       SELECT
@@ -785,7 +810,14 @@ class Estadistica_model extends CI_Model {
       if($municipioid!="0" || $municipioid!=0){
         $concat .= " AND id_municipio = {$municipioid}";
       }
-      $concat .= " AND ciclo = '{$ciclonomb}'";
+
+       if($ciclonomb='2018-2019-INICIO'){
+       		$concat .= " AND ciclo = 'INICIO-2018-2019'";
+       }else{
+       		$concat .= " AND ciclo = '{$ciclonomb}'";
+       }
+
+
 
      $query = "
      SELECT
@@ -945,7 +977,13 @@ class Estadistica_model extends CI_Model {
       if($municipioid!="0" || $municipioid!=0){
         $concat .= " AND id_municipio = {$municipioid}";
       }
-      $concat .= " AND ciclo = '{$ciclonomb}'";
+
+       if($ciclonomb='2018-2019-INICIO'){
+       		$concat .= " AND ciclo = 'INICIO-2018-2019'";
+       }else{
+       		$concat .= " AND ciclo = '{$ciclonomb}'";
+       }
+  
 
      $query = "
      SELECT
@@ -1092,7 +1130,7 @@ class Estadistica_model extends CI_Model {
      elseif ($ciclonomb=="2017-2018"){
         $concat .=  " AND Ciclo_escolar = 'Inicio_2016-2017'";
       }
-      elseif ($ciclonomb=="2018-2019"){
+      elseif ($ciclonomb=="2018-2019-INICIO"){
         $concat .=  " AND Ciclo_escolar = 'Inicio_2016-2017'";
       }
 
@@ -1132,6 +1170,10 @@ class Estadistica_model extends CI_Model {
     elseif ($ciclonomb=="2017-2018"){
         $concat .=  " AND Ciclo_escolar = 'Inicio_2015-2016'";
       }
+
+    elseif ($ciclonomb=="2018-2019-INICIO"){
+        $concat .=  " AND Ciclo_escolar = 'Inicio_2015-2016'";
+     }
 
 
    $query = "
@@ -1173,6 +1215,9 @@ WHERE id_municip=$municipioid
      $concat .= " AND Periodo = '15_16'";
    }
    elseif ($ciclonomb=="2017-2018"){
+        $concat .=  " AND Periodo = '15_16'";
+      }
+    elseif ($ciclonomb=="2018-2019-INICIO"){
         $concat .=  " AND Periodo = '15_16'";
       }
 
@@ -1344,10 +1389,10 @@ function get_llenado_tabla8($municipioid, $municipionomb, $nivelid, $nivelnomb, 
 
 function getciclo_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
 {
- $query = "
- SELECT DISTINCT ciclo FROM estadistica_e_indicadoresxesc
- WHERE num_nivel='".$nivelid."' AND sostenimiento_desagregado='".$sostenimientoid."' AND num_zona_escolar='".$num_ze."' AND cct_zona_escolar='".$cct_ze."'
- ";
+ $query = "SELECT DISTINCT if(ciclo='INICIO-2018-2019','2018-2019-INICIO',ciclo)ciclo FROM estadistica_e_indicadoresxesc
+ 	WHERE num_nivel='".$nivelid."' AND sostenimiento_desagregado='".$sostenimientoid."'
+ 	 AND num_zona_escolar='".$num_ze."' AND cct_zona_escolar='".$cct_ze."'
+     and ciclo!='2014-2015-FIN' and ciclo!='2015-2016-FIN' and ciclo!='FIN-2017-2018'";
  return $this->db->query($query)->result_array();
 }// getciclo_ze()
 
@@ -1770,8 +1815,8 @@ function get_llenado_tabla2_0_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
  'Para Trabajadores','Telesecundaria','No Escolarizada','Indígena','CONAFE (COMUNITARIA)','Bachillerato General',
  'Bachillerato Tecnológico','Profesional Técnico','Universitaria','Normal')
  ";
- echo $query;
- die();
+ // echo $query;
+ // die();
  return $this->db->query($query)->result_array();
 }// get_llenado_tabla2_0_ze()
 

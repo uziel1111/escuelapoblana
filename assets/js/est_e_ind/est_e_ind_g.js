@@ -973,7 +973,7 @@ function EsteIndGen(){
             concat = "2016-2017";
           break;
 
-          case 'INICIO-2018-2019': 
+          case '2018-2019-INICIO': 
             concat = "2016-2017";
           break;
 
@@ -1034,7 +1034,7 @@ function EsteIndGen(){
             concat = "2016-2017";
           break;
 
-          case 'INICIO-2018-2019': 
+          case '2018-2019-INICIO': 
             concat = "2016-2017";
           break;
 
