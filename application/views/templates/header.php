@@ -269,7 +269,7 @@ BODY{
                                         <!-- href="http://spdpuebla.net/" target="_blank"-->
                                         <!-- href="http://escuelapoblana.org/escuelas_particulares/"-->
                                         <!-- href="<?php echo site_url('supervision/index'); ?>"-->
-                                        <li><a >Servicio Profesional Docente</a></li>
+                                        <li><a href="http://sep.puebla.gob.mx/2019-02-19-17-24-35/servicio-profesional-docente" target="_blank">Servicio Profesional Docente</a></li>
                                         <li><a  >Supervisión</a></li>
                                         <li><a  >Escuelas  particulares</a></li>
                                         <!-- http://escuelapoblana.org/escuelas_particulares/ -->
