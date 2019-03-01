@@ -11,7 +11,7 @@ class Estadistica_model extends CI_Model {
        $str_query = "SELECT m.id_municipio, m.nombre_municipio FROM estadistica_e_indicadoresxesc m WHERE m.nombre_municipio !='SAN ANTONIO CA?ADA' AND m.nombre_municipio !='CA?ADA MORELOS'GROUP BY m.nombre_municipio";
      	//querys nuevos
      	//Eloisa HA.
-     	// $str_query="SELECT id_municipio, nombre_municipio from municipio group by nombre_municipio"; 
+     	// $str_query="SELECT id_municipio, nombre_municipio from municipio group by nombre_municipio";
        return $this->db->query($str_query)->result_array();
      }// get_all_municipio_ei()
 
@@ -37,7 +37,7 @@ class Estadistica_model extends CI_Model {
      {
 
 
-			$query = "SELECT DISTINCT num_zona_escolar 
+			$query = "SELECT DISTINCT num_zona_escolar
 			FROM estadistica_e_indicadoresxesc
       		WHERE num_zona_escolar!='No aplica zona escolar' AND num_zona_escolar!='Zona sin asignar'
       		AND cct_zona_escolar!='No aplica zona escolar' AND cct_zona_escolar!='Zona sin asignar' AND cct_zona_escolar!=''
@@ -70,7 +70,7 @@ class Estadistica_model extends CI_Model {
        // 					WHERE n.nombre_nivel!='CAPACITACION PARA EL TRABAJO' AND n.nombre_nivel!='ADULTOS'
      		// 			GROUP BY n.id_nivel";
 		}else{
-			$query = "SELECT num_nivel ,nivel FROM estadistica_e_indicadoresxesc 
+			$query = "SELECT num_nivel ,nivel FROM estadistica_e_indicadoresxesc
 					WHERE id_municipio=".$id_municipio." AND nivel!='CAPACITACION PARA EL TRABAJO' and num_nivel!=0
 					AND nivel!='ADULTOS' GROUP BY num_nivel";
 			//nuevo query
@@ -115,14 +115,14 @@ class Estadistica_model extends CI_Model {
    			$concat .= " AND num_nivel = {$id_nivel}";
    		}
 
-			$query = "SELECT sostenimiento 
-					FROM estadistica_e_indicadoresxesc 
+			$query = "SELECT sostenimiento
+					FROM estadistica_e_indicadoresxesc
 					WHERE 1= 1 {$concat}
       				GROUP BY sostenimiento";
    			//query nuevo Eloisa HA.
    			// $query="SELECT s.nombre_sostenimiento sostenimiento from escuela e
    			// 		inner join sostenimiento s on s.id_sostenimiento=e.id_sostenimiento
-   			// 		where 1=1 {$concat} 
+   			// 		where 1=1 {$concat}
    			// 		group by s.nombre_sostenimiento";
 
       return $this->db->query($query)->result_array();
@@ -133,10 +133,10 @@ class Estadistica_model extends CI_Model {
        	$concat = "";
    		$concat .= " AND num_nivel = {$id_nivel}";
 
-		$query = "SELECT sostenimiento_desagregado 
-				FROM estadistica_e_indicadoresxesc 
-				WHERE 1= 1 {$concat} AND num_zona_escolar!='No aplica zona escolar' 
-				AND num_zona_escolar!='Zona sin asignar' AND cct_zona_escolar!='No aplica zona escolar' 
+		$query = "SELECT sostenimiento_desagregado
+				FROM estadistica_e_indicadoresxesc
+				WHERE 1= 1 {$concat} AND num_zona_escolar!='No aplica zona escolar'
+				AND num_zona_escolar!='Zona sin asignar' AND cct_zona_escolar!='No aplica zona escolar'
 				AND cct_zona_escolar!='Zona sin asignar' AND cct_zona_escolar!=''
       			GROUP BY sostenimiento_desagregado";
    		// $query="SELECT s.nombre_sostenimiento sostenimiento_desagregado from escuela e
@@ -163,7 +163,7 @@ class Estadistica_model extends CI_Model {
 		$query = "SELECT modalidad FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat}
       				GROUP BY modalidad";
 			// nuevo query Eloisa HA.
-      	// $query="SELECT m.nombre_modalidad modalidad 
+      	// $query="SELECT m.nombre_modalidad modalidad
       	// 		from escuela e
       	// 		inner join modalidad m on m.id_modalidad=e.id_modalidad
       	// 		inner join sostenimiento s on s.id_sostenimiento=e.id_sostenimiento
@@ -191,11 +191,11 @@ class Estadistica_model extends CI_Model {
    			$concat .= " AND modalidad = '{$id_modalidad}'";
    		}
 
-			$query = "SELECT if(ciclo='INICIO-2018-2019','2018-2019-INICIO',ciclo)ciclo 
-						FROM estadistica_e_indicadoresxesc 
+			$query = "SELECT if(ciclo='INICIO-2018-2019','2018-2019-INICIO',ciclo)ciclo
+						FROM estadistica_e_indicadoresxesc
 						WHERE 1= 1 {$concat} and ciclo!='FIN-2017-2018'
 					 	and ciclo!='2015-2016-FIN' and ciclo!='2014-2015-FIN'
-					GROUP BY ciclo";
+					GROUP BY if(ciclo='INICIO-2018-2019','2018-2019-INICIO',ciclo)";
    			// nuevo query Eloisa HA.
    			// $query="SELECT ciclo FROM estadistica_e_indicadoresxesc
    			// 	";
@@ -217,7 +217,7 @@ class Estadistica_model extends CI_Model {
        }else{
        		$concat .= " AND ciclo = '{$ciclonomb}'";
        }
-       
+
 
 			$query = "
       SELECT
@@ -383,7 +383,7 @@ class Estadistica_model extends CI_Model {
        }else{
        		$concat .= " AND ciclo = '{$ciclonomb}'";
        }
-       
+
 
 			$query = "
       SELECT
@@ -996,7 +996,7 @@ class Estadistica_model extends CI_Model {
        }else{
        		$concat .= " AND ciclo = '{$ciclonomb}'";
        }
-  
+
 
      $query = "
      SELECT
