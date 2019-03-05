@@ -342,7 +342,7 @@ class Escuela_model extends CI_Model {
                   FROM estadistica_e_indicadoresxesc
                   WHERE escuela='".$global_claveCT."'
                   AND id_turno ='".$id_turno_global."'
-                  AND ciclo='2017-2018'
+                  AND (ciclo='2018-2019-INICIO' or ciclo='INICIO-2018-2019')
                   ";
                   //  echo $query_e; die();
                   // $result_e = $obj_db->select($query_e);
@@ -1716,7 +1716,7 @@ class Escuela_model extends CI_Model {
                               <div id='containerRPB03ete'></div>
                               <center>
                               <div class='tooltip2' style='cursor:default; font-size:1.5em;'>  Eficiencia Terminal Efectiva
-                                <span class='tooltiptext2'><p>Porcentaje de alumnos egresados  con aprendizajes suficientes.</p><i>- (SEP)</i></span>
+                                <span class='tooltiptext2'><p>Porcentaje de alumnos egresados con aprendizajes suficientes.</p><i>- (SEP)</i></span>
                               </div>
                               </center>
                               </div>
