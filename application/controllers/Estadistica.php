@@ -543,14 +543,14 @@ $result = $this->Estadistica_model->get_llenado_tabla2_0($municipioid, $municipi
 
 		}
 
-				$html .= '<td id="show">'.number_format($row['Cant_docentes_M']).'</td>
-					<td id="show">'.number_format($row['Cant_docentes_H']).'</td>
+				$html .= '<td id="show">'.number_format($row['Cant_docentes_H']).'</td>
+					<td id="show">'.number_format($row['Cant_docentes_M']).'</td>
 					<td id="show">'.number_format($row['Cant_docentes_T']).'</td>
-					<td id="show">'.number_format($row['Cant_directivos_con_grupo_M']).'</td>
 					<td id="show">'.number_format($row['Cant_directivos_con_grupo_H']).'</td>
+					<td id="show">'.number_format($row['Cant_directivos_con_grupo_M']).'</td>
 					<td id="show">'.number_format($row['Cant_directivos_con_grupo_T']).'</td>
-					<td id="show">'.number_format($row['Cant_directivos_sin_grupo_M']).'</td>
 					<td id="show">'.number_format($row['Cant_directivos_sin_grupo_H']).'</td>
+					<td id="show">'.number_format($row['Cant_directivos_sin_grupo_M']).'</td>
 					<td id="show">'.number_format($row['Cant_directivos_sin_grupo_T']).'</td>
 				</tr>';
 
@@ -627,14 +627,14 @@ $result = $this->Estadistica_model->get_llenado_tabla2_0($municipioid, $municipi
 							<td id="mis_td" style="text-align: left; background-color: #FFFFFF; padding-left: 65px" id="">'.$row['sub_Sostenimiento'].'</td>';
 
 						}
-								$html .= '<td id="show">'.number_format($row['Cant_docentes_M']).'</td>
-					<td id="show">'.number_format($row['Cant_docentes_H']).'</td>
+								$html .= '<td id="show">'.number_format($row['Cant_docentes_H']).'</td>
+					<td id="show">'.number_format($row['Cant_docentes_M']).'</td>
 					<td id="show">'.number_format($row['Cant_docentes_T']).'</td>
-					<td id="show">'.number_format($row['Cant_directivos_con_grupo_M']).'</td>
 					<td id="show">'.number_format($row['Cant_directivos_con_grupo_H']).'</td>
+					<td id="show">'.number_format($row['Cant_directivos_con_grupo_M']).'</td>
 					<td id="show">'.number_format($row['Cant_directivos_con_grupo_T']).'</td>
-					<td id="show">'.number_format($row['Cant_directivos_sin_grupo_M']).'</td>
 					<td id="show">'.number_format($row['Cant_directivos_sin_grupo_H']).'</td>
+					<td id="show">'.number_format($row['Cant_directivos_sin_grupo_M']).'</td>
 					<td id="show">'.number_format($row['Cant_directivos_sin_grupo_T']).'</td>
 				</tr>';
 
