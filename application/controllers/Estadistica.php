@@ -260,12 +260,14 @@ public function get_llenado_tablas1()
 	$GLOBALS['valor_id_sost']="";
 	$GLOBALS['valor_id_moda']="";
 	$GLOBALS['valor_id_sost']="";
-$GLOBALS['valor_id_sosty']="";
+	$GLOBALS['valor_id_sosty']="";
+
 $html = "";
 $result = $this->Estadistica_model->get_llenado_tabla1_0($municipioid, $municipionomb, $nivelid, $nivelnomb, $sostenimientonomb, $modalidadnomb, $ciclonomb);
 
 
-
+// echo "<pre>";
+// print_r($result);
 
 
 	foreach ($result as $row ) {
@@ -280,6 +282,7 @@ $result = $this->Estadistica_model->get_llenado_tabla1_0($municipioid, $municipi
 				case 'Primaria':  	 	$GLOBALS['valor_id_nivel']="pri"; break;
 				case 'Secundaria': 	 	$GLOBALS['valor_id_nivel']="sec"; break;
 				case 'Media Superior': 	$GLOBALS['valor_id_nivel']="bac"; break;
+
 			}
 
 			$html .= '<tr class="parent" id="'.$GLOBALS['valor_id_nivel'].'">';
@@ -307,7 +310,7 @@ $result = $this->Estadistica_model->get_llenado_tabla1_0($municipioid, $municipi
 
 		}
 		elseif($row['Sostenimiento_X']!=="Total" && $row['Modalidad_X']!="Total")	{
-
+			
 			switch($row['Modalidad_X'])
 			{
 				case 'CAM':     					$GLOBALS['valor_id_moda']="cam"; break;
@@ -324,7 +327,7 @@ $result = $this->Estadistica_model->get_llenado_tabla1_0($municipioid, $municipi
 				case 'Telesecundaria':     			$GLOBALS['valor_id_moda']="tel"; break;
 				case 'No Escolarizada':      		$GLOBALS['valor_id_moda']="nes"; break;
 				case 'Indígena':   					$GLOBALS['valor_id_moda']="ind"; break;
-				case 'CONAFE (COMUNITARIA)':  	 				$GLOBALS['valor_id_moda']="con"; break;
+				case 'CONAFE (COMUNITARIA)':  	 	$GLOBALS['valor_id_moda']="con"; break;
 				case 'Bachillerato General':    	$GLOBALS['valor_id_moda']="bge"; break;
 				case 'Bachillerato Tecnológico':	$GLOBALS['valor_id_moda']="bte"; break;
 				case 'Profesional Técnico':      	$GLOBALS['valor_id_moda']="pte"; break;
@@ -335,6 +338,7 @@ $result = $this->Estadistica_model->get_llenado_tabla1_0($municipioid, $municipi
 
 			$html .= '<tr class="nieto-'.$GLOBALS['valor_id_nivel'].$GLOBALS['valor_id_sost'].' class-hide-'.$GLOBALS['valor_id_nivel'].' hide-ini" id="'.$GLOBALS['valor_id_nivel'].$GLOBALS['valor_id_sost'].$GLOBALS['valor_id_moda'].'">
 			<td id="mis_td" style="text-align: left; background-color: #FFFFFF; padding-left: 45px" id="">'.$row['Modalidad_X'].'</td>';
+
 
 		}
 
@@ -352,7 +356,9 @@ $result = $this->Estadistica_model->get_llenado_tabla1_0($municipioid, $municipi
 	}
 
 	$result = $this->Estadistica_model->get_llenado_tabla1_1($municipioid, $municipionomb, $nivelid, $nivelnomb, $sostenimientonomb, $modalidadnomb, $ciclonomb);
-
+// echo "<pre>";
+// print_r($result);
+// die();
 
 			foreach ($result as $row ) {
 					if (($row['Cant_alumnos_T'])!='') {
@@ -360,7 +366,7 @@ $result = $this->Estadistica_model->get_llenado_tabla1_0($municipioid, $municipi
 
 						if($row['Modalidad_X']=="Total" && $row['Sostenimiento_X']=="Total" && $row['sub_Sostenimiento']=="Total" ) {
 
-							$GLOBALS['valor_id_nivel']="sup";
+							$GLOBALS['valor_id_nivel']="supe";
 
 
 							$html .= '<tr class="parent" id="'.$GLOBALS['valor_id_nivel'].'" title="Click para expander/contraer" style="cursor: pointer;">
@@ -374,6 +380,7 @@ $result = $this->Estadistica_model->get_llenado_tabla1_0($municipioid, $municipi
 								case 'Universitario y Tecnológico': $GLOBALS['valor_id_moda']="uyt"; break;
 								case 'Normal':  					$GLOBALS['valor_id_moda']="nor"; break;
 								case 'Posgrado':   					$GLOBALS['valor_id_moda']="pos"; break;
+								case 'Rectorias':   				$GLOBALS['valor_id_moda']="rec"; break;
 							}
 
 							$html .= '<tr class="child-'.$GLOBALS['valor_id_nivel'].' child-parent hide-ini"
@@ -404,25 +411,29 @@ $result = $this->Estadistica_model->get_llenado_tabla1_0($municipioid, $municipi
 							}
 							else{
 
-							$html .= '<td id="mis_td" style="text-align: left; background-color: #FFFFFF; padding-left: 45px" id="">
-							<span class="chevron_toggleable glyphicon glyphicon-chevron-down"></span
-							>'.$row['Sostenimiento_X'].'
+							// $html .= '<td id="mis_td" style="text-align: left; background-color: #FFFFFF; padding-left: 45px" id="">
+							// <span class="chevron_toggleable glyphicon glyphicon-chevron-down"></span
+							// >'.$row['Sostenimiento_X'].'
+							// </td>';
+								$html .= '<td id="mis_td" style="text-align: left; background-color: #FFFFFF; padding-left: 45px" id="">
+							'.$row['Sostenimiento_X'].'
 							</td>';
-
 
 							}
 						}
 						elseif($row['Sostenimiento_X']=="Público" && $row['sub_Sostenimiento']!="Total")	{
 
-							switch($row['sub_Sostenimiento'])
-							{
-								case 'Estatal':     	$GLOBALS['valor_id_sosty']="est"; break;
-								case 'Federal':      	$GLOBALS['valor_id_sosty']="fed"; break;
-							}
+							// switch($row['sub_Sostenimiento'])
+							// {
+							// 	case 'Estatal':     	$GLOBALS['valor_id_sosty']="est"; break;
+							// 	case 'Federal':      	$GLOBALS['valor_id_sosty']="fed"; break;
+							// }
 
+							// $html .= '<tr class="bisnieto-'.$GLOBALS['valor_id_nivel'].$GLOBALS['valor_id_moda'].$GLOBALS['valor_id_sost'].' class-hide-sup class-hide-'.$GLOBALS['valor_id_nivel'].$GLOBALS['valor_id_moda'].' hide-ini"
+							// 	id="'.$GLOBALS['valor_id_nivel'].$GLOBALS['valor_id_moda'].$GLOBALS['valor_id_sost'].$GLOBALS['valor_id_sosty'].'">
+							// <td id="mis_td" style="text-align: left; background-color: #FFFFFF; padding-left: 65px" id="">'.$row['sub_Sostenimiento'].'</td>';
 							$html .= '<tr class="bisnieto-'.$GLOBALS['valor_id_nivel'].$GLOBALS['valor_id_moda'].$GLOBALS['valor_id_sost'].' class-hide-sup class-hide-'.$GLOBALS['valor_id_nivel'].$GLOBALS['valor_id_moda'].' hide-ini"
-								id="'.$GLOBALS['valor_id_nivel'].$GLOBALS['valor_id_moda'].$GLOBALS['valor_id_sost'].$GLOBALS['valor_id_sosty'].'">
-							<td id="mis_td" style="text-align: left; background-color: #FFFFFF; padding-left: 65px" id="">'.$row['sub_Sostenimiento'].'</td>';
+								id="'.$GLOBALS['valor_id_nivel'].$GLOBALS['valor_id_moda'].$GLOBALS['valor_id_sost'].'">';
 
 						}
 								$html .= '<td id="show">'.number_format($row['Cant_alumnos_M']).'</td>
@@ -606,9 +617,12 @@ $result = $this->Estadistica_model->get_llenado_tabla2_0($municipioid, $municipi
 							}
 							else{
 
-							$html .= '<td id="mis_td" style="text-align: left; background-color: #FFFFFF; padding-left: 45px" id="">
-							<span class="chevron_toggleable glyphicon glyphicon-chevron-down"></span
-							>'.$row['Sostenimiento_X'].'
+							// $html .= '<td id="mis_td" style="text-align: left; background-color: #FFFFFF; padding-left: 45px" id="">
+							// <span class="chevron_toggleable glyphicon glyphicon-chevron-down"></span
+							// >'.$row['Sostenimiento_X'].'
+							// </td>';
+								$html .= '<td id="mis_td" style="text-align: left; background-color: #FFFFFF; padding-left: 45px" id="">
+							'.$row['Sostenimiento_X'].'
 							</td>';
 
 
@@ -809,11 +823,13 @@ $result = $this->Estadistica_model->get_llenado_tabla3_0($municipioid, $municipi
 							}
 							else{
 
-							$html .= '<td id="mis_td" style="text-align: left; background-color: #FFFFFF; padding-left: 45px" id="">
-							<span class="chevron_toggleable glyphicon glyphicon-chevron-down"></span
-							>'.$row['Sostenimiento_X'].'
+							// $html .= '<td id="mis_td" style="text-align: left; background-color: #FFFFFF; padding-left: 45px" id="">
+							// <span class="chevron_toggleable glyphicon glyphicon-chevron-down"></span
+							// >'.$row['Sostenimiento_X'].'
+							// </td>';
+								$html .= '<td id="mis_td" style="text-align: left; background-color: #FFFFFF; padding-left: 45px" id="">
+							'.$row['Sostenimiento_X'].'
 							</td>';
-
 
 							}
 						}
@@ -1320,6 +1336,7 @@ $result = $this->Estadistica_model->get_llenado_tabla1_0_ze($nivelid, $sostenimi
 		}
 		elseif ($row['Sostenimiento_X']!=="Total" && $row['Modalidad_X']=="Total") {
 
+
 			switch($row['Sostenimiento_X'])
 			{
 				case 'Público':   $GLOBALS['valor_id_sost']="pub"; break;
@@ -1356,6 +1373,7 @@ $result = $this->Estadistica_model->get_llenado_tabla1_0_ze($nivelid, $sostenimi
 				case 'Universitaria':   			$GLOBALS['valor_id_moda']="uni"; break;
 				case 'Normal':  	 				$GLOBALS['valor_id_moda']="nor"; break;
 				case 'Administrativo':      	$GLOBALS['valor_id_moda']="adm"; break;
+				case 'Rectorias':      	$GLOBALS['valor_id_moda']="rec"; break;
 			}
 
 			$html .= '<tr class="nieto-'.$GLOBALS['valor_id_nivel'].$GLOBALS['valor_id_sost'].' class-hide-'.$GLOBALS['valor_id_nivel'].' hide-ini" id="'.$GLOBALS['valor_id_nivel'].$GLOBALS['valor_id_sost'].$GLOBALS['valor_id_moda'].'">
@@ -1378,27 +1396,25 @@ $result = $this->Estadistica_model->get_llenado_tabla1_0_ze($nivelid, $sostenimi
 
 	$result = $this->Estadistica_model->get_llenado_tabla1_1_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze);
 
-
 			foreach ($result as $row ) {
 					if (($row['Cant_alumnos_T'])!='') {
 
-
 						if($row['Modalidad_X']=="Total" && $row['Sostenimiento_X']=="Total" && $row['sub_Sostenimiento']=="Total" ) {
-
+							// echo "en la linea 1403";
 							$GLOBALS['valor_id_nivel']="sup";
-
 
 							$html .= '<tr class="parent" id="'.$GLOBALS['valor_id_nivel'].'" title="Click para expander/contraer" style="cursor: pointer;">
 							<td id="mis_td" style="text-align: left; background-color: #FFFFFF" id=""><span class="chevron_toggleable glyphicon glyphicon-chevron-down"></span>'.$row['Nivel_X'].'</td>';
 
 						}
 						elseif ($row['Modalidad_X']!=="Total" && $row['Sostenimiento_X']=="Total"  && $row['sub_Sostenimiento']=="Total") {
-
+							// echo "en la linea 1413";
 							switch($row['Modalidad_X'])
 							{
 								case 'Universitario y Tecnológico': $GLOBALS['valor_id_moda']="uyt"; break;
 								case 'Normal':  					$GLOBALS['valor_id_moda']="nor"; break;
 								case 'Posgrado':   					$GLOBALS['valor_id_moda']="pos"; break;
+								case 'Rectorias':   				$GLOBALS['valor_id_moda']="rec"; break;
 							}
 
 							$html .= '<tr class="child-'.$GLOBALS['valor_id_nivel'].' child-parent hide-ini"
@@ -1408,7 +1424,7 @@ $result = $this->Estadistica_model->get_llenado_tabla1_0_ze($nivelid, $sostenimi
 								'.$row['Modalidad_X'].'</td>';
 						}
 						elseif ($row['Sostenimiento_X']!="Total"  && $row['sub_Sostenimiento']=="Total") {
-
+							// echo "en la linea 1428";
 							switch($row['Sostenimiento_X'])
 							{
 								case 'Público':   $GLOBALS['valor_id_sost']="pub"; break;
@@ -1419,35 +1435,37 @@ $result = $this->Estadistica_model->get_llenado_tabla1_0_ze($nivelid, $sostenimi
 							$html .= '<tr class="nieto-'.$GLOBALS['valor_id_nivel'].$GLOBALS['valor_id_moda'].' child-nieto class-hide-sup hide-ini"
 								id="'.$GLOBALS['valor_id_nivel'].$GLOBALS['valor_id_moda'].$GLOBALS['valor_id_sost'].'"
 								title="Click para expander/contraer" style="cursor: pointer;">';
-
-							if($row['Sostenimiento_X']=='Autónomo' || $row['Sostenimiento_X']=='Privado' ){
+								
+							if($row['Sostenimiento_X']=='Autónomo' || $row['Sostenimiento_X']=='Privado'){
 
 							$html .= '<td id="mis_td" style="text-align: left; background-color: #FFFFFF; padding-left: 45px" id="">
-							'.$row['Sostenimiento_X'].'
-							</td>';
+							'.$row['Sostenimiento_X'].'</td>';
 
 							}
 							else{
-
+								// echo "en la linea 1447";
 							$html .= '<td id="mis_td" style="text-align: left; background-color: #FFFFFF; padding-left: 45px" id="">
 							<span class="chevron_toggleable glyphicon glyphicon-chevron-down"></span
-							>'.$row['Sostenimiento_X'].'
-							</td>';
-
+							>'.$row['Sostenimiento_X'].'</td>';
+							// 	$html .= '<td id="mis_td" style="text-align: left; background-color: #FFFFFF; padding-left: 45px" id="">
+							// '.$row['Sostenimiento_X'].'
+							// </td>';
 
 							}
 						}
 						elseif($row['Sostenimiento_X']=="Público" && $row['sub_Sostenimiento']!="Total")	{
+							// echo "en la linea 1459";
+							// switch($row['sub_Sostenimiento'])
+							// {
+							// 	case 'Estatal':     	$GLOBALS['valor_id_sosty']="est"; break;
+							// 	case 'Federal':      	$GLOBALS['valor_id_sosty']="fed"; break;
+							// }
 
-							switch($row['sub_Sostenimiento'])
-							{
-								case 'Estatal':     	$GLOBALS['valor_id_sosty']="est"; break;
-								case 'Federal':      	$GLOBALS['valor_id_sosty']="fed"; break;
-							}
-
+							// $html .= '<tr class="bisnieto-'.$GLOBALS['valor_id_nivel'].$GLOBALS['valor_id_moda'].$GLOBALS['valor_id_sost'].' class-hide-sup class-hide-'.$GLOBALS['valor_id_nivel'].$GLOBALS['valor_id_moda'].' hide-ini"
+							// 	id="'.$GLOBALS['valor_id_nivel'].$GLOBALS['valor_id_moda'].$GLOBALS['valor_id_sost'].$GLOBALS['valor_id_sosty'].'">
+							// <td id="mis_td" style="text-align: left; background-color: #FFFFFF; padding-left: 65px" id="">'.$row['sub_Sostenimiento'].'</td>';
 							$html .= '<tr class="bisnieto-'.$GLOBALS['valor_id_nivel'].$GLOBALS['valor_id_moda'].$GLOBALS['valor_id_sost'].' class-hide-sup class-hide-'.$GLOBALS['valor_id_nivel'].$GLOBALS['valor_id_moda'].' hide-ini"
-								id="'.$GLOBALS['valor_id_nivel'].$GLOBALS['valor_id_moda'].$GLOBALS['valor_id_sost'].$GLOBALS['valor_id_sosty'].'">
-							<td id="mis_td" style="text-align: left; background-color: #FFFFFF; padding-left: 65px" id="">'.$row['sub_Sostenimiento'].'</td>';
+								id="'.$GLOBALS['valor_id_nivel'].$GLOBALS['valor_id_moda'].$GLOBALS['valor_id_sost'].'">';
 
 						}
 								$html .= '<td id="show">'.number_format($row['Cant_alumnos_M']).'</td>
@@ -1462,10 +1480,6 @@ $result = $this->Estadistica_model->get_llenado_tabla1_0_ze($nivelid, $sostenimi
 							</tr>';
 						}
 					}
-
-
-
-
 
 	$response = array(
 	'status' => 'OK',

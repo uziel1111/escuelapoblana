@@ -8,7 +8,7 @@ class Estadistica_model extends CI_Model {
 
      function get_all_municipio_ei()
      {
-       $str_query = "SELECT m.id_municipio, m.nombre_municipio FROM estadistica_e_indicadoresxesc m WHERE m.nombre_municipio !='SAN ANTONIO CA?ADA' AND m.nombre_municipio !='CA?ADA MORELOS'GROUP BY m.nombre_municipio";
+       $str_query = "SELECT m.id_municipio, m.nombre_municipio FROM temp_estadistica m WHERE m.nombre_municipio !='SAN ANTONIO CA?ADA' AND m.nombre_municipio !='CA?ADA MORELOS'GROUP BY m.nombre_municipio";
      	//querys nuevos
      	//Eloisa HA.
      	// $str_query="SELECT id_municipio, nombre_municipio from municipio group by nombre_municipio";
@@ -19,7 +19,7 @@ class Estadistica_model extends CI_Model {
      {
 
 
-		$query = "SELECT DISTINCT cct_zona_escolar FROM estadistica_e_indicadoresxesc
+		$query = "SELECT DISTINCT cct_zona_escolar FROM temp_estadistica
       				WHERE cct_zona_escolar!='No aplica zona escolar' AND cct_zona_escolar!='Zona sin asignar'
       				 AND num_nivel='".$nivelid."'  AND sostenimiento_desagregado='".$sostenimientoid."' AND num_zona_escolar='".$num_ze."' ";
      	// $query="SELECT s.cct_supervision cct_zona_escolar from escuela e
@@ -38,7 +38,7 @@ class Estadistica_model extends CI_Model {
 
 
 			$query = "SELECT DISTINCT num_zona_escolar
-			FROM estadistica_e_indicadoresxesc
+			FROM temp_estadistica
       		WHERE num_zona_escolar!='No aplica zona escolar' AND num_zona_escolar!='Zona sin asignar'
       		AND cct_zona_escolar!='No aplica zona escolar' AND cct_zona_escolar!='Zona sin asignar' AND cct_zona_escolar!=''
       		AND num_nivel='".$nivelid."' AND sostenimiento_desagregado='".$sostenimientoid."'
@@ -60,7 +60,7 @@ class Estadistica_model extends CI_Model {
      {
 
        	if($id_municipio==0){
-			$query = "SELECT num_nivel ,nivel FROM estadistica_e_indicadoresxesc
+			$query = "SELECT num_nivel ,nivel FROM temp_estadistica
        					WHERE nivel!='CAPACITACION PARA EL TRABAJO' AND nivel!='ADULTOS' and num_nivel!=0
      					GROUP BY num_nivel";
        		//nuevo query
@@ -70,7 +70,7 @@ class Estadistica_model extends CI_Model {
        // 					WHERE n.nombre_nivel!='CAPACITACION PARA EL TRABAJO' AND n.nombre_nivel!='ADULTOS'
      		// 			GROUP BY n.id_nivel";
 		}else{
-			$query = "SELECT num_nivel ,nivel FROM estadistica_e_indicadoresxesc
+			$query = "SELECT num_nivel ,nivel FROM temp_estadistica
 					WHERE id_municipio=".$id_municipio." AND nivel!='CAPACITACION PARA EL TRABAJO' and num_nivel!=0
 					AND nivel!='ADULTOS' GROUP BY num_nivel";
 			//nuevo query
@@ -90,7 +90,7 @@ class Estadistica_model extends CI_Model {
      function getNiveles_ze()
      {
 
-		$query = "SELECT num_nivel ,nivel FROM estadistica_e_indicadoresxesc
+		$query = "SELECT num_nivel ,nivel FROM temp_estadistica
 					WHERE num_nivel!=1 AND num_nivel!=2 and num_nivel!=0 AND nivel!='CAPACITACION PARA EL TRABAJO' AND nivel!='ADULTOS'
       				GROUP BY num_nivel";
      	//query nuevo Eloisa HA
@@ -116,7 +116,7 @@ class Estadistica_model extends CI_Model {
    		}
 
 			$query = "SELECT sostenimiento
-					FROM estadistica_e_indicadoresxesc
+					FROM temp_estadistica
 					WHERE 1= 1 {$concat}
       				GROUP BY sostenimiento";
    			//query nuevo Eloisa HA.
@@ -134,7 +134,7 @@ class Estadistica_model extends CI_Model {
    		$concat .= " AND num_nivel = {$id_nivel}";
 
 		$query = "SELECT sostenimiento_desagregado
-				FROM estadistica_e_indicadoresxesc
+				FROM temp_estadistica
 				WHERE 1= 1 {$concat} AND num_zona_escolar!='No aplica zona escolar'
 				AND num_zona_escolar!='Zona sin asignar' AND cct_zona_escolar!='No aplica zona escolar'
 				AND cct_zona_escolar!='Zona sin asignar' AND cct_zona_escolar!=''
@@ -160,7 +160,7 @@ class Estadistica_model extends CI_Model {
    			$concat .= " AND sostenimiento = '{$id_sostenimiento}'";
    		}
 
-		$query = "SELECT modalidad FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat}
+		$query = "SELECT modalidad FROM temp_estadistica WHERE 1= 1 {$concat}
       				GROUP BY modalidad";
 			// nuevo query Eloisa HA.
       	// $query="SELECT m.nombre_modalidad modalidad
@@ -192,12 +192,12 @@ class Estadistica_model extends CI_Model {
    		}
 
 			$query = "SELECT if(ciclo='INICIO-2018-2019','2018-2019-INICIO',ciclo)ciclo
-						FROM estadistica_e_indicadoresxesc
+						FROM temp_estadistica
 						WHERE 1= 1 {$concat} and ciclo!='FIN-2017-2018'
 					 	and ciclo!='2015-2016-FIN' and ciclo!='2014-2015-FIN'
 					GROUP BY if(ciclo='INICIO-2018-2019','2018-2019-INICIO',ciclo)";
    			// nuevo query Eloisa HA.
-   			// $query="SELECT ciclo FROM estadistica_e_indicadoresxesc
+   			// $query="SELECT ciclo FROM temp_estadistica
    			// 	";
 			// echo $query;
 			// die();
@@ -212,13 +212,9 @@ class Estadistica_model extends CI_Model {
          $concat .= " AND id_municipio = {$municipioid}";
        }
 
-       if($ciclonomb='2018-2019-INICIO'){
-       		$concat .= " AND ciclo = 'INICIO-2018-2019'";
-       }else{
+       
        		$concat .= " AND ciclo = '{$ciclonomb}'";
-       }
-
-
+       
 			$query = "
       SELECT
 				CASE nivel	 WHEN 'AYAYAI' THEN 'Total' ELSE 'Total (todos los niveles)' END AS Nivel_X,
@@ -233,7 +229,7 @@ class Estadistica_model extends CI_Model {
 				SUM(t4) AS Cant_alumnos_4_T,
 				SUM(t5) AS Cant_alumnos_5_T,
 				SUM(t6) AS Cant_alumnos_6_T
-			FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat}
+			FROM temp_estadistica WHERE 1= 1 {$concat}
 			UNION ALL
 			SELECT
 				CASE nivel
@@ -263,7 +259,7 @@ class Estadistica_model extends CI_Model {
 				SUM(t4) AS Cant_alumnos_4_T,
 				SUM(t5) AS Cant_alumnos_5_T,
 				SUM(t6) AS Cant_alumnos_6_T
-			FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
+			FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
 			GROUP BY nivel, sostenimiento
 			UNION ALL
 			SELECT
@@ -290,7 +286,7 @@ class Estadistica_model extends CI_Model {
 				SUM(t4) AS Cant_alumnos_4_T,
 				SUM(t5) AS Cant_alumnos_5_T,
 				SUM(t6) AS Cant_alumnos_6_T
-			FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
+			FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
 			GROUP BY nivel
 			UNION ALL
 			SELECT
@@ -346,7 +342,7 @@ class Estadistica_model extends CI_Model {
         WHEN 'TECNICA' 			THEN 'Técnica'
         WHEN 'COMUNITARIO' 			THEN 'Comunitario'
         WHEN 'ADMINISTRATIVO' 			THEN 'Administrativo'
-        WHEN 'RECTORIA' 			THEN 'Rectoria'
+        WHEN 'RECTORIAS' 			THEN 'Rectorias'
 					ELSE modalidad
 				END AS Modalidad_X,
 				SUM(t_mujeres_alumnos)   AS Cant_alumnos_M,
@@ -358,13 +354,13 @@ class Estadistica_model extends CI_Model {
 				SUM(t4) AS Cant_alumnos_4_T,
 				SUM(t5) AS Cant_alumnos_5_T,
 				SUM(t6) AS Cant_alumnos_6_T
-			FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
+			FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
 			GROUP BY nivel, sostenimiento, modalidad
 			ORDER BY FIELD(Nivel_X,'Especial','Inicial','Preescolar','Primaria','Secundaria','Media Superior','Superior', 'Capacitacion para el trabajo', 'Adultos'),
 			FIELD(Sostenimiento_X,'Público','Autónomo','Privado'),
 			FIELD(Modalidad_X,'Total','CAM','USAER','CENDI','Escolarizada','General','Tecnica','Técnica Industrial','Técnica Agropecuaria',
 			'Para Trabajadores','Telesecundaria','No Escolarizada','Inicial No Escolarizada','Inicial Escolarizada','Indígena','CONAFE (COMUNITARIA)','CONAFE','ND','Bachillerato General',
-			'Bachillerato Tecnológico','Profesional Técnico','Universitaria','Normal','Comunitario','Para adultos', 'Administrativo')
+			'Bachillerato Tecnológico','Profesional Técnico','Universitaria','Normal','Comunitario','Para adultos', 'Administrativo','Rectorias')
 			";
       // echo $query;
       // die();
@@ -378,11 +374,9 @@ class Estadistica_model extends CI_Model {
          $concat .= " AND id_municipio = {$municipioid}";
        }
 
-        if($ciclonomb='2018-2019-INICIO'){
-       		$concat .= " AND ciclo = 'INICIO-2018-2019'";
-       }else{
+        
        		$concat .= " AND ciclo = '{$ciclonomb}'";
-       }
+
 
 
 			$query = "
@@ -400,7 +394,7 @@ class Estadistica_model extends CI_Model {
 				SUM(t4) AS Cant_alumnos_4_T,
 				SUM(t5) AS Cant_alumnos_5_T,
 				SUM(t6) AS Cant_alumnos_6_T
-			FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
+			FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
 			UNION ALL
 			SELECT
 				CASE nivel
@@ -419,6 +413,7 @@ class Estadistica_model extends CI_Model {
 					WHEN 'TECNOLOGICO' THEN 'Universitario y Tecnológico'
 					WHEN 'NORMAL' 	THEN 'Normal'
 					WHEN 'POSGRADO' THEN 'Posgrado'
+          WHEN 'RECTORIAS' THEN 'Rectorias'
 				END AS Modalidad_X,
 				CASE sostenimiento WHEN 'AYAYAI' THEN 'Total'	ELSE 'Total' END AS Sostenimiento_X,
 				CASE sostenimiento_desagregado WHEN 'AYAYAI' THEN 'Total'	ELSE 'Total' END AS sub_Sostenimiento,
@@ -431,7 +426,7 @@ class Estadistica_model extends CI_Model {
 				SUM(t4) AS Cant_alumnos_4_T,
 				SUM(t5) AS Cant_alumnos_5_T,
 				SUM(t6) AS Cant_alumnos_6_T
-			FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
+			FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
 			GROUP BY nivel, modalidad
 			UNION ALL
 			SELECT
@@ -451,6 +446,7 @@ class Estadistica_model extends CI_Model {
 					WHEN 'TECNOLOGICO' THEN 'Universitario y Tecnológico'
 					WHEN 'NORMAL' 	THEN 'Normal'
 					WHEN 'POSGRADO' THEN 'Posgrado'
+          WHEN 'RECTORIAS' THEN 'Rectorias'
 				END AS Modalidad_X,
 				CASE sostenimiento WHEN 'PUBLICO' THEN 'Público' WHEN 'AUTONOMO' THEN 'Autónomo' WHEN 'PRIVADO' THEN 'Privado' END AS Sostenimiento_X,
 				CASE sostenimiento_desagregado WHEN 'AYAYAI' THEN 'Total'	ELSE 'Total' END AS sub_Sostenimiento,
@@ -463,9 +459,9 @@ class Estadistica_model extends CI_Model {
 				SUM(t4) AS Cant_alumnos_4_T,
 				SUM(t5) AS Cant_alumnos_5_T,
 				SUM(t6) AS Cant_alumnos_6_T
-			FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
+			FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
 			GROUP BY nivel, modalidad, sostenimiento
-			UNION ALL
+		/*	UNION ALL
 			SELECT
 				CASE nivel
 					WHEN 'ESPECIAL' 		THEN 'Especial'
@@ -483,11 +479,13 @@ class Estadistica_model extends CI_Model {
 					WHEN 'TECNOLOGICO' THEN 'Universitario y Tecnológico'
 					WHEN 'NORMAL' 	THEN 'Normal'
 					WHEN 'POSGRADO' THEN 'Posgrado'
+          WHEN 'RECTORIAS' THEN 'Rectorias'
 
 				END AS Modalidad_X,
 				CASE sostenimiento WHEN 'PUBLICO' THEN 'Público' WHEN 'AUTONOMO' THEN 'Autónomo' WHEN 'PRIVADO' THEN 'Privado' END AS Sostenimiento_X,
 				CASE sostenimiento_desagregado
 					WHEN 'ESTATAL'	THEN 'Estatal'
+          WHEN 'RECTORIAS'  THEN 'Rectorias'
 					ELSE 'Federal'
 				END AS sub_Sostenimiento,
 				SUM(t_mujeres_alumnos)   AS Cant_alumnos_M,
@@ -499,12 +497,12 @@ class Estadistica_model extends CI_Model {
 				SUM(t4) AS Cant_alumnos_4_T,
 				SUM(t5) AS Cant_alumnos_5_T,
 				SUM(t6) AS Cant_alumnos_6_T
-			FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR' AND sostenimiento='Publico'
-			GROUP BY Nivel_X, Modalidad_X, Sostenimiento_X, sub_Sostenimiento='Estatal'
+			FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR' AND sostenimiento='Publico'
+			GROUP BY Nivel_X, Modalidad_X, Sostenimiento_X, sub_Sostenimiento='Estatal' */
 			ORDER BY FIELD(Nivel_X,'Especial','Inicial','Preescolar','Primaria','Secundaria','Media Superior','Superior'),
-			FIELD(Modalidad_X,'Total','Universitario y Tecnológico','Normal','Posgrado'),
+			FIELD(Modalidad_X,'Total','Universitario y Tecnológico','Normal','Posgrado','Rectorias'),
 			FIELD(Sostenimiento_X,'Total','Público','Autónomo','Privado'),
-			FIELD(sub_Sostenimiento,'Total','Estatal','Federal')
+			FIELD(sub_Sostenimiento,'Total','Estatal','Federal','Rectorias')
 			";
       // echo $query;
       // die();
@@ -518,11 +516,9 @@ class Estadistica_model extends CI_Model {
          $concat .= " AND id_municipio = {$municipioid}";
        }
 
-        if($ciclonomb='2018-2019-INICIO'){
-       		$concat .= " AND ciclo = 'INICIO-2018-2019'";
-       }else{
+        
        		$concat .= " AND ciclo = '{$ciclonomb}'";
-       }
+       
 
 
 			$query = "
@@ -539,7 +535,7 @@ class Estadistica_model extends CI_Model {
 				SUM(directivo_sin_grupo_m) 	AS Cant_directivos_sin_grupo_M,
 				SUM(directivo_sin_grupo_h) 	AS Cant_directivos_sin_grupo_H,
 				SUM(t_directivo_sin_grupo) 	AS Cant_directivos_sin_grupo_T
-			FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
+			FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
 			UNION ALL
 			SELECT
 				CASE nivel
@@ -569,7 +565,7 @@ class Estadistica_model extends CI_Model {
   				SUM(directivo_sin_grupo_m) 	AS Cant_directivos_sin_grupo_M,
   				SUM(directivo_sin_grupo_h) 	AS Cant_directivos_sin_grupo_H,
   				SUM(t_directivo_sin_grupo) 	AS Cant_directivos_sin_grupo_T
-			FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
+			FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
 			GROUP BY nivel, sostenimiento
 			UNION ALL
 			SELECT
@@ -596,7 +592,7 @@ class Estadistica_model extends CI_Model {
 				SUM(directivo_sin_grupo_m) 	AS Cant_directivos_sin_grupo_M,
 				SUM(directivo_sin_grupo_h) 	AS Cant_directivos_sin_grupo_H,
 				SUM(t_directivo_sin_grupo) 	AS Cant_directivos_sin_grupo_T
-			FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
+			FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
 			GROUP BY nivel
 			UNION ALL
 			SELECT
@@ -652,7 +648,7 @@ class Estadistica_model extends CI_Model {
         WHEN 'TECNICA' 			THEN 'Técnica'
         WHEN 'COMUNITARIO' 			THEN 'Comunitario'
         WHEN 'ADMINISTRATIVO' 			THEN 'Administrativo'
-        WHEN 'RECTORIA' 			THEN 'Rectoria'
+        WHEN 'RECTORIAS' 			THEN 'Rectorias'
 					ELSE modalidad
 				END AS Modalidad_X,
         SUM(docente_m)   				AS Cant_docentes_M,
@@ -664,13 +660,13 @@ class Estadistica_model extends CI_Model {
 				SUM(directivo_sin_grupo_m) 	AS Cant_directivos_sin_grupo_M,
 				SUM(directivo_sin_grupo_h) 	AS Cant_directivos_sin_grupo_H,
 				SUM(t_directivo_sin_grupo) 	AS Cant_directivos_sin_grupo_T
-			FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
+			FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
 			GROUP BY nivel, sostenimiento, modalidad
 			ORDER BY FIELD(Nivel_X,'Especial','Inicial','Preescolar','Primaria','Secundaria','Media Superior','Superior'),
 			FIELD(Sostenimiento_X,'Público','Autónomo','Privado'),
 			FIELD(Modalidad_X,'Total','CAM','USAER','CENDI','Escolarizada','General','Tecnica','Técnica Industrial','Técnica Agropecuaria',
 			'Para Trabajadores','Telesecundaria','No Escolarizada','Inicial No Escolarizada','Inicial Escolarizada','Indígena','CONAFE (COMUNITARIA)','ND','CONAFE','Bachillerato General',
-			'Bachillerato Tecnológico','Profesional Técnico','Universitaria','Normal','Comunitario','Para adultos', 'Administrativo')
+			'Bachillerato Tecnológico','Profesional Técnico','Universitaria','Normal','Comunitario','Para adultos', 'Administrativo','Rectorias')
 			";
       // echo $query;
       // die();
@@ -684,11 +680,8 @@ class Estadistica_model extends CI_Model {
          $concat .= " AND id_municipio = {$municipioid}";
        }
 
-       if($ciclonomb='2018-2019-INICIO'){
-       		$concat .= " AND ciclo = 'INICIO-2018-2019'";
-       }else{
+      
        		$concat .= " AND ciclo = '{$ciclonomb}'";
-       }
 
 
 			$query = "
@@ -706,7 +699,7 @@ class Estadistica_model extends CI_Model {
 				SUM(directivo_sin_grupo_m) 	AS Cant_directivos_sin_grupo_M,
 				SUM(directivo_sin_grupo_h) 	AS Cant_directivos_sin_grupo_H,
 				SUM(t_directivo_sin_grupo) 	AS Cant_directivos_sin_grupo_T
-			FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
+			FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
 			UNION ALL
 			SELECT
 				CASE nivel
@@ -724,6 +717,7 @@ class Estadistica_model extends CI_Model {
 					WHEN 'LICENCIATURA' THEN 'Universitario y Tecnológico'
 					WHEN 'NORMAL' 	THEN 'Normal'
 					WHEN 'POSGRADO' THEN 'Posgrado'
+          WHEN 'RECTORIAS'      THEN 'Rectorias'
 				END AS Modalidad_X,
 				CASE sostenimiento WHEN 'AYAYAI' THEN 'Total'	ELSE 'Total' END AS Sostenimiento_X,
 				CASE sostenimiento_desagregado WHEN 'AYAYAI' THEN 'Total'	ELSE 'Total' END AS sub_Sostenimiento,
@@ -736,7 +730,7 @@ class Estadistica_model extends CI_Model {
 				SUM(directivo_sin_grupo_m) 	AS Cant_directivos_sin_grupo_M,
 				SUM(directivo_sin_grupo_h) 	AS Cant_directivos_sin_grupo_H,
 				SUM(t_directivo_sin_grupo) 	AS Cant_directivos_sin_grupo_T
-			FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
+			FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
 			GROUP BY nivel, modalidad
 			UNION ALL
 			SELECT
@@ -755,6 +749,7 @@ class Estadistica_model extends CI_Model {
 					WHEN 'LICENCIATURA' THEN 'Universitario y Tecnológico'
 					WHEN 'NORMAL' 	THEN 'Normal'
 					WHEN 'POSGRADO' THEN 'Posgrado'
+          WHEN 'RECTORIAS'      THEN 'Rectorias'
 				END AS Modalidad_X,
 				CASE sostenimiento WHEN 'PUBLICO' THEN 'Público' WHEN 'AUTONOMO' THEN 'Autónomo' WHEN 'PRIVADO' THEN 'Privado' END AS Sostenimiento_X,
 				CASE sostenimiento_desagregado WHEN 'AYAYAI' THEN 'Total'	ELSE 'Total' END AS sub_Sostenimiento,
@@ -767,9 +762,9 @@ class Estadistica_model extends CI_Model {
 				SUM(directivo_sin_grupo_m) 	AS Cant_directivos_sin_grupo_M,
 				SUM(directivo_sin_grupo_h) 	AS Cant_directivos_sin_grupo_H,
 				SUM(t_directivo_sin_grupo) 	AS Cant_directivos_sin_grupo_T
-			FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
+			FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
 			GROUP BY nivel, modalidad, sostenimiento
-			UNION ALL
+			/*UNION ALL
 			SELECT
 				CASE nivel
 					WHEN 'ESPECIAL' 		THEN 'Especial'
@@ -786,6 +781,7 @@ class Estadistica_model extends CI_Model {
 					WHEN 'LICENCIATURA' THEN 'Universitario y Tecnológico'
 					WHEN 'NORMAL' 						THEN 'Normal'
 					WHEN 'POSGRADO' 					THEN 'Posgrado'
+          WHEN 'RECTORIAS'      THEN 'Rectorias'
 				END AS Modalidad_X,
 				CASE sostenimiento WHEN 'PUBLICO' THEN 'Público' WHEN 'AUTONOMO' THEN 'Autónomo' WHEN 'PRIVADO' THEN 'Privado' END AS Sostenimiento_X,
 				CASE sostenimiento_desagregado
@@ -801,12 +797,12 @@ class Estadistica_model extends CI_Model {
 				SUM(directivo_sin_grupo_m) 	AS Cant_directivos_sin_grupo_M,
 				SUM(directivo_sin_grupo_h) 	AS Cant_directivos_sin_grupo_H,
 				SUM(t_directivo_sin_grupo) 	AS Cant_directivos_sin_grupo_T
-			FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR' AND sostenimiento='Publico'
-			GROUP BY Nivel_X, Modalidad_X, Sostenimiento_X, sub_Sostenimiento='Estatal'
+			FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR' AND sostenimiento='Publico'
+			GROUP BY Nivel_X, Modalidad_X, Sostenimiento_X, sub_Sostenimiento='Estatal'*/
 			ORDER BY FIELD(Nivel_X,'Especial','Inicial','Preescolar','Primaria','Secundaria','Media Superior','Superior'),
-			FIELD(Modalidad_X,'Total','Universitario y Tecnológico','Normal','Posgrado'),
+			FIELD(Modalidad_X,'Total','Universitario y Tecnológico','Normal','Posgrado','Rectorias'),
 			FIELD(Sostenimiento_X,'Total','Público','Autónomo','Privado'),
-			FIELD(sub_Sostenimiento,'Total','Estatal','Federal')
+			FIELD(sub_Sostenimiento,'Total','Estatal','Federal','Rectorias')
 			";
       // echo $query;
       // die();
@@ -820,11 +816,9 @@ class Estadistica_model extends CI_Model {
         $concat .= " AND id_municipio = {$municipioid}";
       }
 
-       if($ciclonomb='2018-2019-INICIO'){
-       		$concat .= " AND ciclo = 'INICIO-2018-2019'";
-       }else{
+
        		$concat .= " AND ciclo = '{$ciclonomb}'";
-       }
+      
 
 
 
@@ -843,7 +837,7 @@ class Estadistica_model extends CI_Model {
 				SUM(grupos_6)   			AS Cant_grupos_6,
 				SUM(grupos_mas_de_un_grado) 	AS Cant_grupos_multigrado,
 				SUM(t_grupos)   				AS Cant_grupos
-     FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
+     FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
      UNION ALL
      SELECT
        CASE nivel
@@ -874,7 +868,7 @@ class Estadistica_model extends CI_Model {
 				SUM(grupos_6)   			AS Cant_grupos_6,
 				SUM(grupos_mas_de_un_grado) 	AS Cant_grupos_multigrado,
 				SUM(t_grupos)   				AS Cant_grupos
-     FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
+     FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
      GROUP BY nivel, sostenimiento
      UNION ALL
      SELECT
@@ -902,7 +896,7 @@ class Estadistica_model extends CI_Model {
 				SUM(grupos_6)   			AS Cant_grupos_6,
 				SUM(grupos_mas_de_un_grado) 	AS Cant_grupos_multigrado,
 				SUM(t_grupos)   				AS Cant_grupos
-     FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
+     FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
      GROUP BY nivel
      UNION ALL
      SELECT
@@ -958,7 +952,7 @@ class Estadistica_model extends CI_Model {
        WHEN 'TECNICA' 			THEN 'Técnica'
        WHEN 'COMUNITARIO' 			THEN 'Comunitario'
        WHEN 'ADMINISTRATIVO' 			THEN 'Administrativo'
-       WHEN 'RECTORIA' 			THEN 'Rectoria'
+       WHEN 'RECTORIAS' 			THEN 'Rectorias'
          ELSE modalidad
        END AS Modalidad_X,
        COUNT(escuela) AS escuelas,
@@ -971,13 +965,13 @@ class Estadistica_model extends CI_Model {
 				SUM(grupos_6)   			AS Cant_grupos_6,
 				SUM(grupos_mas_de_un_grado) 	AS Cant_grupos_multigrado,
 				SUM(t_grupos)   				AS Cant_grupos
-     FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
+     FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel!='SUPERIOR' AND nivel!='ADULTOS' AND nivel!='CAPACITACION PARA EL TRABAJO'
      GROUP BY nivel, sostenimiento, modalidad
      ORDER BY FIELD(Nivel_X,'Especial','Inicial','Preescolar','Primaria','Secundaria','Media Superior','Superior', 'Capacitacion para el trabajo', 'Adultos'),
      FIELD(Sostenimiento_X,'Público','Autónomo','Privado'),
      FIELD(Modalidad_X,'Total','CAM','USAER','CENDI','Escolarizada','General','Tecnica','Técnica Industrial','Técnica Agropecuaria',
      'Para Trabajadores','Telesecundaria','No Escolarizada','Inicial No Escolarizada','Inicial Escolarizada','Indígena','CONAFE (COMUNITARIA)','CONAFE','ND','Bachillerato General',
-     'Bachillerato Tecnológico','Profesional Técnico','Universitaria','Normal','Comunitario','Para adultos', 'Administrativo')
+     'Bachillerato Tecnológico','Profesional Técnico','Universitaria','Normal','Comunitario','Para adultos', 'Administrativo','Rectorias')
      ";
      // echo $query;
      // die();
@@ -991,11 +985,9 @@ class Estadistica_model extends CI_Model {
         $concat .= " AND id_municipio = {$municipioid}";
       }
 
-       if($ciclonomb='2018-2019-INICIO'){
-       		$concat .= " AND ciclo = 'INICIO-2018-2019'";
-       }else{
-       		$concat .= " AND ciclo = '{$ciclonomb}'";
-       }
+       
+      $concat .= " AND ciclo = '{$ciclonomb}'";
+       
 
 
      $query = "
@@ -1014,7 +1006,7 @@ class Estadistica_model extends CI_Model {
 				SUM(grupos_6)   			AS Cant_grupos_6,
 				SUM(grupos_mas_de_un_grado) 	AS Cant_grupos_multigrado,
 				SUM(t_grupos)   				AS Cant_grupos
-     FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
+     FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
      UNION ALL
      SELECT
        CASE nivel
@@ -1032,6 +1024,7 @@ class Estadistica_model extends CI_Model {
          WHEN 'LICENCIATURA' THEN 'Universitario y Tecnológico'
          WHEN 'NORMAL' 	THEN 'Normal'
          WHEN 'POSGRADO' THEN 'Posgrado'
+         WHEN 'RECTORIAS'       THEN 'Rectorias'
        END AS Modalidad_X,
        CASE sostenimiento WHEN 'AYAYAI' THEN 'Total'	ELSE 'Total' END AS Sostenimiento_X,
        CASE sostenimiento_desagregado WHEN 'AYAYAI' THEN 'Total'	ELSE 'Total' END AS sub_Sostenimiento,
@@ -1045,7 +1038,7 @@ class Estadistica_model extends CI_Model {
 				SUM(grupos_6)   			AS Cant_grupos_6,
 				SUM(grupos_mas_de_un_grado) 	AS Cant_grupos_multigrado,
 				SUM(t_grupos)   				AS Cant_grupos
-     FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
+     FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
      GROUP BY nivel, modalidad
      UNION ALL
      SELECT
@@ -1064,6 +1057,7 @@ class Estadistica_model extends CI_Model {
          WHEN 'LICENCIATURA' THEN 'Universitario y Tecnológico'
          WHEN 'NORMAL' 	THEN 'Normal'
          WHEN 'POSGRADO' THEN 'Posgrado'
+         WHEN 'RECTORIAS'       THEN 'Rectorias'
        END AS Modalidad_X,
        CASE sostenimiento WHEN 'PUBLICO' THEN 'Público' WHEN 'AUTONOMO' THEN 'Autónomo' WHEN 'PRIVADO' THEN 'Privado' END AS Sostenimiento_X,
        CASE sostenimiento_desagregado WHEN 'AYAYAI' THEN 'Total'	ELSE 'Total' END AS sub_Sostenimiento,
@@ -1077,9 +1071,9 @@ class Estadistica_model extends CI_Model {
 				SUM(grupos_6)   			AS Cant_grupos_6,
 				SUM(grupos_mas_de_un_grado) 	AS Cant_grupos_multigrado,
 				SUM(t_grupos)   				AS Cant_grupos
-     FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
+     FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
      GROUP BY nivel, modalidad, sostenimiento
-     UNION ALL
+    /* UNION ALL
      SELECT
        CASE nivel
          WHEN 'ESPECIAL' 		THEN 'Especial'
@@ -1096,6 +1090,7 @@ class Estadistica_model extends CI_Model {
          WHEN 'LICENCIATURA' THEN 'Universitario y Tecnológico'
          WHEN 'NORMAL' 						THEN 'Normal'
          WHEN 'POSGRADO' 					THEN 'Posgrado'
+         WHEN 'RECTORIAS'       THEN 'Rectorias'
        END AS Modalidad_X,
        CASE sostenimiento WHEN 'PUBLICO' THEN 'Público' WHEN 'AUTONOMO' THEN 'Autónomo' WHEN 'PRIVADO' THEN 'Privado' END AS Sostenimiento_X,
        CASE sostenimiento_desagregado
@@ -1112,12 +1107,12 @@ class Estadistica_model extends CI_Model {
 				SUM(grupos_6)   			AS Cant_grupos_6,
 				SUM(grupos_mas_de_un_grado) 	AS Cant_grupos_multigrado,
 				SUM(t_grupos)   				AS Cant_grupos
-     FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR' AND sostenimiento='Publico'
-     GROUP BY Nivel_X, Modalidad_X, Sostenimiento_X, sub_Sostenimiento='Estatal'
+     FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR' AND sostenimiento='Publico'
+     GROUP BY Nivel_X, Modalidad_X, Sostenimiento_X, sub_Sostenimiento='Estatal'*/
      ORDER BY FIELD(Nivel_X,'Especial','Inicial','Preescolar','Primaria','Secundaria','Media Superior','Superior'),
-     FIELD(Modalidad_X,'Total','Universitario y Tecnológico','Normal','Posgrado'),
+     FIELD(Modalidad_X,'Total','Universitario y Tecnológico','Normal','Posgrado','Rectorias'),
      FIELD(Sostenimiento_X,'Total','Público','Autónomo','Privado'),
-     FIELD(sub_Sostenimiento,'Total','Estatal','Federal')
+     FIELD(sub_Sostenimiento,'Total','Estatal','Federal','Rectorias')
      ";
      // echo $query;
      // die();
@@ -1140,7 +1135,7 @@ class Estadistica_model extends CI_Model {
      elseif ($ciclonomb=="2016-2017-INICIO"){
        $concat .= " AND Ciclo_escolar = 'Inicio_2016-2017'";
      }
-     elseif ($ciclonomb=="2017-2018"){
+     elseif ($ciclonomb=="2017-2018-INICIO"){
         $concat .=  " AND Ciclo_escolar = 'Inicio_2016-2017'";
       }
       elseif ($ciclonomb=="2018-2019-INICIO"){
@@ -1180,7 +1175,7 @@ class Estadistica_model extends CI_Model {
     elseif ($ciclonomb=="2016-2017-INICIO"){
       $concat .= " AND Ciclo_escolar = 'Inicio_2015-2016'";
     }
-    elseif ($ciclonomb=="2017-2018"){
+    elseif ($ciclonomb=="2017-2018-INICIO"){
         $concat .=  " AND Ciclo_escolar = 'Inicio_2015-2016'";
       }
 
@@ -1227,7 +1222,7 @@ WHERE id_municip=$municipioid
    elseif ($ciclonomb=="2016-2017-INICIO"){
      $concat .= " AND Periodo = '15_16'";
    }
-   elseif ($ciclonomb=="2017-2018"){
+   elseif ($ciclonomb=="2017-2018-INICIO"){
         $concat .=  " AND Periodo = '15_16'";
       }
     elseif ($ciclonomb=="2018-2019-INICIO"){
@@ -1402,7 +1397,7 @@ function get_llenado_tabla8($municipioid, $municipionomb, $nivelid, $nivelnomb, 
 
 function getciclo_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
 {
- $query = "SELECT DISTINCT if(ciclo='INICIO-2018-2019','2018-2019-INICIO',ciclo)ciclo FROM estadistica_e_indicadoresxesc
+ $query = "SELECT DISTINCT ciclo FROM temp_estadistica
  	WHERE num_nivel='".$nivelid."' AND sostenimiento_desagregado='".$sostenimientoid."'
  	 AND num_zona_escolar='".$num_ze."' AND cct_zona_escolar='".$cct_ze."'
      and ciclo!='2014-2015-FIN' and ciclo!='2015-2016-FIN' and ciclo!='FIN-2017-2018'";
@@ -1435,7 +1430,7 @@ function get_llenado_tabla1_0_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
    SUM(t4) AS Cant_alumnos_4_T,
    SUM(t5) AS Cant_alumnos_5_T,
    SUM(t6) AS Cant_alumnos_6_T
- FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat}
+ FROM temp_estadistica WHERE 1= 1 {$concat}
  UNION ALL
  SELECT
    CASE nivel
@@ -1463,7 +1458,7 @@ function get_llenado_tabla1_0_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
    SUM(t4) AS Cant_alumnos_4_T,
    SUM(t5) AS Cant_alumnos_5_T,
    SUM(t6) AS Cant_alumnos_6_T
- FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel!='SUPERIOR'
+ FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel!='SUPERIOR'
  GROUP BY nivel, sostenimiento
  UNION ALL
  SELECT
@@ -1488,7 +1483,7 @@ function get_llenado_tabla1_0_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
    SUM(t4) AS Cant_alumnos_4_T,
    SUM(t5) AS Cant_alumnos_5_T,
    SUM(t6) AS Cant_alumnos_6_T
- FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel!='SUPERIOR'
+ FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel!='SUPERIOR'
  GROUP BY nivel
  UNION ALL
  SELECT
@@ -1534,6 +1529,7 @@ function get_llenado_tabla1_0_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
      WHEN 'POSGRADO' 	THEN 'Universitaria'
      WHEN 'LICENCIATURA NORMAL' 			THEN 'Normal'
      WHEN 'NORMAL' 			THEN 'Normal'
+     WHEN 'RECTORIAS'       THEN 'Rectorias'
      ELSE modalidad
    END AS Modalidad_X,
    SUM(t_mujeres_alumnos)   AS Cant_alumnos_M,
@@ -1545,13 +1541,13 @@ function get_llenado_tabla1_0_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
    SUM(t4) AS Cant_alumnos_4_T,
    SUM(t5) AS Cant_alumnos_5_T,
    SUM(t6) AS Cant_alumnos_6_T
- FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel!='SUPERIOR'
+ FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel!='SUPERIOR'
  GROUP BY nivel, sostenimiento, modalidad
  ORDER BY FIELD(Nivel_X,'Especial','Inicial','Preescolar','Primaria','Secundaria','Media Superior','Superior'),
  FIELD(Sostenimiento_X,'Público','Autónomo','Privado'),
  FIELD(Modalidad_X,'Total','CAM','USAER','Escolarizada','General','Técnica Industrial','Técnica Agropecuaria',
  'Para Trabajadores','Telesecundaria','No Escolarizada','Inicial No Escolarizada','Inicial Escolarizada','Indígena','CONAFE (COMUNITARIA)','CONAFE','ND','Bachillerato General',
- 'Bachillerato Tecnológico','Profesional Técnico','Universitaria','Normal')
+ 'Bachillerato Tecnológico','Profesional Técnico','Universitaria','Normal','Rectorias')
  ";
  // echo $query;
  // die();
@@ -1585,7 +1581,7 @@ function get_llenado_tabla1_1_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
    SUM(t4) AS Cant_alumnos_4_T,
    SUM(t5) AS Cant_alumnos_5_T,
    SUM(t6) AS Cant_alumnos_6_T
- FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
+ FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
  UNION ALL
  SELECT
    CASE nivel
@@ -1603,6 +1599,7 @@ function get_llenado_tabla1_1_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
      WHEN 'LICENCIATURA' THEN 'Universitario y Tecnológico'
      WHEN 'NORMAL' 	THEN 'Normal'
      WHEN 'POSGRADO' THEN 'Posgrado'
+     WHEN 'RECTORIAS'       THEN 'Rectorias'
    END AS Modalidad_X,
    CASE sostenimiento WHEN 'AYAYAI' THEN 'Total'	ELSE 'Total' END AS Sostenimiento_X,
    CASE sostenimiento_desagregado WHEN 'AYAYAI' THEN 'Total'	ELSE 'Total' END AS sub_Sostenimiento,
@@ -1615,8 +1612,8 @@ function get_llenado_tabla1_1_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
    SUM(t4) AS Cant_alumnos_4_T,
    SUM(t5) AS Cant_alumnos_5_T,
    SUM(t6) AS Cant_alumnos_6_T
- FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
- GROUP BY nivel, modalidad
+ FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
+ GROUP BY nivel,modalidad
  UNION ALL
  SELECT
    CASE nivel
@@ -1634,6 +1631,7 @@ function get_llenado_tabla1_1_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
      WHEN 'LICENCIATURA' THEN 'Universitario y Tecnológico'
      WHEN 'NORMAL' 	THEN 'Normal'
      WHEN 'POSGRADO' THEN 'Posgrado'
+     WHEN 'RECTORIAS'       THEN 'Rectorias'
    END AS Modalidad_X,
    CASE sostenimiento WHEN 'PUBLICO' THEN 'Público' WHEN 'AUTONOMO' THEN 'Autónomo' WHEN 'PRIVADO' THEN 'Privado' END AS Sostenimiento_X,
    CASE sostenimiento_desagregado WHEN 'AYAYAI' THEN 'Total'	ELSE 'Total' END AS sub_Sostenimiento,
@@ -1646,9 +1644,9 @@ function get_llenado_tabla1_1_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
    SUM(t4) AS Cant_alumnos_4_T,
    SUM(t5) AS Cant_alumnos_5_T,
    SUM(t6) AS Cant_alumnos_6_T
- FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
+ FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
  GROUP BY nivel, modalidad, sostenimiento
- UNION ALL
+ /*UNION ALL
  SELECT
    CASE nivel
      WHEN 'ESPECIAL' 		THEN 'Especial'
@@ -1665,6 +1663,7 @@ function get_llenado_tabla1_1_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
      WHEN 'LICENCIATURA' THEN 'Universitario y Tecnológico'
      WHEN 'NORMAL' 						THEN 'Normal'
      WHEN 'POSGRADO' 					THEN 'Posgrado'
+     WHEN 'RECTORIAS'       THEN 'Rectorias'
    END AS Modalidad_X,
    CASE sostenimiento WHEN 'PUBLICO' THEN 'Público' WHEN 'AUTONOMO' THEN 'Autónomo' WHEN 'PRIVADO' THEN 'Privado' END AS Sostenimiento_X,
    CASE sostenimiento_desagregado
@@ -1680,13 +1679,15 @@ function get_llenado_tabla1_1_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
    SUM(t4) AS Cant_alumnos_4_T,
    SUM(t5) AS Cant_alumnos_5_T,
    SUM(t6) AS Cant_alumnos_6_T
- FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR' AND sostenimiento='Publico'
- GROUP BY Nivel_X, Modalidad_X, Sostenimiento_X, sub_Sostenimiento='Estatal'
+ FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR' AND sostenimiento='Publico'
+ GROUP BY Nivel_X, Modalidad_X, Sostenimiento_X, sub_Sostenimiento='Estatal' */
  ORDER BY FIELD(Nivel_X,'Especial','Inicial','Preescolar','Primaria','Secundaria','Media Superior','Superior'),
- FIELD(Modalidad_X,'Total','Universitario y Tecnológico','Normal','Posgrado'),
- FIELD(Sostenimiento_X,'Total','Público','Autónomo','Privado'),
- FIELD(sub_Sostenimiento,'Total','Estatal','Federal')
+   FIELD(Modalidad_X,'Total','Universitario y Tecnológico','Normal','Posgrado','Rectorias'),
+  FIELD(Sostenimiento_X,'Total','Público','Autónomo','Privado'),
+ FIELD(sub_Sostenimiento,'Total','Estatal','Federal','Rectorias')
  ";
+
+
  // echo $query;
  // die();
  return $this->db->query($query)->result_array();
@@ -1718,7 +1719,7 @@ function get_llenado_tabla2_0_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
    SUM(directivo_sin_grupo_m) 	AS Cant_directivos_sin_grupo_M,
    SUM(directivo_sin_grupo_h) 	AS Cant_directivos_sin_grupo_H,
    SUM(t_directivo_sin_grupo) 	AS Cant_directivos_sin_grupo_T
- FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat}
+ FROM temp_estadistica WHERE 1= 1 {$concat}
  UNION ALL
  SELECT
    CASE nivel
@@ -1746,7 +1747,7 @@ function get_llenado_tabla2_0_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
      SUM(directivo_sin_grupo_m) 	AS Cant_directivos_sin_grupo_M,
      SUM(directivo_sin_grupo_h) 	AS Cant_directivos_sin_grupo_H,
      SUM(t_directivo_sin_grupo) 	AS Cant_directivos_sin_grupo_T
- FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel!='SUPERIOR'
+ FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel!='SUPERIOR'
  GROUP BY nivel, sostenimiento
  UNION ALL
  SELECT
@@ -1771,7 +1772,7 @@ function get_llenado_tabla2_0_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
    SUM(directivo_sin_grupo_m) 	AS Cant_directivos_sin_grupo_M,
    SUM(directivo_sin_grupo_h) 	AS Cant_directivos_sin_grupo_H,
    SUM(t_directivo_sin_grupo) 	AS Cant_directivos_sin_grupo_T
- FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel!='SUPERIOR'
+ FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel!='SUPERIOR'
  GROUP BY nivel
  UNION ALL
  SELECT
@@ -1817,6 +1818,7 @@ function get_llenado_tabla2_0_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
      WHEN 'POSGRADO' 	THEN 'Universitaria'
      WHEN 'LICENCIATURA NORMAL' 			THEN 'Normal'
      WHEN 'NORMAL' 			THEN 'Normal'
+     WHEN 'RECTORIAS'       THEN 'Rectorias'
      ELSE modalidad
    END AS Modalidad_X,
    SUM(docente_m)   				AS Cant_docentes_M,
@@ -1828,13 +1830,13 @@ function get_llenado_tabla2_0_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
    SUM(directivo_sin_grupo_m) 	AS Cant_directivos_sin_grupo_M,
    SUM(directivo_sin_grupo_h) 	AS Cant_directivos_sin_grupo_H,
    SUM(t_directivo_sin_grupo) 	AS Cant_directivos_sin_grupo_T
- FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel!='SUPERIOR'
+ FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel!='SUPERIOR'
  GROUP BY nivel, sostenimiento, modalidad
  ORDER BY FIELD(Nivel_X,'Especial','Inicial','Preescolar','Primaria','Secundaria','Media Superior','Superior'),
  FIELD(Sostenimiento_X,'Público','Autónomo','Privado'),
  FIELD(Modalidad_X,'Total','CAM','USAER','Escolarizada','General','Técnica Industrial','Técnica Agropecuaria',
  'Para Trabajadores','Telesecundaria','No Escolarizada','Inicial No Escolarizada','Inicial Escolarizada','Indígena','CONAFE (COMUNITARIA)','CONAFE','ND','Bachillerato General',
- 'Bachillerato Tecnológico','Profesional Técnico','Universitaria','Normal')
+ 'Bachillerato Tecnológico','Profesional Técnico','Universitaria','Normal','Rectorias')
  ";
  // echo $query;
  // die();
@@ -1868,7 +1870,7 @@ function get_llenado_tabla2_1_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
    SUM(directivo_sin_grupo_m) 	AS Cant_directivos_sin_grupo_M,
    SUM(directivo_sin_grupo_h) 	AS Cant_directivos_sin_grupo_H,
    SUM(t_directivo_sin_grupo) 	AS Cant_directivos_sin_grupo_T
- FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
+ FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
  UNION ALL
  SELECT
    CASE nivel
@@ -1886,6 +1888,7 @@ function get_llenado_tabla2_1_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
      WHEN 'LICENCIATURA' THEN 'Universitario y Tecnológico'
      WHEN 'NORMAL' 	THEN 'Normal'
      WHEN 'POSGRADO' THEN 'Posgrado'
+     WHEN 'RECTORIAS'       THEN 'Rectorias'
    END AS Modalidad_X,
    CASE sostenimiento WHEN 'AYAYAI' THEN 'Total'	ELSE 'Total' END AS Sostenimiento_X,
    CASE sostenimiento_desagregado WHEN 'AYAYAI' THEN 'Total'	ELSE 'Total' END AS sub_Sostenimiento,
@@ -1898,7 +1901,7 @@ function get_llenado_tabla2_1_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
    SUM(directivo_sin_grupo_m) 	AS Cant_directivos_sin_grupo_M,
    SUM(directivo_sin_grupo_h) 	AS Cant_directivos_sin_grupo_H,
    SUM(t_directivo_sin_grupo) 	AS Cant_directivos_sin_grupo_T
- FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
+ FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
  GROUP BY nivel, modalidad
  UNION ALL
  SELECT
@@ -1917,6 +1920,7 @@ function get_llenado_tabla2_1_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
      WHEN 'LICENCIATURA' THEN 'Universitario y Tecnológico'
      WHEN 'NORMAL' 	THEN 'Normal'
      WHEN 'POSGRADO' THEN 'Posgrado'
+     WHEN 'RECTORIAS'       THEN 'Rectorias'
    END AS Modalidad_X,
    CASE sostenimiento WHEN 'PUBLICO' THEN 'Público' WHEN 'AUTONOMO' THEN 'Autónomo' WHEN 'PRIVADO' THEN 'Privado' END AS Sostenimiento_X,
    CASE sostenimiento_desagregado WHEN 'AYAYAI' THEN 'Total'	ELSE 'Total' END AS sub_Sostenimiento,
@@ -1929,7 +1933,7 @@ function get_llenado_tabla2_1_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
    SUM(directivo_sin_grupo_m) 	AS Cant_directivos_sin_grupo_M,
    SUM(directivo_sin_grupo_h) 	AS Cant_directivos_sin_grupo_H,
    SUM(t_directivo_sin_grupo) 	AS Cant_directivos_sin_grupo_T
- FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
+ FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
  GROUP BY nivel, modalidad, sostenimiento
  UNION ALL
  SELECT
@@ -1948,6 +1952,7 @@ function get_llenado_tabla2_1_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
      WHEN 'LICENCIATURA' THEN 'Universitario y Tecnológico'
      WHEN 'NORMAL' 						THEN 'Normal'
      WHEN 'POSGRADO' 					THEN 'Posgrado'
+     WHEN 'RECTORIAS'       THEN 'Rectorias'
    END AS Modalidad_X,
    CASE sostenimiento WHEN 'PUBLICO' THEN 'Público' WHEN 'AUTONOMO' THEN 'Autónomo' WHEN 'PRIVADO' THEN 'Privado' END AS Sostenimiento_X,
    CASE sostenimiento_desagregado
@@ -1963,10 +1968,10 @@ function get_llenado_tabla2_1_ze($nivelid, $sostenimientoid, $num_ze, $cct_ze)
    SUM(directivo_sin_grupo_m) 	AS Cant_directivos_sin_grupo_M,
    SUM(directivo_sin_grupo_h) 	AS Cant_directivos_sin_grupo_H,
    SUM(t_directivo_sin_grupo) 	AS Cant_directivos_sin_grupo_T
- FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR' AND sostenimiento='Publico'
+ FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR' AND sostenimiento='Publico'
  GROUP BY Nivel_X, Modalidad_X, Sostenimiento_X, sub_Sostenimiento='Estatal'
  ORDER BY FIELD(Nivel_X,'Especial','Inicial','Preescolar','Primaria','Secundaria','Media Superior','Superior'),
- FIELD(Modalidad_X,'Total','Universitario y Tecnológico','Normal','Posgrado'),
+ FIELD(Modalidad_X,'Total','Universitario y Tecnológico','Normal','Posgrado','Rectorias'),
  FIELD(Sostenimiento_X,'Total','Público','Autónomo','Privado'),
  FIELD(sub_Sostenimiento,'Total','Estatal','Federal')
  ";
@@ -2002,7 +2007,7 @@ SELECT
    SUM(grupos_6)   			AS Cant_grupos_6,
    SUM(grupos_mas_de_un_grado) 	AS Cant_grupos_multigrado,
    SUM(t_grupos)   				AS Cant_grupos
-FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat}
+FROM temp_estadistica WHERE 1= 1 {$concat}
 UNION ALL
 SELECT
   CASE nivel
@@ -2031,7 +2036,7 @@ SELECT
    SUM(grupos_6)   			AS Cant_grupos_6,
    SUM(grupos_mas_de_un_grado) 	AS Cant_grupos_multigrado,
    SUM(t_grupos)   				AS Cant_grupos
-FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel!='SUPERIOR'
+FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel!='SUPERIOR'
 GROUP BY nivel, sostenimiento
 UNION ALL
 SELECT
@@ -2057,7 +2062,7 @@ SELECT
    SUM(grupos_6)   			AS Cant_grupos_6,
    SUM(grupos_mas_de_un_grado) 	AS Cant_grupos_multigrado,
    SUM(t_grupos)   				AS Cant_grupos
-FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel!='SUPERIOR'
+FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel!='SUPERIOR'
 GROUP BY nivel
 UNION ALL
 SELECT
@@ -2103,6 +2108,7 @@ SELECT
     WHEN 'POSGRADO' 	THEN 'Universitaria'
     WHEN 'LICENCIATURA NORMAL' 			THEN 'Normal'
     WHEN 'NORMAL' 			THEN 'Normal'
+    WHEN 'RECTORIAS'      THEN 'Rectorias'
     ELSE modalidad
   END AS Modalidad_X,
   COUNT(escuela) AS escuelas,
@@ -2115,13 +2121,13 @@ SELECT
    SUM(grupos_6)   			AS Cant_grupos_6,
    SUM(grupos_mas_de_un_grado) 	AS Cant_grupos_multigrado,
    SUM(t_grupos)   				AS Cant_grupos
-FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel!='SUPERIOR'
+FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel!='SUPERIOR'
 GROUP BY nivel, sostenimiento, modalidad
 ORDER BY FIELD(Nivel_X,'Especial','Inicial','Preescolar','Primaria','Secundaria','Media Superior','Superior'),
 FIELD(Sostenimiento_X,'Público','Autónomo','Privado'),
 FIELD(Modalidad_X,'Total','CAM','USAER','Escolarizada','General','Técnica Industrial','Técnica Agropecuaria',
 'Para Trabajadores','Telesecundaria','No Escolarizada','Inicial No Escolarizada','Inicial Escolarizada','Indígena','CONAFE (COMUNITARIA)','CONAFE','ND','Bachillerato General',
-'Bachillerato Tecnológico','Profesional Técnico','Universitaria','Normal')
+'Bachillerato Tecnológico','Profesional Técnico','Universitaria','Normal','Rectorias')
 ";
 // echo $query;
 // die();
@@ -2156,7 +2162,7 @@ SELECT
    SUM(grupos_6)   			AS Cant_grupos_6,
    SUM(grupos_mas_de_un_grado) 	AS Cant_grupos_multigrado,
    SUM(t_grupos)   				AS Cant_grupos
-FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
+FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
 UNION ALL
 SELECT
   CASE nivel
@@ -2174,6 +2180,7 @@ SELECT
     WHEN 'LICENCIATURA' THEN 'Universitario y Tecnológico'
     WHEN 'NORMAL' 	THEN 'Normal'
     WHEN 'POSGRADO' THEN 'Posgrado'
+    WHEN 'RECTORIAS'      THEN 'Rectorias'
   END AS Modalidad_X,
   CASE sostenimiento WHEN 'AYAYAI' THEN 'Total'	ELSE 'Total' END AS Sostenimiento_X,
   CASE sostenimiento_desagregado WHEN 'AYAYAI' THEN 'Total'	ELSE 'Total' END AS sub_Sostenimiento,
@@ -2187,7 +2194,7 @@ SELECT
    SUM(grupos_6)   			AS Cant_grupos_6,
    SUM(grupos_mas_de_un_grado) 	AS Cant_grupos_multigrado,
    SUM(t_grupos)   				AS Cant_grupos
-FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
+FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
 GROUP BY nivel, modalidad
 UNION ALL
 SELECT
@@ -2206,6 +2213,7 @@ SELECT
     WHEN 'LICENCIATURA' THEN 'Universitario y Tecnológico'
     WHEN 'NORMAL' 	THEN 'Normal'
     WHEN 'POSGRADO' THEN 'Posgrado'
+    WHEN 'RECTORIAS'      THEN 'Rectorias'
   END AS Modalidad_X,
   CASE sostenimiento WHEN 'PUBLICO' THEN 'Público' WHEN 'AUTONOMO' THEN 'Autónomo' WHEN 'PRIVADO' THEN 'Privado' END AS Sostenimiento_X,
   CASE sostenimiento_desagregado WHEN 'AYAYAI' THEN 'Total'	ELSE 'Total' END AS sub_Sostenimiento,
@@ -2219,7 +2227,7 @@ SELECT
    SUM(grupos_6)   			AS Cant_grupos_6,
    SUM(grupos_mas_de_un_grado) 	AS Cant_grupos_multigrado,
    SUM(t_grupos)   				AS Cant_grupos
-FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
+FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR'
 GROUP BY nivel, modalidad, sostenimiento
 UNION ALL
 SELECT
@@ -2238,6 +2246,7 @@ SELECT
     WHEN 'LICENCIATURA' THEN 'Universitario y Tecnológico'
     WHEN 'NORMAL' 						THEN 'Normal'
     WHEN 'POSGRADO' 					THEN 'Posgrado'
+    WHEN 'RECTORIAS'      THEN 'Rectorias'
   END AS Modalidad_X,
   CASE sostenimiento WHEN 'PUBLICO' THEN 'Público' WHEN 'AUTONOMO' THEN 'Autónomo' WHEN 'PRIVADO' THEN 'Privado' END AS Sostenimiento_X,
   CASE sostenimiento_desagregado
@@ -2254,10 +2263,10 @@ SELECT
    SUM(grupos_6)   			AS Cant_grupos_6,
    SUM(grupos_mas_de_un_grado) 	AS Cant_grupos_multigrado,
    SUM(t_grupos)   				AS Cant_grupos
-FROM estadistica_e_indicadoresxesc WHERE 1= 1 {$concat} AND nivel='SUPERIOR' AND sostenimiento='Publico'
+FROM temp_estadistica WHERE 1= 1 {$concat} AND nivel='SUPERIOR' AND sostenimiento='Publico'
 GROUP BY Nivel_X, Modalidad_X, Sostenimiento_X, sub_Sostenimiento='Estatal'
 ORDER BY FIELD(Nivel_X,'Especial','Inicial','Preescolar','Primaria','Secundaria','Media Superior','Superior'),
-FIELD(Modalidad_X,'Total','Universitario y Tecnológico','Normal','Posgrado'),
+FIELD(Modalidad_X,'Total','Universitario y Tecnológico','Normal','Posgrado','Rectorias'),
 FIELD(Sostenimiento_X,'Total','Público','Autónomo','Privado'),
 FIELD(sub_Sostenimiento,'Total','Estatal','Federal')
 ";

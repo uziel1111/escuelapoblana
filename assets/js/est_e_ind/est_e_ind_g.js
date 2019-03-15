@@ -965,7 +965,7 @@ function EsteIndGen(){
             concat = "2016-2017";
           break;
 
-          case '2017-2018': 
+          case '2017-2018-INICIO': 
             concat = "2016-2017";
           break;
 
@@ -4047,6 +4047,24 @@ function EsteIndGen(){
                                           $("#suppospub #show, #sup2pos2pub2 #show, #sup3pos3pub3 #show").css("background-color","#F5D0A9");
 
                                     break;
+
+                                    case 'RECTORIAS':
+                                          // Desplegamos hijos y nietos
+                                          $("#supuyt, #sup2uyt2, #sup3uyt3").css("display","");
+                                          $("#supnor, #sup2nor2, #sup3nor3").css("display","");
+                                          $("#suppos, #sup2pos2, #sup3pos3").css("display","");
+                                          $("#suppospub, #sup2pos2pub2, #sup3pos3pub3").css("display","");
+                                          $("#suppospubest, #sup2pos2pub2est2, #sup3pos3pub3est3").css("display","");
+                                          $("#suppospubfed, #sup2pos2pub2fed2, #sup3pos3pub3fed3").css("display","");
+                                          $("#suppospri, #sup2pos2pri2, #sup3pos3pri3").css("display","");
+                                          $("#supposaut, #sup2pos2aut2, #sup3pos3aut3").css("display","");
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+                                          $("#suppos #mis_td, #sup2pos2 #mis_td, #sup3pos3 #mis_td").css("background-color","#FAAC58");
+                                          $("#suppos #show, #sup2pos2 #show, #sup3pos3 #show").css("background-color","#FAAC58");
+                                          $("#suppospub #mis_td, #sup2pos2pub2 #mis_td, #sup3pos3pub3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#suppospub #show, #sup2pos2pub2 #show, #sup3pos3pub3 #show").css("background-color","#F5D0A9");
+
+                                    break;
                               }
 
 
@@ -4158,6 +4176,28 @@ function EsteIndGen(){
 
 
                                     break;
+
+                                    case 'RECTORIAS':
+
+                                          // Desplegamos hijos y nietos
+                                          $("#supuyt, #sup2uyt2, #sup3uyt3").css("display","");
+
+                                          $("#supnor, #sup2nor2, #sup3nor3").css("display","");
+
+                                          $("#suppos, #sup2pos2, #sup3pos3").css("display","");
+                                          $("#suppospub, #sup2pos2pub2, #sup3pos3pub3").css("display","");
+                                          $("#suppospri, #sup2pos2pri2, #sup3pos3pri3").css("display","");
+                                          $("#supposaut, #sup2pos2aut2, #sup3pos3aut3").css("display","");
+
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+
+                                          $("#suppos #mis_td, #sup2pos2 #mis_td, #sup3pos3 #mis_td").css("background-color","#FAAC58");
+                                          $("#suppos #show, #sup2pos2 #show, #sup3pos3 #show").css("background-color","#FAAC58");
+                                          $("#suppospri #mis_td, #sup2pos2pri2 #mis_td, #sup3pos3pri3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#suppospri #show, #sup2pos2pri2 #show, #sup3pos3pri3 #show").css("background-color","#F5D0A9");
+
+
+                                    break;
                               }
 
 
@@ -4221,6 +4261,28 @@ function EsteIndGen(){
 
 
                                     case 'POSGRADO':
+
+                                          // Desplegamos hijos y nietos
+                                          $("#supuyt, #sup2uyt2, #sup3uyt3").css("display","");
+
+                                          $("#supnor, #sup2nor2, #sup3nor3").css("display","");
+
+                                          $("#suppos, #sup2pos2, #sup3pos3").css("display","");
+                                          $("#suppospub, #sup2pos2pub2, #sup3pos3pub3").css("display","");
+                                          $("#suppospri, #sup2pos2pri2, #sup3pos3pri3").css("display","");
+                                          $("#supposaut, #sup2pos2aut2, #sup3pos3aut3").css("display","");
+
+                                          // Pintamos de color las filas para resaltar la seleccion realizada.
+
+
+                                          $("#suppos #mis_td, #sup2pos2 #mis_td, #sup3pos3 #mis_td").css("background-color","#FAAC58");
+                                          $("#suppos #show, #sup2pos2 #show, #sup3pos3 #show").css("background-color","#FAAC58");
+                                          $("#supposaut #mis_td, #sup2pos2aut2 #mis_td, #sup3pos3aut3 #mis_td").css("background-color","#F5D0A9");
+                                          $("#supposaut #show, #sup2pos2aut2 #show, #sup3pos3aut3 #show").css("background-color","#F5D0A9");
+
+                                    break;
+
+                                    case 'RECTORIAS':
 
                                           // Desplegamos hijos y nietos
                                           $("#supuyt, #sup2uyt2, #sup3uyt3").css("display","");
