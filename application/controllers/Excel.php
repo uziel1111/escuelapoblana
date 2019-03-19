@@ -375,7 +375,8 @@ class Excel extends CI_Controller {
 		}// crea_excel_grid()1
 
 		public function crea_excel_ei_grid($esta_muniN, $esta_muni, $nivel, $sost, $modalidad, $ciclo){
-			$nivelnomb='TODOS';
+			// ob_start();
+      $nivelnomb='TODOS';
 
 				$result = $this->Estadistica_model->get_llenado_tabla1_0($esta_muniN, $esta_muni, $nivel, $nivelnomb, $sost, $modalidad, $ciclo);
 
@@ -428,6 +429,8 @@ class Excel extends CI_Controller {
 
 			$result = $this->Estadistica_model->get_llenado_tabla1_0($esta_muniN, $esta_muni, $nivel, $nivelnomb, $sost, $modalidad, $ciclo);
 			$i=8;
+      // echo "<pre>";
+      // print_r($result);
       foreach ($result as $row) {
 
           $objPHPExcel->getActiveSheet()->SetCellValue('A'.$i, $row['Nivel_X']);
@@ -451,7 +454,8 @@ class Excel extends CI_Controller {
         }
 
 				$result = $this->Estadistica_model->get_llenado_tabla1_1($esta_muniN, $esta_muni, $nivel, $nivelnomb, $sost, $modalidad, $ciclo);
-
+        // echo "<pre>";
+        // print_r($result);
 				foreach ($result as $row) {
 
           $objPHPExcel->getActiveSheet()->SetCellValue('A'.$i, $row['Nivel_X']);
@@ -520,7 +524,8 @@ class Excel extends CI_Controller {
         $tabla3_cont=$i;
 
 				$result = $this->Estadistica_model->get_llenado_tabla2_0($esta_muniN, $esta_muni, $nivel, $nivelnomb, $sost, $modalidad, $ciclo);
-
+        // echo "<pre>";
+        // print_r($result);
 				foreach ($result as $row) {
 					$objPHPExcel->getActiveSheet()->SetCellValue('A'.$i, $row['Nivel_X']);
           $objPHPExcel->getActiveSheet()->mergeCells('A'.$i.':B'.$i);
@@ -544,7 +549,8 @@ class Excel extends CI_Controller {
         }
 
 				$result = $this->Estadistica_model->get_llenado_tabla2_1($esta_muniN, $esta_muni, $nivel, $nivelnomb, $sost, $modalidad, $ciclo);
-
+        // echo "<pre>";
+        // print_r($result);
 				foreach ($result as $row) {
 					$objPHPExcel->getActiveSheet()->SetCellValue('A'.$i, $row['Nivel_X']);
           $objPHPExcel->getActiveSheet()->mergeCells('A'.$i.':B'.$i);
@@ -608,7 +614,8 @@ class Excel extends CI_Controller {
         $tabla4_cont=$i;
 
 				$result = $this->Estadistica_model->get_llenado_tabla3_0($esta_muniN, $esta_muni, $nivel, $nivelnomb, $sost, $modalidad, $ciclo);
-
+        // echo "<pre>";
+        // print_r($result);
 				foreach ($result as $row) {
 					$objPHPExcel->getActiveSheet()->SetCellValue('A'.$i, $row['Nivel_X']);
 				 $objPHPExcel->getActiveSheet()->SetCellValue('B'.$i, $row['Sostenimiento_X']);
@@ -634,7 +641,8 @@ class Excel extends CI_Controller {
 			 $tabla5_cont=$i;
 
 			 $result = $this->Estadistica_model->get_llenado_tabla3_1($esta_muniN, $esta_muni, $nivel, $nivelnomb, $sost, $modalidad, $ciclo);
-
+        // echo "<pre>";
+        // print_r($result);
 			 foreach ($result as $row) {
 
 				 $objPHPExcel->getActiveSheet()->SetCellValue('A'.$i, $row['Nivel_X']);
@@ -694,7 +702,8 @@ class Excel extends CI_Controller {
         $tabla7_cont=$i;
 
 				$result = $this->Estadistica_model->get_llenado_tabla4($esta_muniN, $esta_muni, $nivel, $nivelnomb, $sost, $modalidad, $ciclo);
-
+        // echo "<pre>";
+        // print_r($result);
  			 foreach ($result as $row) {
 				 $objPHPExcel->getActiveSheet()->SetCellValue('A'.$i, $row['nivel']);
           $objPHPExcel->getActiveSheet()->mergeCells('A'.$i.':B'.$i);
@@ -732,7 +741,8 @@ class Excel extends CI_Controller {
 
 				$i++;
 				$result = $this->Estadistica_model->get_llenado_tabla5($esta_muniN, $esta_muni, $nivel, $nivelnomb, $sost, $modalidad, $ciclo);
-
+        // echo "<pre>";
+        // print_r($result);
  			 foreach ($result as $row) {
 
 				 $objPHPExcel->getActiveSheet()->SetCellValue('A'.$i, 'Primaria');
@@ -804,7 +814,9 @@ class Excel extends CI_Controller {
         $tabla7_cont=$i;
 
 				$result = $this->Estadistica_model->get_llenado_tabla6($esta_muniN, $esta_muni, $nivel, $nivelnomb, $sost, $modalidad, $ciclo);
- 			 foreach ($result as $row) {
+ 			  // echo "<pre>";
+      //   print_r($result);
+       foreach ($result as $row) {
 
 				 $objPHPExcel->getActiveSheet()->SetCellValue('A'.$i, $row['Nivel']);
           $objPHPExcel->getActiveSheet()->mergeCells('A'.$i.':B'.$i);
@@ -857,7 +869,9 @@ class Excel extends CI_Controller {
         $tabla7_cont=$i;
 
 				$result = $this->Estadistica_model->get_llenado_tabla7($esta_muniN, $esta_muni, $nivel, $nivelnomb, $sost, $modalidad, $ciclo);
- 			 foreach ($result as $row) {
+ 			  // echo "<pre>";
+      //   print_r($result);
+       foreach ($result as $row) {
 
 				 $objPHPExcel->getActiveSheet()->SetCellValue('A'.$i, '3 a 5 años');
           $objPHPExcel->getActiveSheet()->mergeCells('A'.$i.':B'.$i);
@@ -925,7 +939,9 @@ class Excel extends CI_Controller {
         $tabla7_cont=$i;
 
 				$result = $this->Estadistica_model->get_llenado_tabla8($esta_muniN, $esta_muni, $nivel, $nivelnomb, $sost, $modalidad, $ciclo);
- 			 foreach ($result as $row) {
+ 			  // echo "<pre>";
+      //   print_r($result);
+       foreach ($result as $row) {
 
 				 $objPHPExcel->getActiveSheet()->SetCellValue('A'.$i, 'Población de 8 a 14 años que no saben leer ni escribir');
           $objPHPExcel->getActiveSheet()->mergeCells('A'.$i.':B'.$i);
@@ -954,10 +970,14 @@ class Excel extends CI_Controller {
 
 
 		    $nombre_excel = "escuelapoblana_estadisticas_indicadores.xlsx";
-		    header('Content-Type: application/vnd.ms-excel');
-		    header('Content-Disposition: attachment;filename='.$nombre_excel);
-		    header('Cache-Control: max-age=0');
+		    // header('Content-Type: application/vnd.ms-excel');
+		    // header('Content-Disposition: attachment;filename='.$nombre_excel);
+		    // header('Cache-Control: max-age=0');
+       
 		    $objWriter=PHPExcel_IOFactory::createWriter($objPHPExcel,'Excel2007');
+        ob_end_clean();
+        header('Content-type: application/vnd.ms-excel');
+        header('Content-Disposition: attachment;filename='.$nombre_excel);
 		    $objWriter->save('php://output');
 
 		    exit;

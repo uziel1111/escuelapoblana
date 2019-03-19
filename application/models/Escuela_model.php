@@ -339,7 +339,7 @@ class Escuela_model extends CI_Model {
                   IFNULL(t_grupos, 0) AS grupos_total,IFNULL(grupos_1, 0) AS grupos_1,IFNULL(grupos_2, 0) AS grupos_2,IFNULL(grupos_3, 0) AS grupos_3,IFNULL(grupos_4, 0) AS grupos_4,IFNULL(grupos_5, 0) AS grupos_5,IFNULL(grupos_6, 0) AS grupos_6,
                   IFNULL(doc1, 0) AS docentes_1,IFNULL(doc2, 0) AS docentes_2,IFNULL(doc3, 0) AS docentes_3,IFNULL(doc4, 0) AS docentes_4,IFNULL(doc5, 0) AS docentes_5,IFNULL(doc6, 0) AS docentes_6,
                   IFNULL(t_docente, 0) AS total_docentes
-                  FROM temp_estadistica
+                  FROM estadistica_e_indicadoresxesc
                   WHERE escuela='".$global_claveCT."'
                   AND id_turno ='".$id_turno_global."'
                   AND (ciclo='2018-2019-INICIO' or ciclo='INICIO-2018-2019')
@@ -926,7 +926,7 @@ class Escuela_model extends CI_Model {
 									IF(retencion='No Aplica' OR retencion='N/D' ,0,ROUND(retencion*100,2)) AS retencion,
                   IF(aprobacion='No Aplica' OR aprobacion='N/D',0,ROUND(aprobacion*100,2)) AS aprobacion,
                   IF(`eficiencia terminal`='No Aplica' OR `eficiencia terminal`='N/D',0,ROUND(`eficiencia terminal`*100,2)) AS eficiencia_terminal
-                  FROM temp_estadistica
+                  FROM estadistica_e_indicadoresxesc
                   WHERE escuela='".$global_claveCT."'
                   AND id_turno ='".$id_turno_global."'
                   AND ciclo='2016-2017-INICIO'
