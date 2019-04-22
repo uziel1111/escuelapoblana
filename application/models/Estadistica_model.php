@@ -1298,7 +1298,7 @@ class Estadistica_model extends CI_Model {
                     FROM planea_x_muni WHERE 1= 1  {$concat} AND Nivel!='PRIMARIA'
                     GROUP BY Nivel 
                     ORDER BY FIELD(Nivel,'Secundaria','Media Superior')
-              ) AS yy ORDER BY Nivel";
+              ) AS yy ORDER BY FIELD(Nivel,'Primaria {$ciclonombre_pri}','Secundaria {$ciclonombre}','Media Superior {$ciclonombre}')";
    // echo $query;
    // die();
   return $this->db->query($query)->result_array();
