@@ -363,6 +363,7 @@ function EscuelaLista(){
     this.getEscuelasCCT = function(){
         var id_escuela =  $("#LE_cct_turno").val();
         obj_escuela.getInfoEscuela(id_escuela)
+        console.log("llego es esta funcion");
     }// getEscuelasCCT()
 
 

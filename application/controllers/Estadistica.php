@@ -939,25 +939,30 @@ $result = $this->Estadistica_model->get_llenado_tabla5($municipioid, $municipion
 
 
 	foreach ($result as $row ) {
-
-		$html .= '<tr>
-		<td>Primaria</td>
-		<td>'.$row['retencion_primaria'].'</td>
-		<td>'.$row['aprobacion_primaria'].'</td>
-		<td>'.$row['eficiencia_terminal_primaria'].'</td>
+		if($row['Nivel']=='Primaria'){
+			$html .= '<tr>
+			<td>Primaria</td>
+			<td>'.$row['Retencion'].'</td>
+			<td>'.$row['Aprobacion'].'</td>
+			<td>'.$row['eficiencia_terminal'].'</td>
 			</tr>';
+		}
+		if($row['Nivel']=='Secundaria'){
 			$html .= '<tr>
 			<td>Secundaria</td>
-			<td>'.$row['retencion_secundaria'].'</td>
-			<td>'.$row['aprobacion_secundaria'].'</td>
-			<td>'.$row['eficiencia_terminal_secundaria'].'</td>
-				</tr>';
-				$html .= '<tr>
+			<td>'.$row['Retencion'].'</td>
+			<td>'.$row['Aprobacion'].'</td>
+			<td>'.$row['eficiencia_terminal'].'</td>
+			</tr>';
+		}
+		if($row['Nivel']=='Media Superior'){
+			$html .= '<tr>
 				<td>Media Superior</td>
-				<td>'.$row['retencion_media_superior'].'</td>
-				<td>'.$row['aprobacion_media_superior'].'</td>
-				<td>'.$row['eficiencia_terminal_media_superior'].'</td>
-					</tr>';
+				<td>'.$row['Retencion'].'</td>
+				<td>'.$row['Aprobacion'].'</td>
+				<td>'.$row['eficiencia_terminal'].'</td>
+				</tr>';
+		}
 
 
 
@@ -999,22 +1004,14 @@ public function get_llenado_tablas6()
 	$GLOBALS['valor_id_moda']="";
 	$GLOBALS['valor_id_sost']="";
 	$GLOBALS['valor_id_sosty']="";
-	if (substr($ciclonomb, 5, 4)=='2017') {
-		$periodo_planea='2016';
-	}
-	elseif (substr($ciclonomb, 5, 4)=='2018') {
-		$periodo_planea='2016';
-	}
-	else {
-		$periodo_planea=substr($ciclonomb, 5, 4);
-	}
+
 $html = "";
 $result = $this->Estadistica_model->get_llenado_tabla6($municipioid, $municipionomb, $nivelid, $nivelnomb, $sostenimientonomb, $modalidadnomb, $ciclonomb);
 
 $html .= '<div class="well_">
       <a name="Indicadores de Aprendizaje'.$ciclonomb.' de Cursos" style="text-decoration:none; color:black;">
         <h3 id="well_">Indicadores de Aprendizaje </h3>
-				<h3 id="well_">PLANEA '.$periodo_planea.'</h3>
+				<h3 id="well_">PLANEA </h3>
       </a>
     </div>
 		<div style="overflow-x:auto;">

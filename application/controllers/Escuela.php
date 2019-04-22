@@ -230,8 +230,10 @@ class Escuela extends CI_Controller {
 						$id_escuela = $this->input->post('id_escuela');
 					  $mensaje = '';
 					  $ciclo_escolar_programas = "16_17";
-					  $ciclo_escolar_estadistica = "Inicio_2016-2017";
+					  // $ciclo_escolar_estadistica = "2016-2017-Inicio";
+					  $ciclo_escolar_estadistica = "2018-2019-Inicio";
 					  $ciclo_escolar_ipermanencia = "15_16";
+
 					  $turno = "";
 					 	if(strlen($id_escuela)>0){
 							  	$mensaje ="se_encontro_cct";
@@ -283,7 +285,7 @@ class Escuela extends CI_Controller {
 						$id_escuela = $result[0]['id_escuela'];
 						$mensaje ="se_encontro_cct";
 
-						$respuesta = $this->Escuela_model->getInfoEscuela($id_escuela, $mensaje, "16_17", "Inicio_2016-2017", "15_16");
+						$respuesta = $this->Escuela_model->getInfoEscuela($id_escuela, $mensaje, "16_17", "2016-2017-Inicio", "15_16");
 
 						$vec_aux=$respuesta['array_graficas']['graph_unidad_analisis_lyc'];
 						$vec_aux = $this->array_sort_by($vec_aux, 'porcen_alum_respok', $order = SORT_ASC);
@@ -428,6 +430,13 @@ class Escuela extends CI_Controller {
 				}
 				else{
 					$tabla_riesgo = "riesgosecub".$bimestre."c".substr($ciclo,2,2).substr($ciclo,7,2);
+				}
+
+				if($nivel_global=='PRIMARIA' and $ciclo=='2018-2019'){
+					$tabla_riesgo='riesgoprimp1c1819';
+				}
+				if($nivel_global=='SECUNDARIA' and $ciclo=='2018-2019'){
+					$tabla_riesgo='riesgosecp1c1819';
 				}
 
 				$respuesta = $this->Escuela_model->get_info_riesgoabandono($tabla_riesgo, $bimestre, $ciclo, $global_cct, $global_nombre_turno, $nivel_global);

@@ -193,7 +193,7 @@ class Estadistica_model extends CI_Model {
 
 			$query = "SELECT if(ciclo='INICIO-2018-2019','2018-2019-INICIO',ciclo)ciclo
 						FROM estadistica_e_indicadoresxesc
-						WHERE 1= 1 {$concat} and ciclo!='FIN-2017-2018'
+						WHERE 1= 1 {$concat} and ciclo!='2017-2018-FIN'
 					 	and ciclo!='2015-2016-FIN' and ciclo!='2014-2015-FIN'
 					GROUP BY if(ciclo='INICIO-2018-2019','2018-2019-INICIO',ciclo)";
    			// nuevo query Eloisa HA.
@@ -1123,21 +1123,20 @@ class Estadistica_model extends CI_Model {
      return $this->db->query($query)->result_array();
    }// get_llenado_tabla3_1()
 
-   function get_llenado_tabla4($municipioid, $municipionomb, $nivelid, $nivelnomb, $sostenimientonomb, $modalidadnomb, $ciclonomb)
-   {
+  function get_llenado_tabla4($municipioid, $municipionomb, $nivelid, $nivelnomb, $sostenimientonomb, $modalidadnomb, $ciclonomb){
 
      $concat = "";
 
        $concat .= " AND Num_municipio = {$municipioid}";
 
      if($ciclonomb=="2014-2015-INICIO"){
-       $concat .= " AND Ciclo_escolar = 'Inicio_2014-2015'";
+       $concat .= " AND Ciclo_escolar = 'Inicio_2013-2014'";
      }
      elseif ($ciclonomb=="2015-2016-INICIO"){
-       $concat .= " AND Ciclo_escolar = 'Inicio_2015-2016'";
+       $concat .= " AND Ciclo_escolar = 'Inicio_2014-2015'";
      }
      elseif ($ciclonomb=="2016-2017-INICIO"){
-       $concat .= " AND Ciclo_escolar = 'Inicio_2016-2017'";
+       $concat .= " AND Ciclo_escolar = 'Inicio_2015-2016'";
      }
      elseif ($ciclonomb=="2017-2018-INICIO"){
         $concat .=  " AND Ciclo_escolar = 'Inicio_2016-2017'";
@@ -1168,44 +1167,41 @@ class Estadistica_model extends CI_Model {
 
     $concat = "";
 
+    if($municipioid>0){
       $concat .= " AND Num_municipio = {$municipioid}";
+    }
 
     if($ciclonomb=="2014-2015-INICIO"){
-      $concat .= " AND Ciclo_escolar = 'Inicio_2014-2015'";
+      $concat .= " AND Ciclo_escolar = 'Inicio_2013-2014'";
     }
     elseif ($ciclonomb=="2015-2016-INICIO"){
-      $concat .= " AND Ciclo_escolar = 'Inicio_2015-2016'";
+      $concat .= " AND Ciclo_escolar = 'Inicio_2014-2015'";
     }
     elseif ($ciclonomb=="2016-2017-INICIO"){
       $concat .= " AND Ciclo_escolar = 'Inicio_2015-2016'";
     }
     elseif ($ciclonomb=="2017-2018-INICIO"){
-        $concat .=  " AND Ciclo_escolar = 'Inicio_2015-2016'";
+        $concat .=  " AND Ciclo_escolar = 'Inicio_2016-2017'";
       }
 
     elseif ($ciclonomb=="2018-2019-INICIO"){
-        $concat .=  " AND Ciclo_escolar = 'Inicio_2015-2016'";
+        $concat .=  " AND Ciclo_escolar = 'Inicio_2016-2017'";
      }
 
 
-   $query = "
+   // $query = "SELECT ciclo_escolar,retencion_primaria,retencion_secundaria,retencion_media_superior,aprobacion_primaria,
+   //            aprobacion_secundaria,aprobacion_media_superior,eficiencia_terminal_primaria,eficiencia_terminal_secundaria,
+   //            eficiencia_terminal_media_superior
+   //            FROM indicadores_fail
+   //            WHERE id_municip=$municipioid";
 
-   SELECT
-ciclo_escolar,
- retencion_primaria,
- retencion_secundaria,
- retencion_media_superior,
- aprobacion_primaria,
- aprobacion_secundaria,
- aprobacion_media_superior,
-eficiencia_terminal_primaria,
-eficiencia_terminal_secundaria,
-eficiencia_terminal_media_superior
- FROM indicadores_fail
-WHERE id_municip=$municipioid
-
-   ";
-    // echo $query;
+    $query="SELECT CASE Nivel WHEN 'PRIMARIA' THEN 'Primaria' WHEN 'SECUNDARIA' THEN 'Secundaria' 
+                WHEN 'MEDIA SUPERIOR' THEN 'Media Superior' END AS Nivel, 
+                Retencion,Aprobacion,eficiencia_terminal
+                FROM indicaxmuni WHERE 1= 1 {$concat} AND Nivel NOT IN('Superior','Superior con Posgrado','Preescolar')
+                GROUP BY Nivel 
+                ORDER BY FIELD(Nivel,'Primaria','Secundaria','Media Superior')";
+    // echo $query."\n";
     // die();
    return $this->db->query($query)->result_array();
  }// get_llenado_tabla5()
@@ -1213,49 +1209,96 @@ WHERE id_municip=$municipioid
  function get_llenado_tabla6($municipioid, $municipionomb, $nivelid, $nivelnomb, $sostenimientonomb, $modalidadnomb, $ciclonomb)
  {
 
-   $concat = "";
+    $concat = "";
+    $concat2 = "";
+    $ciclonombre="";
+    $ciclonombre_pri="";
+  
+      $concat .= " AND Num_Municipio = {$municipioid}";
+      $concat2 .= " AND Num_Municipio = {$municipioid}";
+   
+    if($ciclonomb=="2014-2015-INICIO"){
+      $concat .= " AND Periodo = '14_15'";
+      $concat2 .= " AND Periodo = '14_15'";
+      $ciclonombre="PLANEA 2015";
+      $ciclonombre_pri="PLANEA 2015";
+    }
+    if ($ciclonomb=="2015-2016-INICIO"){
+      $concat .= " AND Periodo = '15_16'";
+      $concat2 .= " AND Periodo = '15_16'";
+      $ciclonombre="PLANEA 2016";
+      $ciclonombre_pri="PLANEA 2015";
+    }
+    if ($ciclonomb=="2016-2017-INICIO" ){
+      $concat .= " AND Periodo = '16_17'";
+      $ciclonombre="PLANEA 2017";
+    }
+    if ($ciclonomb=="2016-2017-INICIO" and $nivelid=4){
+      $concat2 .= " AND Periodo = '15_16'";
+      $ciclonombre_pri="PLANEA 2015";
+    }
+    if ($ciclonomb=="2017-2018-INICIO"){
+      $concat .=  " AND Periodo = '16_17'";
+      $ciclonombre="PLANEA 2017";
+    }
+    if ($ciclonomb=="2018-2019-INICIO"){
+      $concat .=  " AND Periodo = '16_17'";
+      $ciclonombre="PLANEA 2017";
+    }
+    if ($ciclonomb=="2017-2018-INICIO" and $nivelid=4){
+      $concat2 .=  " AND Periodo = '17_18'";
+      $ciclonombre_pri="PLANEA 2018";
+      // echo "llego aca";
+    }
+    if ($ciclonomb=="2018-2019-INICIO" and $nivelid=4){
+      $concat2 .=  " AND Periodo = '17_18'";
+      $ciclonombre_pri="PLANEA 2018";
+    }
 
-     $concat .= " AND Num_Municipio = {$municipioid}";
 
-   if($ciclonomb=="2014-2015-INICIO"){
-     $concat .= " AND Periodo = '14_15'";
-   }
-   elseif ($ciclonomb=="2015-2016-INICIO"){
-     $concat .= " AND Periodo = '15_16'";
-   }
-   elseif ($ciclonomb=="2016-2017-INICIO"){
-     $concat .= " AND Periodo = '15_16'";
-   }
-   elseif ($ciclonomb=="2017-2018-INICIO"){
-        $concat .=  " AND Periodo = '15_16'";
-      }
-    elseif ($ciclonomb=="2018-2019-INICIO"){
-        $concat .=  " AND Periodo = '15_16'";
-      }
+  // $query = "
+  // SELECT
+		// 	CASE Nivel
+		// 		WHEN 'PRIMARIA' THEN 'Primaria'
+		// 		WHEN 'SECUNDARIA' THEN 'Secundaria'
+		// 		WHEN 'MEDIA SUPERIOR' THEN 'Media Superior'
+		// 	END AS Nivel,
+		// 	CONCAT(ROUND(lyc_I,1),'%') 					AS lyc_I,
+		// 	CONCAT(ROUND(lyc_II,1),'%') 				AS lyc_II,
+		// 	CONCAT(ROUND(lyc_III,1),'%') 				AS lyc_III,
+		// 	CONCAT(ROUND(lyc_IV,1),'%') 				AS lyc_IV,
+		// 	CONCAT(ROUND(SUM(lyc_III+lyc_IV),1),'%') 	AS lyc_III_mas_IV,
+		// 	CONCAT(ROUND(mat_I,1),'%') 					AS mat_I,
+		// 	CONCAT(ROUND(mat_II,1),'%') 				AS mat_II,
+		// 	CONCAT(ROUND(mat_III,1),'%') 				AS mat_III,
+		// 	CONCAT(ROUND(mat_IV,1),'%') 				AS mat_IV,
+		// 	CONCAT(ROUND(SUM(mat_III+mat_IV),1),'%') 	AS mat_III_mas_IV
+		// FROM planea_x_muni WHERE 1= 1 {$concat}
+		// GROUP BY Nivel
+		// ORDER BY FIELD(Nivel,'Primaria','Secundaria','Media Superior')
 
-
-  $query = "
-  SELECT
-			CASE Nivel
-				WHEN 'PRIMARIA' THEN 'Primaria'
-				WHEN 'SECUNDARIA' THEN 'Secundaria'
-				WHEN 'MEDIA SUPERIOR' THEN 'Media Superior'
-			END AS Nivel,
-			CONCAT(ROUND(lyc_I,1),'%') 					AS lyc_I,
-			CONCAT(ROUND(lyc_II,1),'%') 				AS lyc_II,
-			CONCAT(ROUND(lyc_III,1),'%') 				AS lyc_III,
-			CONCAT(ROUND(lyc_IV,1),'%') 				AS lyc_IV,
-			CONCAT(ROUND(SUM(lyc_III+lyc_IV),1),'%') 	AS lyc_III_mas_IV,
-			CONCAT(ROUND(mat_I,1),'%') 					AS mat_I,
-			CONCAT(ROUND(mat_II,1),'%') 				AS mat_II,
-			CONCAT(ROUND(mat_III,1),'%') 				AS mat_III,
-			CONCAT(ROUND(mat_IV,1),'%') 				AS mat_IV,
-			CONCAT(ROUND(SUM(mat_III+mat_IV),1),'%') 	AS mat_III_mas_IV
-		FROM planea_x_muni WHERE 1= 1 {$concat}
-		GROUP BY Nivel
-		ORDER BY FIELD(Nivel,'Primaria','Secundaria','Media Superior')
-
-  ";
+  // ";
+      $query="SELECT * FROM (
+                SELECT CASE Nivel WHEN 'PRIMARIA' THEN 'Primaria {$ciclonombre_pri}' END AS Nivel, 
+                  CONCAT(ROUND(lyc_I,1),'%') AS lyc_I, CONCAT(ROUND(lyc_II,1),'%') AS lyc_II, 
+                  CONCAT(ROUND(lyc_III,1),'%') AS lyc_III, CONCAT(ROUND(lyc_IV,1),'%') AS lyc_IV, 
+                  CONCAT(ROUND(SUM(lyc_III+lyc_IV),1),'%') AS lyc_III_mas_IV, CONCAT(ROUND(mat_I,1),'%') AS mat_I, 
+                  CONCAT(ROUND(mat_II,1),'%') AS mat_II, CONCAT(ROUND(mat_III,1),'%') AS mat_III, CONCAT(ROUND(mat_IV,1),'%') AS mat_IV, 
+                  CONCAT(ROUND(SUM(mat_III+mat_IV),1),'%') AS mat_III_mas_IV 
+                  FROM planea_x_muni WHERE 1= 1  {$concat2} AND Nivel='PRIMARIA'
+                  GROUP BY Nivel
+                    UNION ALL 
+                    SELECT CASE Nivel WHEN 'SECUNDARIA' THEN 'Secundaria {$ciclonombre}' 
+                    WHEN 'MEDIA SUPERIOR' THEN 'Media Superior {$ciclonombre}' END AS Nivel, 
+                    CONCAT(ROUND(lyc_I,1),'%') AS lyc_I, CONCAT(ROUND(lyc_II,1),'%') AS lyc_II, 
+                    CONCAT(ROUND(lyc_III,1),'%') AS lyc_III, CONCAT(ROUND(lyc_IV,1),'%') AS lyc_IV, 
+                    CONCAT(ROUND(SUM(lyc_III+lyc_IV),1),'%') AS lyc_III_mas_IV, CONCAT(ROUND(mat_I,1),'%') AS mat_I, 
+                    CONCAT(ROUND(mat_II,1),'%') AS mat_II, CONCAT(ROUND(mat_III,1),'%') AS mat_III, CONCAT(ROUND(mat_IV,1),'%') AS mat_IV, 
+                    CONCAT(ROUND(SUM(mat_III+mat_IV),1),'%') AS mat_III_mas_IV 
+                    FROM planea_x_muni WHERE 1= 1  {$concat} AND Nivel!='PRIMARIA'
+                    GROUP BY Nivel 
+                    ORDER BY FIELD(Nivel,'Secundaria','Media Superior')
+              ) AS yy ORDER BY Nivel";
    // echo $query;
    // die();
   return $this->db->query($query)->result_array();

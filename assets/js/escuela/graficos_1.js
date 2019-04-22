@@ -1976,20 +1976,43 @@ this.TablaPieGraficaBarSecundaria= function(){
       }
 
 
+      
+      $("#select_opcciclo").change(function(){
+            // get_riesgo_abandono();
+        // console.log("select ciclo");
+        var opciones = {'opc1':'opcion 1','opc2':'opcion 2','opc3':'opcion 3'};
+        // console.log("ciclo: "+$("#select_opcciclo").val());
+        if($("#select_opcciclo").val()=='2018-2019'){
+          $("#select_opcbimestre").empty();
+          $('#select_opcbimestre').append('<option value="1">1er Periodo</option>');
+          $('#select_opcbimestre').append('<option value="2">2do Periodo</option>');
+          $('#select_opcbimestre').append('<option value="3">3er Periodo</option>');
+         
+        }else{
+          $("#select_opcbimestre").empty();
+          $('#select_opcbimestre').append('<option value="1">1er Bimestre</option>');
+          $('#select_opcbimestre').append('<option value="2">2do Bimestre</option>');
+          $('#select_opcbimestre').append('<option value="3">3er Bimestre</option>');
+          $('#select_opcbimestre').append('<option value="4">4to Bimestre</option>');
+          $('#select_opcbimestre').append('<option value="5">5to Bimestre</option>');
+        }
 
+       });
 
 
       this.get_riesgo_abandono = function(){
           var bimes = $("#select_opcbimestre").val();
           var ciclo = $("#select_opcciclo").val();
+          // console.log("ciclo:"+ciclo);
           var global_cct = $("#global_cct").val();
           var global_nombre_turno = $("#global_nombre_turno").val();
           var global_nivel = $("#global_nivel").val();
-          if ((bimes==4 || bimes==5) && ciclo=='2017-2018') {
+          if ((bimes==2 || bimes==3) && ciclo=='2018-2019') {
             alert("AUN NO DISPONIBLE");
 
-          }
-          else {
+          }else if((bimes==4 || bimes==5) && ciclo=='2017-2018'){
+            alert("AUN NO DISPONIBLE");
+          }else {
 
           var ruta = base_url+"escuela/info_escuela_riesgoabandono";
           $.ajax({
@@ -2094,7 +2117,7 @@ this.TablaPieGraficaBarSecundaria= function(){
                   type: 'bar'
               },
               title: {
-                  text: '<b style="font-size: 2.3vh;">PLANEA 2016</b>'
+                  text: '<b style="font-size: 2.3vh;">PLANEA 2018</b>'
               },
               subtitle: {
                   text: '<b style="font-size: 1.5vh;"> Total de alumnos evaluados: '+arr_lyc[0]['alumnos_evaluados']+'</b>'
@@ -2232,7 +2255,7 @@ this.TablaPieGraficaBarSecundaria= function(){
                   // width: 1000
               },
               title: {
-                  text: '<b style="font-size: 2.3vh;">PLANEA 2016</b>'
+                  text: '<b style="font-size: 2.3vh;">PLANEA 2018</b>'
               },
               subtitle: {
                   text: '<b style="font-size: 1.5vh;"> Total de alumnos evaluados: '+arr_mate[0]['alumnos_evaluados']+'</b>'

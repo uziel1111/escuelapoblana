@@ -944,40 +944,28 @@ function EsteIndGen(){
     this.gettablas4 = function(municipioid, municipionomb, nivelid, nivelnomb, sostenimientonomb, modalidadnomb, ciclonomb){
        // console.log(ciclonomb);    
       switch(ciclonomb)
-        {
+      {
           case '2014-2015-INICIO': 
-            concat = " 2014-2015";
-          break;
-
-          case '2014-2015-FIN':
-            concat = " 2014-2015";
+            concat = " 2013-2014";
           break;
 
           case '2015-2016-INICIO': 
-            concat = "2015-2016";
+            concat = "2014-2015";
           break;
-
-          case '2015-2016-FIN':
-            concat = "2015-2016";
-          break;
-
+          
           case '2016-2017-INICIO':
-            concat = "2016-2017";
+            concat = "2015-2016";
           break;
 
           case '2017-2018-INICIO': 
             concat = "2016-2017";
           break;
 
-          case 'FIN-2017-2018':
-            concat = "2016-2017";
-          break;
-
           case '2018-2019-INICIO': 
-            concat = "2016-2017";
+            concat = "2017-2018";
           break;
 
-        }
+      }
 
       
       $("#ind_asist_lb").empty();
@@ -1007,35 +995,23 @@ function EsteIndGen(){
       switch(ciclonomb)
         {
           case '2014-2015-INICIO': 
-            concat = " 2014-2015";
-          break;
-
-          case '2014-2015-FIN':
-            concat = " 2014-2015";
+            concat = " 2013-2014";
           break;
 
           case '2015-2016-INICIO': 
-            concat = "2015-2016";
+            concat = "2014-2015";
           break;
           
-          case '2015-2016-FIN':
+          case '2016-2017-INICIO':
             concat = "2015-2016";
           break;
 
-          case '2016-2017-INICIO':
-            concat = "2016-2017";
-          break;
-
-          case '2017-2018': 
-            concat = "2016-2017";
-          break;
-
-          case 'FIN-2017-2018':
+          case '2017-2018-INICIO': 
             concat = "2016-2017";
           break;
 
           case '2018-2019-INICIO': 
-            concat = "2016-2017";
+            concat = "2017-2018";
           break;
 
         }
