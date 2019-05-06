@@ -62,11 +62,12 @@ class Escuela_model extends CI_Model {
       INNER JOIN nivel n ON n.id_nivel = e.id_nivel
       INNER JOIN municipio m ON m.id_municipio = e.id_municipio
       INNER JOIN sostenimiento s ON s.id_sostenimiento = e.id_sostenimiento
-      INNER JOIN localidad l ON (l.id_localidad_a = e.id_localidad AND  m.id_municipio = l.id_municipio)
+      INNER JOIN localidad l ON (l.id_localidad = e.id_localidad AND  m.id_municipio = l.id_municipio)
       WHERE  1=1 AND ( e.nombre_ct LIKE '%".$valorabuscar."%' OR e.nombre_ct LIKE '%".$valorabuscar."%') AND ( 1= 1 ".$concat.")
       GROUP BY e.id_escuela
-      ORDER BY e.clave_ct, n.nombre_nivel
-      ";
+      ORDER BY e.clave_ct, n.nombre_nivel";
+      // echo $query;
+      // die();
     }
     else{
       /*
@@ -97,10 +98,11 @@ class Escuela_model extends CI_Model {
       INNER JOIN nivel n ON n.id_nivel = e.id_nivel
       INNER JOIN municipio m ON m.id_municipio = e.id_municipio
       INNER JOIN sostenimiento s ON s.id_sostenimiento = e.id_sostenimiento
-      INNER JOIN localidad l ON (l.id_localidad_a = e.id_localidad AND m.id_municipio = l.id_municipio)
+      left JOIN localidad l ON (l.id_localidad_a = e.id_localidad AND m.id_municipio = l.id_municipio)
       WHERE 1 = 1". $concat ."
-      ORDER BY e.clave_ct, n.nombre_nivel
-      ";
+      ORDER BY e.clave_ct, n.nombre_nivel";
+      // echo $query;
+      // die();
     }#  else
 
      //echo $query; die();
@@ -274,7 +276,13 @@ class Escuela_model extends CI_Model {
     $html .= "</div><!-- panel body -->";
     $html .= "</div><!-- panel-heading -->";
     $html .= "</div><!-- container -->";
+    // echo $nivel_global."\n";
 
+      if($nivel_global=='PRIMARIA'){
+          $ciclo_escolar_ipermanencia = "17_18";
+      }else{
+          $ciclo_escolar_ipermanencia = "15_16";
+      }
 
 
 
@@ -342,9 +350,9 @@ class Escuela_model extends CI_Model {
                   FROM estadistica_e_indicadoresxesc
                   WHERE escuela='".$global_claveCT."'
                   AND id_turno ='".$id_turno_global."'
-                  AND (ciclo='2018-2019-INICIO' or ciclo='INICIO-2018-2019')
+                  AND ciclo='2018-2019-INICIO'
                   ";
-                  //  echo $query_e; die();
+                   // echo $query_e; die();
                   // $result_e = $obj_db->select($query_e);
                   $result_e = $this->db->query($query_e)->result_array();
 
@@ -542,15 +550,27 @@ class Escuela_model extends CI_Model {
 
 
                   ////////////////////RIESGO DE abandono
-                  $bim=3;
-
+                  $bim=1;
+                  $titulo_planea="";
+                  $titulo_planea2="";
+                  $ciclo_es="";
+                  $ciclo_e="";
                   if($nivel_global=='PRIMARIA')
                   {
-                    $tabla_riesgo = "riesgoprimb".$bim."c1718";
+                    $tabla_riesgo = "riesgoprimp".$bim."c1819";
+                    $titulo_planea="PLANEA 2018";
+                    $titulo_planea2="PLANEA 2016";
+                    $ciclo_es='15_16';
+                    $ciclo_e='17_18';
+
                   }
                   else
                   {
-                    $tabla_riesgo = "riesgosecub".$bim."c1718";
+                    $tabla_riesgo = "riesgosecp".$bim."c1819";
+                    $titulo_planea="PLANEA 2016";
+                    $titulo_planea2="PLANEA 2015";
+                    $ciclo_es='14_15';
+                    $ciclo_e='15_16';
                   }
 
 
@@ -584,21 +604,32 @@ class Escuela_model extends CI_Model {
                       /************************************************************************************************************************/
                       $html .= "<div id='div_info_riesgoabandono'>";
                       /************************************************************************************************************************/
-
+                      // echo $ciclo_escolar_estadistica;
+                      // die();
                       $html .= '          <div class="row">';
                       $html .= '            <form id="form_riesgoporct" name="form_riesgoporct">';
                       $html .= '              <div class="col-sm-2"> </div>';
                       $html .= '              <div class="col-sm-3">';
                       $html .= '                <div class="form-group">';
                       $html .= '                  <label>Bimestre: </label>';
-                      $html .= '                  <select id="select_opcbimestre" name="select_opcbimestre" class="form-control">';
-                      $html .= '                    <option value="1">1er Bimestre</option>';
-                      $html .= '                    <option value="2">2do Bimestre</option>';
-                      $html .= '                    <option value="3" selected="selected">3er Bimestre</option>';
-                      $html .= '                    <option value="4">4to Bimestre</option>';
-                      $html .= '                    <option value="5">5to Bimestre</option>';
+                      if($ciclo_escolar_estadistica=='2018-2019-Inicio'){
+                        $html .= '                  <select id="select_opcbimestre" name="select_opcbimestre" class="form-control">';
+                        $html .= '                    <option value="1" selected="selected">1er Periodo</option>';
+                        $html .= '                    <option value="2">2do Periodo</option>';
+                        $html .= '                    <option value="3">3er Periodo</option>';
+                        $html .= '                  </select>';
+                      }else{
+                        $html .= '                  <select id="select_opcbimestre" name="select_opcbimestre" class="form-control">';
+                        $html .= '                    <option value="1">1er Bimestre</option>';
+                        $html .= '                    <option value="2">2do Bimestre</option>';
+                        $html .= '                    <option value="3" selected="selected">3er Bimestre</option>';
+                        $html .= '                    <option value="4">4to Bimestre</option>';
+                        $html .= '                    <option value="5">5to Bimestre</option>';
+                        $html .= '                  </select>';
+                      }
+                      
 
-                      $html .= '                  </select>';
+
                       $html .= '                </div>';
                       $html .= '              </div>';
                       $html .= '              <div class="col-sm-3">';
@@ -606,7 +637,8 @@ class Escuela_model extends CI_Model {
                       $html .= '                  <label>Ciclo Escolar:</label>';
                       $html .= '                  <select id="select_opcciclo" name="select_opcciclo" class="form-control">';
                       $html .= '                    <option value="2016-2017">2016 - 2017</option>';
-                      $html .= '                    <option value="2017-2018" selected="selected">2017 - 2018</option>';
+                      $html .= '                    <option value="2017-2018">2017 - 2018</option>';
+                      $html .= '                    <option value="2018-2019" selected="selected">2018 - 2019</option>';
 
                       $html .= '                  </select>';
                       $html .= '                </div>';
@@ -659,11 +691,11 @@ class Escuela_model extends CI_Model {
 
                       if($nivel_global=='PRIMARIA')
                       {
-                        $tabla_estatusb= "estatusbprimb".$bim."c1718";;
+                        $tabla_estatusb= "estatusbprimp".$bim."c1819";;
                       }
                       else
                       {
-                        $tabla_estatusb= "estatusbsecub".$bim."c1718";;
+                        $tabla_estatusb= "estatusbsecp".$bim."c1819";;
                       }
 
 
@@ -1101,6 +1133,7 @@ class Escuela_model extends CI_Model {
                   AND turno ='".$id_turno_global."'
                   AND ciclo_escolar = '" .$ciclo_escolar_ipermanencia. "'
                   ";
+
                   $query_ipe15 =     "SELECT
 
                   ILC,
@@ -1114,7 +1147,7 @@ class Escuela_model extends CI_Model {
                   FROM planeaxescprimsecuyms
                   WHERE clave_ct='" .$global_claveCT. "'
                   AND turno ='".$id_turno_global."'
-                  AND ciclo_escolar = '14_15'
+                  AND ciclo_escolar = '".$ciclo_es."'
                   ";
 
                   $query_ipe17 =     "SELECT
@@ -1132,6 +1165,8 @@ class Escuela_model extends CI_Model {
                   AND turno ='".$id_turno_global."'
                   AND ciclo_escolar = '16_17'
                   ";
+
+                  // echo $query_ipe17."\n";
 
                   $result_ipe17 = $this->db->query($query_ipe17)->result_array();
 
@@ -1174,9 +1209,10 @@ class Escuela_model extends CI_Model {
                   SELECT
                   lyc_I, lyc_II, lyc_III,lyc_IV, mat_I, mat_II, mat_III, mat_IV
                   FROM planea_x_muni
-                  WHERE Nivel='".$nivel_global."' AND Num_Municipio=0 AND Periodo='14_15'
+                  WHERE Nivel='".$nivel_global."' AND Num_Municipio=0 AND Periodo='".$ciclo_es."'
                   ";
 
+                  // echo $query_ipest15."\n";
                   $result_ipest15 = $this->db->query($query_ipest15)->result_array();
 
                   if (count($result_ipest15)>=1){
@@ -1197,9 +1233,10 @@ class Escuela_model extends CI_Model {
                   SELECT
                   lyc_I, lyc_II, lyc_III,lyc_IV, mat_I, mat_II, mat_III, mat_IV
                   FROM planea_x_muni
-                  WHERE Nivel='".$nivel_global."' AND Num_Municipio=0 AND Periodo='15_16'
+                  WHERE Nivel='".$nivel_global."' AND Num_Municipio=0 AND Periodo='".$ciclo_e."'
                   ";
-
+                  // echo $query_ipest16;
+                  // die();
                   $result_ipest16 = $this->db->query($query_ipest16)->result_array();
 
                   if (count($result_ipest16)>=1){
@@ -1243,7 +1280,7 @@ class Escuela_model extends CI_Model {
                   SELECT
                   lyc_I, lyc_II, lyc_III,lyc_IV, mat_I, mat_II, mat_III, mat_IV
                   FROM planea_nacionalxnivel
-                  WHERE nivel='".$nivel_global."' AND periodo='14_15'
+                  WHERE nivel='".$nivel_global."' AND periodo='15_16'
                   ";
 
                   $result_ipenac15 = $this->db->query($query_ipenac15)->result_array();
@@ -1321,7 +1358,7 @@ class Escuela_model extends CI_Model {
                   FROM planeaxescprimsecuyms
                   WHERE clave_ct='" .$global_claveCT. "'
                   AND turno ='".$id_turno_global."'
-                  AND ciclo_escolar = '14_15'
+                  AND ciclo_escolar = '".$ciclo_es."'
                   ";
 
 
@@ -1329,7 +1366,10 @@ class Escuela_model extends CI_Model {
 
 
                   // $result_ipe = $obj_db->select($query_ipe);
+                  // echo $query_ipe;
+                  // die();
                   $result_ipe = $this->db->query($query_ipe)->result_array();
+
 
                   if (count($result_ipe)>=1){
                     $row = $result_ipe[0];
@@ -1353,68 +1393,6 @@ class Escuela_model extends CI_Model {
 
                     $html .= "<div class='container-fluid'>";
 
-
-
-                                        //////////////////////////////////////////////////////// Por Unidades de Análisis
-                                        //////////////////////////////////////////////////////// Por Unidades de Análisis
-                                        // los tags
-                                        // '<div class="col-sm-12" id="containerbar_unidad_analisis_lyc" style="height: 400px; margin: 0 auto; width:auto;" ></div>'.
-                                        /*
-                                       $html .= '
-                                        <center>
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                            <thead>
-                                            <tr>
-                                                <th>
-                                                  PLANEA por contenido temático Lenguaje y Comunicación
-                                                </th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td>
-                                                  <div id="containerbar_unidad_analisis_lyc"></div>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                            </table>
-                                        </div>
-
-                                         </center>
-                                          ';
-                                          */
-
-
-/*
-<center>
-    <div class="panel-heading panel_head" role="button" data-toggle="collapse" data-target="#demo51" title="Clic para desplegar">
-      PLANEA por contenido temático<br>Lenguaje y Comunicación
-    </div>
-
-    <div id="demo51" class="collapse panel-body">
-            <br>
-            <div class="row margintop10">
-
-                  <div class="row">
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ft-responsive-xg"></div>
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ft-responsive-xg">
-                        <p style="1.9vh;">Presiona click en cada barra para conocer las preguntas en las que hubo más errores<p>
-                      </div>
-                 </div>
-
-                 <div class="row">
-                    <div class="col-sm-12">
-                      <div id="containerbar_unidad_analisis_lyc"></div>
-                    </div>
-                  </div>
-
-
-            </div>
-
-      </div>
- </center>
-*/
                                         $html .= '
                                         <div class="panel panel-default">
                                             <div class="panel-heading panel_head" role="button" data-toggle="collapse" data-target="#demo51" title="Clic para desplegar">
@@ -1506,11 +1484,11 @@ class Escuela_model extends CI_Model {
                     else {
                       $html .= '    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">';
                       $html .= '      <div style="display:inline-block; width:20px; height:20px; background-color:#ECC462; border: 1px solid black;"></div>';
-                      $html .= '      <p style="display:inline-block; font-size:1.5em; margin-left:10px;">2015</p>';
+                      $html .= '      <p style="display:inline-block; font-size:1.5em; margin-left:10px;">2016</p>';
                       $html .= '    </div>';
                       $html .= '    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">';
                       $html .= '       <div style="display:inline-block; margin-left:30px; width:20px; height:20px; background-color:#D5831C; border: 1px solid black;"></div>';
-                      $html .= '      <p style="display:inline-block; font-size:1.5em; margin-left:10px;">2016</p>';
+                      $html .= '      <p style="display:inline-block; font-size:1.5em; margin-left:10px;">2018</p>';
                       $html .= '    </div>';
                     }
 
@@ -1592,7 +1570,7 @@ class Escuela_model extends CI_Model {
                     $html .= "</th>";
                   }
 
-                  $html .= "<tr><td colspan='9' style='background-color:silver;'>PLANEA 2016";
+                  $html .= "<tr><td colspan='9' style='background-color:silver;'>".$titulo_planea;
                   $html .= "</td></tr>  <tr>    <th class='text-center'>Tu escuela";
                   $html .= "</th>    <td id='lycI_16' class='text-center'>".$ILC."%";
                   $html .= "</td>    <td id='lycII_16' class='text-center'>".$IILC."%";
@@ -1624,7 +1602,7 @@ class Escuela_model extends CI_Model {
                   $html .= "<td class='text-center'>".$IVMAT16nac."</td></tr>  ";
 
                     $html .= "<tr>";
-                    $html .= "<td colspan='9' style='background-color:silver;'>PLANEA 2015</td></tr><tr>   ";
+                    $html .= "<td colspan='9' style='background-color:silver;'>".$titulo_planea2."</td></tr><tr>   ";
                     $html .= "<th class='text-center'>Tu escuela</th>    ";
                     $html .= "<td id='lycI_15' class='text-center'>".$ILC15."%</td>    ";
                     $html .= "<td id='lycII_15' class='text-center'>".$IILC15."%</td>    ";
@@ -1672,7 +1650,7 @@ class Escuela_model extends CI_Model {
                     WHERE cct='".$global_claveCT."'
                     AND turno ='".$nombre_turno_global."'
                     ";
-                    // echo $query_e; die();
+                    // echo $query_ipete; die();
                     // $result_ip = $obj_db->select($query_ip);
                     $result_ipete = $this->db->query($query_ipete)->result_array();
                     // echo "<pre>";
@@ -1734,31 +1712,6 @@ class Escuela_model extends CI_Model {
 
                               $html .= "</div>";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                     // echo $nivel_global; die();
                     if($nivel_global=="PRIMARIA"){
 
@@ -1767,7 +1720,7 @@ class Escuela_model extends CI_Model {
                               (SELECT COUNT(*) FROM planea_primxconreactivo WHERE contenidos=p.contenidos) as total_reac_xua
                               FROM planea_primxconreactivo p
                               WHERE campos_disciplinares
-                              LIKE '%Lenguaje y Comunicación%'
+                              LIKE '%Lenguaje y Comunicación%' AND p.ciclo_escolar='17_18'
                     ";
 
                     $result_ua1 = $this->db->query($query_ua1)->result_array();
@@ -1775,7 +1728,7 @@ class Escuela_model extends CI_Model {
                       $string_reactivos = "";
                       $query_ua2 = "SELECT N_reactivo
                                     FROM planea_primxconreactivo
-                                    WHERE contenidos = '{$row['contenidos']}'
+                                    WHERE contenidos = '{$row['contenidos']}' AND ciclo_escolar='17_18'
                       ";
 
                       $result_reactivos = $this->db->query($query_ua2)->result_array();
@@ -1800,11 +1753,20 @@ class Escuela_model extends CI_Model {
                       $tmp_r_rea_xua = $row['total_reac_xua'];
                       foreach ($arr_react as $row) {
                         $num_reactivo = $row;
+                        // echo $num_reactivo;
+                        // die();
+                        
                         $campo = "R".$num_reactivo."_lyc";
+                        // echo $campo;
+                        if($campo=='R1_lyc' || $campo=='R2_lyc' || $campo=='R3_lyc'|| $campo=='R4_lyc' || $campo=='R5_lyc' || $campo=='R6_lyc' || $campo=='R7_lyc' || $campo=='R8_lyc' || $campo=='R9_lyc'){
+                          $campo = "R0".$num_reactivo."_lyc";
+                        }
+                        // die();
                         $query_ua3 = "SELECT {$campo}, n_alumn_eval_lyc
                                       FROM planea_primxreactivo
                                       WHERE clave_ct LIKE '%{$global_claveCT}%'
-                                      AND nombre_turno LIKE '%{$nombre_turno_global}%'
+                                      AND nombre_turno LIKE '%{$nombre_turno_global}%' 
+                                      AND ciclo_escolar='17_18' 
                         ";
                         // echo $query_ua3; die();
                         $result_num_alumno = $this->db->query($query_ua3)->result_array();
@@ -1835,7 +1797,7 @@ class Escuela_model extends CI_Model {
                     (SELECT COUNT(*) FROM planea_primxconreactivo WHERE contenidos=p.contenidos) as total_reac_xua
                               FROM planea_primxconreactivo p
                               WHERE campos_disciplinares
-                              LIKE '%Matemáticas%'
+                              LIKE '%Matemáticas%' AND p.`ciclo_escolar`='17_18'
                     ";
                     $result_ua1 = $this->db->query($query_ua1)->result_array();
                     foreach ($result_ua1 as $row) {
@@ -1843,7 +1805,7 @@ class Escuela_model extends CI_Model {
                       $string_reactivos = "";
                       $query_ua2 = "SELECT N_reactivo
                                     FROM planea_primxconreactivo
-                                    WHERE contenidos = '{$row['contenidos']}'
+                                    WHERE contenidos = '{$row['contenidos']}' AND ciclo_escolar='17_18'
                       ";
 
                       $result_reactivos = $this->db->query($query_ua2)->result_array();
@@ -1871,7 +1833,8 @@ class Escuela_model extends CI_Model {
                         $query_ua3 = "SELECT {$campo}, n_alumn_eval_mat
                                       FROM planea_primxreactivo
                                       WHERE clave_ct LIKE '%{$global_claveCT}%'
-                                      AND nombre_turno LIKE '%{$nombre_turno_global}%'
+                                      AND nombre_turno LIKE '%{$nombre_turno_global}%' 
+                                      AND ciclo_escolar='17_18'
                         ";
                         // echo $query_ua3; die();
                         $result_num_alumno = $this->db->query($query_ua3)->result_array();
@@ -1966,7 +1929,6 @@ class Escuela_model extends CI_Model {
 
                     $indice++;
                   }
-
 
 
                   $query_ua1 =  "SELECT DISTINCT p.contenidos,
@@ -2426,6 +2388,8 @@ class Escuela_model extends CI_Model {
 
 
                 public function get_info_riesgoabandono($tabla_riesgo, $bimestre, $ciclo, $global_claveCT, $nombre_turno_global, $nivel_global){
+                  // echo $bimestre."\n";
+                  // echo $ciclo;
                   $query_riesgo = " SELECT COUNT(CCT) total_alumnos,
                                     (SELECT COUNT(CCT) FROM $tabla_riesgo WHERE (CCT='$global_claveCT' and  TURNO='$nombre_turno_global' AND INASISTENCIAS >10 AND CALIFICACIONESPANOL=0 AND CALIFICACIONMATEMATICAS=0) ) zombies,
                                     (SELECT COUNT(CCT) FROM $tabla_riesgo WHERE (CCT='$global_claveCT' and  TURNO='$nombre_turno_global' AND  SEMAFORO >=3) ) muyalto_riesgo,
@@ -2435,7 +2399,14 @@ class Escuela_model extends CI_Model {
                                     FROM $tabla_riesgo WHERE CCT='$global_claveCT' AND TURNO='$nombre_turno_global'
                                   ";
                   $result_riesgo = $this->db->query($query_riesgo)->result_array();
-
+                  $select1="";
+                  $select2="";
+                  $select3="";
+                  $select_bim1="";
+                  $select_bim2="";
+                  $select_bim3="";
+                  $select_bim4="";
+                  $select_bim5="";
                   if (count($result_riesgo)>=1){
                     $row = $result_riesgo[0];
                     if ($row['total_alumnos']!='0') {
@@ -2450,22 +2421,54 @@ class Escuela_model extends CI_Model {
                       $html .= '              <div class="col-sm-2">';
                       $html .= '                <div class="form-group">';
                       $html .= '                  <label>Bimestre: </label>';
-                      $html .= '                  <select id="select_opcbimestre" name="select_opcbimestre" class="form-control">';
-                      $html .= '                    <option value="1">1er Bimestre</option>';
-                      $html .= '                    <option value="2">2do Bimestre</option>';
-                      $html .= '                    <option value="3" selected="selected">3er Bimestre</option>';
-                      $html .= '                    <option value="4">4to Bimestre</option>';
-                      $html .= '                    <option value="5">5to Bimestre</option>';
+                      if($ciclo=='2018-2019-INICIO' || $ciclo=='2018-2019'){
+                        $select1='selected="selected"';
+                      }else if($ciclo=='2017-2018'){
+                        $select2='selected="selected"';
+                      }else if($ciclo=='2016-2017'){
+                        $select3='selected="selected"';
+                      }
 
-                      $html .= '                  </select>';
+                      if($ciclo=='2016-2017' || $ciclo=='2017-2018'){
+                        if($bimestre==1){
+                          $select_bim1='selected="selected"';
+                        }else if($bimestre==2){
+                          $select_bim2='selected="selected"';
+                        }else if($bimestre==3){
+                          $select_bim3='selected="selected"';
+                        }else if($bimestre==4){
+                          $select_bim4='selected="selected"';
+                        }else if($bimestre==5){
+                          $select_bim5='selected="selected"';
+                        }
+                      }
+
+                      if($ciclo=='2018-2019-INICIO'  || $ciclo=='2018-2019'){
+                        $html .= '                  <select id="select_opcbimestre" name="select_opcbimestre" class="form-control">';
+                        $html .= '                    <option value="1" selected="selected">1er Periodo</option>';
+                        $html .= '                    <option value="2">2do Periodo</option>';
+                        $html .= '                    <option value="3">3er Periodo</option>';
+                        $html .= '                  </select>';
+                      }else{
+                        $html .= '                  <select id="select_opcbimestre" name="select_opcbimestre" class="form-control">';
+                        $html .= '                    <option value="1" '.$select_bim1.'>1er Bimestre</option>';
+                        $html .= '                    <option value="2" '.$select_bim2.'>2do Bimestre</option>';
+                        $html .= '                    <option value="3" '.$select_bim3.'>3er Bimestre</option>';
+                        $html .= '                    <option value="4" '.$select_bim4.'>4to Bimestre</option>';
+                        $html .= '                    <option value="5" '.$select_bim5.'>5to Bimestre</option>';
+                        $html .= '                  </select>';
+                      }
+                      
+
                       $html .= '                </div>';
                       $html .= '              </div>';
                       $html .= '              <div class="col-sm-2">';
                       $html .= '                <div class="form-group">';
                       $html .= '                  <label>Ciclo Escolar:</label>';
                       $html .= '                  <select id="select_opcciclo" name="select_opcciclo" class="form-control">';
-                      $html .= '                    <option value="2016-2017" selected="selected">2016 - 2017</option>';
-                      $html .= '                    <option value="2017-2018" selected="selected">2017 - 2018</option>';
+                      $html .= '                    <option value="2016-2017" '.$select3.'>2016 - 2017</option>';
+                      $html .= '                    <option value="2017-2018" '.$select2.'>2017 - 2018</option>';
+                      $html .= '                    <option value="2018-2019" '.$select1.'>2018 - 2019</option>';
                       $html .= '                  </select>';
                       $html .= '                </div>';
                       $html .= '              </div>';
@@ -2520,6 +2523,13 @@ class Escuela_model extends CI_Model {
                       else
                       {
                         $tabla_estatusb= "estatusbsecub".$bimestre."c".substr($ciclo,2,2).substr($ciclo,7,2);
+                      }
+
+                      if($nivel_global=='PRIMARIA' and $ciclo=='2018-2019')
+                      {
+                        $tabla_estatusb= "estatusbprimp".$bimestre."c".substr($ciclo,2,2).substr($ciclo,7,2);
+                      }elseif($nivel_global=='SECUNDARIA' and $ciclo=='2018-2019'){
+                        $tabla_estatusb= "estatusbsecp".$bimestre."c".substr($ciclo,2,2).substr($ciclo,7,2);
                       }
 
 
@@ -2800,6 +2810,9 @@ class Escuela_model extends CI_Model {
                         $num_reactivo = $row2['N_reactivo'];
                         // echo $num_reactivo; die();
                         $campo = "R".$num_reactivo."_".$opcion;
+                        if($campo=='R1_lyc' || $campo=='R2_lyc' || $campo=='R3_lyc'|| $campo=='R4_lyc' || $campo=='R5_lyc' || $campo=='R6_lyc' || $campo=='R7_lyc' || $campo=='R8_lyc' || $campo=='R9_lyc'){
+                           $campo = "R0".$num_reactivo."_".$opcion;
+                        }
                         $n_alumnos = "n_alumn_eval_".$opcion; //n_alumn_eval_lyc n_alumn_eval_mat
                         $query_ua3 = "SELECT {$campo}, {$n_alumnos}
                                       FROM planea_{$nvl}xreactivo

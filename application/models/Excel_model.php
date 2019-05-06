@@ -23,6 +23,8 @@ class Excel_model extends CI_Model {
 		    WHERE 1 = 1". $concat ."
 		    ORDER BY e.clave_ct, n.nombre_nivel
 		    ";
+		    // echo $query;
+		    // die();
        return $this->db->query($query)->result_array();
      }// get_all()
 
