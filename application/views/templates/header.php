@@ -438,6 +438,26 @@ BODY{
               </div>
             </div>
 
+            <div id="alert_genero" class="modal fade modal100 grises" role="dialog" >
+          <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header modal_head">
+              <button type="button"  id="RA_modal_visorpdf_btnsalir" class="close bold_white "  aria-label="Close"  data-dismiss="modal">
+                X
+              </button>
+            <h4 class="modal-title titulo_none" id="title_din">
+              Alerta de género.
+            </h4>
+            </div>
+            <div class="modal-body">
+                    <a href="#" id="pacvg" ><p>- Protocolos de atención a casos de violencia de género.</p></a>
+                    <a href="#" id="inf" ><p>- Infografías.</p></a>
+                    <a href="#" id="melv" ><p>- Manual de entrenamiento para escuela libres de violencia.</p></a>
+            </div><!-- modal body -->
+          </div>
+          </div>
+        </div>
+
             <div id="modal_preinscr" class="modal fade modal100 grises" role="dialog" >
           <div class="modal-dialog modal-lg">
           <div class="modal-content">

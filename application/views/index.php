@@ -711,6 +711,19 @@
                     </a>
                   </div>
 
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <a type="button" href="#" id="btn_alert_genero1">
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 div_herramientas_amarillo grises">
+                      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
+                        <img src="<?php echo base_url('assets/img/puzzle.svg'); ?>" alt="..." class=" img_icon" />
+                      </div>
+                      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 ">
+                      <span class="span_titulo">Alerta de género</span>
+                      </div>
+                  </div>
+                  </a>
+                </div>
+
                   </fieldset>
                 </div>
 

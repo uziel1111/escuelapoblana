@@ -162,6 +162,10 @@ $("#pdtcl_clase").click(function(e){
                                     e.preventDefault();
                                     $("#modal_din_cal").modal("show");
                         });
+              $("#btn_alert_genero1").click(function(e){
+                                    e.preventDefault();
+                                    $("#alert_genero").modal("show");
+                        });
               $("#btn_preinscripciones").click(function(e){
                                               e.preventDefault();
                                               $("#modal_preinscr").modal("show");
@@ -242,8 +246,33 @@ $("#cal185").click(function(e){
                           $('#RA_modal_visorpdf').modal("show");
                     });
 
+// $("#pacvg").click(function(e){
+//             e.preventDefault();
+//             $("#alert_genero").modal("hide");
+//             var dom = '<iframe src="" width="100%" height="500" style="border: none;"></iframe>';
+//             $('#RA_modal_visorpdf .modal-body').empty();
+//                 $('#RA_modal_visorpdf .modal-body').html(dom);
+//
+//                 $('#RA_modal_visorpdf').modal("show");
+//           });
+//           $("#inf").click(function(e){
+//                       e.preventDefault();
+//                       $("#alert_genero").modal("hide");
+//                       var dom = '<iframe src="" width="100%" height="500" style="border: none;"></iframe>';
+//                       $('#RA_modal_visorpdf .modal-body').empty();
+//                           $('#RA_modal_visorpdf .modal-body').html(dom);
+//
+//                           $('#RA_modal_visorpdf').modal("show");
+//                     });
+                    $("#melv").click(function(e){
+                                e.preventDefault();
+                                $("#alert_genero").modal("hide");
+                                var dom = '<iframe src="http://escuelapoblana.org/escuelapoblana_pdfs/index/alert_genero/Manuallibresdeviolencia.pdf" width="100%" height="500" style="border: none;"></iframe>';
+                                $('#RA_modal_visorpdf .modal-body').empty();
+                                    $('#RA_modal_visorpdf .modal-body').html(dom);
 
-
+                                    $('#RA_modal_visorpdf').modal("show");
+                              });
 
 
 
