@@ -512,22 +512,19 @@ BODY{
           <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header modal_head">
-              <button type="button"  id="RA_modal_visorpdf_btnsalir" class="close bold_white "  aria-label="Close"  data-dismiss="modal">
-                X
-              </button>
+              <h3>AVISO IMPORTANTE <button type="button"  id="RA_modal_visorpdf_btnsalir_aviso" class="close bold_white " data-dismiss="modal"  aria-label="Close">X</button></h3>
 
             </div>
             <div class="modal-body">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <center>
+                  <img style="width:100%" src="<?php echo base_url('assets/img/evaluacion_interna.png'); ?>" alt="">
 
-                      <img style="width:100%" src="<?php echo base_url('assets/img/electoral-avisoEP.png'); ?>" alt="">
-
-              </div>
-              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <center>
             </div><!-- modal body -->
           </div>
           </div>
         </div>
+
 
         <div id="md_sismo_md" class="modal fade modal100 grises" role="dialog" >
       <div class="modal-dialog modal-lg">
