@@ -715,10 +715,21 @@
                   <a type="button" href="#" id="btn_alert_genero1">
                   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 div_herramientas_amarillo grises">
                       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
-                        <img src="<?php echo base_url('assets/img/puzzle.svg'); ?>" alt="..." class=" img_icon" />
+                       <img src="<?php echo base_url('assets/img/puzzle.svg'); ?>" alt="..." class=" img_icon" />
                       </div>
                       <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 ">
                       <span class="span_titulo">Alerta de género</span>
+                      </div>
+                  </div>
+                  </a>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <a type="button" href="#" id="btn_alert_aviso">
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 div_herramientas_amarillo grises">
+                   
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                      <span class="span_titulo">Evaluación interna 6° de educación primaria</span>
                       </div>
                   </div>
                   </a>
@@ -762,7 +773,7 @@
             }(document, 'script', 'facebook-jssdk'));</script>
 
 
-            <script>
+    <!--         <script>
 
               $("#modal_aviso_elect").modal("show");
               $("#spd_id").click(function(e){
@@ -774,11 +785,4 @@
                 $("#modal_aviso_elect").modal("show");
               });
 
-              // $("#RA_modal_visorpdf_btnsalir_aviso").click(function(e){
-              //     e.preventDefault();
-              //     $('#modal_aviso_elect').modal("hide");
-              //     $('#modal_aviso_evaluacion_interna').modal("show");
-
-              // });
-
-              </script>
+              </script> -->

@@ -166,6 +166,10 @@ $("#pdtcl_clase").click(function(e){
                                     e.preventDefault();
                                     $("#alert_genero").modal("show");
                         });
+               $("#btn_alert_aviso").click(function(e){
+                                    e.preventDefault();
+                                    $("#modal_aviso_elect").modal("show");
+                        });
               $("#btn_preinscripciones").click(function(e){
                                               e.preventDefault();
                                               $("#modal_preinscr").modal("show");

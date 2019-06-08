@@ -517,7 +517,8 @@ BODY{
             </div>
             <div class="modal-body">
                 <center>
-                  <img style="width:100%" src="<?php echo base_url('assets/img/evaluacion_interna.png'); ?>" alt="">
+                   <a href="http://planea.sep.gob.mx/ba_ei/" target="_blank">
+                  <img style="width:100%" src="<?php echo base_url('assets/img/evaluacion_interna.png'); ?>" alt=""></a>
 
                 <center>
             </div><!-- modal body -->
