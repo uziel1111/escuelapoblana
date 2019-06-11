@@ -453,6 +453,8 @@ BODY{
                     <a href="#" id="pacvg" ><p>- Protocolos de atención a casos de violencia de género.</p></a>
                     <a href="#" id="inf" ><p>- Infografías.</p></a>
                     <a href="#" id="melv" ><p>- Manual de entrenamiento para escuela libres de violencia.</p></a>
+                    <a href="#" id="info1" ><p>- Libro de equidad de genero y prevencion de la violencia en primaria.</p></a>
+                    <a href="#" id="info2" ><p>- Libro de equidad de genero y prevencion de la violencia en secundaria.</p></a>
             </div><!-- modal body -->
           </div>
           </div>
