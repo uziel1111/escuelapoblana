@@ -625,14 +625,14 @@
                           <img src="<?php echo base_url('assets/img/certificate.svg'); ?>" alt="..." class=" img_icon" />
                         </div>
                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 ">
-                        <span class="span_titulo"><!-- Oferta --> de formación continua</span>
+                        <span class="span_titulo">Oferta de formación continua</span>
                         </div>
                     </div>
                     <!-- </a> -->
                   </div>
 
                   <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                    <!-- <a href="http://sep.puebla.gob.mx/2019-02-19-17-24-35/servicio-profesional-docente" target="_blank"> -->
+                    <a href="http://sep.puebla.gob.mx/2019-02-19-17-24-35/servicio-profesional-docente" target="_blank">
                     <!-- <a type="button" href="#" id="btn_spd1"> -->
                     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 div_herramientas_turquesa grises" id="spd_id">
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
@@ -642,7 +642,7 @@
                         <span  class="span_titulo">Servicio Profesional Docente</span>
                         </div>
                     </div>
-                    <!-- </a> -->
+                    </a>
                   </div>
 
                   <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
