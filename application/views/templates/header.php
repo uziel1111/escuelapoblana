@@ -269,7 +269,8 @@ BODY{
                                         <!-- href="http://spdpuebla.net/" target="_blank"-->
                                         <!-- href="http://escuelapoblana.org/escuelas_particulares/"-->
                                         <!-- href="<?php echo site_url('supervision/index'); ?>"-->
-                                        <li><a href="http://sep.puebla.gob.mx/2019-02-19-17-24-35/servicio-profesional-docente" target="_blank">Servicio Profesional Docente</a></li>
+                                        <!-- href="http://sep.puebla.gob.mx/2019-02-19-17-24-35/servicio-profesional-docente" target="_blank" -->
+                                        <li><a type="button" id="modal_spd">Servicio Profesional Docente</a></li>
                                         <li><a  >Supervisión</a></li>
                                         <li><a  >Escuelas  particulares</a></li>
                                         <!-- http://escuelapoblana.org/escuelas_particulares/ -->
@@ -452,7 +453,7 @@ BODY{
             <div class="modal-body">
                     <a href="#" id="pacvg" ><p>- Protocolos de atención a casos de violencia de género.</p></a>
                     <a href="#" id="inf" ><p>- Infografías.</p></a>
-                    <a href="#" id="melv" ><p>- Manual de entrenamiento para escuela libres de violencia.</p></a>
+                    <a href="#" id="melv" ><p>- Manual de entrenamiento para escuelas libres de violencia.</p></a>
             </div><!-- modal body -->
           </div>
           </div>
@@ -512,18 +513,23 @@ BODY{
           <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header modal_head">
-              <button type="button"  id="RA_modal_visorpdf_btnsalir" class="close bold_white "  aria-label="Close"  data-dismiss="modal">
-                X
-              </button>
+              <h3>AVISO IMPORTANTE <button type="button"  id="RA_modal_visorpdf_btnsalir" class="close bold_white "  aria-label="Close"  data-dismiss="modal">X</button></h3>
 
             </div>
             <div class="modal-body">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> -->
+                <center>
+                <p style="font-size: 20px;">
+                  <b>AVISO IMPORTANTE</b> de la Coordinación Nacional del Servicio Profesional Docente de la SEP: La Coordinación Nacional del Servicio Profesional Docente informa a los aspirantes a ingresar al servicio educativo en Educación Básica, que por efecto de la entrada en vigor del “Decreto por el que se reforman, adicionan y derogan diversas disposiciones de los artículos 3o., 31 y 73 de la Constitución Política de los Estados Unidos Mexicanos, en materia educativa”, se suspende temporalmente la aplicación de las evaluaciones programadas para los días 18 y 19 de mayo y subsecuentes.
+Agradecemos su comprensión y les pedimos estar atentos a las publicaciones oficiales a este respecto.
+                </p>
+                <a href="https://servicioprofesionaldocente.sep.gob.mx/" target="_blank">https://servicioprofesionaldocente.sep.gob.mx/</a>
+                <center>
 
-                      <img style="width:100%" src="<?php echo base_url('assets/img/electoral-avisoEP.png'); ?>" alt="">
+                      <!-- <img style="width:100%" src="<?php echo base_url('assets/img/electoral-avisoEP.png'); ?>" alt=""> -->
 
-              </div>
-              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <!-- </div> -->
+              <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
             </div><!-- modal body -->
           </div>
           </div>
