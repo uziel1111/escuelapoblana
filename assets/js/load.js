@@ -166,6 +166,10 @@ $("#pdtcl_clase").click(function(e){
                                     e.preventDefault();
                                     $("#alert_genero").modal("show");
                         });
+               $("#btn_alert_aviso").click(function(e){
+                                    e.preventDefault();
+                                    $("#modal_aviso_elect").modal("show");
+                        });
               $("#btn_preinscripciones").click(function(e){
                                               e.preventDefault();
                                               $("#modal_preinscr").modal("show");
@@ -247,14 +251,13 @@ $("#cal185").click(function(e){
                     });
 
 $("#pacvg").click(function(e){
-            e.preventDefault();
-            $("#alert_genero").modal("hide");
-            var dom = '<iframe src="http://escuelapoblana.org/escuelapoblana_pdfs/index/alert_genero/protocol.pdf" width="100%" height="500" style="border: none;"></iframe>';
-            $('#RA_modal_visorpdf .modal-body').empty();
-                $('#RA_modal_visorpdf .modal-body').html(dom);
-
-                $('#RA_modal_visorpdf').modal("show");
-          });
+  e.preventDefault();
+  $("#alert_genero").modal("hide");
+  var dom = '<iframe src="http://escuelapoblana.org/escuelapoblana_pdfs/index/alert_genero/protocol.pdf" width="100%" height="500" style="border: none;"></iframe>';
+  $('#RA_modal_visorpdf .modal-body').empty();
+  $('#RA_modal_visorpdf .modal-body').html(dom);
+  $('#RA_modal_visorpdf').modal("show");
+});
 //           $("#inf").click(function(e){
 //                       e.preventDefault();
 //                       $("#alert_genero").modal("hide");
@@ -264,16 +267,32 @@ $("#pacvg").click(function(e){
 //
 //                           $('#RA_modal_visorpdf').modal("show");
 //                     });
-                    $("#melv").click(function(e){
-                                e.preventDefault();
-                                $("#alert_genero").modal("hide");
-                                var dom = '<iframe src="http://escuelapoblana.org/escuelapoblana_pdfs/index/alert_genero/Manuallibresdeviolencia.pdf" width="100%" height="500" style="border: none;"></iframe>';
-                                $('#RA_modal_visorpdf .modal-body').empty();
-                                    $('#RA_modal_visorpdf .modal-body').html(dom);
+$("#melv").click(function(e){
+  e.preventDefault();
+  $("#alert_genero").modal("hide");
+  var dom = '<iframe src="http://escuelapoblana.org/escuelapoblana_pdfs/index/alert_genero/Manuallibresdeviolencia.pdf" width="100%" height="500" style="border: none;"></iframe>';
+  $('#RA_modal_visorpdf .modal-body').empty();
+  $('#RA_modal_visorpdf .modal-body').html(dom);
+  $('#RA_modal_visorpdf').modal("show");
+});
 
-                                    $('#RA_modal_visorpdf').modal("show");
-                              });
+$("#info1").click(function(e){
+  e.preventDefault();
+  $("#alert_genero").modal("hide");
+  var dom = '<iframe src="http://escuelapoblana.org/escuelapoblana_pdfs/index/alert_genero/Manuallibresdeviolenciaprimaria.pdf" width="100%" height="500" style="border: none;"></iframe>';
+  $('#RA_modal_visorpdf .modal-body').empty();
+  $('#RA_modal_visorpdf .modal-body').html(dom);
+  $('#RA_modal_visorpdf').modal("show");
+});
 
+$("#info2").click(function(e){
+  e.preventDefault();
+  $("#alert_genero").modal("hide");
+  var dom = '<iframe src="http://escuelapoblana.org/escuelapoblana_pdfs/index/alert_genero/Manuallibresdeviolenciasecundaria.pdf" width="100%" height="500" style="border: none;"></iframe>';
+  $('#RA_modal_visorpdf .modal-body').empty();
+  $('#RA_modal_visorpdf .modal-body').html(dom);
+  $('#RA_modal_visorpdf').modal("show");
+});
 
 
 

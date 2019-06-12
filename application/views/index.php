@@ -726,6 +726,17 @@
                   </a>
                 </div>
 
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <a type="button" href="#" id="btn_alert_aviso">
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 div_herramientas_amarillo grises">
+
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                      <span class="span_titulo">Evaluación interna 6° de educación primaria</span>
+                      </div>
+                  </div>
+                  </a>
+                </div>
+
                   </fieldset>
                 </div>
 
@@ -764,8 +775,7 @@
             }(document, 'script', 'facebook-jssdk'));</script>
 
 
-
-            <script>
+    <!--         <script>
 
               $("#modal_aviso_elect").modal("show");
               $("#spd_id").click(function(e){
@@ -776,14 +786,5 @@
                 e.preventDefault();
                 $("#modal_aviso_elect").modal("show");
               });
-
-            // (function(d, s, id) {
-            //   var js, fjs = d.getElementsByTagName(s)[0];
-            //   if (d.getElementById(id)) return;
-            //   js = d.createElement(s); js.id = id;
-            //   js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.2&appId=150246222139156&autoLogAppEvents=1"';
-            //   fjs.parentNode.insertBefore(js, fjs);
-            // }(document, 'script', 'facebook-jssdk'));
-
 
               </script>

@@ -453,7 +453,10 @@ BODY{
             <div class="modal-body">
                     <a href="#" id="pacvg" ><p>- Protocolos de atención a casos de violencia de género.</p></a>
                     <a href="#" id="inf" ><p>- Infografías.</p></a>
-                    <a href="#" id="melv" ><p>- Manual de entrenamiento para escuelas libres de violencia.</p></a>
+                    <a href="#" id="melv" ><p>- Manual de entrenamiento para escuela libres de violencia.</p></a>
+                    <a href="#" id="info1" ><p>- Libro de equidad de genero y prevencion de la violencia en primaria.</p></a>
+                    <a href="#" id="info2" ><p>- Libro de equidad de genero y prevencion de la violencia en secundaria.</p></a>
+
             </div><!-- modal body -->
           </div>
           </div>
@@ -513,27 +516,20 @@ BODY{
           <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header modal_head">
-              <h3>AVISO IMPORTANTE <button type="button"  id="RA_modal_visorpdf_btnsalir" class="close bold_white "  aria-label="Close"  data-dismiss="modal">X</button></h3>
+              <h3>AVISO IMPORTANTE <button type="button"  id="RA_modal_visorpdf_btnsalir_aviso" class="close bold_white " data-dismiss="modal"  aria-label="Close">X</button></h3>
 
             </div>
             <div class="modal-body">
-              <!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> -->
                 <center>
-                <p style="font-size: 20px;">
-                  <b>AVISO IMPORTANTE</b> de la Coordinación Nacional del Servicio Profesional Docente de la SEP: La Coordinación Nacional del Servicio Profesional Docente informa a los aspirantes a ingresar al servicio educativo en Educación Básica, que por efecto de la entrada en vigor del “Decreto por el que se reforman, adicionan y derogan diversas disposiciones de los artículos 3o., 31 y 73 de la Constitución Política de los Estados Unidos Mexicanos, en materia educativa”, se suspende temporalmente la aplicación de las evaluaciones programadas para los días 18 y 19 de mayo y subsecuentes.
-Agradecemos su comprensión y les pedimos estar atentos a las publicaciones oficiales a este respecto.
-                </p>
-                <a href="https://servicioprofesionaldocente.sep.gob.mx/" target="_blank">https://servicioprofesionaldocente.sep.gob.mx/</a>
+                   <a href="http://planea.sep.gob.mx/ba_ei/" target="_blank">
+                  <img style="width:100%" src="<?php echo base_url('assets/img/evaluacion_interna.png'); ?>" alt=""></a>
+
                 <center>
-
-                      <!-- <img style="width:100%" src="<?php echo base_url('assets/img/electoral-avisoEP.png'); ?>" alt=""> -->
-
-              <!-- </div> -->
-              <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
             </div><!-- modal body -->
           </div>
           </div>
         </div>
+
 
         <div id="md_sismo_md" class="modal fade modal100 grises" role="dialog" >
       <div class="modal-dialog modal-lg">
