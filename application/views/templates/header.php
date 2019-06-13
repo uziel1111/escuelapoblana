@@ -269,8 +269,7 @@ BODY{
                                         <!-- href="http://spdpuebla.net/" target="_blank"-->
                                         <!-- href="http://escuelapoblana.org/escuelas_particulares/"-->
                                         <!-- href="<?php echo site_url('supervision/index'); ?>"-->
-                                        <!-- href="http://sep.puebla.gob.mx/2019-02-19-17-24-35/servicio-profesional-docente" target="_blank" -->
-                                        <li><a type="button" id="modal_spd">Servicio Profesional Docente</a></li>
+                                        <li><a href="http://sep.puebla.gob.mx/2019-02-19-17-24-35/servicio-profesional-docente" target="_blank">Servicio Profesional Docente</a></li>
                                         <li><a  >Supervisión</a></li>
                                         <li><a  >Escuelas  particulares</a></li>
                                         <!-- http://escuelapoblana.org/escuelas_particulares/ -->
@@ -456,7 +455,7 @@ BODY{
                     <a href="#" id="melv" ><p>- Manual de entrenamiento para escuela libres de violencia.</p></a>
                     <a href="#" id="info1" ><p>- Libro de equidad de genero y prevencion de la violencia en primaria.</p></a>
                     <a href="#" id="info2" ><p>- Libro de equidad de genero y prevencion de la violencia en secundaria.</p></a>
-
+                    <a href="#" id="ptpvg" ><p>- Programa de Trabajo Prevención de Violencia de Género.</p></a>
             </div><!-- modal body -->
           </div>
           </div>

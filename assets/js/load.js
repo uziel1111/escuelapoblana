@@ -294,6 +294,16 @@ $("#info2").click(function(e){
   $('#RA_modal_visorpdf').modal("show");
 });
 
+$("#ptpvg").click(function(e){
+  e.preventDefault();
+  $("#alert_genero").modal("hide");
+  var dom = '<iframe src="http://escuelapoblana.org/escuelapoblana_pdfs/index/alert_genero/PROGRAMA_DE_TRABAJO_PREVENCION_DE_VIOLENCIA_DE_GENERO.pdf" width="100%" height="500" style="border: none;"></iframe>';
+  $('#RA_modal_visorpdf .modal-body').empty();
+  $('#RA_modal_visorpdf .modal-body').html(dom);
+  $('#RA_modal_visorpdf').modal("show");
+});
+
+
 
 
 
