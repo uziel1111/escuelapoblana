@@ -2519,3 +2519,79 @@ to {
     position: relative;
     z-index: 1;
 }
+/** Cards **/
+.card-style-1 {
+  border: 0;
+	background: none;
+}
+.card-style-1 .card-header {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 27px;
+	font-weight: 800;
+
+	padding: 3px 20px 0 20px;
+}
+.card-1-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.4);
+}
+.card-style-1 .card-body {
+	background: #FFFFFF;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+	border-color:#D3D3D3;
+
+    box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.2);
+}
+/* End Cards */
+/*** Accordion  ***/
+.accordion-style-1 .card  {
+    padding: 0 0 0 0 !important;
+	border: 0 !important;
+	background: transparent;
+}
+.accordion-style-1 .card > div.card-header {
+	font-family: 'Source Sans Pro', sans-serif !important;
+   /* font-family:'Passion One', cursive !important; */
+    padding: 11px 16px 11px 17px;
+
+}
+.accordion-style-1 .tcard > div.card-header:first-child {
+    border-radius:6px 6px 0 0;
+    -moz-border-radius:6px 6px 0 0;
+    -webkit-border-radius:6px 6px 0 0;
+	
+}
+
+.accordion-style-1 .card-header:not(.collapsed) {
+    font-size: 18px;
+	font-weight:normal;
+	color: #D3D3D3;
+	background:#D5D5D5;
+}
+.accordion-style-1 .card-header.collapsed {
+    font-size: 18px;
+	font-weight: normal;
+    color: #58595b;
+	background: #D3D3D3;
+}
+.accordion-style-1 .card-header.collapsed:hover {
+    background: rgba(0, 0, 0, 0.2);
+	color:#292828;
+}
+.accordion-style-1 .accordion-style-1-header .fa {
+  transition: .5s transform ease-in-out;
+  color: #fff;
+  font-size: 18px;
+}
+.accordion-style-1 .accordion-style-1-header .collapsed .fa {
+  transform: rotate(90deg);
+  color: #777777;
+  font-size: 18px;
+}
+.accordion-style-1 .card-body {
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 0 2px 4px 2px;
+}
