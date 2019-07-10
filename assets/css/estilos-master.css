@@ -275,3 +275,36 @@ textarea{
 /* FOOTER */
 footer{
 }
+
+
+/* ---------------------------------------------------
+    PORTAFOLIO CARDS
+----------------------------------------------------- */
+.panel-custom{
+border: 2px solid rgba(0,0,0,0.2);	
+}
+.panel-custom .inner{
+	overflow: hidden;
+	height: 130px;
+}
+.panel-custom .inner img{
+	transition: all 1.5s ease;
+}
+.panel-custom:hover .inner img {
+	transform: scale(1.2);
+}
+.panel-custom p{
+font-size: 16px;
+}
+.panel-custom .panel-body{
+font-size: 18px;
+font-weight: bold;	
+}
+/* .card-columns {
+  @include media-breakpoint-only(md) {
+    column-count: 1;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 2;
+  }
+}*/

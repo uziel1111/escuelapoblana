@@ -521,7 +521,7 @@ BODY{
             <div class="modal-body">
                 <center>
                    <a href="http://planea.sep.gob.mx/ba_ei/" target="_blank">
-                  <img style="width:100%" src="<?php echo base_url('assets/img/evaluacion_interna.png'); ?>" alt=""></a>
+                  <img style="width:100%" src="<?php echo base_url('assets/img/TALIS_ESCUELA_POBLANA.png'); ?>" alt=""></a>
 
                 <center>
             </div><!-- modal body -->

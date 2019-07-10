@@ -59,63 +59,63 @@
       <th scope="row">1</th>
       <td>Acta de Visita de Inspección Inicial (Educación Inicial)</td>
       <td>Word</td>
-      <td><a href="docs/actas_visitas/1. Formato - Acta de Visita Inicial - Nivel inicial.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/1. Formato - Acta de Visita Inicial - Nivel inicial.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Acta de Visita de Inspección Inicial (Preescolar)</td>
       <td>Word</td>
-      <td><a href="docs/actas_visitas/2. Formato - Acta de Visita Inicial - Nivel Preescolar.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/2. Formato - Acta de Visita Inicial - Nivel Preescolar.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">3</th>
       <td>Opinión Técnica (Todos los niveles)</td>
       <td>Word</td>
-      <td><a href="docs/actas_visitas/2.2. Opinion Tecnica _Todos los Niveles.doc" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/2.2. Opinion Tecnica _Todos los Niveles.doc');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">4</th>
       <td>Acta de Visita de Inspección Ordinaria (Educación Inicial)</td>
       <td>Word</td>
-      <td><a href="docs/actas_visitas/2.4. Acta de Insp Ord _Nivel Educacion Inicial.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/2.4. Acta de Insp Ord _Nivel Educacion Inicial.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">5</th>
       <td>Acta de Visita de Inspección Ordinaria (Preescolar)</td>
       <td>Word</td>
-      <td><a href="docs/actas_visitas/2.6. Acta de Insp Ord_Nivel Preescolar.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/2.6. Acta de Insp Ord_Nivel Preescolar.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">6</th>
       <td>Acta de Visita de Inspección Ordinaria (Primaria)</td>
       <td>Word</td>
-      <td><a href="docs/actas_visitas/2.8. Acta de Insp Ord_Nivel Primaria.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/2.8. Acta de Insp Ord_Nivel Primaria.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true"><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">7</th>
       <td>Acta de Visita de Inspección Ordinaria (Secundaria General)</td>
       <td>Word</td>
-      <td><a href="docs/actas_visitas/2.10. Acta de Insp Ord_Nivel Secundaria General.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/2.10. Acta de Insp Ord_Nivel Secundaria General.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>	
     <tr>
       <th scope="row">8</th>
       <td>Acta de Visita de Inspección Ordinaria (Secundaria Técnica)</td>
       <td>Word</td>
-      <td><a href="docs/actas_visitas/2.12. Acta de Insp Ord_Nivel Secundaria Tecnica.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/2.12. Acta de Insp Ord_Nivel Secundaria Tecnica.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>	
     <tr>
       <th scope="row">9</th>
       <td>Acta de Visita de Inspección Ordinaria de Bachilleratos Generales Escolarizados 
 </td>
       <td>Word</td>
-      <td><a href="docs/actas_visitas/2.14. Visita de inspeccion Ord_Nivel Media Superior Bachilleratos.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/2.14. Visita de inspeccion Ord_Nivel Media Superior Bachilleratos.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">10</th>
       <td>Acta de Visita de Inspección Ordinaria de Capacitación para el Trabajo, Técnico y Técnico Profesional. 
 </td>
       <td>Word</td>
-      <td><a href="docs/actas_visitas/2.16. Visita de inspeccion Ord_Nivel Media Superior Capacitacion.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/2.16. Visita de inspeccion Ord_Nivel Media Superior Capacitacion.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">11</th>
@@ -123,7 +123,7 @@
 
 </td>
       <td>Word</td>
-      <td><a href="docs/actas_visitas/3. Formato - de Visita Inicial - Nivel Primaria.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/3. Formato - de Visita Inicial - Nivel Primaria.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">12</th>
@@ -131,7 +131,7 @@
 
 </td>
       <td>Word</td>
-      <td><a href="docs/actas_visitas/4. Formato - de Visita Inicial - Nivel Secundaria General.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/4. Formato - de Visita Inicial - Nivel Secundaria General.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">13</th>
@@ -139,7 +139,7 @@
 
 </td>
       <td>Word</td>
-      <td><a href="docs/actas_visitas/5. Formato - de Visita Inicial - Nivel Secundaria Técnica.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/5. Formato - de Visita Inicial - Nivel Secundaria Técnica.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>	
     <tr>
       <th scope="row">14</th>
@@ -148,7 +148,7 @@
 
 </td>
       <td>Word</td>
-      <td><a href="docs/actas_visitas/6. Formato - de Visita Inicial - Bachillerato Escolarizados y No Escolarizados.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/6. Formato - de Visita Inicial - Bachillerato Escolarizados y No Escolarizados.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">15</th>
@@ -157,7 +157,7 @@
 
 </td>
       <td>Word</td>
-      <td><a href="docs/actas_visitas/7. Formato - de Visita Inicial - Nivel Media Superior - Capacitación para el trabajo.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/7. Formato - de Visita Inicial - Nivel Media Superior - Capacitación para el trabajo.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">16</th>
@@ -165,7 +165,7 @@
 
 </td>
       <td>Word</td>
-      <td><a href="docs/actas_visitas/Visita Extraordinaria con Instructivo DEC 2017.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/Visita Extraordinaria con Instructivo DEC 2017.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>	  
   </tbody>
 </table>
@@ -198,70 +198,70 @@
       <th scope="row">1</th>
       <td>Instituciones Cierre Definitivo Ciclo escolar 2016-2017</td>
       <td>PDF</td>
-      <td><a href="docs/altas_bajas_recientes/7.1. Cierres definitivos 2016_2017.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/altas_bajas_recientes/7.1. Cierres definitivos 2016_2017.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Instituciones Cierre Temporal Ciclo escolar 2016-2017</td>
       <td>PDF</td>
-      <td><a href="docs/altas_bajas_recientes/7.2. Cierres temporales 2016_2017.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/altas_bajas_recientes/7.2. Cierres temporales 2016_2017.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">3</th>
       <td>185 días 2017-2018</td>
       <td>PDF</td>
-      <td><a href="docs/altas_bajas_recientes/185 DÍAS 2017-2018.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/altas_bajas_recientes/185 DÍAS 2017-2018.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">4</th>
       <td>185 días 2016-2017</td>
       <td>PDF</td>
-      <td><a href="docs/altas_bajas_recientes/185DIAS 2016-2017.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/altas_bajas_recientes/185DIAS 2016-2017.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">5</th>
       <td>Cierres Definitivos Ciclo escolar 2015-2016</td>
       <td>PDF</td>
-      <td><a href="docs/altas_bajas_recientes/Cierres definitivosc2015 2016.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/altas_bajas_recientes/Cierres definitivosc2015 2016.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">6</th>
       <td>Cierres Temporales Ciclo escolar 2015-2016</td>
       <td>PDF</td>
-      <td><a href="docs/altas_bajas_recientes/Cierres temporalesc2015 2016.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/altas_bajas_recientes/Cierres temporalesc2015 2016.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true"><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">7</th>
       <td>Escuelas aprobadas para impartir Cursos de Verano 2017</td>
       <td>PDF</td>
-      <td><a href="docs/altas_bajas_recientes/Escuelas aprobadas para impartir Cursos de Verano 2017.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/altas_bajas_recientes/Escuelas aprobadas para impartir Cursos de Verano 2017.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>	
     <tr>
       <th scope="row">8</th>
       <td>Escuelas particulares a las que fue otorgada Autorización y RVOE 2016-2017</td>
       <td>PDF</td>
-      <td><a href="docs/altas_bajas_recientes/Escuelas particulares a las que fue otorgada Autorización y RVOE 2016-2017.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/altas_bajas_recientes/Escuelas particulares a las que fue otorgada Autorización y RVOE 2016-2017.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>	
     <tr>
       <th scope="row">9</th>
       <td>Incorporaciones Ciclo escolar 2015-2016 
 </td>
       <td>PDF</td>
-      <td><a href="docs/altas_bajas_recientes/Incorporacionesc2015 2016.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/altas_bajas_recientes/Incorporacionesc2015 2016.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">10</th>
       <td>Instituciones en Cierre Definitivo 
 </td>
       <td>PDF</td>
-      <td><a href="docs/altas_bajas_recientes/Instituciones en cierre definitivo.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/altas_bajas_recientes/Instituciones en cierre definitivo.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">11</th>
       <td>Instituciones en Cierre Temporal
 </td>
       <td>PDF</td>
-      <td><a href="docs/altas_bajas_recientes/Instituciones en cierre temporal.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/altas_bajas_recientes/Instituciones en cierre temporal.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">12</th>
@@ -269,7 +269,7 @@
 
 </td>
       <td>PDF</td>
-      <td><a href="docs/altas_bajas_recientes/Instituciones que obtuvieron RVOE.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/altas_bajas_recientes/Instituciones que obtuvieron RVOE.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">13</th>
@@ -277,7 +277,7 @@
 
 </td>
       <td>PDF</td>
-      <td><a href="docs/altas_bajas_recientes/Instituciones Sancionadas 2016-17.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/altas_bajas_recientes/Instituciones Sancionadas 2016-17.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>	
     <tr>
       <th scope="row">14</th>
@@ -285,7 +285,7 @@
 
 </td>
       <td>PDF</td>
-      <td><a href="docs/altas_bajas_recientes/Instituciones Sancionadas 2017-18.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/altas_bajas_recientes/Instituciones Sancionadas 2017-18.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">15</th>
@@ -293,7 +293,7 @@
 
 </td>
       <td>PDF</td>
-      <td><a href="docs/altas_bajas_recientes/Resolucion Administrativa COLEGIO JUAN DE LA CRUZ 21112017.PDF" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/altas_bajas_recientes/Resolucion Administrativa COLEGIO JUAN DE LA CRUZ 21112017.PDF');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
 	  
   </tbody>
@@ -327,56 +327,56 @@
       <th scope="row">1</th>
       <td>Cooperación - SDU y SEP</td>
       <td>PDF</td>
-      <td><a href="docs/comunicados/1 Cooperación - SDU y SEP.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/comunicados/1 Cooperación - SDU y SEP.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Acuerdo Horario de Invierno</td>
       <td>PDF</td>
-      <td><a href="docs/comunicados/2 AcuerdoHorario de Invierno.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/comunicados/2 AcuerdoHorario de Invierno.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">3</th>
       <td>Oficio SEO 2378-2016</td>
       <td>PDF</td>
-      <td><a href="docs/comunicados/3 OFICIO SEO 2378-2016.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/comunicados/3 OFICIO SEO 2378-2016.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">4</th>
       <td>Profesiograma para nivel Medio Superior</td>
       <td>PDF</td>
-      <td><a href="docs/comunicados/6. PROFESIOGRAMA_MS.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/comunicados/6. PROFESIOGRAMA_MS.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">5</th>
       <td>Básica - De los requisitos del personal académico y docente</td>
       <td>PDF</td>
-      <td><a href="docs/comunicados/BÁSICA - DE LOS REQUISITOS DEL PERSONAL ACADÉMICO Y DOCENTE.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/comunicados/BÁSICA - DE LOS REQUISITOS DEL PERSONAL ACADÉMICO Y DOCENTE.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">6</th>
       <td>Calendario general 2018 SEP INEE SPD</td>
       <td>PDF</td>
-      <td><a href="docs/comunicados/Calendario general 2018_SEP_INEE_SPD.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/comunicados/Calendario general 2018_SEP_INEE_SPD.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true"><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">7</th>
       <td>Invitacion - Afiliación seguro social</td>
       <td>PDF</td>
-      <td><a href="docs/comunicados/Invitacion - Afiliacion seguro social.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/comunicados/Invitacion - Afiliacion seguro social.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>	
     <tr>
       <th scope="row">8</th>
       <td>Oficio - Primer Requerimiento Supervisor Oct</td>
       <td>Word</td>
-      <td><a href="docs/comunicados/OFICIO_PRIMER_REQUERIMIENTO_SUPERVISOR OCT.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/comunicados/OFICIO_PRIMER_REQUERIMIENTO_SUPERVISOR OCT.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>	
     <tr>
       <th scope="row">9</th>
       <td>Oficio - Primer Requerimiento Supervisor 
 </td>
       <td>Word</td>
-      <td><a href="docs/comunicados/OFICIO_PRIMER_REQUERIMIENTO_SUPERVISOR.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/comunicados/OFICIO_PRIMER_REQUERIMIENTO_SUPERVISOR.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
 
     </tr>
     <tr>
@@ -384,7 +384,7 @@
       <td>Oficio - Segundo Requerimiento Supervisor Oct
 </td>
       <td>Word</td>
-      <td><a href="docs/comunicados/OFICIO_SEGUNDO_REQUERIMIENTO_SUPERVISOR OCT.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/comunicados/OFICIO_SEGUNDO_REQUERIMIENTO_SUPERVISOR OCT.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">11</th>
@@ -392,7 +392,7 @@
 
 </td>
       <td>Word</td>
-      <td><a href="docs/comunicados/OFICIO_SEGUNDO_REQUERIMIENTO_SUPERVISOR.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/comunicados/OFICIO_SEGUNDO_REQUERIMIENTO_SUPERVISOR.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">12</th>
@@ -400,7 +400,7 @@
 
 </td>
       <td>PDF</td>
-      <td><a href="docs/comunicados/Profesiograma_Basica.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/comunicados/Profesiograma_Basica.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
   
   </tbody>
@@ -434,37 +434,37 @@
       <th scope="row">1</th>
       <td>Los Fines de la Educacion en el Siglo XXI</td>
       <td>PDF</td>
-      <td><a href="docs/modeloeducativo2016/1. Los_Fines_de_la_Educacion_en_el_Siglo_XXI.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/modeloeducativo2016/1. Los_Fines_de_la_Educacion_en_el_Siglo_XXI.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Modelo Educativo 2016</td>
       <td>PDF</td>
-      <td><a href="docs/modeloeducativo2016/2. Modelo_Educativo_2016.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/modeloeducativo2016/2. Modelo_Educativo_2016.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">3</th>
       <td>Preguntas Frecuentes - Modelo Educativo 2016</td>
       <td>PDF</td>
-      <td><a href="docs/modeloeducativo2016/3. Preguntas Frecuentes _ Modelo Educativo 2016 _ Gobierno _ gob.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/modeloeducativo2016/3. Preguntas Frecuentes _ Modelo Educativo 2016 _ Gobierno _ gob.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">4</th>
       <td>Solicitud de Cambio de Capacitación para el trabajo para Bachilleratos</td>
       <td>Word</td>
-      <td><a href="docs/modeloeducativo2016/3.2.Formato de Cbio de Capac17.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/modeloeducativo2016/3.2.Formato de Cbio de Capac17.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">5</th>
       <td>Formato Cambio/Alta formación propedeuticas</td>
       <td>Word</td>
-      <td><a href="docs/modeloeducativo2016/3.3.Formato Cbio Alta Mat Proped17.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/modeloeducativo2016/3.3.Formato Cbio Alta Mat Proped17.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">6</th>
       <td>Propuesta Curricular para la Educacion Obligatoria</td>
       <td>PDF</td>
-      <td><a href="docs/modeloeducativo2016/4. Propuesta-Curricular-para-la-Educacion-Obligatoria-compressed.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/modeloeducativo2016/4. Propuesta-Curricular-para-la-Educacion-Obligatoria-compressed.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true"><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
   </tbody>
 </table>
@@ -565,13 +565,13 @@
       <th scope="row">1</th>
       <td>Formato Programas 2019 V1 Particulares</td>
       <td>Word</td>
-      <td><a href="docs/tramites_especificos/FORMATO_PROGRAMAS_EST_2019_V_1_PARTICULARES.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/tramites_especificos/FORMATO_PROGRAMAS_EST_2019_V_1_PARTICULARES.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Mapa curricular Oficial</td>
       <td>Word</td>
-      <td><a href="docs/tramites_especificos/Mapa curricular _OFICIAL_SEP_DAST_2019_V1.docx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/tramites_especificos/Mapa curricular _OFICIAL_SEP_DAST_2019_V1.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr> 
   </tbody>
 </table>
@@ -604,25 +604,25 @@
       <th scope="row">1</th>
       <td>Preguntas frecuentes ante la Ventanilla 2017</td>
       <td>PDF</td>
-      <td><a href="docs/otros/4. Preguntas frecuentes ante la Ventanilla 2017.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/otros/4. Preguntas frecuentes ante la Ventanilla 2017.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Manual de usuario</td>
       <td>Word</td>
-      <td><a href="docs/otros/5. Manual del usuario.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/otros/5. Manual del usuario.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">3</th>
       <td>Catálogo de Nombres Febrero 2019</td>
       <td>Excel</td>
-      <td><a href="docs/otros/Catálogo de Nombres FEBRERO 2019.xlsx" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/otros/Catálogo de Nombres FEBRERO 2019.xlsx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">4</th>
       <td>Instituciones clausuradas</td>
       <td>PDF</td>
-      <td><a href="docs/otros/Instituciones_clausuradas.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/otros/Instituciones_clausuradas.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
 
   </tbody>
@@ -684,13 +684,13 @@
       <th scope="row">1</th>
       <td>Acuerdo Información para la comercialización de los servicios educativos de particulares</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Comercialización de servicios educativos y pagos de derechos/Acuerdo_Informaciyn_para_la_comercializaciyn_de_los_servicios_educativos_que_prestan_los_particulares.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Comercialización de servicios educativos y pagos de derechos/Acuerdo_Informaciyn_para_la_comercializaciyn_de_los_servicios_educativos_que_prestan_los_particulares.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Ley de Ingresos del Estado de Puebla para el Ejercicio Fiscal 2018</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Comercialización de servicios educativos y pagos de derechos/Ley_de_Ingresos_del_Estado_de_Puebla_para_el_Ejercicio_Fiscal_2018.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Comercialización de servicios educativos y pagos de derechos/Ley_de_Ingresos_del_Estado_de_Puebla_para_el_Ejercicio_Fiscal_2018.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
   </tbody>
 </table>
@@ -725,43 +725,43 @@
       <th scope="row">1</th>
       <td>Acuerdo Específico de Educación Preescolar SEP Puebla 2016</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Educación Básica/3_Acuerdo_Especyfico_de_Educaciyn_Preescolar_SEP_Puebla_2016.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Básica/3_Acuerdo_Especyfico_de_Educaciyn_Preescolar_SEP_Puebla_2016.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Acuerdo Específico de Educación Primaria SEP Puebla 2016</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Educación Básica/4_Acuerdo_Especyfico_de_Educaciyn_Primaria__SEP_Puebla_2016 (1).pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Básica/4_Acuerdo_Especyfico_de_Educaciyn_Primaria__SEP_Puebla_2016 (1).pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">3</th>
       <td>Acuerdo Específico de Educación Secundaria SEP Puebla 2016</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Educación Básica/5_Acuerdo_Especyfico_de_Educaciyn_Secundaria_SEP_Puebla_2016.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Básica/5_Acuerdo_Especyfico_de_Educaciyn_Secundaria_SEP_Puebla_2016.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">4</th>
       <td>Circular de Actividades Extraescolares</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Educación Básica/Circular_de_Actividades_Extraescolares (2).pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Básica/Circular_de_Actividades_Extraescolares (2).pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">5</th>
       <td>Circular de Cursos de Verano 2018</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Educación Básica/Circular_de_Cursos_de_Verano_2018 (1).pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Básica/Circular_de_Cursos_de_Verano_2018 (1).pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">6</th>
       <td>Información Jurídico Administrativa de Educación Básica</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Educación Básica/Informaciyn_Jurydico_Administrativa_de_Educaciyn_ByAsica.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Básica/Informaciyn_Jurydico_Administrativa_de_Educaciyn_ByAsica.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">7</th>
       <td>Profesiograma de Educación Básica</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Educación Básica/Profesiograma_de_Educaciyn_ByAsica.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Básica/Profesiograma_de_Educaciyn_ByAsica.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>	  
   </tbody>
 </table>
@@ -796,19 +796,19 @@
       <th scope="row">1</th>
       <td>Acuerdo Específico de Educación Inicial SEP Puebla 2016</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Educación Inicial/2_Acuerdo_Especyfico_de_Educaciyn_Inicial_SEP_Puebla_2016.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Inicial/2_Acuerdo_Especyfico_de_Educaciyn_Inicial_SEP_Puebla_2016.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Información Jurídico Administrativa de Educación Inicial</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Educación Inicial/Informacion_Jurydico_Administrativa_de_Educaciyn_Inicial.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Inicial/Informacion_Jurydico_Administrativa_de_Educaciyn_Inicial.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">3</th>
       <td>Modelo de Atención con Enfoque Integral para la Educación Inicial</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Educación Inicial/Modelo_de_Atenciyn_con_Enfoque_Integral_para_la_Educaciyn_Inicial.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Inicial/Modelo_de_Atenciyn_con_Enfoque_Integral_para_la_Educaciyn_Inicial.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
  
   </tbody>
@@ -844,25 +844,25 @@
       <th scope="row">1</th>
       <td>Acuerdo Específico de Educación Inicial SEP Puebla 2016</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Generales/1_Acuerdo_Bases_Generales_SEP_Puebla_2016 (1).pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Generales/1_Acuerdo_Bases_Generales_SEP_Puebla_2016 (1).pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Información Jurídico Administrativa de Educación Inicial</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Generales/Acuerdo_Cambio_de_domicilio_temporal_-_Periydico_Oficial.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Generales/Acuerdo_Cambio_de_domicilio_temporal_-_Periydico_Oficial.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">3</th>
       <td>Circular Lineamientos para la protección de los derechos humanos de los educandos</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Generales/Circular_Lineamientos_para_la_protecciyn_de_los_derechos_humanos_de_los_educandos_en_situaciones_o_conflictos_de_violenci~1.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Generales/Circular_Lineamientos_para_la_protecciyn_de_los_derechos_humanos_de_los_educandos_en_situaciones_o_conflictos_de_violenci~1.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
      <tr>
       <th scope="row">4</th>
       <td>Circular sobre Entrega de Certificados, Constancias y Diplomas Escolares</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Generales/Circular_sobre_Entrega_de_Certificados_Constancias_y_Diplomas_Escolares.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Generales/Circular_sobre_Entrega_de_Certificados_Constancias_y_Diplomas_Escolares.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
   </tbody>
 </table>
@@ -897,73 +897,73 @@
       <th scope="row">1</th>
       <td>Acuerdo 243 RVOE</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Normatividad Media Superior/Acuerdo_243_RVOE.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Acuerdo_243_RVOE.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Acuerdo 286 Estudios Realizados en el Extranjero</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Normatividad Media Superior/Acuerdo_286_Estudios_Realizados_en_el_Extranjero (1).pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Acuerdo_286_Estudios_Realizados_en_el_Extranjero (1).pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">3</th>
       <td>Acuerdo 444 Marco Curricular Común</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Normatividad Media Superior/Acuerdo_444_Marco_Curricular_Comyn.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Acuerdo_444_Marco_Curricular_Comyn.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
      <tr>
       <th scope="row">4</th>
       <td>Acuerdo 445 Modalidad</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Normatividad Media Superior/Acuerdo_445_Modalidad.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Acuerdo_445_Modalidad.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">5</th>
       <td>Acuerdo 447 Competencias Docentes de Educación Media Superior</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Normatividad Media Superior/Acuerdo_447_Competencias_Docentes_de_Educaciyn_Media_Superior (1).pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Acuerdo_447_Competencias_Docentes_de_Educaciyn_Media_Superior (1).pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
      <tr>
       <th scope="row">6</th>
       <td>Acuerdo 449 Competencias Director Educación Media Superior</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Normatividad Media Superior/Acuerdo_449_Competencias_Director_Educaciyn_Media_Superior.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Acuerdo_449_Competencias_Director_Educaciyn_Media_Superior.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">7</th>
       <td>Acuerdo 450 Lineamientos Particulares Educación Media Superior</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Normatividad Media Superior/Acuerdo_450_Lineamientos_Particulares_Educaciyn_Media_Superior (2).pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Acuerdo_450_Lineamientos_Particulares_Educaciyn_Media_Superior (2).pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
      <tr>
       <th scope="row">8</th>
       <td>Acuerdo Específico de Educación Media Superior SEP Puebla 2016 con Profesiograma</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Normatividad Media Superior/Acuerdo_Especyfico_de_Educaciyn_Media_Superior_SEP_Puebla_2016_con_Profesiograma.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Acuerdo_Especyfico_de_Educaciyn_Media_Superior_SEP_Puebla_2016_con_Profesiograma.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">9</th>
       <td>Acuerdo Específico de Educación Media Superior SEP Puebla 2016 sin Profesiograma</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Normatividad Media Superior/Acuerdo_Especyfico_de_Educaciyn_Media_Superior_SEP_Puebla_2016_sin_Profesiograma.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Acuerdo_Especyfico_de_Educaciyn_Media_Superior_SEP_Puebla_2016_sin_Profesiograma.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
      <tr>
       <th scope="row">10</th>
       <td>Acuerdo para la obtención de Título Profesional Diploma de Especialidad y Grados Académicos</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Normatividad Media Superior/Acuerdo_para_la_obtenciyn_de_Tytulo_Profesional_Diploma_de_Especialidad_y_Grados_Acadymicos.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Acuerdo_para_la_obtenciyn_de_Tytulo_Profesional_Diploma_de_Especialidad_y_Grados_Acadymicos.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">11</th>
       <td>Información Jurídico Administrativa de Educación Media Superior</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Normatividad Media Superior/Informaciyn_Jurydico_Administrativa_de_Educaciyn_Media_Superior (4).pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Informaciyn_Jurydico_Administrativa_de_Educaciyn_Media_Superior (4).pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
      <tr>
       <th scope="row">12</th>
       <td>Profesiograma de Educación Media Superior</td>
       <td>PDF</td>
-      <td><a href="docs/normatividad/Normatividad Media Superior/Profesiograma_de_Educaciyn_Media_Superior.pdf" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Profesiograma_de_Educaciyn_Media_Superior.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>	  
   </tbody>
 </table>
@@ -999,13 +999,13 @@ $("#EP_a_cat_ep").click(function(){
 
 $("#EP_btn_manualusuario").click(function(e){
   e.preventDefault();
-  pdf = path_home+"escuelas_particulares/5. Manual del usuario.pdf";
+  pdf = path_home+"escuelas_particulares/5. Manual del usuario.pdf');?>";
   muestraPDF(pdf);
 });
 
 $("#EP_btn_preguntasfrecuentes").click(function(e){
   e.preventDefault();
-  pdf = path_home+"escuelas_particulares/4. Preguntas frecuentes ante la Ventanilla 2017.pdf";
+  pdf = path_home+"escuelas_particulares/4. Preguntas frecuentes ante la Ventanilla 2017.pdf');?>";
   muestraPDF(pdf);
 });
 

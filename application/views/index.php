@@ -659,7 +659,7 @@
                   </div>
 
                   <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                    <!-- <a href="http://escuelapoblana.org/escuelas_particulares/"> -->
+                    <a href="<?php echo site_url('EscuelasParticulares/index'); ?>">
                     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 div_herramientas_turquesa grises">
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                           <img src="<?php echo base_url('assets/img/mountain.svg'); ?>" alt="..." class="img_icon" />
@@ -668,7 +668,7 @@
                         <span class="span_titulo">Escuelas  particulares</span>
                         </div>
                     </div>
-                    <!-- </a> -->
+                    </a> 
                   </div>
 
 
@@ -712,7 +712,7 @@
                   </div>
 
                   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                  <a type="button" href="#" id="btn_alert_genero1">
+                  <a type="button" href="<?php echo site_url('AlertaGenero/index'); ?>">
                   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 div_herramientas_amarillo grises">
                       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
                         <center>
@@ -787,4 +787,4 @@
                 $("#modal_aviso_elect").modal("show");
               });
 
-              </script>
+              </script> -->

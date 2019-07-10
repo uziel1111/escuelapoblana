@@ -1,0 +1,18 @@
+﻿30, 31|
+EST05|
+Estadísticas|
+Levantamiento estadístico del formato de Bibliotecas|
+Levantamiento estadístico de Bibliotecas|
+CORDE|
+Dirección de Planeación y Estadística Educativa|
+Dirección General de Planeación, Programación y Estadística Educativa SEP (Federal)|
+SISTEMA AUTOMATIZADO|
+http://www.f912bibliotecas.sep.gob.mx|
+Todos los Niveles|
+Captura e impreso|
+No|
+Al inicio de cada ciclo|
+Enero, febrero|
+Artículos 1, 2, 3, 6, 45, 46, 103 y 106 de la Ley del Sistema Nacional de Información, Estadística y Geografía INEGI Reglamento Interior de la SEP Artículo 39 fracción XVII.|
+No|
+-|

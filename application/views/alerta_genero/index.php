@@ -1,502 +1,107 @@
-<style>
-
-.id_glyph{
-  font-size:20px;
-  padding-top:8px;
-  padding-left:15px;
-  color:#337ab7;
-}
-
-
-
-.divCitas{
-  background : #F3f3f3;
-  width: "100%";
-  height: 50px;
-  text-align: center;
-  font-size: 28px;
-  margin: 5px;
-
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-
-  -webkit-box-shadow: -2px 6px 5px 2px rgba(219,210,219,0.83);
-  -moz-box-shadow: -2px 6px 5px 2px rgba(219,210,219,0.83);
-  box-shadow: -2px 6px 5px 2px rgba(219,210,219,0.83);
-
-}
-.divCitas a {
-  text-decoration: none;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.divCitas:hover{
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
-.divbuscador{
-  background : #004E7D;
-  width: "100%";
-  height: 100px;
-  text-align: center;
-  font-size: 28px;
-  margin: 5px;
-
-
-  /* centrado X  Y */
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  /*
-  -webkit-box-shadow: -1px 0px 11px 2px rgba(165,209,207,1);
-  -moz-box-shadow: -1px 0px 11px 2px rgba(165,209,207,1);
-  box-shadow: -1px 0px 11px 2px rgba(165,209,207,1);
-  */
-}
-.divbuscador a {
-  text-decoration: none;
-  cursor: pointer;
-  color: #FFFFFF;
-  font-weight: bold;
-}
-.divbuscador:hover{
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
-.cat_ep{
-  background : #FCD12C;
-  width: "100%";
-  height: 100px;
-  text-align: center;
-  font-size: 20px;
-  /*margin: 5px;*/
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  /*
-  -webkit-box-shadow: -2px 6px 5px 2px rgba(219,210,219,0.83);
-  -moz-box-shadow: -2px 6px 5px 2px rgba(219,210,219,0.83);
-  box-shadow: -2px 6px 5px 2px rgba(219,210,219,0.83);
-  */
-}
-.cat_ep a {
-  text-decoration: none;
-  cursor: pointer;
-  font-weight: bold;
-  color: #FFF;
-}
-.cat_ep:hover{
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
-.norm_tra{
-  background : #EB7923;
-  width: "100%";
-  height: 100px;
-  text-align: center;
-  font-size: 20px;
-  /*margin: 5px;*/
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  -webkit-box-shadow: -2px 6px 5px 2px rgba(219,210,219,0.83);
-  -moz-box-shadow: -2px 6px 5px 2px rgba(219,210,219,0.83);
-  box-shadow: -2px 6px 5px 2px rgba(219,210,219,0.83);
-}
-.norm_tra a {
-  text-decoration: none;
-  cursor: pointer;
-  font-weight: bold;
-  color: #FFF;
-}
-.norm_tra:hover{
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
-.altas_ba{
-  background : #0092B3;
-  width: "100%";
-  height: 100px;
-  text-align: center;
-  font-size: 20px;
-  /*margin: 5px;*/
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-
-  -webkit-box-shadow: -2px 6px 5px 2px rgba(219,210,219,0.83);
-  -moz-box-shadow: -2px 6px 5px 2px rgba(219,210,219,0.83);
-  box-shadow: -2px 6px 5px 2px rgba(219,210,219,0.83);
-
-}
-.altas_ba a {
-  text-decoration: none;
-  cursor: pointer;
-  font-weight: bold;
-  color: #FFF;
-}
-.altas_ba:hover{
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
-.margen_columna{
-  margin-bottom: 5px;
-}
-
-.margin_top_pFixed{
-  margin-top: 150px;
-}
-
-.table {
-  text-align: center;
-  border-collapse: separate;
-  border-spacing: 0;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 0;
-  border: 2px solid #225D99;
-    margin-bottom: 0px;
-}
-.informa {
-    text-align: center;
-    background-color: #225D99;
-    color: #fff;
-    font-weight: bold;
-}
-.clr_tr_tableb{
-  cursor: pointer;
-  background-color: white;
-}
-.clr_tr_tableg{
-  cursor: pointer;
-  background-color: #DCDCDC;
-}
-
-.clr_tr_tableg:hover{
-  cursor: pointer;
-  background-color: #5bc0de;
-}
-.clr_tr_tableb:hover{
-  cursor: pointer;
-  background-color: #5bc0de;
-}
-.tooltip1 {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-
-.tooltip1 .tooltiptext1 {
-    visibility: hidden;
-    width: 180px;
-    background-color: black;
-    color: #fff;
-    font-size: 12px;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    top: 100%;
-    left: 30px;
-}
-
-.tooltip1:hover .tooltiptext1 {
-    visibility: visible;
-}
-
-.tooltip2 {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-
-.tooltip2 .tooltiptext2 {
-    visibility: hidden;
-    width: 180px;
-    background-color: black;
-    color: #fff;
-    font-size: 12px;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    top: 100%;
-    left: -30px;
-    margin-left: 0px;
-}
-
-.tooltip2:hover .tooltiptext2 {
-    visibility: visible;
-}
-.td_paloma_verde{
-  color: green;
-}
-.graf_div_ajust{
-  Display: none !important;
-}
-.cd-top:hover {
-  opacity: 1 !important;
-}
-
-.div_herramientas_naranja{
-  background-color: #FF9800;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  margin-top: 10px;
-  margin-bottom: 20px;
-  color: #FFFFFF;
-  cursor: pointer;
-}
-.div_herramientas_amarillo{
-  background-color: #F5C716;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  margin-top: 10px;
-  margin-bottom: 20px;
-  color: #FFFFFF;
-  cursor: pointer;
-}
-.div_herramientas_azul{
-  background-color: #0277BD;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  margin-top: 10px;
-  margin-bottom: 20px;
-  color: #FFFFFF;
-  cursor: pointer;
-}
-.div_herramientas_rojo{
-  background-color: #F44336;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  margin-top: 10px;
-  margin-bottom: 20px;
-  color: #FFFFFF;
-  cursor: pointer;
-}
-
-.scroll_modal{
-  overflow: scroll;
-}
-</style>
-
-
-
-
 <!-- <section> -->
-<div  class="container-fluid">
+<div  class="container">
+          <div class="row" style="margin: 20px;">
+            <div class="col-3">
+              <center>
+                <img src="<?php echo base_url('assets/img/alerta-genero-1.png'); ?>" class="img-fluid" alt="Responsive image">
+              </center>
+            </div>
+          </div> <!-- row -->	
   <div class="row">
     <div class="col-sm-12">
-      <div id="div_particulares_opciones">
-          <div class="row">
-            <div class="col-sm-12">
-              <center>
-                <div class="h3">  <strong> Escuelas Particulares </strong></div>
-              </center>
-            </div>
-            <div class="col-sm-12">
-              <center class="">
-                <p >Inicial, Preescolar, Primaria, Secundaria, Secundaria Técnica, Capacitación para el trabajo, Técnico, Técnico Profesional, Bachillerato General, Tecnológico y no Escolarizado.</p>
-              </center>
-            </div>
-          </div> <!-- row -->
+   
 
-          <div class="well">
-            <p> <b>Padre de familia:</b> en este sitio encontrarás información referente a los planteles educativos que ofertan servicios particulares y que están reconocidos por SEP Puebla. Te recomendamos revisar el estatus de la escuela antes de inscribir a tu hijo.</p>
-            <p> <b>Supervisor escolar o jefe de sector:</b> en este sitio podrá consultar y descargar la normatividad que regula a las Escuelas Particulares con Reconocimiento Oficial de SEP Puebla, podrá verificar quiénes cuentan con Acuerdo o Registro de Validez Oficial de Estudios (RVOE) y los distintos servicios que están dentro de la Educación Obligatoria.</p>
-          </div>
 
-          <div class="row">
-            <div class="col-sm-12 ">
-              <div class="divCitas">
-                <a  href="http://citasenlinea.puebla.gob.mx" target="_blank"> Citas en línea </a>
-              </div>
-            </div>
-          </div>
+<div class="card card-style-1"  style="margin-bottom: 20px;">
+  <div class="card-header bg-primary text-center">
+    <span class="second-txt">Catálogo de Documentos</span>
+  </div>
+  <div class="card-body">
 
-          <div class="row">
-            <div class="col-sm-12 ">
-              <div class="divbuscador">
-                <a id="EP_buscador"> Buscador de escuelas particulares </a>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 margen_columna">
-              <div class="cat_ep">
-                <a id="EP_a_cat_ep"> Catálogo de nombres de escuelas particulares </a>
-              </div>
+	  
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre del documento</th>
+      <th scope="col">Tipo de Archivo</th>
+      <th scope="col">Opciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Machismo y sexismo en Disney</td>
+      <td>Vídeo</td>
+      <td><a href="https://youtu.be/d0smB63Xrp8" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+		</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Estereotipos en los simpsons - Violencia de genero</td>
+      <td>Vídeo</td>
+      <td><a href="https://youtu.be/cTYf8n33IRo" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+		</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>La Consulta</td>
+      <td>Vídeo</td>
+      <td><a href="https://youtu.be/Cu_GX8Xn8vY" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+		</td>
+    </tr>	  
+    <tr>
+      <th scope="row">4</th>
+      <td>Mi bienestar es el tuyo </td>
+      <td>PDF</td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/index/alert_genero/bienestar-interiores_12junio.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
+		<a href="<?php echo base_url('escuelapoblana_pdfs/index/alert_genero/bienestar-interiores_12junio.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i></a>
+		</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Material teórico-práctico para la prevención de la violencia </td>
+      <td>PDF</td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/index/alert_genero/Material prevención a la violencia SEP.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
+		<a href="<?php echo base_url('escuelapoblana_pdfs/index/alert_genero/Material prevención a la violencia SEP.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i></a>
+		</td>
+    </tr>
 
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 margen_columna">
-              <div class="norm_tra">
-                <a id="" href="<?php echo site_url('escuela/normatividad_tramites_com'); ?>"> Normatividad, trámites, comunicados y modelo educativo 2016 </a>
-              </div>
+    <tr>
+      <th scope="row">6</th>
+      <td>Libro de equidad de género y prevención de la violencia en primaria</td>
+      <td>PDF</td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/index/alert_genero/Manuallibresdeviolenciaprimaria.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
+		<a href="<?php echo base_url('escuelapoblana_pdfs/index/alert_genero/Manuallibresdeviolenciaprimaria.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i></a>
+		</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Libro de equidad de género y prevención de la violencia en secundaria</td>
+      <td>PDF</td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/index/alert_genero/Manuallibresdeviolenciasecundaria.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
+		<a href="<?php echo base_url('escuelapoblana_pdfs/index/alert_genero/Manuallibresdeviolenciasecundaria.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i></a>
+		</td>
+    </tr>	
+    <tr>
+      <th scope="row">8</th>
+      <td>Programa de trabajo de prevención de violencia de género</td>
+      <td>PDF</td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/index/alert_genero/PROGRAMA_DE_TRABAJO_PREVENCION_DE_VIOLENCIA_DE_GENERO.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
+		<a href="<?php echo base_url('escuelapoblana_pdfs/index/alert_genero/PROGRAMA_DE_TRABAJO_PREVENCION_DE_VIOLENCIA_DE_GENERO.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i></a>
+		</td>
+    </tr>	 
+  </tbody>
+</table> 
+	  
+	  
+  </div>
+</div>	
 
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 margen_columna">
-              <div class="altas_ba">
-                <a id="" href="<?php echo site_url('escuela/altas_bajas_rec_y_cal'); ?>"> Altas, bajas recientes de escuelas particulares y calendario de 185 días </a>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 margen_columna">
-              <a href="http://goo.gl/forms/TrDQmJMhsYSUyzjn1" target="_blank" type="button" class="btn btn-default btn-block btn-lg">
-                Ayúdanos a mejorar
-              </a>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 margen_columna">
-              <a type="button" id="EP_btn_manualusuario"  class="btn btn-default btn-block btn-lg">
-                Manual de usuario
-              </a>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 margen_columna">
-              <a type="button" id="EP_btn_preguntasfrecuentes" class="btn btn-default btn-block btn-lg">
-                Preguntas más frecuentes
-              </a>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <center>
-                <p>DIRECCIÓN DE ESCUELAS PARTICULARES</p>
-                <p>Avenida Reforma No 710. Col. Centro</p>
-                <p>Puebla, Pue. C.P. 72000</p>
-                <p>Tel: 222 – 2230995</p>
-                <p>escuelasparticulares@puebla.gob.mx</p>
-                <p>www.sep.pue.gob.mx</p>
-              </center>
-            </div>
-          </div>
-
-      </div><!-- div_particulares_opciones -->
+   
   </div> <!-- col-xs-12 -->
   </div> <!-- row -->
 </div><!-- container -->
-
-
-      <div id="div_particulares_grid">
-        <div  class="container-fluid">
-          <div class="row">
-              <div class="dv_flotante" style="top:auto; position: fixed; width:100%; height:auto; background-color:#ffffff; border: 2px solid #ccc; padding:10px;">
-                <div class="row"><!-- div de encabezado -->
-                  <div class="col-sm-12">
-                    <center>
-                      <strong> Conozca los datos de matrícula, maestros y desempeño de cada escuela al hacer clic en su CCT  </strong>
-                    </center>
-                  </div>
-                </div><!-- div de encabezado -->
-                <div class="row">
-                  <!-- <div class="col-sm-12 margin_top_7"> -->
-                    <!-- <div id="busqueda"> -->
-                      <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 margin_top_7">
-                        <span style="background-color: yellow;" id="id_glyph" class="glyphicon glyphicon-filter"></span>
-                        <label style="background-color: yellow;" id="LE_resultados_busqueda"></label>
-                      </div>
-                      <div class="col-xs-6 col-sm-6 col-md-1 col-lg-1 margin_top_7">
-                        <!-- <form action="excel/exportar_excel" method="post"> -->
-                        <?php echo form_open('excel/exportar_excel', array('id' => 'form_excel')); ?>
-                          <input type="hidden" name="LE_id_municipio" id="LE_id_municipio" value="">
-                          <input type="hidden" name="LE_id_nivel" id="LE_id_nivel" value="">
-                          <input type="hidden" name="LE_sostenimiento" id="LE_sostenimiento" value="">
-                          <input type="hidden" name="LE_clave" id="LE_clave" value="">
-                          <input type="hidden" name="action" id="" value="lista_escuelas_grid">
-                          <!-- <b class="pull-right"><button id="" type="submit" class="btn btn-info btn-block btn-sm">Exportar reporte a excel</button></b> -->
-                          <button id="" type="submit" class="btn btn-info btn-block" data-toggle="tooltip" title="Exportar reporte a excel">
-                            <center><img src="<?php echo base_url('assets/img/xlsx.svg'); ?>" alt="..." class="img-responsive img_icono"/></center>
-                          </button>
-                        </form>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-1 col-lg-1 margin_top_7">
-                      <b class="pull-right"><button id="EP_btn_rebuscar" type="button" class="btn btn-info btn-block">Buscar otra vez</button></b>
-                    </div>
-                  </div><!-- row -->
-
-                  <div class="row">
-                      <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 margin_top_7">
-                        <b  class="pull-left"><label id="le_totalRegistros">0</label> escuelas encontradas</b>
-                      </div>
-
-                      <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 margin_top_7">
-                        <button id="EP_btn_importante" type="button" class="btn btn-info btn-block">Importante <span class="glyphicon glyphicon-info-sign" aria-hidden="true"> </span></button>
-                      </div>
-
-                      <div class="col-xs-8 col-sm-8 col-md-7 col-lg-7 margin_top_7">
-                        <input type="text" id="EP_txt_buscadorAvanzado" class="form-control pull-right" placeholder="Use este campo para buscar una escuela dentro de la tabla de resultados, ingrese parte del nombre de la escuela" >
-                      </div>
-                      <div class="col-xs-4 col-sm-4 col-md-1 col-lg-1 margin_top_7">
-                        <!-- <button id="EP_btn_buscar" type="button" class="btn btn-block btn-sm btn_turquesa" ><span class="glyphicon glyphicon-search" aria-hidden="true"> </span></button> -->
-
-                          <button id="EP_btn_buscar" type="button" class="btn btn-primary btn-block" data-toggle="tooltip" title="Buscar">
-                            <center><img src="<?php echo base_url('assets/img/search.svg'); ?>" alt="..." class="img-responsive img_icono" /></center>
-                          </button>
-
-                      </div>
-                  </div><!-- row -->
-
-
-                  <!-- </div> -->
-                <!-- </div> -->
-              </div><!-- fixed-top -->
-              </div><!-- row -->
-
-              <div class="container-fluid">
-                  <div id="mostrarResultado"></div>
-                  <div class="row container-fluid margin_top_pFixed">
-                        <table class='table' id='le_tabla_listaEscuelas'>
-                          <thead>
-                            <tr class='informa'>
-                              <td>CCT</td>
-                              <td>Turno </td>
-                              <td>Nombre </td>
-                              <td>Nivel </td>
-                              <td>Municipio </td>
-                              <td>Localidad </td>
-                              <td>Domicilio </td>
-                            </tr>
-                          </thead>
-                          <tbody class="tbody_white tbody_center">
-                          </tbody>
-                        </table>
-                  </div>
-            </div>
-        </div>
-
-    </div> <!-- div_particulares_grid -->
-
-
-
 
 
 

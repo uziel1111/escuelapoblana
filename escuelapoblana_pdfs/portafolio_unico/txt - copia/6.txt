@@ -1,0 +1,18 @@
+﻿7|
+EST01|
+Estadísticas|
+Registro de Alumnos Atendidos por los Servicios de Apoyo de Educación Especial (USAER)|
+Es un sistema en donde se registra la atención y seguimiento de los alumnos atendidos por los servicios de USAER en cada una de las Escuelas de Educación Regular. |
+Supervisión|
+Dirección de Educación Especial |
+Evidencias de Informe del C. Gobernador,  Evidencias de alumnos atendidos para PIEE |
+MANUAL|
+-|
+Educación Especial|
+DIGITAL|
+No|
+Al inicio y fin de cada ciclo|
+octubre, julio|
+Artículo 40 Fracciones I, II, IV, V y VI, Artículos 44 y 45; de la Ley del Sistema Nacional de Información Estadística y Geográfica |
+No|
+-|
