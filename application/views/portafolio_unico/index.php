@@ -76,10 +76,26 @@
 						
 						}					
 						?>
-					<div>
-						 <button type="button" class="btn btn-sm btn-info btn-block" id="btn_ver_todo" onclick="" ><i class='fa fa-eye'></i> Ver todo</button>
-					</div>
+					
+				
+					
 					<div id="box_level">
+						<div class="row">
+							<div class="col-sm-3"></div>
+						<div class="col-sm-6 col align-self-center">
+							<div class="panel">
+								
+						<div col=" center-block" >
+						<button type="button" class="btn  btn-success btn-block" id="btn_ver_todo" onclick="" ><i class='fa fa-eye'></i> Ver todo</button>					
+						</div>
+						
+							</div>
+						</div>
+						<div class="col-sm-3"></div>
+						</div>
+						<div class="col-sm-12">
+							
+						</div>
 						<div class="col-sm-4">
 							<div class="panel panel-custom">
 							  <div class="inner">
@@ -175,11 +191,11 @@
 								  </li>
 							  </ul>							
 							</div>					
-						</div>					
+						</div>
 					</div>
 				</div>	
 					
-						
+					
 				<div class="card card-style-1">
 					<div class="card-header bg-primary text-center">
 						<span class="second-txt" id="titulo_tabla">Catálogo de Documentos por Tema</span>
@@ -194,72 +210,67 @@
 						$i = 0;
 						$flag = 0;
 						$tema_titulo = "";
+						
 						foreach ($m_files as $filename) {
-
+							// print_r($m_files);
+							
 							$m_array = explode( '/', $filename );
 							$file_n = substr($m_array[3], 0, -4);
 							$file_t = substr($m_array[3], 0, 2);
 							$file_niv = substr($file_n, -6);
 
 							$data[$filename] = array('f_name' => $file_n, 't_tema' => $file_t);
-							// print_r($data);
+							// print_r($data[$filename]['t_tema']. ",");
 								
 							$total = 0;								
 							//print_r($m_array);						
 							
 							if ($data[$filename]['t_tema'] != $tf_current and $flag == 1){
 								$flag = 2;
-							}
-													
+							}	
+
 							if ($data[$filename]['t_tema'] != $tf_current and $flag == 0) { 
 							$flag = 1;
 								
-							$tf_current = $data[$filename]['t_tema'];
-								
+							$tf_current = $data[$filename]['t_tema'];		
 							switch ($tf_current) {
 								case "AD":
-									$tema_titulo = "Administración Escolar";
+									$tema_titulo = "Administración Escolar / ";
 									break;
 								case "CE":
-									$tema_titulo = "Control Escolar";
+									$tema_titulo = "Control Escolar / ";
 									break;
 								case "CO":
-									$tema_titulo = "Cooperativas y Tiendas Escolares";
+									$tema_titulo = "Cooperativas y Tiendas Escolares / ";
 									break;
 								case "ED":
-									$tema_titulo = "Educación Inicial";
+									$tema_titulo = "Educación Inicial / ";
 									break;
 								case "ES":
-									$tema_titulo = "Estadísticas";
+									$tema_titulo = "Estadísticas / ";
 									break;
 								case "PC":
-									$tema_titulo = "Protección Civil";
+									$tema_titulo = "Protección Civil / ";
 									break;
 								case "PS":
-									$tema_titulo = "Participción Social";
+									$tema_titulo = "Participción Social / ";
 									break;
 								case "RH":
-									$tema_titulo = "Recursos Humanos";
+									$tema_titulo = "Recursos Humanos / ";
 									break;
 								case "RM":
-									$tema_titulo = "Recursos Materiales";
+									$tema_titulo = "Recursos Materiales / ";
 									break;									
 							}	
 								
 
 							?>  
-
-									<?php 
-									$n_file = fopen($dir.$data[$filename]['f_name'].".txt" , "r");
-				$n_name = fread($n_file,filesize($dir.$data[$filename]['f_name'].".txt"));								
-				$n_array = explode ("|", $n_name);
-				$nivel_tabla = trim($n_array[10]); 
-
-									 ?>					  
+				  
 									
 							<div class="card">
 								<div class="card-header collapsed" id="heading<?php echo $data[$filename]['t_tema']?>"  data-toggle="collapse" data-target="#collapse<?php echo $data[$filename]['t_tema']?>" aria-expanded="false" aria-controls="collapse<?php echo $data[$filename]['t_tema']?>" style="cursor: pointer;"  >
-									<i class="fas fa-clipboard-list mr-2"></i> <span class="text-primary" id='titulo<?php echo $data[$filename]['t_tema']?>'><?php echo $tema_titulo ?></span>
+									<i class="fas fa-clipboard-list mr-2"></i> 
+									<span class="text-primary"><?php echo $tema_titulo ?><b id='titulo<?php echo $data[$filename]['t_tema']?>'></b></span>
 <!--									<span class="float-right badge badge-danger h4 text-light">
 										<?php // echo $i;?>
 									</span> -->
@@ -284,11 +295,14 @@
 
 										}
 										if ($data[$filename]['t_tema'] == $tf_current and $flag == 1) {
+
+					
 				
 				$i++;							
 				$n_file = fopen($dir.$data[$filename]['f_name'].".txt" , "r");
 				$n_name = fread($n_file,filesize($dir.$data[$filename]['f_name'].".txt"));								
 				$n_array = explode ("|", $n_name);	
+
 				// print_r("row_{$i}_{$data[$filename]['t_tema']}");
 				echo "<tr'>";		
 			    echo "<td scope='row' style='font-weight: bold;'>";
@@ -311,6 +325,7 @@
 											$tf_current = " ";
 											$flag = 0;
 											$i = 0;
+											$tema_titulo = " ";
 											echo "</tbody>";
 											echo "</table>";
 											echo "</div></div></div></div>";
@@ -319,11 +334,12 @@
 											
 										<?php 	
 										}else{
+											print_r('hola');
 											echo "</tbody>";
 											echo "</table>";
 											echo "</div></div></div></div>";
 											
-										}
+										}	
 									} //main foreach;
 										?>
 										</tbody>
@@ -873,7 +889,11 @@ console.log("error");
       } else {
         tr[i].style.display = "none";
       }
-    } 
+    } else {
+    	if (txtValue == '') {
+    		id++;
+    	}
+    }
   }
   return id;
 }
@@ -884,13 +904,13 @@ console.log("error");
 		$('#titulo_tabla').text('Catálogo de Documentos por Tema / Educación Inicial');
 		$('#headingED').removeClass('ocultar');
 		$('#headingCO').addClass('ocultar');
-		$('#tituloAD').text('Administración Escolar /'+ filtrarTabla('Inicial', 'tabla_AD'));
-		$('#tituloED').text('Educación Inicial /'+filtrarTabla('Inicial', 'tabla_ED'));
-		$('#tituloES').text('Estadísticas /'+filtrarTabla('Inicial', 'tabla_ES'));
-		$('#tituloPC').text('Protección Civil /'+filtrarTabla('Inicial', 'tabla_PC'));
-		$('#tituloPS').text('Participación Social /'+filtrarTabla('Inicial', 'tabla_PS'));
-		$('#tituloRH').text('Recursos Humanos /'+filtrarTabla('Inicial', 'tabla_RH'));
-		$('#tituloRM').text('Recursos Materiales /'+filtrarTabla('Inicial', 'tabla_RM'));
+		$('#tituloAD').text(filtrarTabla('Inicial', 'tabla_AD'));
+		$('#tituloED').text(filtrarTabla('Inicial', 'tabla_ED'));
+		$('#tituloES').text(filtrarTabla('Inicial', 'tabla_ES'));
+		$('#tituloPC').text(filtrarTabla('Inicial', 'tabla_PC'));
+		$('#tituloPS').text(filtrarTabla('Inicial', 'tabla_PS'));
+		$('#tituloRH').text(filtrarTabla('Inicial', 'tabla_RH'));
+		$('#tituloRM').text(filtrarTabla('Inicial', 'tabla_RM'));
 
 		
 	});
@@ -900,41 +920,41 @@ console.log("error");
 		$('#headingED').addClass('ocultar');
 		$('#headingCO').addClass('ocultar');
 
-		$('#tituloAD').text('Administración Escolar /'+filtrarTabla('Preescolar', 'tabla_AD'));
-		$('#tituloED').text('Educación Inicial /'+filtrarTabla('Preescolar', 'tabla_ED'));
-		$('#tituloES').text('Estadísticas /'+filtrarTabla('Preescolar', 'tabla_ES'));
-		$('#tituloPC').text('Protección Civil /'+filtrarTabla('Preescolar', 'tabla_PC'));
-		$('#tituloPS').text('Participación Social /'+filtrarTabla('Preescolar', 'tabla_PS'));
-		$('#tituloRH').text('Recursos Humanos /'+filtrarTabla('Preescolar', 'tabla_RH'));
-		$('#tituloRM').text('Recursos Materiales /'+filtrarTabla('Preescolar', 'tabla_RM'));
+		$('#tituloAD').text(filtrarTabla('Preescolar', 'tabla_AD'));
+		$('#tituloED').text(filtrarTabla('Preescolar', 'tabla_ED'));
+		$('#tituloES').text(filtrarTabla('Preescolar', 'tabla_ES'));
+		$('#tituloPC').text(filtrarTabla('Preescolar', 'tabla_PC'));
+		$('#tituloPS').text(filtrarTabla('Preescolar', 'tabla_PS'));
+		$('#tituloRH').text(filtrarTabla('Preescolar', 'tabla_RH'));
+		$('#tituloRM').text(filtrarTabla('Preescolar', 'tabla_RM'));
 	});
 	$('#btn_consulta_prim').click(function() {
 		
 		$('#titulo_tabla').text('Catálogo de Documentos por Tema / Primaria ');
 		$('#headingED').addClass('ocultar');
 		$('#headingCO').removeClass('ocultar');
-		$('#tituloCO').text('Cooperativas y Tiendas Escolares/ 16');		
-		$('#tituloAD').text('Administración Escolar /'+filtrarTabla('primaria', 'tabla_AD'));
-		$('#tituloED').text('Educación Inicial /'+filtrarTabla('primaria', 'tabla_ED'));
-		$('#tituloES').text('Estadísticas /'+filtrarTabla('primaria', 'tabla_ES'));
-		$('#tituloPC').text('Protección Civil /'+filtrarTabla('primaria', 'tabla_PC'));
-		$('#tituloPS').text('Participación Social /'+filtrarTabla('primaria', 'tabla_PS'));
-		$('#tituloRH').text('Recursos Humanos /'+filtrarTabla('primaria', 'tabla_RH'));
-		$('#tituloRM').text('Recursos Materiales /'+filtrarTabla('primaria', 'tabla_RM'));
+		$('#tituloCO').text('16');		
+		$('#tituloAD').text(filtrarTabla('primaria', 'tabla_AD'));
+		$('#tituloED').text(filtrarTabla('primaria', 'tabla_ED'));
+		$('#tituloES').text(filtrarTabla('primaria', 'tabla_ES'));
+		$('#tituloPC').text(filtrarTabla('primaria', 'tabla_PC'));
+		$('#tituloPS').text(filtrarTabla('primaria', 'tabla_PS'));
+		$('#tituloRH').text(filtrarTabla('primaria', 'tabla_RH'));
+		$('#tituloRM').text(filtrarTabla('primaria', 'tabla_RM'));
 	});
 	$('#btn_consulta_sec').click(function() {
 		
 		$('#titulo_tabla').text('Catálogo de Documentos por Tema / Secundaria ');
 		$('#headingED').addClass('ocultar');
 		$('#headingCO').removeClass('ocultar');
-		$('#tituloCO').text('Cooperativas y Tiendas Escolares/ 16');
-		$('#tituloAD').text('Administración Escolar /'+filtrarTabla('secundaria', 'tabla_AD'));
-		$('#tituloED').text('Educación Inicial /'+filtrarTabla('secundaria', 'tabla_ED'));
-		$('#tituloES').text('Estadísticas /'+filtrarTabla('secundaria', 'tabla_ES'));
-		$('#tituloPC').text('Protección Civil /'+filtrarTabla('secundaria', 'tabla_PC'));
-		$('#tituloPS').text('Participación Social /'+filtrarTabla('secundaria', 'tabla_PS'));
-		$('#tituloRH').text('Recursos Humanos /'+filtrarTabla('secundaria', 'tabla_RH'));
-		$('#tituloRM').text('Recursos Materiales /'+ filtrarTabla('secundaria', 'tabla_RM'));
+		$('#tituloCO').text('16');
+		$('#tituloAD').text(filtrarTabla('secundaria', 'tabla_AD'));
+		$('#tituloED').text(filtrarTabla('secundaria', 'tabla_ED'));
+		$('#tituloES').text(filtrarTabla('secundaria', 'tabla_ES'));
+		$('#tituloPC').text(filtrarTabla('secundaria', 'tabla_PC'));
+		$('#tituloPS').text(filtrarTabla('secundaria', 'tabla_PS'));
+		$('#tituloRH').text(filtrarTabla('secundaria', 'tabla_RH'));
+		$('#tituloRM').text( filtrarTabla('secundaria', 'tabla_RM'));
 	});
 	$('#btn_consulta_eduEsp').click(function() {
 		
@@ -942,13 +962,13 @@ console.log("error");
 		$('#headingED').addClass('ocultar');
 		$('#headingCO').addClass('ocultar');
 
-		$('#tituloAD').text('Administración Escolar /'+filtrarTabla('Educación Especial', 'tabla_AD'));
-		$('#tituloED').text('Educación Inicial /'+filtrarTabla('Educación Especial', 'tabla_ED'));
-		$('#tituloES').text('Estadísticas /'+filtrarTabla('Educación Especial', 'tabla_ES'));
-		$('#tituloPC').text('Protección Civil /'+filtrarTabla('Educación Especial', 'tabla_PC'));
-		$('#tituloPS').text('Participación Social /'+filtrarTabla('Educación Especial', 'tabla_PS'));
-		$('#tituloRH').text('Recursos Humanos /'+filtrarTabla('Educación Especial', 'tabla_RH'));
-		$('#tituloRM').text('Recursos Materiales /'+filtrarTabla('Educación Especial', 'tabla_RM'));
+		$('#tituloAD').text(filtrarTabla('Educación Especial', 'tabla_AD'));
+		$('#tituloED').text(filtrarTabla('Educación Especial', 'tabla_ED'));
+		$('#tituloES').text(filtrarTabla('Educación Especial', 'tabla_ES'));
+		$('#tituloPC').text(filtrarTabla('Educación Especial', 'tabla_PC'));
+		$('#tituloPS').text(filtrarTabla('Educación Especial', 'tabla_PS'));
+		$('#tituloRH').text(filtrarTabla('Educación Especial', 'tabla_RH'));
+		$('#tituloRM').text(filtrarTabla('Educación Especial', 'tabla_RM'));
 	});
 	$('#btn_consulta_eduFis').click(function() {
 		
@@ -956,13 +976,13 @@ console.log("error");
 		$('#headingED').addClass('ocultar');
 		$('#headingCO').addClass('ocultar');
 
-		$('#tituloAD').text('Administración Escolar /'+filtrarTabla('Educación FIsica', 'tabla_AD'));
-		$('#tituloED').text('Educación Inicial /'+filtrarTabla('Educación FIsica', 'tabla_ED'));
-		$('#tituloES').text('Estadísticas /'+filtrarTabla('Educación FIsica', 'tabla_ES'));
-		$('#tituloPC').text('Protección Civil /'+filtrarTabla('Educación FIsica', 'tabla_PC'));
-		$('#tituloPS').text('Participación Social /'+filtrarTabla('Educación FIsica', 'tabla_PS'));
-		$('#tituloRH').text('Recursos Humanos /'+filtrarTabla('Educación FIsica', 'tabla_RH'));
-		$('#tituloRM').text('Recursos Materiales /'+filtrarTabla('Educación FIsica', 'tabla_RM'));
+		$('#tituloAD').text(filtrarTabla('Educación FIsica', 'tabla_AD'));
+		$('#tituloED').text(filtrarTabla('Educación FIsica', 'tabla_ED'));
+		$('#tituloES').text(filtrarTabla('Educación FIsica', 'tabla_ES'));
+		$('#tituloPC').text(filtrarTabla('Educación FIsica', 'tabla_PC'));
+		$('#tituloPS').text(filtrarTabla('Educación FIsica', 'tabla_PS'));
+		$('#tituloRH').text(filtrarTabla('Educación FIsica', 'tabla_RH'));
+		$('#tituloRM').text(filtrarTabla('Educación FIsica', 'tabla_RM'));
 
 	});
 	$('#btn_ver_todo').click(function(event) {
@@ -970,7 +990,31 @@ console.log("error");
 		$('#titulo_tabla').text('Catálogo de Documentos por Tema');
 		$('#headingED').removeClass('ocultar');
 		$('#headingCO').removeClass('ocultar');
+		$('#tituloAD').text(filtrarTabla('', 'tabla_AD'));
+		$('#tituloCO').text('16');	
+		$('#tituloED').text(filtrarTabla('', 'tabla_ED'));
+		$('#tituloES').text(filtrarTabla('', 'tabla_ES'));
+		$('#tituloPC').text(filtrarTabla('', 'tabla_PC'));
+		$('#tituloPS').text(filtrarTabla('', 'tabla_PS'));
+		$('#tituloRH').text(filtrarTabla('', 'tabla_RH'));
+		$('#tituloRM').text(filtrarTabla('', 'tabla_RM'));
 	});
+	$(document).ready(
+		function cargar_todo() {
+			$('#titulo_tabla').text('Catálogo de Documentos por Tema');
+		$('#headingED').removeClass('ocultar');
+		$('#headingCO').removeClass('ocultar');
+		$('#tituloAD').text(filtrarTabla('', 'tabla_AD'));
+		$('#tituloCO').text('16');	
+		$('#tituloED').text(filtrarTabla('', 'tabla_ED'));
+		$('#tituloES').text(filtrarTabla('', 'tabla_ES'));
+		$('#tituloPC').text(filtrarTabla('', 'tabla_PC'));
+		$('#tituloPS').text(filtrarTabla('', 'tabla_PS'));
+		$('#tituloRH').text(filtrarTabla('', 'tabla_RH'));
+		$('#tituloRM').text(filtrarTabla('', 'tabla_RM'));
+		}
+		
+		);
 </script>
 
 <script src="<?php echo base_url(); ?>assets/js/escuela/5.0.3/highcharts.js"></script> <!--Problemas con esta versión <script src="https://code.highcharts.com/highcharts.js"></script>-->
