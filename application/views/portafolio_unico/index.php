@@ -1,6 +1,7 @@
 <style type="text/css">
 
 #wrapper {clear:both; overflow:hidden;padding-top:1em;}
+.ocultar{display: none;}
 </style>
 
 <!-- <section> -->
@@ -75,7 +76,9 @@
 						
 						}					
 						?>
-					
+					<div>
+						 <button type="button" class="btn btn-sm btn-info btn-block" id="btn_ver_todo" onclick="" ><i class='fa fa-eye'></i> Ver todo</button>
+					</div>
 					<div id="box_level">
 						<div class="col-sm-4">
 							<div class="panel panel-custom">
@@ -88,7 +91,7 @@
 							  </div>
 							  <ul class="list-group">
 								<li class="list-group-item">
-								  <button type="button" class="btn btn-sm btn-info btn-block" onclick="" ><i class='fa fa-eye'></i> Consultar</button>
+								  <button type="button" class="btn btn-sm btn-info btn-block" id="btn_consulta_eduIni" onclick="" ><i class='fa fa-eye'></i> Consultar</button>
 								  </li>
 							  </ul>							
 							</div>					
@@ -104,7 +107,7 @@
 							  </div>
 							  <ul class="list-group">
 								<li class="list-group-item">
-									<button type="button" class="btn btn-sm btn-info btn-block" onclick="" ><i class='fa fa-eye'></i> Consultar</button>
+									<button type="button" class="btn btn-sm btn-info btn-block" id="btn_consulta_pree" onclick="" ><i class='fa fa-eye'></i> Consultar</button>
 								  </li>
 							  </ul>							
 							</div>					
@@ -120,7 +123,7 @@
 							  </div>
 							  <ul class="list-group">
 								<li class="list-group-item">
-									<button type="button" class="btn btn-sm btn-info btn-block" onclick="" ><i class='fa fa-eye'></i> Consultar</button>
+									<button type="button" class="btn btn-sm btn-info btn-block" id="btn_consulta_prim" onclick="" ><i class='fa fa-eye'></i> Consultar</button>
 								  </li>
 							  </ul>							
 							</div>					
@@ -136,7 +139,7 @@
 							  </div>
 							  <ul class="list-group">
 								<li class="list-group-item">
-									<button type="button" class="btn btn-sm btn-info btn-block" onclick="" ><i class='fa fa-eye'></i> Consultar</button>
+									<button type="button" class="btn btn-sm btn-info btn-block" id="btn_consulta_sec" onclick="" ><i class='fa fa-eye'></i> Consultar</button>
 								  </li>
 							  </ul>							
 							</div>					
@@ -152,7 +155,7 @@
 							  </div>
 							  <ul class="list-group">
 								<li class="list-group-item">
-									<button type="button" class="btn btn-sm btn-info btn-block" onclick="" ><i class='fa fa-eye'></i> Consultar</button>
+									<button type="button" class="btn btn-sm btn-info btn-block" id="btn_consulta_eduEsp" onclick="" ><i class='fa fa-eye'></i> Consultar</button>
 								  </li>
 							  </ul>							
 							</div>					
@@ -168,346 +171,18 @@
 							  </div>
 							  <ul class="list-group">
 								<li class="list-group-item">
-									<button type="button" class="btn btn-sm btn-info btn-block" onclick="" ><i class='fa fa-eye'></i> Consultar</button>
+									<button type="button" class="btn btn-sm btn-info btn-block" id="btn_consulta_eduFis" onclick="" ><i class='fa fa-eye'></i> Consultar</button>
 								  </li>
 							  </ul>							
 							</div>					
 						</div>					
 					</div>
 				</div>	
-				<div id="wrapper">
-				<!-- row INICIAL -->		
-					<div class="card card-style-1">
-					<div class="card-header bg-primary text-center">
-						<span class="second-txt">Catálogo de Documentos para Educación Inicial</span>
-					</div>
-					<div class="card-body">
-						<?php //print_r($inicial); ?>
-						
-						
-		<table class='table table-striped table-hover'>
-		<thead>  
-		<tr>   
-		<th scope='col'>#</th>      
-		<th scope='col'>Nombre del documento</th>      
-		<th scope='col'>Área concentradora</th> 
-		<th scope='col'>Opciones</th>
-		<tr>
-		<thead>  
-		<tbody>											
-		<?php
-			
-			$i = 0;	
-foreach ($inicial as $file_inicial) {
-	
-				$i++; 
-				$im_array = explode( '/', $file_inicial );
-				$file_in = substr($im_array[3], 0, -4);
-	
-				$in_file = fopen($file_inicial, "r");
-				$in_name = fread($in_file,filesize($file_inicial));								
-				$in_array = explode ("|", $in_name);
-	
-				
-						
-			    echo "<th scope='row'>";
-			    echo $i."</th>";
-				echo "<td>". $in_array[3] ."</td>";
-				echo "<td>". $in_array[6] ."</td>";	
-				echo "<td nowrap>";
-			    echo "<span data-toggle='modal' data-target='#Modal_pdf' data-id='' class='open-Modal-pdf'><button type='button' class='btn btn-sm btn-primary'><i class='fa fa-file'></i></button></span>";
-											
-			    echo "<button type='button' class='btn btn-sm btn-info' onclick=verDetalle('".$file_in."')><i class='fa fa-eye'></i></button>";
-			    echo "<button type='button' class='btn btn-sm btn-success' onclick=verContacto('') ><i class='fa fa-address-card'></i></button>";			    
-	  
-				echo "</td>";
-				echo "</tr>";	
-}
-
-		?>
-		</tbody>
-		</table>						
-	
-					</div>
-					</div>	
-				
-				<!-- row PREESCOLAR -->		
-					<div class="card card-style-1">
-					<div class="card-header bg-primary text-center">
-						<span class="second-txt">Catálogo de Documentos para Preescolar</span>
-					</div>
-					<div class="card-body">
 					
-						
-		<table class='table table-striped table-hover'>
-		<thead>  
-		<tr>   
-		<th scope='col'>#</th>      
-		<th scope='col'>Nombre del documento</th>      
-		<th scope='col'>Área concentradora</th>      
-		<th scope='col'>Opciones</th>
-		<tr>
-		<thead>  
-		<tbody>											
-		<?php
-			
-			$i = 0;	
-foreach ($preescolar as $file_inicial) {
-	
-				$i++; 
-				$im_array = explode( '/', $file_inicial );
-				$file_in = substr($im_array[3], 0, -4);
-	
-				$in_file = fopen($file_inicial, "r");
-				$in_name = fread($in_file,filesize($file_inicial));								
-				$in_array = explode ("|", $in_name);
-	
-				
-						
-			    echo "<th scope='row'>";
-			    echo $i."</th>";
-				echo "<td>". $in_array[3] ."</td>";
-				echo "<td>". $in_array[6] ."</td>";
-				echo "<td nowrap>";
-			    echo "<span data-toggle='modal' data-target='#Modal_pdf' data-id='' class='open-Modal-pdf'><button type='button' class='btn btn-sm btn-primary'><i class='fa fa-file'></i></button></span>";
-											
-			    echo "<button type='button' class='btn btn-sm btn-info' onclick=verDetalle('".$file_in."')><i class='fa fa-eye'></i></button>";
-			    echo "<button type='button' class='btn btn-sm btn-success' onclick=verContacto('') ><i class='fa fa-address-card'></i></button>";			    
-	  
-				echo "</td>";
-				echo "</tr>";	
-}
-
-		?>
-		</tbody>
-		</table>						
-	
-					</div>
-					</div>	
-
-				<!-- row PRIMARIA -->		
-					<div class="card card-style-1">
-					<div class="card-header bg-primary text-center">
-						<span class="second-txt">Catálogo de Documentos para Primaria</span>
-					</div>
-					<div class="card-body">
-					
-						
-		<table class='table table-striped table-hover'>
-		<thead>  
-		<tr>   
-		<th scope='col'>#</th>      
-		<th scope='col'>Nombre del documento</th>      
-		<th scope='col'>Área concentradora</th>      
-		<th scope='col'>Opciones</th>
-		<tr>
-		<thead>  
-		<tbody>											
-		<?php
-			
-			$i = 0;	
-foreach ($primaria as $file_inicial) {
-	
-				$i++; 
-				$im_array = explode( '/', $file_inicial );
-				$file_in = substr($im_array[3], 0, -4);
-	
-				$in_file = fopen($file_inicial, "r");
-				$in_name = fread($in_file,filesize($file_inicial));								
-				$in_array = explode ("|", $in_name);
-	
-				
-						
-			    echo "<th scope='row'>";
-			    echo $i."</th>";
-				echo "<td>". $in_array[3] ."</td>";
-				echo "<td>". $in_array[6] ."</td>";
-				echo "<td nowrap>";
-			    echo "<span data-toggle='modal' data-target='#Modal_pdf' data-id='' class='open-Modal-pdf'><button type='button' class='btn btn-sm btn-primary'><i class='fa fa-file'></i></button></span>";
-											
-			    echo "<button type='button' class='btn btn-sm btn-info' onclick=verDetalle('".$file_in."')><i class='fa fa-eye'></i></button>";
-			    echo "<button type='button' class='btn btn-sm btn-success' onclick=verContacto('') ><i class='fa fa-address-card'></i></button>";			    
-	  
-				echo "</td>";
-				echo "</tr>";	
-}
-
-		?>
-		</tbody>
-		</table>						
-	
-					</div>
-					</div>							
-
-				<!-- row SECUNDARIA -->		
-					<div class="card card-style-1">
-					<div class="card-header bg-primary text-center">
-						<span class="second-txt">Catálogo de Documentos para Secundaria</span>
-					</div>
-					<div class="card-body">
-					
-						
-		<table class='table table-striped table-hover'>
-		<thead>  
-		<tr>   
-		<th scope='col'>#</th>      
-		<th scope='col'>Nombre del documento</th>      
-		<th scope='col'>Área concentradora</th>      
-		<th scope='col'>Opciones</th>
-		<tr>
-		<thead>  
-		<tbody>											
-		<?php
-			
-			$i = 0;	
-foreach ($secundaria as $file_inicial) {
-	
-				$i++; 
-				$im_array = explode( '/', $file_inicial );
-				$file_in = substr($im_array[3], 0, -4);
-	
-				$in_file = fopen($file_inicial, "r");
-				$in_name = fread($in_file,filesize($file_inicial));								
-				$in_array = explode ("|", $in_name);
-	
-				
-						
-			    echo "<th scope='row'>";
-			    echo $i."</th>";
-				echo "<td>". $in_array[3] ."</td>";
-				echo "<td>". $in_array[6] ."</td>";
-				echo "<td nowrap>";
-			    echo "<span data-toggle='modal' data-target='#Modal_pdf' data-id='' class='open-Modal-pdf'><button type='button' class='btn btn-sm btn-primary'><i class='fa fa-file'></i></button></span>";
-											
-			    echo "<button type='button' class='btn btn-sm btn-info' onclick=verDetalle('".$file_in."')><i class='fa fa-eye'></i></button>";
-			    echo "<button type='button' class='btn btn-sm btn-success' onclick=verContacto('') ><i class='fa fa-address-card'></i></button>";			    
-	  
-				echo "</td>";
-				echo "</tr>";	
-}
-
-		?>
-		</tbody>
-		</table>						
-	
-					</div>
-					</div>							
-
-				<!-- row ESPECIAL -->		
-					<div class="card card-style-1">
-					<div class="card-header bg-primary text-center">
-						<span class="second-txt">Catálogo de Documentos para Educación Especial</span>
-					</div>
-					<div class="card-body">
-					
-						
-		<table class='table table-striped table-hover'>
-		<thead>  
-		<tr>   
-		<th scope='col'>#</th>      
-		<th scope='col'>Nombre del documento</th>      
-		<th scope='col'>Área concentradora</th>      
-		<th scope='col'>Opciones</th>
-		<tr>
-		<thead>  
-		<tbody>											
-		<?php
-			
-			$i = 0;	
-foreach ($especial as $file_inicial) {
-	
-				$i++; 
-				$im_array = explode( '/', $file_inicial );
-				$file_in = substr($im_array[3], 0, -4);
-	
-				$in_file = fopen($file_inicial, "r");
-				$in_name = fread($in_file,filesize($file_inicial));								
-				$in_array = explode ("|", $in_name);
-	
-				
-						
-			    echo "<th scope='row'>";
-			    echo $i."</th>";
-				echo "<td>". $in_array[3] ."</td>";
-				echo "<td>". $in_array[6] ."</td>";
-				echo "<td nowrap>";
-			    echo "<span data-toggle='modal' data-target='#Modal_pdf' data-id='' class='open-Modal-pdf'><button type='button' class='btn btn-sm btn-primary'><i class='fa fa-file'></i></button></span>";
-											
-			    echo "<button type='button' class='btn btn-sm btn-info' onclick=verDetalle('".$file_in."')><i class='fa fa-eye'></i></button>";
-			    echo "<button type='button' class='btn btn-sm btn-success' onclick=verContacto('') ><i class='fa fa-address-card'></i></button>";			    
-	  
-				echo "</td>";
-				echo "</tr>";	
-}
-
-		?>
-		</tbody>
-		</table>						
-	
-					</div>
-					</div>						
-
-				<!-- row FISICA -->		
-					<div class="card card-style-1">
-					<div class="card-header bg-primary text-center">
-						<span class="second-txt">Catálogo de Documentos para Educación Física</span>
-					</div>
-					<div class="card-body">
-					
-						
-		<table class='table table-striped table-hover'>
-		<thead>  
-		<tr>   
-		<th scope='col'>#</th>      
-		<th scope='col'>Nombre del documento</th>      
-		<th scope='col'>Área concentradora</th>      
-		<th scope='col'>Opciones</th>
-		<tr>
-		<thead>  
-		<tbody>											
-		<?php
-			
-			$i = 0;	
-foreach ($fisica as $file_inicial) {
-	
-				$i++; 
-				$im_array = explode( '/', $file_inicial );
-				$file_in = substr($im_array[3], 0, -4);
-	
-				$in_file = fopen($file_inicial, "r");
-				$in_name = fread($in_file,filesize($file_inicial));								
-				$in_array = explode ("|", $in_name);
-	
-				
-						
-			    echo "<th scope='row'>";
-			    echo $i."</th>";
-				echo "<td>". $in_array[3] ."</td>";
-				echo "<td>". $in_array[6] ."</td>";
-				echo "<td nowrap>";
-			    echo "<span data-toggle='modal' data-target='#Modal_pdf' data-id='' class='open-Modal-pdf'><button type='button' class='btn btn-sm btn-primary'><i class='fa fa-file'></i></button></span>";
-											
-			    echo "<button type='button' class='btn btn-sm btn-info' onclick=verDetalle('".$file_in."')><i class='fa fa-eye'></i></button>";
-			    echo "<button type='button' class='btn btn-sm btn-success' onclick=verContacto('') ><i class='fa fa-address-card'></i></button>";			    
-	  
-				echo "</td>";
-				echo "</tr>";	
-}
-
-		?>
-		</tbody>
-		</table>						
-	
-					</div>
-					</div>							
-				</div>
-						
-						
-						
 						
 				<div class="card card-style-1">
 					<div class="card-header bg-primary text-center">
-						<span class="second-txt">Catálogo de Documentos por Tema</span>
+						<span class="second-txt" id="titulo_tabla">Catálogo de Documentos por Tema</span>
 					</div>
 					<div class="card-body">
 						<div class="accordion accordion-style-1" id="accordionDocs">
@@ -527,7 +202,7 @@ foreach ($fisica as $file_inicial) {
 							$file_niv = substr($file_n, -6);
 
 							$data[$filename] = array('f_name' => $file_n, 't_tema' => $file_t);
-							//print_r($data);
+							// print_r($data);
 								
 							$total = 0;								
 							//print_r($m_array);						
@@ -571,15 +246,20 @@ foreach ($fisica as $file_inicial) {
 									break;									
 							}	
 								
-								
-/*							echo $file_n;
-							$my_value = $data[$filename]['t_tema']; 
-							$filtered_array = array_filter($data, function ($element) use ($my_value) { return ($element == $my_value); } ); 
-print_r($filtered_array); */
+
 							?>  
+
+									<?php 
+									$n_file = fopen($dir.$data[$filename]['f_name'].".txt" , "r");
+				$n_name = fread($n_file,filesize($dir.$data[$filename]['f_name'].".txt"));								
+				$n_array = explode ("|", $n_name);
+				$nivel_tabla = trim($n_array[10]); 
+
+									 ?>					  
+									
 							<div class="card">
-								<div class="card-header collapsed" id="heading<?php echo $data[$filename]['t_tema']?>" data-toggle="collapse" data-target="#collapse<?php echo $data[$filename]['t_tema']?>" aria-expanded="false" aria-controls="collapse<?php echo $data[$filename]['t_tema']?>" style="cursor: pointer;">
-									<i class="fas fa-clipboard-list mr-2"></i> <span class="text-primary"><?php echo $tema_titulo ?></span>
+								<div class="card-header collapsed" id="heading<?php echo $data[$filename]['t_tema']?>"  data-toggle="collapse" data-target="#collapse<?php echo $data[$filename]['t_tema']?>" aria-expanded="false" aria-controls="collapse<?php echo $data[$filename]['t_tema']?>" style="cursor: pointer;"  >
+									<i class="fas fa-clipboard-list mr-2"></i> <span class="text-primary" id='titulo<?php echo $data[$filename]['t_tema']?>'><?php echo $tema_titulo ?></span>
 <!--									<span class="float-right badge badge-danger h4 text-light">
 										<?php // echo $i;?>
 									</span> -->
@@ -589,7 +269,7 @@ print_r($filtered_array); */
 									<div class="card-body p-0">
 										<div class="col">
 											
-		<table class='table table-striped table-hover'>
+		<table class='table table-striped table-hover' id="tabla_<?=$data[$filename]['t_tema']?>">
 		<thead>  
 		<tr>   
 		<th scope='col'>#</th>      
@@ -604,15 +284,15 @@ print_r($filtered_array); */
 
 										}
 										if ($data[$filename]['t_tema'] == $tf_current and $flag == 1) {
-
+				
 				$i++;							
 				$n_file = fopen($dir.$data[$filename]['f_name'].".txt" , "r");
 				$n_name = fread($n_file,filesize($dir.$data[$filename]['f_name'].".txt"));								
 				$n_array = explode ("|", $n_name);	
-				//print_r($n_array);
-						
-			    echo "<th scope='row'>";
-			    echo $i."</th>";
+				// print_r("row_{$i}_{$data[$filename]['t_tema']}");
+				echo "<tr'>";		
+			    echo "<td scope='row' style='font-weight: bold;'>";
+			    echo $i."</td>";
 				echo "<td>". $n_array[3] ."</td>";
 				echo "<td>". $n_array[6] ."</td>";
 				echo "<td>". $n_array[10] ."</td>";											
@@ -1015,7 +695,7 @@ print_r($filtered_array); */
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
-						
+<script src="<?php echo base_url('assets/js/jquery-3.1.2.min.js'); ?>"></script>
 						
 						
 <script type="text/javascript">
@@ -1032,6 +712,7 @@ while(i--) {
 
 function showHide(obj) {
 var aDiv=document.getElementById('wrapper').getElementsByClassName('card-style-1');
+
 if (typeof showHide.counter == 'undefined' ) { 
     showHide.counter = 0; 
     }
@@ -1170,6 +851,126 @@ console.log("error");
 		$( '#RA_modal_visorpdf .modal-body' ).html( dom );
 		$( '#RA_modal_visorpdf' ).modal( "show" );
 	} // muestraPDF()
+
+	function filtrarTabla(filtro, idtabla) {
+		
+  // Declare variables 
+  var filter, table, tr, td, i, txtValue;
+  filter = filtro.toUpperCase();
+  table = document.getElementById(idtabla);
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  id = 0;
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[3];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1 || txtValue.toUpperCase().indexOf("TODOS LOS NIVELES") > -1) {
+      	id++;
+      	tr[i].getElementsByTagName("td")[0].innerHTML = id;
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    } 
+  }
+  return id;
+}
+
+	
+	$('#btn_consulta_eduIni').click(function() {
+		
+		$('#titulo_tabla').text('Catálogo de Documentos por Tema / Educación Inicial');
+		$('#headingED').removeClass('ocultar');
+		$('#headingCO').addClass('ocultar');
+		$('#tituloAD').text('Administración Escolar /'+ filtrarTabla('Inicial', 'tabla_AD'));
+		$('#tituloED').text('Educación Inicial /'+filtrarTabla('Inicial', 'tabla_ED'));
+		$('#tituloES').text('Estadísticas /'+filtrarTabla('Inicial', 'tabla_ES'));
+		$('#tituloPC').text('Protección Civil /'+filtrarTabla('Inicial', 'tabla_PC'));
+		$('#tituloPS').text('Participación Social /'+filtrarTabla('Inicial', 'tabla_PS'));
+		$('#tituloRH').text('Recursos Humanos /'+filtrarTabla('Inicial', 'tabla_RH'));
+		$('#tituloRM').text('Recursos Materiales /'+filtrarTabla('Inicial', 'tabla_RM'));
+
+		
+	});
+	$('#btn_consulta_pree').click(function() {
+		
+		$('#titulo_tabla').text('Catálogo de Documentos por Tema / Preescolar ');
+		$('#headingED').addClass('ocultar');
+		$('#headingCO').addClass('ocultar');
+
+		$('#tituloAD').text('Administración Escolar /'+filtrarTabla('Preescolar', 'tabla_AD'));
+		$('#tituloED').text('Educación Inicial /'+filtrarTabla('Preescolar', 'tabla_ED'));
+		$('#tituloES').text('Estadísticas /'+filtrarTabla('Preescolar', 'tabla_ES'));
+		$('#tituloPC').text('Protección Civil /'+filtrarTabla('Preescolar', 'tabla_PC'));
+		$('#tituloPS').text('Participación Social /'+filtrarTabla('Preescolar', 'tabla_PS'));
+		$('#tituloRH').text('Recursos Humanos /'+filtrarTabla('Preescolar', 'tabla_RH'));
+		$('#tituloRM').text('Recursos Materiales /'+filtrarTabla('Preescolar', 'tabla_RM'));
+	});
+	$('#btn_consulta_prim').click(function() {
+		
+		$('#titulo_tabla').text('Catálogo de Documentos por Tema / Primaria ');
+		$('#headingED').addClass('ocultar');
+		$('#headingCO').removeClass('ocultar');
+		$('#tituloCO').text('Cooperativas y Tiendas Escolares/ 16');		
+		$('#tituloAD').text('Administración Escolar /'+filtrarTabla('primaria', 'tabla_AD'));
+		$('#tituloED').text('Educación Inicial /'+filtrarTabla('primaria', 'tabla_ED'));
+		$('#tituloES').text('Estadísticas /'+filtrarTabla('primaria', 'tabla_ES'));
+		$('#tituloPC').text('Protección Civil /'+filtrarTabla('primaria', 'tabla_PC'));
+		$('#tituloPS').text('Participación Social /'+filtrarTabla('primaria', 'tabla_PS'));
+		$('#tituloRH').text('Recursos Humanos /'+filtrarTabla('primaria', 'tabla_RH'));
+		$('#tituloRM').text('Recursos Materiales /'+filtrarTabla('primaria', 'tabla_RM'));
+	});
+	$('#btn_consulta_sec').click(function() {
+		
+		$('#titulo_tabla').text('Catálogo de Documentos por Tema / Secundaria ');
+		$('#headingED').addClass('ocultar');
+		$('#headingCO').removeClass('ocultar');
+		$('#tituloCO').text('Cooperativas y Tiendas Escolares/ 16');
+		$('#tituloAD').text('Administración Escolar /'+filtrarTabla('secundaria', 'tabla_AD'));
+		$('#tituloED').text('Educación Inicial /'+filtrarTabla('secundaria', 'tabla_ED'));
+		$('#tituloES').text('Estadísticas /'+filtrarTabla('secundaria', 'tabla_ES'));
+		$('#tituloPC').text('Protección Civil /'+filtrarTabla('secundaria', 'tabla_PC'));
+		$('#tituloPS').text('Participación Social /'+filtrarTabla('secundaria', 'tabla_PS'));
+		$('#tituloRH').text('Recursos Humanos /'+filtrarTabla('secundaria', 'tabla_RH'));
+		$('#tituloRM').text('Recursos Materiales /'+ filtrarTabla('secundaria', 'tabla_RM'));
+	});
+	$('#btn_consulta_eduEsp').click(function() {
+		
+		$('#titulo_tabla').text('Catálogo de Documentos por Tema / Educación Especial');
+		$('#headingED').addClass('ocultar');
+		$('#headingCO').addClass('ocultar');
+
+		$('#tituloAD').text('Administración Escolar /'+filtrarTabla('Educación Especial', 'tabla_AD'));
+		$('#tituloED').text('Educación Inicial /'+filtrarTabla('Educación Especial', 'tabla_ED'));
+		$('#tituloES').text('Estadísticas /'+filtrarTabla('Educación Especial', 'tabla_ES'));
+		$('#tituloPC').text('Protección Civil /'+filtrarTabla('Educación Especial', 'tabla_PC'));
+		$('#tituloPS').text('Participación Social /'+filtrarTabla('Educación Especial', 'tabla_PS'));
+		$('#tituloRH').text('Recursos Humanos /'+filtrarTabla('Educación Especial', 'tabla_RH'));
+		$('#tituloRM').text('Recursos Materiales /'+filtrarTabla('Educación Especial', 'tabla_RM'));
+	});
+	$('#btn_consulta_eduFis').click(function() {
+		
+		$('#titulo_tabla').text('Catálogo de Documentos por Tema / Educación Física');
+		$('#headingED').addClass('ocultar');
+		$('#headingCO').addClass('ocultar');
+
+		$('#tituloAD').text('Administración Escolar /'+filtrarTabla('Educación FIsica', 'tabla_AD'));
+		$('#tituloED').text('Educación Inicial /'+filtrarTabla('Educación FIsica', 'tabla_ED'));
+		$('#tituloES').text('Estadísticas /'+filtrarTabla('Educación FIsica', 'tabla_ES'));
+		$('#tituloPC').text('Protección Civil /'+filtrarTabla('Educación FIsica', 'tabla_PC'));
+		$('#tituloPS').text('Participación Social /'+filtrarTabla('Educación FIsica', 'tabla_PS'));
+		$('#tituloRH').text('Recursos Humanos /'+filtrarTabla('Educación FIsica', 'tabla_RH'));
+		$('#tituloRM').text('Recursos Materiales /'+filtrarTabla('Educación FIsica', 'tabla_RM'));
+
+	});
+	$('#btn_ver_todo').click(function(event) {
+		
+		$('#titulo_tabla').text('Catálogo de Documentos por Tema');
+		$('#headingED').removeClass('ocultar');
+		$('#headingCO').removeClass('ocultar');
+	});
 </script>
 
 <script src="<?php echo base_url(); ?>assets/js/escuela/5.0.3/highcharts.js"></script> <!--Problemas con esta versión <script src="https://code.highcharts.com/highcharts.js"></script>-->
