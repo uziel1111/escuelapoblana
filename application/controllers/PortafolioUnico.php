@@ -28,21 +28,21 @@ public function verDetalle()
 	$n_array = explode ("|", $n_name);	
 
 	$html = "<h3><span class='fa-lg' style=''><i class='fa fa-circle pull-left fa-file-text text-muted'></i></span> $n_array[3]</h3><hr/>";	
-	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Nombre:</strong> $n_array[2]</div>";
-	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Nombre:</strong> $n_array[4]</div>";	
-	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Nombre:</strong> $n_array[5]</div>";	
-	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Nombre:</strong> $n_array[6]</div>";	
-	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Nombre:</strong> $n_array[7]</div>";	
-	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Nombre:</strong> $n_array[8]</div>";	
-	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Nombre:</strong> $n_array[9]</div>";	
+	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Tema:</strong> $n_array[2]</div>";
+	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Descripción:</strong> $n_array[4]</div>";	
+	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Área Solicitante:</strong> $n_array[5]</div>";	
+	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Área Concentradora:</strong> $n_array[6]</div>";	
+	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Destino:</strong> $n_array[7]</div>";	
+	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Forma:</strong> $n_array[8]</div>";	
+	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>URL:</strong> $n_array[9]</div>";	
 	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Nivel:</strong> $n_array[10]</div>";	
-	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Nombre:</strong> $n_array[11]</div>";	
-	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Nombre:</strong> $n_array[12]</div>";	
-	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Nombre:</strong> $n_array[13]</div>";	
-	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Nombre:</strong> $n_array[14]</div>";	
-	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Nombre:</strong> $n_array[15]</div>";	
-	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Nombre:</strong> $n_array[16]</div>";	
-	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Nombre:</strong> $n_array[17]</div>";		
+	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Entrega:</strong> $n_array[11]</div>";
+	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Oficio:</strong> $n_array[12]</div>";
+	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Periodo:</strong> $n_array[13]</div>";
+	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Fecha:</strong> $n_array[14]</div>";
+	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Legal:</strong> $n_array[15]</div>";
+	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Anexos:</strong> $n_array[16]</div>";
+	$html .= "<div class='alert alert-warning' style='margin-bottom:5px;' role='alert'><strong>Archivo Anexado:</strong> $n_array[17]</div>";		
 
 	$response = array(
 		'status' => 'OK',
