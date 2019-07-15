@@ -1,22 +1,28 @@
-ï»¿1, 2|
+1|
 PS01|
-ParticipaciÃ³n Social|
-Sistema REPASE (Registro de ParticipaciÃ³n Social en la EducaciÃ³n)|
-El Registro de ParticipaciÃ³n Social en la EducaciÃ³n REPASE es la plataforma  que  lleva a cabo el registro de actas de las Sesiones de los Consejos Escolares de ParticipaciÃ³n Social (CEPS).|
-SecretarÃ­a TÃ©cnica del Consejo Estatal de ParticipaciÃ³n Social|
-SecretarÃ­a TÃ©cnica del Consejo Estatal de ParticipaciÃ³n Social|
+Participación Social|
+Acta de la Primera Sesión del Consejo Escolar de Participación Social en la Educación|
+El Registro de Participación Social en la Educación REPASE es la plataforma que lleva a cabo el registro de actas de las Sesiones de los Consejos Escolares de Participación Social (CEPS).|
+Secretaría Técnica del Consejo Estatal de Participación Social|
+Secretaría Técnica del Consejo Estatal de Participación Social|
 Plataforma REPASE|
-SISTEMA AUTOMATIZADO|
+Sistema Automatizado|
 https://www.repase.sep.gob.mx|
 Todos los Niveles|
 Digital|
 No|
 Al inicio de cada ciclo|
 Marzo, julio, diciembre|
-Acuerdo No. 02/05/16 Acuerdo No. 08/08/17 Ley de Desarrollo Social, Ley de Servidores PÃºblicos, Art 3Â° Constitucional.|
+"Acuerdo No. 02/05/16Acuerdo No. 08/08/17Ley de Desarrollo Social, Ley de Servidores Públicos, Art 3° Constitucional."|
 No|
--|
-SecretarÃ­a TÃ©cnica del Consejo Estatal de ParticipaciÃ³n Social|
-Norma BelÃ©n Huerta Zamora|
+n/a|
+1|
+1|
+1|
+1|
+1|
+1|
+Secretaría Técnica del Consejo Estatal de Participación Social|
+ Norma Belén Huerta Zamora|
 belemiker5@icloud.com|
-3 03 46 00 ext. 2260|
+"3 03 46 00 ext. 2260"

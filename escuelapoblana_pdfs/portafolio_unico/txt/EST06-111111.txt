@@ -1,22 +1,28 @@
-ï»¿32|
+26|
 EST06|
-EstadÃ­sticas|
-Levantamiento EstadÃ­stico del Formato Anexo de los Objetos de Desarrollo Sostenible|
-Levantamiento estadÃ­stico de Inicio de Cursos del Anexo de los Objetos de Desarrollo Sostenible.|
+Estadísticas|
+"Levantamiento Estadístico del ""Formato Anexo de los Objetos de Desarrollo Sostenible"""|
+Levantamiento estadístico de Inicio de Cursos del Anexo de los Objetos de Desarrollo Sostenible.|
 CORDE|
-DirecciÃ³n de PlaneaciÃ³n y EstadÃ­stica Educativa|
-DirecciÃ³n General de PlaneaciÃ³n, ProgramaciÃ³n y EstadÃ­stica Educativa SEP (Federal)|
-SISTEMA AUTOMATIZADO|
+Dirección de Planeación y Estadística Educativa|
+Dirección General de Planeación, Programación y Estadística Educativa SEP (Federal)|
+Sistema Automatizado|
 http://www.f911.sep.gob.mx|
 Todos los Niveles|
 Captura e impreso|
 No|
 Al inicio de cada ciclo|
 Septiembre, octubre|
-ArtÃ­culos 1, 2, 3, 6, 45, 46, 103 y 106 de la Ley del Sistema Nacional de InformaciÃ³n, EstadÃ­stica y GeografÃ­a INEGI Reglamento Interior de la SEP ArtÃ­culo 39 fracciÃ³n XVII.|
+"Artículos 1,2,3,6,45,46,103 y 106 de la Ley del Sistema Nacional de Información, Estadística y Geografía INEGIReglamento Interior de la SEP Artículo 39 fracción XVII."|
 No|
--|
-DirecciÃ³n de PlaneaciÃ³n y EstadÃ­stica Educativa|
+n/a|
+1|
+1|
+1|
+1|
+1|
+1|
+Dirección de Planeación y Estadística Educativa|
 Augusto Munive Rivera|
 estadis.amr@hotmail.com|
-5 09 11 63 |
+"5 09 11 63"

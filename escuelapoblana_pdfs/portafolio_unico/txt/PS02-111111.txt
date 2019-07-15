@@ -1,23 +1,28 @@
-Ôªø3|
+2|
 PS02|
-Participaci√≥n Social|
-Sistema Inform√°tico de Contralor√≠a Social |
-La Contralor√≠a Social es el mecanismo de los beneficiarios, de manera organizada, para verificar el cumplimiento de las metas y la correcta aplicaci√≥n de los recursos p√∫blicos asignados a los programas de desarrollo social.|
-Secretar√≠a T√©cnica del Consejo Estatal de Participaci√≥n Social|
-Secretar√≠a T√©cnica del Consejo Estatal de Participaci√≥n Social|
-SICS Sistema Inform√°tico de Contralor√≠a Social|
-SISTEMA AUTOMATIZADO|
-http://sics.funcionpublica.gob.mx/SICS-web/loginPage.jsf|
+ParticipaciÛn Social|
+Acta de la Segunda SesiÛn del Consejo Escolar de ParticipaciÛn Social en la EducaciÛn|
+El Registro de ParticipaciÛn Social en la EducaciÛn REPASE es la plataforma que lleva a cabo el registro de actas de las Sesiones de los Consejos Escolares de ParticipaciÛn Social (CEPS).|
+SecretarÌa TÈcnica del Consejo Estatal de ParticipaciÛn Social|
+SecretarÌa TÈcnica del Consejo Estatal de ParticipaciÛn Social|
+Plataforma REPASE|
+Sistema Automatizado|
+https://www.repase.sep.gob.mx|
 Todos los Niveles|
-Captura e impreso|
+Digital|
 No|
 Al inicio de cada ciclo|
-Agosto, septiembre, octubre, diciembre|
-Acuerdo 02/05/16 y 08/08/17 Ley General de Desarrollo Social Ley de Servidores P√∫blicos Lineamientos Generales para la Promoci√≥n y Operaci√≥n de los Programas Federales de Desarrollo Social Estrategia Marco Reglamento Interior de la Funci√≥n P√∫blica Art 6|
-7 y 21 GRACC xviii de la Ley General Anticorrupci√≥n Art 70 de contralor√≠a Social|
+Marzo, julio, diciembre|
+"Acuerdo No. 02/05/16Acuerdo No. 08/08/17Ley de Desarrollo Social, Ley de Servidores P˙blicos, Art 3∞ Constitucional."|
 No|
--|
-Secretar√≠a T√©cnica del Consejo Estatal de Participaci√≥n Social|
-Norma Bel√©n Huerta Zamora|
+n/a|
+1|
+1|
+1|
+1|
+1|
+1|
+SecretarÌa TÈcnica del Consejo Estatal de ParticipaciÛn Social|
+ Norma BelÈn Huerta Zamora|
 belemiker5@icloud.com|
-4 03 46 00 ext. 2260|
+"4 03 46 00 ext. 2260"

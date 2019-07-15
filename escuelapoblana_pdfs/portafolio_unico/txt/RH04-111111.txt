@@ -1,22 +1,28 @@
-ï»¿18|
+18|
 RH04|
 Recursos Humanos|
 Formato de Compatibilidad de empleos|
 Menciona, declara la (s) clave (s) presupuestal (es) a contratar para cubrir las necesidad (es) de la escuela.|
-SupervisiÃ³n|
-DirecciÃ³n de Recursos Humanos|
-DirecciÃ³n de Recursos Humanos|
-MANUAL|
--|
+Supervisión|
+Dirección de Recursos Humanos|
+Dirección de Recursos Humanos|
+Manual|
+n/a|
 Todos los Niveles|
 Impreso, Digital en unidad de memoria|
 No|
 Ocasional|
 Enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre|
-Reglamento Interior de la SecretarÃ­a de EducaciÃ³n PÃºblica del Estado de Puebla.|
-SÃ­|
-Docente en servicio: Constancia de servicios, orden de adscripciÃ³n y/o formato Ãºnico de personal, talones, basificaciones, horario de personal, INE, RFC, CURP, mov. De alta.|
-DirecciÃ³n de Recursos Humanos|
-Claudia GuzmÃ¡n GonzÃ¡lez|
+Reglamento Interior de la Secretaría de Educación Pública del Estado de Puebla.|
+Sí|
+Docente en servicio: Constancia de servicios, orden de adscripción y/o formato único de personal, talones, basificaciones, horario de personal, INE, RFC, CURP, mov. De alta. |
+1|
+1|
+1|
+1|
+1|
+1|
+Dirección de Recursos Humanos|
+Claudia Guzmán González|
 claudia.guzman@seppue.gob.mx|
-2735913|
+"2735913"

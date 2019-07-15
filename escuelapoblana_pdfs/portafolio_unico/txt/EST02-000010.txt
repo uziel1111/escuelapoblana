@@ -1,0 +1,28 @@
+8|
+EST02|
+Estadísticas|
+FCE. Control estadístico de alumnos atendidos por CAM|
+"Es un sistema en donde se registra la atención y seguimiento de los alumnos atendidos por los servicios escolarizados de CAM que no hay posibilidad de registrar en Yolixtli."|
+Supervisión|
+"Dirección de Educación Especial"|
+"Evidencias de Informe del C. Gobernador, Evidencias de alumnos atendidos para PIEE"|
+Manual|
+n/a|
+Educación Especial|
+Digital|
+No|
+Al inicio y fin de cada ciclo|
+octubre, julio|
+Artículo 40 Fracciones I, II, IV, V y VI, Artículos 44 y 45; de la Ley del Sistema Nacional de Información Estadística y Geográfica |
+No|
+n/a|
+0|
+0|
+0|
+0|
+1|
+0|
+"Dirección de Educación Especial"|
+Juan Jesús Téllez|
+educ_esp@seppue.gob.mx|
+"2297008"

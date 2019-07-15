@@ -1,23 +1,28 @@
-Ôªø43|
+36|
 COO01|
 Cooperativas y Tiendas Escolares|
-Convocatoria para la Asamblea  General Extraordinaria para Validaci√≥n  de Gastos. |
-Vigilar la  utilizaci√≥n de los Fondos Social, de Reserva y Capital Social de las Cooperativas Escolares de Consumo  y Producci√≥n.|
+"Convocatoria para la Asamblea General Extraordinaria para ValidaciÛn de Gastos."|
+Vigilar la utilizaciÛn de los Fondos Social, de Reserva y Capital Social de las Cooperativas Escolares de Consumo y ProducciÛn.|
 CORDE|
-Coordinaci√≥n de Desarrollo Educativo|
-Direcci√≥n General de Desarrollo Educativo|
-MANUAL|
--|
-PRIMARIA, SECUNDARIA|
-IMPRESO|
+CoordinaciÛn de Desarrollo Educativo|
+DirecciÛn General de Desarrollo Educativo|
+Manual|
+n/a|
+Primaria, Secundaria|
+Impreso|
 No|
 Semestral|
 Enero, febrero, marzo, abril, mayo, agosto, septiembre, octubre, noviembre, diciembre|
 Reglamento de Cooperativas Escolares.|
-S√≠|
-Presupuesto del bien a adquirir.|
-Coordinaci√≥n de Desarrollo Educativo|
-Fausto Rodr√≠guez Dur√°n|
+SÌ|
+"Presupuesto del bien a adquirir."|
+0|
+0|
+1|
+1|
+0|
+0|
+CoordinaciÛn de Desarrollo Educativo|
+Fausto RodrÌguez Dur·n|
 fausto.rodriguez@seppue.gob.mx|
-2296958|
-	
+"2296958"

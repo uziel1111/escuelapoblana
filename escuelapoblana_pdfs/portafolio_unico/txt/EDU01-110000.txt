@@ -1,22 +1,28 @@
-ï»¿4|
+4|
 EDU01|
-EducaciÃ³n Inicial|
-Registro Nacional de Centros de AtenciÃ³n Infantil (RENCAI)|
-Es un catÃ¡logo pÃºblico donde se concentra la informaciÃ³n de todos los centros de AtenciÃ³n Infantil a nivel Nacional y son las entidades Federativas las responsables de proporcionar dicha informaciÃ³n al Sistema Nacional para el Desarrollo Integral de la Familia (SENDIF)|
-SupervisiÃ³n|
-DirecciÃ³n de EducaciÃ³n Inicial|
-Sistema Nacional para el Desarrollo Integral de la Familia (SENDIF) Sistema Nacional para el Desarrollo Integral de la Familia (SENDIF)|
-SISTEMA AUTOMATIZADO|
+Educación Inicial|
+Registro Nacional de Centros de Atención Infantil (RENCAI)|
+Es un catálogo público donde se concentra la información de todos los centros de Atención Infantil a nivel Nacional y son las entidades Federativas las responsables de proporcionar dicha información al Sistema Nacional para el Desarrollo Integral de la Familia (SENDIF)|
+Supervisión|
+Dirección de Educación Inicial|
+"Sistema Nacional para el Desarrollo Integral de la Familia (SENDIF)Sistema Nacional para el Desarrollo Integral de la Familia (SENDIF)"|
+Sistema Automatizado|
 http://rencai.dif.gob.mx/rencai/|
 Inicial y Preescolar|
-Correo ElectrÃ³nico|
+Correo Electrónico|
 No|
 Semestral|
 Noviembre, mayo|
-Convenio de ColaboraciÃ³n entre la SecretarÃ­a de EducaciÃ³n PÃºblica, el Sistema Nacional para el Desarrollo Integral de la Familia y el Sistema  para el Desarrollo Integral de la Familia del Estado de Puebla. Vigencia Indefinida.|
+"Convenio de Colaboración entre la Secretaría de Educación Pública, el Sistema Nacional para el Desarrollo Integral de la Familia y el Sistema para el Desarrollo Integral de la Familia del Estado de Puebla.Vigencia Indefinida."|
 No|
--|
-DirecciÃ³n de EducaciÃ³n Inicial|
-Laura VillafaÃ±e Osorio|
+n/a|
+1|
+1|
+0|
+0|
+0|
+0|
+Dirección de Educación Inicial|
+Laura Villafañe Osorio|
 eduini.sistematizacion@gmail.com|
-2230981|
+"2230981"

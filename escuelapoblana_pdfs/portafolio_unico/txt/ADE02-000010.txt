@@ -1,0 +1,28 @@
+10|
+ADE02|
+Administración Escolar|
+Plantilla de Escuelas Regulares Atendidas por los Servicios de USAER|
+Es un sistema en donde se registran datos de las escuelas atendidas por los servicios de Apoyo USAER, que nos sirve para identificar, física y geográficamente la atención y la cobertura que tienen Dichos Servicios en el Estado.|
+Supervisión|
+"Dirección de Educación Especial"|
+"Matriz de Indicadores del sistema Educativo CoberturaAlimenta la precargaEvidencias de Informe del C. Gobernador Indicador Cobertura Educativa.Alimenta la precarga de escuelas atendidas en SIGED 911 formato 911-USAER"|
+Manual|
+n/a|
+Educación Especial|
+Archivos individuales|
+No|
+Al inicio y fin de cada ciclo|
+Septiembre, julio|
+"Artículo 40 Fracciones I, II, IV, V y VI, Artículos 44 y 45; de la Ley del Sistema Nacional de Información Estadística y Geográfica. "|
+No|
+n/a|
+0|
+0|
+0|
+0|
+1|
+0|
+"Dirección de Educación Especial"|
+Juan Jesús Téllez|
+educ_esp@seppue.gob.mx|
+"2297008"

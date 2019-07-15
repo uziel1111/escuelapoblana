@@ -1,22 +1,28 @@
-Ôªø42|
+35|
 PC02|
-Protecci√≥n Civil|
-Actualizaci√≥n del Atlas de Riesgos.|
-El Atlas de Riesgos es un sistema  integral de informaci√≥n sobre los agentes perturbadores y da√±os esperados, resultado de un an√°lisis espacial y temporal sobre la interacci√≥n entre los peligros, la vulnerabilidad y el grado de exposici√≥n de los agentes afectables. |
+ProtecciÛn Civil|
+ActualizaciÛn del Atlas de Riesgos.|
+El Atlas de Riesgos es un sistema integral de informaciÛn sobre los agentes perturbadores y daÒos esperados, resultado de un an·lisis espacial y temporal sobre la interacciÛn entre los peligros, la vulnerabilidad y el grado de exposiciÛn de los agentes afectables. |
 CORDE|
-Coordinaci√≥n de Desarrollo Educativo|
-Direcci√≥n General de Desarrollo Educativo|
-SISTEMA AUTOMATIZADO|
+CoordinaciÛn de Desarrollo Educativo|
+DirecciÛn General de Desarrollo Educativo|
+Sistema Automatizado|
 http://atlasriesgo.seppue.gob.mx:7010/atlas|
 Todos los Niveles|
 Captura en sistema|
 No|
 Anual|
 Marzo|
-Art√≠culo 2, fracci√≥n IV de la Ley General de Protecci√≥n Civil  y los componentes en el Art√≠culo 112 del Reglamento de la misma ley, Art√≠culo 2, fracci√≥n V, de la Ley del Sistema Estatal de Protecci√≥n Civil y Art√≠culo 4 del Reglamento de la misma Ley del Sistema Estatal de Protecci√≥n Civil. |
+"ArtÌculo 2, fracciÛn IV de la Ley General de ProtecciÛn Civil y los componentes en el ArtÌculo 112 del Reglamento de la misma ley, ArtÌculo 2, fracciÛn V, de la Ley del Sistema Estatal de ProtecciÛn Civil y ArtÌculo 4 del Reglamento de la misma Ley del Sistema Estatal de ProtecciÛn Civil."|
 No|
--|
-Coordinaci√≥n de Desarrollo Educativo|
-Fausto Rodr√≠guez Dur√°n|
+n/a|
+1|
+1|
+1|
+1|
+1|
+1|
+CoordinaciÛn de Desarrollo Educativo|
+Fausto RodrÌguez Dur·n|
 fausto.rodriguez@seppue.gob.mx|
-2296958|
+"2296958"

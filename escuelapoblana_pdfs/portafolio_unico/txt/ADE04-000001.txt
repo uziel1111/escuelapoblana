@@ -1,22 +1,28 @@
-ï»¿12|
+12|
 ADE04|
-AdministraciÃ³n Escolar|
+Administración Escolar|
 Horario Escolar (Docente, Supervisor y Ligas Deportivas)|
-El personal de EducaciÃ³n FÃ­sica, Docentes reportan su carga de horario en los C.T.|
-SupervisiÃ³n|
-DirecciÃ³n de EducaciÃ³n FÃ­sica|
-DirecciÃ³n de EducaciÃ³n FÃ­sica|
-MANUAL|
--|
-EducaciÃ³n Fisica|
+El personal de Educación Física, Docentes reportan su carga de horario en los C.T.|
+Supervisión|
+Dirección de Educación Física|
+Dirección de Educación Física|
+Manual|
+n/a|
+ Educación Física|
 Impreso, Digital en unidad de memoria|
 No|
 Al inicio y fin de cada ciclo|
 Julio, octubre|
 Calendario Escolar Acuerdo Numero 13/05/2019|
 No|
--|
-DirecciÃ³n de EducaciÃ³n FÃ­sica|
-Cristian GutiÃ©rrez SÃ¡nchez|
+n/a|
+0|
+0|
+0|
+0|
+0|
+1|
+Dirección de Educación Física|
+Cristian Gutiérrez Sánchez|
 urh.dep.fed@hotmail.com|
-2296989|
+"2296989"

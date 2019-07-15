@@ -1,22 +1,28 @@
-Ôªø19|
+19|
 RH05|
 Recursos Humanos|
 Solicitud de Movimiento de Alta|
-Formato a trav√©s del cual el docente que est√° llevando a cabo una contrataci√≥n, hace menci√≥n de sus generales y de los datos del contrato.|
-Supervisi√≥n|
-Direcci√≥n de Recursos Humanos|
-Direcci√≥n de Recursos Humanos|
-MANUAL|
--|
+Formato a travÈs del cual el docente que est· llevando a cabo una contrataciÛn, hace menciÛn de sus generales y de los datos del contrato.|
+SupervisiÛn|
+DirecciÛn de Recursos Humanos|
+DirecciÛn de Recursos Humanos|
+Manual|
+n/a|
 Todos los Niveles|
 Impreso|
 No|
 Ocasional|
--|
+n/a|
 Reglamento Interior de la SEP Art. 53 Fracc. IX|
-S√≠|
-R.F.C. CURP INE Talones de pago Antecedentes no penales constancia de no inhabilitado Certificado M√©dico|
-Direcci√≥n de Recursos Humanos|
-Claudia Guzm√°n Gonz√°lez|
+SÌ|
+"R.F.C.CURPINETalones de pagoAntecedentes no penalesconstancia de no inhabilitadoCertificado MÈdico"|
+1|
+1|
+1|
+1|
+1|
+1|
+DirecciÛn de Recursos Humanos|
+Claudia Guzm·n Gonz·lez|
 claudia.guzman@seppue.gob.mx|
-2735913|
+"2735913"

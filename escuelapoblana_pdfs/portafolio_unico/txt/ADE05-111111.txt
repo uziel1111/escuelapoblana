@@ -1,13 +1,13 @@
-ï»¿13|
+13|
 ADE05|
-AdministraciÃ³n Escolar|
-ReanudaciÃ³n de Labores|
+Administración Escolar|
+Reanudación de Labores|
 Reportar la fecha con que se reanudan labores en sus distintos C.T.|
-SupervisiÃ³n|
-Nivel respectivo |
-DirecciÃ³n de EducaciÃ³n FÃ­sica|
-MANUAL|
--|
+Supervisión|
+"Nivel respectivo"|
+Dirección de Educación Física|
+Manual|
+n/a|
 Todos los Niveles|
 Impreso, Digital en unidad de memoria|
 No|
@@ -15,8 +15,14 @@ Al inicio de cada ciclo|
 Agosto|
 Calendario Escolar Acuerdo Numero 13/05/2019|
 No|
--|
+n/a|
+1|
+1|
+1|
+1|
+1|
+1|
 Nivel Respectivo|
-|
-|
-2296900|
+n/a|
+n/a|
+2296900

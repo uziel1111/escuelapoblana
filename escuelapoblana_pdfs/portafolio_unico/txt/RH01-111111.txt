@@ -1,22 +1,28 @@
-ï»¿15|
+15|
 RH01|
 Recursos Humanos|
-Propuesta de ContrataciÃ³n|
-Documento en la cual se hace menciÃ³n del personal que el Director propone para poder ser contratado para cubrir alguna incidencia.|
-SupervisiÃ³n|
-DirecciÃ³n de Recursos Humanos|
-DirecciÃ³n de Recursos Humanos|
-MANUAL|
--|
+Propuesta de Contratación|
+Documento en la cual se hace mención del personal que el Director propone para poder ser contratado para cubrir alguna incidencia.|
+Supervisión|
+Dirección de Recursos Humanos|
+Dirección de Recursos Humanos|
+Manual|
+n/a|
 Todos los Niveles|
 Impreso|
 No|
 Al inicio y fin de cada ciclo|
 Junio, agosto|
-Reglamento Interior de la SecretarÃ­a de EducaciÃ³n PÃºblica del Estado de Puebla.|
+Reglamento Interior de la Secretaría de Educación Pública del Estado de Puebla.|
 No|
--|
-DirecciÃ³n de Recursos Humanos|
-Claudia GuzmÃ¡n GonzÃ¡lez|
+n/a|
+1|
+1|
+1|
+1|
+1|
+1|
+Dirección de Recursos Humanos|
+Claudia Guzmán González|
 claudia.guzman@seppue.gob.mx|
-2735913|
+"2735913"

@@ -1,22 +1,28 @@
-Ôªø35, 36|
+29|
 CE01|
 Control Escolar|
-Sistema de Informaci√≥n y Vinculaci√≥n para la Comunidad Educativa de Puebla ‚ÄúYOLIXTLI‚Äù|
-M√≥dulo Alumnos donde se captura informaci√≥n necesaria formalizar el ingreso de los alumnos a una Instituci√≥n Educativa, como datos generales del alumno, tutor, apoyos educativos y otros. M√≥dulo Evaluaciones, donde se capturan las evaluaciones de los alumnos del ciclo escolar actual, como lo marca las Normas Espec√≠ficas de Control Escolar relativas a la Inscripci√≥n, Reinscripci√≥n, Acreditaci√≥n, Promoci√≥n, Regularizaci√≥n y Certificaci√≥n en la Educaci√≥n B√°sica. M√≥dulo Regularizaciones, donde se capturan calificaciones obtenidas por los alumnos que presentan examen extraordinario o a t√≠tulo de suficiencia, en los periodos establecidos en las Normas Espec√≠ficas de Control   Escolar. Modulo Uniforme Escolar, donde se captura informaci√≥n de captura, talla y calzado de los alumnos. |
-Supervisi√≥n|
-Direcci√≥n de Control Escolar|
-Direcci√≥n de Control Escolar|
-SISTEMA AUTOMATIZADO|
+Sistema de InformaciÛn y VinculaciÛn para la Comunidad Educativa de Puebla ìYOLIXTLIî|
+MÛdulo Alumnos donde se captura informaciÛn necesaria formalizar el ingreso de los alumnos a una InstituciÛn Educativa, como datos generales del alumno, tutor, apoyos educativos y otros. MÛdulo Evaluaciones, donde se capturan las evaluaciones de los alumnos del ciclo escolar actual, como lo marca las Normas EspecÌficas de Control Escolar relativas a la InscripciÛn, ReinscripciÛn, AcreditaciÛn, PromociÛn, RegularizaciÛn y CertificaciÛn en la EducaciÛn B·sica. MÛdulo Regularizaciones, donde se capturan calificaciones obtenidas por los alumnos que presentan examen extraordinario o a tÌtulo de suficiencia, en los periodos establecidos en las Normas EspecÌficas de Control  Escolar. Modulo Uniforme Escolar, donde se captura informaciÛn de captura, talla y calzado de los alumnos. |
+SupervisiÛn|
+DirecciÛn de Control Escolar|
+DirecciÛn de Control Escolar|
+Sistema Automatizado|
 https://www.yolixtli.gob.mx|
 Todos los Niveles|
 Captura en sistema|
 No|
 Ocasional|
 Enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre|
-Ley de Educaci√≥n del Estado de Puebla, Art 12, fracci√≥n III inciso e) y Art√≠culo 14, fracci√≥n XXXI.|
+Ley de EducaciÛn del Estado de Puebla, Art 12, fracciÛn III inciso e) y ArtÌculo 14, fracciÛn XXXI.|
 No|
--|
-Direcci√≥n de Control Escolar|
-Francisco Omar √Ålvarez √Åguila|
+n/a|
+1|
+1|
+1|
+1|
+1|
+1|
+DirecciÛn de Control Escolar|
+Francisco Omar ¡lvarez ¡guila|
 rene.resendiz@seppue.gob.mx|
-2 29 69 37 ext 1173 |
+"2 29 69 37 ext 1173 "

@@ -1,22 +1,28 @@
-ï»¿14|
+14|
 ADE06|
-AdministraciÃ³n Escolar|
-Acta de ProtocolizaciÃ³n y Proyecto Anual en formato libre de Ligas Deportivas e Informes Trimestrales, EstadÃ­sticas de juegos deportivos|
-Estos requerimientos se piden de un plan estratÃ©gico de mejora que anualmente se revisa para buscar nuevas estrategias y asÃ­ fortalecer el desarrollo integral de los individuos.|
-SupervisiÃ³n|
-DirecciÃ³n de EducaciÃ³n FÃ­sica|
-DirecciÃ³n de EducaciÃ³n FÃ­sica|
-MANUAL|
--|
-EducaciÃ³n Fisica|
+Administración Escolar|
+Acta de Protocolización y Proyecto Anual en formato libre de Ligas Deportivas e Informes Trimestrales, Estadísticas de juegos deportivos|
+Estos requerimientos se piden de un plan estratégico de mejora que anualmente se revisa para buscar nuevas estrategias y así fortalecer el desarrollo integral de los individuos.|
+Supervisión|
+Dirección de Educación Física|
+Dirección de Educación Física|
+Manual|
+n/a|
+ Educación Fisica|
 Impreso, Digital en unidad de memoria|
 No|
 Ocasional|
 Enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre|
-Reglamento Interior de la SecretarÃ­a de EducaciÃ³n PÃºblica|
-SÃ­|
-Evidencias fotogrÃ¡ficas|
-DirecciÃ³n de EducaciÃ³n FÃ­sica|
-Cristian Gutierrez SÃ¡nchez|
+Reglamento Interior de la Secretaría de Educación Pública|
+Sí|
+Evidencias fotográficas|
+0|
+0|
+0|
+0|
+0|
+1|
+Dirección de Educación Física|
+Cristian Gutierrez Sánchez|
 urh.dep.fed@hotmail.com|
-2296989|
+"2296989"

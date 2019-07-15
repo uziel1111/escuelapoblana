@@ -1,12 +1,12 @@
-Ôªø20|
+20|
 RH06|
 Recursos Humanos|
-SPARH-CENSUS (Actualizaci√≥n de Plantilla de Personal)|
-Actualizar la plantilla de personal  en cada centro de trabajo siendo validada y firmada por el responsable de la escuela, as√≠ mismo cargarla a la plataforma SPARH-CENSUS|
-Supervisi√≥n|
-Direcci√≥n de Recursos Humanos|
-Direcci√≥n de Recursos Humanos|
-SISTEMA AUTOMATIZADO|
+SPARH-CENSUS (ActualizaciÛn de Plantilla de Personal)|
+Actualizar la plantilla de personal en cada centro de trabajo siendo validada y firmada por el responsable de la escuela, asÌ mismo cargarla a la plataforma SPARH-CENSUS|
+SupervisiÛn|
+DirecciÛn de Recursos Humanos|
+DirecciÛn de Recursos Humanos|
+Sistema Automatizado|
 http://census.seppue.gob.mx:7010/sparhwebp/jsp/menu/MenuInicio.jsp|
 Todos los Niveles|
 Captura e impreso|
@@ -15,8 +15,14 @@ Mensual|
 Enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre|
 Circular emitida por el Director de Recursos Humanos al inicio y fin del ciclo escolar actual.|
 No|
--|
-Direcci√≥n de Recursos Humanos|
-Claudia Guzm√°n Gonz√°lez|
+n/a|
+1|
+1|
+1|
+1|
+1|
+1|
+DirecciÛn de Recursos Humanos|
+Claudia Guzm·n Gonz·lez|
 claudia.guzman@seppue.gob.mx|
-2735913|
+"2735913"

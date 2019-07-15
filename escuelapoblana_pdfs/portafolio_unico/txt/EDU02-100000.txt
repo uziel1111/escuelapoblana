@@ -1,22 +1,28 @@
-ï»¿5|
+5|
 EDU02|
-EducaciÃ³n Inicial|
+Educación Inicial|
 Sistema de Vigilancia Nutricional y Neurodesarrollo en estancias infantiles (SIVNNEI)|
-Es una plataforma en donde se registra los resultados de la evaluaciÃ³n del Desarrollo Infantil de las niÃ±os y niÃ±as de un mes a cinco aÃ±os, en Ã¡reas, tales como motricidad gruesa, fina, lenguaje, social y conocimiento asÃ­ como talla y peso.|
-SupervisiÃ³n|
-DirecciÃ³n de EducaciÃ³n Inicial|
+Es una plataforma en donde se registra los resultados de la evaluación del Desarrollo Infantil de las niños y niñas de un mes a cinco años, en áreas, tales como motricidad gruesa, fina, lenguaje, social y conocimiento así como talla y peso.|
+Supervisión|
+Dirección de Educación Inicial|
 Sistema Nacional para el Desarrollo Integral de la Familia (SENDIF)|
-SISTEMA AUTOMATIZADO|
+Sistema Automatizado|
 https://dirnutmex.org/sivnnei/|
 Inicial|
 Captura en sistema|
 No|
 Semestral|
 Mayo, noviembre|
-Acuerdo del  entre la SecretarÃ­a de EducaciÃ³n PÃºblica, El Sistema Nacional para el Desarrollo Integral de la Familia y el Hospital Infantil de MÃ©xico Federico GÃ³mez. No existe documento.|
+Acuerdo del entre la Secretaría de Educación Pública, El Sistema Nacional para el Desarrollo Integral de la Familia y el Hospital Infantil de México Federico Gómez. No existe documento.|
 No|
--|
-DirecciÃ³n de EducaciÃ³n Inicial|
-Laura VillafaÃ±e Osorio|
+n/a|
+1|
+0|
+0|
+0|
+0|
+0|
+Dirección de Educación Inicial|
+Laura Villafañe Osorio|
 eduini.sistematizacion@gmail.com|
-2230981|
+"2230981"
