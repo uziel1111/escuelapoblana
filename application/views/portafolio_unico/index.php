@@ -201,7 +201,7 @@
 						<span class="second-txt" id="titulo_tabla">Catálogo de Documentos por Tema</span>
 					</div>
 					<div class="card-body">
-						<div class="accordion accordion-style-1" id="accordionDocs">
+						<div class="accordion accordion-style-1 text-light" id="accordionDocs">
 						<?php
 
 						//print_r($m_files);
