@@ -2558,7 +2558,17 @@ to {
    /* font-family:'Passion One', cursive !important; */
     padding: 11px 16px 11px 17px;
 	transition: .5s ease-in-out;
-	color:#DBD4D4 !important;
+	color:#DBD4D4;
+
+}
+.accordion-style-1 .card > div.card-header:hover {
+
+	color:#DBD4D4;
+
+}
+.accordion-style-1 .card > div.card-header span{
+
+	color:#1D173D;
 
 }
 .accordion-style-1 .tcard > div.card-header:first-child {
@@ -2599,7 +2609,7 @@ background: -o-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 
 background: -ms-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
 background: linear-gradient(to bottom, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=0 );
-	color:#DBD4D4;
+	color:#292828;
 }
 .accordion-style-1 .accordion-style-1-header .fa {
   transition: .5s transform ease-in-out;
