@@ -18,7 +18,7 @@
 					</div>
 					<div class="col-sm-12">
 						<center class="">
-							<p>Con el propósito de reducir de forma drástica la carga administrativa de las escuelas, se revisaron 196 requerimientos de información de las escuelas de educación básica, de los cuales se acordó eliminar 86 de ellos, por lo que a continuación se presenta el primer avance de 110 requerimientos de información (entre formatos y sistemas automatizados) aplicables al ciclo escolar 2019-2020.</p>
+							<p>Inicial, Preescolar, Primaria, Secundaria, Secundaria Técnica, Capacitación para el trabajo, Técnico, Técnico Profesional, Bachillerato General, Tecnológico y no Escolarizado.</p>
 						</center>
 					</div>
 				</div>
@@ -33,9 +33,7 @@
 							$pr = 0;
 							$se = 0;
 							$es = 0;
-							$fi = 0;
-							$id = 1;
-							$ce = 0;					
+							$fi = 0;					
 					$tema_titulo = " ";
 						$m_files = glob('escuelapoblana_pdfs/portafolio_unico/txt/*.{txt}', GLOB_BRACE);		
 						foreach ($m_files as $file_nivel) {
@@ -43,7 +41,7 @@
 							
 							$ni_array = explode( '/', $file_nivel );
 							$file_ni = substr($ni_array[3], 0, -4);
-							$file_niv = substr($file_ni, -8);
+							$file_niv = substr($file_ni, -6);
 
 							//echo $file_niv;
 							
@@ -72,18 +70,9 @@
 								$es++;				
 							}
 							if (substr_compare($data_nivel[$file_nivel]['f_nivel'], "1", 5, 1) == 0){
-								$especial[] = $file_nivel; 
-								$id++;				
-							}
-							if (substr_compare($data_nivel[$file_nivel]['f_nivel'], "1", 6, 1) == 0){
-								$especial[] = $file_nivel; 
-								$ce++;				
-							}
-							if (substr_compare($data_nivel[$file_nivel]['f_nivel'], "1", 7, 1) == 0){
 								$fisica[] = $file_nivel; 
 								$fi++;				
-							}					
-
+							}							
 						
 						}					
 						?>
@@ -190,38 +179,6 @@
 						<div class="col-sm-4">
 							<div class="panel panel-custom">
 							  <div class="inner">
-								<img  src="<?php echo base_url(); ?>assets/img/portafolio/box0.jpg" class="card-img-top" alt="...">
-							  </div>
-							  <div class="panel-body">
-								Educación Indígena:  <span class="text-primary"><?php echo $id;?></span>
-								  
-							  </div>
-							  <ul class="list-group">
-								<li class="list-group-item">
-									<button type="button" class="btn btn-sm btn-info btn-block" id="btn_consulta_eduInd" onclick="" ><i class='fa fa-eye'></i> Consultar</button>
-								  </li>
-							  </ul>							
-							</div>					
-						</div>
-						<div class="col-sm-4">
-							<div class="panel panel-custom">
-							  <div class="inner">
-								<img  src="<?php echo base_url(); ?>assets/img/portafolio/box0.jpg" class="card-img-top" alt="...">
-							  </div>
-							  <div class="panel-body">
-								Centros Escolares:  <span class="text-primary"><?php echo $ce;?></span>
-								  
-							  </div>
-							  <ul class="list-group">
-								<li class="list-group-item">
-									<button type="button" class="btn btn-sm btn-info btn-block" id="btn_consulta_cenEsc" onclick="" ><i class='fa fa-eye'></i> Consultar</button>
-								  </li>
-							  </ul>							
-							</div>					
-						</div>
-						<div class="col-sm-4">
-							<div class="panel panel-custom">
-							  <div class="inner">
 								<img  src="<?php echo base_url(); ?>assets/img/portafolio/box6.jpg" class="card-img-top" alt="...">
 							  </div>
 							  <div class="panel-body">
@@ -295,9 +252,6 @@
 								case "PC":
 									$tema_titulo = "Protección Civil / ";
 									break;
-								case "PF":
-									$tema_titulo = "Programas Federales / ";
-									break;
 								case "PS":
 									$tema_titulo = "Participción Social / ";
 									break;
@@ -353,7 +307,7 @@
 				echo "<tr'>";		
 			    echo "<td scope='row' style='font-weight: bold;'>";
 			    echo $i."</td>";
-				echo "<td>". $n_array[3]."</td>";
+				echo "<td>". $n_array[3] ."</td>";
 				echo "<td>". $n_array[6] ."</td>";
 				echo "<td>". $n_array[10] ."</td>";											
 				echo "<td nowrap>";
@@ -794,7 +748,7 @@ $(document).on("click", ".open-Modal-pdf", function () {
 	
 	var htmlString_pdf = '';
 	
-	var sPDF = "http://qual-edu.org/pruebas_qualedu/escuelapoblana/escuelapoblana_pdfs/portafolio_unico/pdf/" + file_pdfId + ".pdf";
+	var sPDF = "//localhost/escuelapoblana/escuelapoblana_pdfs/portafolio_unico/pdf/" + file_pdfId + ".pdf";
 	htmlString_pdf += '<p><a href="' + sPDF + '" class="btn btn-success" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i> Descargar</a></p>';
 	htmlString_pdf += '<iframe width="100%" height="400px" id="pdfId" class="embed-responsive-item" src="' + sPDF + '" allowfullscreen/></iframe>';
 	
@@ -949,22 +903,14 @@ console.log("error");
   filter = filtro.toUpperCase();
   table = document.getElementById(idtabla);
   tr = table.getElementsByTagName("tr");
-   id = 0;
-   /**
-   * A partir de aquí no estoy segura de qué estoy programando jejeje
-   */
-  
-  	cadena = filter.split(',');
-  console.log(cadena.length);
-  	for (var i = 0; i < cadena.length; i++) {
 
-  		console.log(cadena[i].trim());
-
-  		 for (i = 0; i < tr.length; i++) {
+  // Loop through all table rows, and hide those who don't match the search query
+  id = 0;
+  for (i = 0; i < tr.length; i++) {
     td = tr[i].getElementsByTagName("td")[3];
     if (td) {
       txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(cadena) > -1 || txtValue.toUpperCase().indexOf("TODOS LOS NIVELES") > -1) {
+      if (txtValue.toUpperCase().indexOf(filter) > -1 || txtValue.toUpperCase().indexOf("TODOS LOS NIVELES") > -1) {
       	id++;
       	tr[i].getElementsByTagName("td")[0].innerHTML = id;
         tr[i].style.display = "";
@@ -977,35 +923,7 @@ console.log("error");
     	}
     }
   }
-
-  	}
-  	// console.log(cadena);
-
-  /**
-   * Hasta aquí no estoy segura de qué estoy programando jejeje
-   */
-
-  // Loop through all table rows, and hide those who don't match the search query
-  // id = 0;
-  // for (i = 0; i < tr.length; i++) {
-  //   td = tr[i].getElementsByTagName("td")[3];
-  //   if (td) {
-  //     txtValue = td.textContent || td.innerText;
-  //     if (txtValue.toUpperCase().indexOf(filter) > -1 || txtValue.toUpperCase().indexOf("TODOS LOS NIVELES") > -1) {
-  //     	id++;
-  //     	tr[i].getElementsByTagName("td")[0].innerHTML = id;
-  //       tr[i].style.display = "";
-  //     } else {
-  //       tr[i].style.display = "none";
-  //     }
-  //   } else {
-  //   	if (txtValue == '') {
-  //   		id++;
-  //   	}
-  //   }
-  // }
   return id;
-  
 }
 
 	
@@ -1014,8 +932,6 @@ console.log("error");
 		$('#titulo_tabla').text('Catálogo de Documentos por Tema / Educación Inicial');
 		$('#headingED').removeClass('ocultar');
 		$('#headingCO').addClass('ocultar');
-		$('#headingPF').addClass('ocultar');
-
 		$('#tituloAD').text(filtrarTabla('Inicial', 'tabla_AD'));
 		$('#tituloED').text(filtrarTabla('Inicial', 'tabla_ED'));
 		$('#tituloES').text(filtrarTabla('Inicial', 'tabla_ES'));
@@ -1023,9 +939,6 @@ console.log("error");
 		$('#tituloPS').text(filtrarTabla('Inicial', 'tabla_PS'));
 		$('#tituloRH').text(filtrarTabla('Inicial', 'tabla_RH'));
 		$('#tituloRM').text(filtrarTabla('Inicial', 'tabla_RM'));
-		$('#tituloCE').text(filtrarTabla('Inicial', 'tabla_CE'));
-		$('#tituloPF').text(filtrarTabla('Inicial', 'tabla_PF'));
-
 
 		
 	});
@@ -1042,15 +955,13 @@ console.log("error");
 		$('#tituloPS').text(filtrarTabla('Preescolar', 'tabla_PS'));
 		$('#tituloRH').text(filtrarTabla('Preescolar', 'tabla_RH'));
 		$('#tituloRM').text(filtrarTabla('Preescolar', 'tabla_RM'));
-		$('#tituloCE').text(filtrarTabla('Preescolar', 'tabla_CE'));
-		$('#tituloPF').text(filtrarTabla('preescolar', 'tabla_PF'));
 	});
 	$('#btn_consulta_prim').click(function() {
 		
 		$('#titulo_tabla').text('Catálogo de Documentos por Tema / Primaria ');
 		$('#headingED').addClass('ocultar');
 		$('#headingCO').removeClass('ocultar');
-		$('#tituloCO').text(filtrarTabla('primaria', 'tabla_CO'));	
+		$('#tituloCO').text('16');		
 		$('#tituloAD').text(filtrarTabla('primaria', 'tabla_AD'));
 		$('#tituloED').text(filtrarTabla('primaria', 'tabla_ED'));
 		$('#tituloES').text(filtrarTabla('primaria', 'tabla_ES'));
@@ -1058,24 +969,20 @@ console.log("error");
 		$('#tituloPS').text(filtrarTabla('primaria', 'tabla_PS'));
 		$('#tituloRH').text(filtrarTabla('primaria', 'tabla_RH'));
 		$('#tituloRM').text(filtrarTabla('primaria', 'tabla_RM'));
-		$('#tituloCE').text(filtrarTabla('primaria', 'tabla_CE'));
-		$('#tituloPF').text(filtrarTabla('primaria', 'tabla_PF'));
 	});
 	$('#btn_consulta_sec').click(function() {
 		
 		$('#titulo_tabla').text('Catálogo de Documentos por Tema / Secundaria ');
-		// $('#headingED').addClass('ocultar');
-		// $('#headingCO').removeClass('ocultar');
-		$('#tituloCO').text(filtrarTabla('secundaria', 'tabla_CO'));
+		$('#headingED').addClass('ocultar');
+		$('#headingCO').removeClass('ocultar');
+		$('#tituloCO').text('16');
 		$('#tituloAD').text(filtrarTabla('secundaria', 'tabla_AD'));
 		$('#tituloED').text(filtrarTabla('secundaria', 'tabla_ED'));
 		$('#tituloES').text(filtrarTabla('secundaria', 'tabla_ES'));
 		$('#tituloPC').text(filtrarTabla('secundaria', 'tabla_PC'));
 		$('#tituloPS').text(filtrarTabla('secundaria', 'tabla_PS'));
 		$('#tituloRH').text(filtrarTabla('secundaria', 'tabla_RH'));
-		$('#tituloRM').text(filtrarTabla('secundaria', 'tabla_RM'));
-		$('#tituloCE').text(filtrarTabla('secuntaria', 'tabla_CE'));
-		$('#tituloPF').text(filtrarTabla('secuntaria', 'tabla_PF'));
+		$('#tituloRM').text( filtrarTabla('secundaria', 'tabla_RM'));
 	});
 	$('#btn_consulta_eduEsp').click(function() {
 		
@@ -1090,65 +997,20 @@ console.log("error");
 		$('#tituloPS').text(filtrarTabla('Educación Especial', 'tabla_PS'));
 		$('#tituloRH').text(filtrarTabla('Educación Especial', 'tabla_RH'));
 		$('#tituloRM').text(filtrarTabla('Educación Especial', 'tabla_RM'));
-		$('#tituloCE').text(filtrarTabla('Educación Especial', 'tabla_CE'));
-		$('#tituloPF').text(filtrarTabla('Educación Especial', 'tabla_PF'));
 	});
 	$('#btn_consulta_eduFis').click(function() {
 		
 		$('#titulo_tabla').text('Catálogo de Documentos por Tema / Educación Física');
 		$('#headingED').addClass('ocultar');
 		$('#headingCO').addClass('ocultar');
-		$('#headingES').addClass('ocultar');
-		$('#headingPC').addClass('ocultar');
-		$('#headingPF').addClass('ocultar');
-		$('#headingPS').addClass('ocultar');
-		$('#headingRH').addClass('ocultar');
-		$('#headingRM').addClass('ocultar');
 
-		$('#tituloAD').text(filtrarTabla('Educación Física', 'tabla_AD'));
-		$('#tituloED').text(filtrarTabla('Educación Física', 'tabla_ED'));
-		$('#tituloES').text(filtrarTabla('Educación Física', 'tabla_ES'));
-		$('#tituloPC').text(filtrarTabla('Educación Física', 'tabla_PC'));
-		$('#tituloPS').text(filtrarTabla('Educación Física', 'tabla_PS'));
-		$('#tituloRH').text(filtrarTabla('Educación Física', 'tabla_RH'));
-		$('#tituloRM').text(filtrarTabla('Educación Física', 'tabla_RM'));
-		$('#tituloCE').text(filtrarTabla('Educación Física', 'tabla_CE'));
-		$('#tituloPF').text(filtrarTabla('Educación Física', 'tabla_PF'));
-
-	});
-	$('#btn_consulta_eduInd').click(function() {
-		
-		$('#titulo_tabla').text('Catálogo de Documentos por Tema / Educación Indígena');
-		// $('#headingED').addClass('ocultar');
-		// $('#headingCO').addClass('ocultar');
-
-		$('#tituloAD').text(filtrarTabla('Educación Indígena', 'tabla_AD'));
-		$('#tituloED').text(filtrarTabla('Educación Indígena', 'tabla_ED'));
-		$('#tituloCO').text(filtrarTabla('Educación Indígena', 'tabla_CO'));
-		$('#tituloES').text(filtrarTabla('Educación Indígena', 'tabla_ES'));
-		$('#tituloPC').text(filtrarTabla('Educación Indígena', 'tabla_PC'));
-		$('#tituloPS').text(filtrarTabla('Educación Indígena', 'tabla_PS'));
-		$('#tituloRH').text(filtrarTabla('Educación Indígena', 'tabla_RH'));
-		$('#tituloRM').text(filtrarTabla('Educación Indígena', 'tabla_RM'));
-		$('#tituloCE').text(filtrarTabla('Educación Indígena', 'tabla_CE'));
-		$('#tituloPF').text(filtrarTabla('Educación Indígena', 'tabla_PF'));
-	});
-	$('#btn_consulta_cenEsc').click(function() {
-		
-		$('#titulo_tabla').text('Catálogo de Documentos por Tema / Centros Escolares');
-		// $('#headingED').addClass('ocultar');
-		// $('#headingCO').addClass('ocultar');
-
-		$('#tituloAD').text(filtrarTabla('Centros Escolares', 'tabla_AD'));
-		$('#tituloED').text(filtrarTabla('Centros Escolares', 'tabla_ED'));
-		$('#tituloCO').text(filtrarTabla('Centros Escolares', 'tabla_CO'));
-		$('#tituloES').text(filtrarTabla('Centros Escolares', 'tabla_ES'));
-		$('#tituloPC').text(filtrarTabla('Centros Escolares', 'tabla_PC'));
-		$('#tituloPS').text(filtrarTabla('Centros Escolares', 'tabla_PS'));
-		$('#tituloRH').text(filtrarTabla('Centros Escolares', 'tabla_RH'));
-		$('#tituloRM').text(filtrarTabla('Centros Escolares', 'tabla_RM'));
-		$('#tituloCE').text(filtrarTabla('Centros Escolares', 'tabla_CE'));
-		$('#tituloPF').text(filtrarTabla('Centros Escolares', 'tabla_PF'));
+		$('#tituloAD').text(filtrarTabla('Educación FIsica', 'tabla_AD'));
+		$('#tituloED').text(filtrarTabla('Educación FIsica', 'tabla_ED'));
+		$('#tituloES').text(filtrarTabla('Educación FIsica', 'tabla_ES'));
+		$('#tituloPC').text(filtrarTabla('Educación FIsica', 'tabla_PC'));
+		$('#tituloPS').text(filtrarTabla('Educación FIsica', 'tabla_PS'));
+		$('#tituloRH').text(filtrarTabla('Educación FIsica', 'tabla_RH'));
+		$('#tituloRM').text(filtrarTabla('Educación FIsica', 'tabla_RM'));
 
 	});
 	$('#btn_ver_todo').click(function(event) {
@@ -1157,15 +1019,13 @@ console.log("error");
 		$('#headingED').removeClass('ocultar');
 		$('#headingCO').removeClass('ocultar');
 		$('#tituloAD').text(filtrarTabla('', 'tabla_AD'));
-		$('#tituloCO').text('36');	
+		$('#tituloCO').text('16');	
 		$('#tituloED').text(filtrarTabla('', 'tabla_ED'));
 		$('#tituloES').text(filtrarTabla('', 'tabla_ES'));
 		$('#tituloPC').text(filtrarTabla('', 'tabla_PC'));
 		$('#tituloPS').text(filtrarTabla('', 'tabla_PS'));
 		$('#tituloRH').text(filtrarTabla('', 'tabla_RH'));
 		$('#tituloRM').text(filtrarTabla('', 'tabla_RM'));
-		$('#tituloCE').text(filtrarTabla('', 'tabla_CE'));
-		$('#tituloPF').text(filtrarTabla('', 'tabla_PF'));
 	});
 	$(document).ready(
 		function cargar_todo() {
@@ -1173,15 +1033,13 @@ console.log("error");
 		$('#headingED').removeClass('ocultar');
 		$('#headingCO').removeClass('ocultar');
 		$('#tituloAD').text(filtrarTabla('', 'tabla_AD'));
-		$('#tituloCO').text(filtrarTabla('', 'tabla_CO'));
+		$('#tituloCO').text('16');	
 		$('#tituloED').text(filtrarTabla('', 'tabla_ED'));
 		$('#tituloES').text(filtrarTabla('', 'tabla_ES'));
 		$('#tituloPC').text(filtrarTabla('', 'tabla_PC'));
 		$('#tituloPS').text(filtrarTabla('', 'tabla_PS'));
 		$('#tituloRH').text(filtrarTabla('', 'tabla_RH'));
 		$('#tituloRM').text(filtrarTabla('', 'tabla_RM'));
-		$('#tituloCE').text(filtrarTabla('', 'tabla_CE'));
-		$('#tituloPF').text(filtrarTabla('', 'tabla_PF'));
 		}
 		
 		);
