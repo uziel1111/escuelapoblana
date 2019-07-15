@@ -636,7 +636,7 @@
                     <!-- <a type="button" href="#" id="btn_spd1"> -->
                     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 div_herramientas_turquesa grises" id="spd_id">
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
-                          <img src="<?php echo base_url('assets/img/briefcase.svg'); ?>" alt="..." class="img_icon" />
+                          <img src="<?php echo base_url('assets/img/open-book.svg'); ?>" alt="..." class="img_icon" />
                         </div>
                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 ">
                         <span  class="span_titulo">Servicio Profesional Docente</span>
@@ -668,7 +668,7 @@
                         <span class="span_titulo">Escuelas  particulares</span>
                         </div>
                     </div>
-                    </a> 
+                    </a>
                   </div>
 
 
@@ -681,6 +681,22 @@
 
                   <fieldset class="fiel_estilo_idxfieldset">
                     <legend class="fiel_estilo_idxlegend">Otros</legend>
+
+                    <!-- http://localhost/escuelapoblana/index.php/PortafolioUnico -->
+
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <a type="button" href="<?php echo site_url('PortafolioUnico'); ?>">
+                    <!-- <a type="button" href="#" id="btn_spd1"> -->
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 div_herramientas_amarillo grises" id="spd_id">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
+                          <img src="<?php echo base_url('assets/img/briefcase.svg'); ?>" alt="..." class="img_icon" />
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 ">
+                        <span  class="span_titulo">Portafolio Único de Formatos</span>
+                        </div>
+                    </div>
+                    </a>
+                  </div>
 
 
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
