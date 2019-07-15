@@ -1,0 +1,30 @@
+8|
+CE02|
+Control Escolar|
+Cuotas de Incorporación por Alumno(a) de Escuelas Particulares con Reconocimiento de Validez Oficial |
+Que las escuelas particulares con registro de validez oficial de estudios realicen el pago correspondiente por concepto de “Cuotas de incorporación por alumno(a) de escuelas particulares”. |
+CORDE|
+Coordinación de Desarrollo Educativo|
+Escuelas|
+Sistema automatizado|
+http://187.157.44.110/TramitaSep/cuota.html |
+ Educación Inicial, Preescolar, Primaria, Educación Especial, Secundarias Técnicas, Secundarias Generales|
+Impreso|
+No|
+Al inicio y fin de cada ciclo|
+Julio, agosto, septiembre|
+• Reglamento Interior de la Secretaría de Educación Pública del Estado. - Vigente• Ley de Ingresos del Estado de Puebla. Vigente|
+No|
+n/a|
+1|
+1|
+1|
+1|
+1|
+0|
+0|
+0|
+Coordinación de Desarrollo Educativo|
+Fausto Rodríguez|
+fausto.rodriguez@seppue.gob.mx|
+2296958|

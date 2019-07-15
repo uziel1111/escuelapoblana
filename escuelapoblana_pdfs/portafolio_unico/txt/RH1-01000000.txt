@@ -1,0 +1,30 @@
+100|
+RH1|
+Recursos Humanos|
+Plantilla de Personal |
+Formato de excel en que se solicita la información general del centro de trabajo (Nombre, Dirección, Zona, Sector, CORDE, teléfono, turno, modalidad y tipo de organización), así como la información personal y laboral, de los que integran dicho plantel (Nombre completo, CURP, RFC, teléfonos personales, correo electrónico, dirección personal, clave presupuestal que ostenta, código de nombramiento, fecha de ingreso a SEP, grado máximo de estudios, grado, grupo y número de niños que atiende, firma autógrafa de que los datos son ciertos y reales. Todo esto se solicita por falta de Actualización de SPARH.|
+Supervisión|
+Dirección de Educación Preescolar|
+Dirección de Educación Preescolar|
+Manual|
+n/a|
+Preescolar|
+Digital en unidad de memoria|
+Sí|
+Ocasional|
+Octubre|
+N/A|
+Sí|
+En la entrega impresa se anexan copias de los últimos talones de pago, IFE y de su trayectoria.|
+0|
+1|
+0|
+0|
+0|
+0|
+0|
+0|
+Nivel respectivo|
+n/a|
+n/a|
+2296900|

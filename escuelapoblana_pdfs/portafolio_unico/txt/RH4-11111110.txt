@@ -1,0 +1,30 @@
+95|
+RH4|
+Recursos Humanos|
+SPARH-CENSUS (Actualización de Plantilla de Personal)|
+Actualizar la plantilla de personal en cada centro de trabajo siendo validada y firmada por el responsable de la escuela, así mismo cargarla a la plataforma SPARH-CENSUS|
+Supervisión|
+Recursos Humanos|
+Dirección de Recursos Humanos|
+Sistema automatizado|
+http://census.seppue.gob.mx:7010/sparhwebp/jsp/menu/MenuInicio.jsp|
+ Educación Inicial, Preescolar, Primaria, Educación Indígena, Educación Especial, Secundarias Técnicas, Secundarias Generales, Telesecundarias, Centros Escolares|
+Captura e impreso|
+No|
+Mensual|
+Enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre|
+Circular emitida por el Director de Recursos Humanos al inicio y fin del ciclo escolar actual.|
+No|
+n/a|
+1|
+1|
+1|
+1|
+1|
+1|
+1|
+0|
+Dirección de Recursos Humanos|
+Adriana Romero Díaz|
+info.plantillas@seppue.gob.mx|
+2296900 ext. 6928, 7206|
