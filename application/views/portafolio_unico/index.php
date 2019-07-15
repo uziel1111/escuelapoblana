@@ -12,7 +12,7 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<center>
-							<div class="h3"> <strong> Portafolio Único</strong>
+							<div class="h3"> <strong> Portafolio Único de Información Escolar</strong>
 							</div>
 						</center>
 					</div>
