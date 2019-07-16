@@ -732,7 +732,8 @@
 
 
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <a type="button" href="#" id="btn_calendarios1">
+                    <!-- <a type="button" href="#" id="btn_calendarios1"> -->
+                    <a href="https://www.gob.mx/sep?tab=Calendario%20escolar%202019-2020" target="_blank">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 div_herramientas_amarillo grises">
                         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
                           <img src="<?php echo base_url('assets/img/calendar.svg'); ?>" alt="..." class=" img_icon" />
