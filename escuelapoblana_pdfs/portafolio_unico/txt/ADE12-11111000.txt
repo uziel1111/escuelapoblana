@@ -1,5 +1,5 @@
-8|
-CE02|
+﻿8|
+ADE12|
 Control Escolar|
 Cuotas de Incorporación por Alumno(a) de Escuelas Particulares con Reconocimiento de Validez Oficial |
 Que las escuelas particulares con registro de validez oficial de estudios realicen el pago correspondiente por concepto de “Cuotas de incorporación por alumno(a) de escuelas particulares”. |

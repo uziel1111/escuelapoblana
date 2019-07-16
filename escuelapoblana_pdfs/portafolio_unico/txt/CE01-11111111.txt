@@ -1,5 +1,5 @@
-99|
-CE03|
+﻿99|
+CE01|
 Control Escolar|
 Sistema de Información y Vinculación para la Comunidad Educativa de Puebla “YOLIXTLI”|
 Módulo Alumnos donde se captura información necesaria formalizar el ingreso de los alumnos a una Institución Educativa, como datos generales del alumno, tutor, apoyos educativos y otros. Módulo Evaluaciones, donde se capturan las evaluaciones de los alumnos del ciclo escolar actual, como lo marca las Normas Específicas de Control Escolar relativas a la Inscripción, Reinscripción, Acreditación, Promoción, Regularización y Certificación en la Educación Básica. Módulo Regularizaciones, donde se capturan calificaciones obtenidas por los alumnos que presentan examen extraordinario o a título de suficiencia, en los periodos establecidos en las Normas Específicas de Control  Escolar. Modulo Uniforme Escolar, donde se captura información de captura, talla y calzado de los alumnos. |

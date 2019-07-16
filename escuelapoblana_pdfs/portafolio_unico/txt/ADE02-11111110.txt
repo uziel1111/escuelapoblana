@@ -1,4 +1,4 @@
-2|
+﻿2|
 ADE02|
 Administración Escolar|
 INFOMEX (Información México)|
@@ -8,7 +8,7 @@ Coordinación Estatal de Transparencia y Gobierno Abierto|
 Usuario |
 Manual|
 n/a|
- Educación Inicial, Preescolar, Primaria, Educación Indígena, Educación Especial, Secundaria Técnicas, Secundarias Generales, Telesecundarias, Centros Escolares|
+ Educación Inicial, Preescolar, Primaria, Educación Indígena, Educación Especial, Secundarias Técnicas, Secundarias Generales, Telesecundarias, Centros Escolares|
 Impreso|
 No|
 Ocasional|

@@ -1,5 +1,5 @@
-8|
-CE01|
+﻿8|
+ADE11|
 Control Escolar|
 Procedimiento para la Recopilación y Validación de Ingresos Propios en CDE |
 Este procedimiento es de observancia obligatoria para las personas involucradas en el Proceso para la Recopilación y Validación de Ingresos Propios recabados a través de las Coordinaciones de Desarrollo Educativo (CDE). Mismo que abarca desde la solicitud y entrega de la documentación, hasta el archivo y resguardo del expediente.|

@@ -1,4 +1,4 @@
-4|
+﻿4|
 ADE04|
 Administración Escolar|
 Formato de Solicitud de Actividades Extraescolares|
@@ -8,7 +8,7 @@ Nivel Respectivo|
 Dirección de Educación Especial|
 Manual|
 n/a|
-Educación Inicial, Preescolar, Primaria, Educación Indígena, Educación Especial, Educación Física, Secundaria Técnicas, Secundarias Generales, Telesecundarias, Centros Escolares|
+Educación Inicial, Preescolar, Primaria, Educación Indígena, Educación Especial, Educación Física, Secundarias Técnicas, Secundarias Generales, Telesecundarias, Centros Escolares|
 Digital o impreso|
 No|
 Ocasional|
