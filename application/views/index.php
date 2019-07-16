@@ -618,6 +618,23 @@
                   <fieldset class="fiel_estilo_idxfieldset">
                     <legend class="fiel_estilo_idxlegend">Servicios</legend>
 
+                    <!-- http://localhost/escuelapoblana/index.php/PortafolioUnico -->
+
+                 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <a type="button" href="<?php echo site_url('PortafolioUnico'); ?>">
+                    <!-- <a type="button" href="#" id="btn_spd1"> -->
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  div_herramientas_turquesa grises" id="spd_id">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
+                          <img src="<?php echo base_url('assets/img/briefcase.svg'); ?>" alt="..." class="img_icon" />
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 ">
+                        <span  class="span_titulo">Portafolio Único de Información Escolar</span>
+                        </div>
+                    </div>
+                    </a>
+                  </div>
+
+
                   <div  class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                     <a href="http://www.dsate.mx/" target="_blank">
                     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 div_herramientas_turquesa grises">
@@ -645,11 +662,11 @@
                     </a>
                   </div>
 
-                  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                    <a href="<?php echo site_url('supervision/index'); ?>">
+                 <!--  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <a href="<?php// echo site_url('supervision/index'); ?>">
                     <div style="" class="col-xs-12 col-sm-12 col-md-3 col-lg-3 div_herramientas_turquesa grises">
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
-                          <img src="<?php echo base_url('assets/img/woman-going-to-work.svg'); ?>" alt="..." class="img_icon" />
+                          <img src="<?php// echo base_url('assets/img/woman-going-to-work.svg'); ?>" alt="..." class="img_icon" />
                         </div>
                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 ">
                         <span  class="span_titulo">Supervisión</span>
@@ -657,7 +674,7 @@
                     </div>
                     </a>
                   </div>
-
+ -->
                   <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                     <a href="<?php echo site_url('EscuelasParticulares/index'); ?>">
                     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 div_herramientas_turquesa grises">
@@ -684,12 +701,12 @@
 
                     <!-- http://localhost/escuelapoblana/index.php/PortafolioUnico -->
 
-                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <a type="button" href="<?php echo site_url('PortafolioUnico'); ?>">
+                  <!-- <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <a type="button" href="<?php// echo site_url('PortafolioUnico'); ?>"> -->
                     <!-- <a type="button" href="#" id="btn_spd1"> -->
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 div_herramientas_amarillo grises" id="spd_id">
+                   <!--  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 div_herramientas_amarillo grises" id="spd_id">
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
-                          <img src="<?php echo base_url('assets/img/briefcase.svg'); ?>" alt="..." class="img_icon" />
+                          <img src="<?php// echo base_url('assets/img/briefcase.svg'); ?>" alt="..." class="img_icon" />
                         </div>
                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 ">
                         <span  class="span_titulo">Portafolio Único de Formatos</span>
@@ -697,7 +714,7 @@
                     </div>
                     </a>
                   </div>
-
+ -->
 
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                       <a href="http://sisep.puebla.gob.mx/sicepconsulta/" target="_blank">
