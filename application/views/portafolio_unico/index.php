@@ -190,7 +190,7 @@
 						<div class="col-sm-4">
 							<div class="panel panel-custom">
 							  <div class="inner">
-								<img  src="<?php echo base_url(); ?>assets/img/portafolio/box0.jpg" class="card-img-top" alt="...">
+								<img  src="<?php echo base_url(); ?>assets/img/portafolio/box8.jpg" class="card-img-top" alt="...">
 							  </div>
 							  <div class="panel-body">
 								Educación Indígena:  <span class="text-primary"><?php echo $id;?></span>
@@ -206,7 +206,7 @@
 						<div class="col-sm-4">
 							<div class="panel panel-custom">
 							  <div class="inner">
-								<img  src="<?php echo base_url(); ?>assets/img/portafolio/box0.jpg" class="card-img-top" alt="...">
+								<img  src="<?php echo base_url(); ?>assets/img/portafolio/box7.jpg" class="card-img-top" alt="...">
 							  </div>
 							  <div class="panel-body">
 								Centros Escolares:  <span class="text-primary"><?php echo $ce;?></span>
