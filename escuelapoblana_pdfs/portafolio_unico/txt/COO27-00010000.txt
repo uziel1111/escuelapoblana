@@ -1,4 +1,4 @@
-37|
+﻿37|
 COO27|
 Cooperativas y Tiendas Escolares|
 Convocatoria para la Realización de Asamblea General Ordinaria de Renovación de la Cooperativa Escolar de Producción|
@@ -25,6 +25,6 @@ n/a|
 0|
 0|
 Coordinación de Desarrollo Educativo|
-Fausto Rodríguez|
+Fausto Rodríguez Durán|
 fausto.rodriguez@seppue.gob.mx|
 2296958|

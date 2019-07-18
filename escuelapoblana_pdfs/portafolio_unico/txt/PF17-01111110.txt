@@ -1,7 +1,7 @@
-81|
+﻿81|
 PF17|
 Programas Federales|
-Formato de evidencia fotográficaPETC|
+Formato de evidencia fotográfica PETC|
 Formato que realiza el Director de la escuela donde anexan fotografías donde se muestra la compra, la actividad o la remodelación efectuada, para realizar la comprobatoria del recurso otorgado a la escuela|
 Coordinación del Programa Escuelas de Tiempo Completo|
 Coordinación Operativa de Programas Federales|

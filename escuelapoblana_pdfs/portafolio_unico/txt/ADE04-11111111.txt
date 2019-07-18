@@ -4,8 +4,8 @@ Administración Escolar|
 Formato de Solicitud de Actividades Extraescolares|
 Formato de Solicitud para autorización de salidas fuera del centro de trabajo para realizar actividades educativas|
 Supervisión|
+Coordinación de Desarrollo Educativo|
 Nivel Respectivo|
-Dirección de Educación Especial|
 Manual|
 n/a|
 Educación Inicial, Preescolar, Primaria, Educación Indígena, Educación Especial, Educación Física, Secundarias Técnicas, Secundarias Generales, Telesecundarias, Centros Escolares|
@@ -24,7 +24,7 @@ n/a|
 1|
 1|
 1|
-Nivel respectivo|
-n/a|
-n/a|
-2296900|
+Coordinación de Desarrollo Educativo|
+Fausto Rodríguez Durán|
+fausto.rodriguez@seppue.gob.mx|
+2296958|

@@ -1,7 +1,7 @@
-67|
+﻿67|
 PF01|
 Programas Federales|
-Carta Compromiso EscolarPNCE|
+Carta Compromiso Escolar PNCE|
 Documento mediante el cual la Escuela Pública de Educación Básica expresa a la AEL, su voluntad de participar en el Programa Nacional de Convivencia Escolar, así como el compromiso de realizar las acciones correspondientes sujetándose a los términos y condiciones establecidos en las presentes Reglas de Operación.|
 Supervisión|
 Coordinación Operativa de Programas Federales|

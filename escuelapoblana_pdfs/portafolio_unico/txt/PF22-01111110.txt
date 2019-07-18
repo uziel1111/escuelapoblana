@@ -1,7 +1,7 @@
-83|
+﻿83|
 PF22|
 Programas Federales|
-Acta de PlaneaciónPRE|
+Acta de Planeación PRE|
 Acta en el que se describe la planeación de las actividades para el ejercicio del recurso|
 Coordinación Estatal del Programa de la Reforma Educativa|
 Coordinación Operativa de Programas Federales|

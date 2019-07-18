@@ -1,4 +1,4 @@
-11|
+﻿11|
 COO01|
 Cooperativas y Tiendas Escolares|
 Convocatoria para la Asamblea General Extraordinaria para Validación de Gastos.|
@@ -25,6 +25,6 @@ Presupuesto del bien a adquirir.|
 1|
 0|
 Coordinación de Desarrollo Educativo|
-Fausto Rodríguez|
+Fausto Rodríguez Durán|
 fausto.rodriguez@seppue.gob.mx|
 2296958|

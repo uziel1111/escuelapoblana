@@ -1,4 +1,4 @@
-33|
+﻿33|
 COO23|
 Cooperativas y Tiendas Escolares|
 Plan de Trabajo de Cooperativas Escolares de Producción (Secundarias Técnicas)|
@@ -25,6 +25,6 @@ n/a|
 0|
 0|
 Coordinación de Desarrollo Educativo|
-Fausto Rodríguez|
+Fausto Rodríguez Durán|
 fausto.rodriguez@seppue.gob.mx|
 2296958|

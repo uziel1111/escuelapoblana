@@ -1,4 +1,4 @@
-3|
+﻿3|
 ADE03|
 Administración Escolar|
 Plantilla de escuelas regulares atendidas por los servicios de apoyo USAER|
@@ -25,6 +25,6 @@ n/a|
 0|
 0|
 Dirección de Educación Especial|
-Juan Jesús Tellez|
+Alfonso Luna Castañeda|
 educ_esp@seppue.gob.mx|
 2297008|

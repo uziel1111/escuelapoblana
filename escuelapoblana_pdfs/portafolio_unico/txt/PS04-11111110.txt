@@ -1,4 +1,4 @@
-62|
+﻿62|
 PS04|
 Participación Social|
 Convocatoria para Renovación o Reestructuración de Mesa Directiva de la Asociación de Padres de Familia.|
@@ -25,6 +25,6 @@ n/a|
 1|
 0|
 Coordinación de Desarrollo Educativo|
-Fausto Rodríguez|
+Fausto Rodríguez Durán|
 fausto.rodriguez@seppue.gob.mx|
 2296958|

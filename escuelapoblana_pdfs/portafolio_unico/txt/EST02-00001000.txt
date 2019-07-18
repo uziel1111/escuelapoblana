@@ -1,4 +1,4 @@
-51|
+﻿51|
 EST02|
 Estadísticas|
 FCE. Control estadístico de alumnos atendidos por CAM|
@@ -25,6 +25,6 @@ n/a|
 0|
 0|
 Dirección de Educación Especial|
-Juan Jesús Tellez|
+Alfonso Luna Castañeda|
 educ_esp@seppue.gob.mx|
 2297008|

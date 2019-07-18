@@ -1,4 +1,4 @@
-16|
+﻿16|
 COO06|
 Cooperativas y Tiendas Escolares|
 Relación de socios fundadores|
@@ -25,6 +25,6 @@ n/a|
 0|
 0|
 Coordinación de Desarrollo Educativo|
-Fausto Rodríguez|
+Fausto Rodríguez Durán|
 fausto.rodriguez@seppue.gob.mx|
 2296958|

@@ -1,4 +1,4 @@
-29|
+﻿29|
 COO19|
 Cooperativas y Tiendas Escolares|
 Acta de Asamblea General Ordinaria, del Informe Final de Actividades de la Cooperativa Escolar de Producción (Secundarias Técnicas)|
@@ -25,6 +25,6 @@ n/a|
 0|
 0|
 Coordinación de Desarrollo Educativo|
-Fausto Rodríguez|
+Fausto Rodríguez Durán|
 fausto.rodriguez@seppue.gob.mx|
 2296958|

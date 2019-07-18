@@ -1,7 +1,7 @@
-91|
+﻿91|
 PF32|
 Programas Federales|
-Lista de Cotejo de la Documentación requerida para la validación de datos de las escuelas beneficiadas en ciclo escolar 20xx-20xxPRE|
+Lista de Cotejo de la Documentación requerida para la validación de datos de las escuelas beneficiadas en ciclo escolar 20xx-20xx PRE|
 Documentos que evidencian la aplicación de los recursos asignados a la escuela|
 Coordinación Estatal del Programa de la Reforma Educativa|
 Coordinación Operativa de Programas Federales|

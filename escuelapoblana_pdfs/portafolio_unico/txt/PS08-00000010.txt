@@ -1,4 +1,4 @@
-66|
+﻿66|
 PS08|
 Participación Social|
 Proyecto de Necesidades para los Consejos de Administración Central (Proyecto N)|
@@ -25,6 +25,6 @@ n/a|
 1|
 0|
 Coordinación de Desarrollo Educativo|
-Fausto Rodríguez|
+Fausto Rodríguez Durán|
 fausto.rodriguez@seppue.gob.mx|
 2296958|

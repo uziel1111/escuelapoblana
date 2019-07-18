@@ -1,7 +1,7 @@
-78|
+﻿78|
 PF14|
 Programas Federales|
-Oficio de Asignación del Coordinador de AlimentaciónPETC|
+Oficio de Asignación del Coordinador de Alimentación PETC|
 Documento que realiza el Director de la escuela, para nombrar al coordinador de alimentación.|
 Coordinación del Programa Escuelas de Tiempo Completo|
 Coordinación Operativa de Programas Federales|

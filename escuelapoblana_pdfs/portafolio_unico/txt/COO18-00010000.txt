@@ -1,4 +1,4 @@
-28|
+﻿28|
 COO18|
 Cooperativas y Tiendas Escolares|
 Acta de Alta por Nacencia (Secundarias Técnicas)|
@@ -25,6 +25,6 @@ n/a|
 0|
 0|
 Coordinación de Desarrollo Educativo|
-Fausto Rodríguez|
+Fausto Rodríguez Durán|
 fausto.rodriguez@seppue.gob.mx|
 2296958|

@@ -1,7 +1,7 @@
-80|
+﻿80|
 PF16|
 Programas Federales|
-Formato de relación de documentosPETC|
+Formato de relación de documentos PETC|
 Formato que firma el director de la escuela donde remite presenta la documentación para su trámite comprobatoria del recurso otorgado a la escuela|
 Coordinación del Programa Escuelas de Tiempo Completo|
 Coordinación Operativa de Programas Federales|

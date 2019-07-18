@@ -1,4 +1,4 @@
-12|
+﻿12|
 COO02|
 Cooperativas y Tiendas Escolares|
 Acta de Asamblea General Extraordinaria para la Validación de Gastos.|
@@ -25,6 +25,6 @@ Presupuesto del bien a adquirir.|
 1|
 0|
 Coordinación de Desarrollo Educativo|
-Fausto Rodríguez|
+Fausto Rodríguez Durán|
 fausto.rodriguez@seppue.gob.mx|
 2296958|

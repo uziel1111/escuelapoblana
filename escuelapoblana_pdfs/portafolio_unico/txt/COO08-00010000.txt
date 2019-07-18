@@ -1,4 +1,4 @@
-18|
+﻿18|
 COO08|
 Cooperativas y Tiendas Escolares|
 Consejo de Administración de la Cooperativa Escolar de Producción. (Secundarias Técnicas)|
@@ -25,6 +25,6 @@ n/a|
 0|
 0|
 Coordinación de Desarrollo Educativo|
-Fausto Rodríguez|
+Fausto Rodríguez Durán|
 fausto.rodriguez@seppue.gob.mx|
 2296958|

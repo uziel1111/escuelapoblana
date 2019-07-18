@@ -1,4 +1,4 @@
-53|
+﻿53|
 EST04|
 Estadísticas|
 Levantamiento Estadístico de los Formatos de la serie 911 Básica|
@@ -24,7 +24,7 @@ n/a|
 1|
 1|
 0|
-Nivel respectivo|
+Dirección de Planeación y Estadística Educativa|
 Augusto Munive Rivera|
 estadis.amr@hotmail.com|
 3 09 11 63|

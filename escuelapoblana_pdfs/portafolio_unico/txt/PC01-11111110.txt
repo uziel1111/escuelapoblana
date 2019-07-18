@@ -1,4 +1,4 @@
-93|
+﻿93|
 PC01|
 Protección Civil|
 Programa Interno de Protección Civil.|
@@ -25,6 +25,6 @@ Dictámenes estructurales, eléctrico, de gas, de medidas preventivas contra inc
 1|
 0|
 Coordinación de Desarrollo Educativo|
-Fausto Rodríguez|
+Fausto Rodríguez Durán|
 fausto.rodriguez@seppue.gob.mx|
 2296958|

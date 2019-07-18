@@ -1,4 +1,4 @@
-34|
+﻿34|
 COO24|
 Cooperativas y Tiendas Escolares|
 Cédula de Control de Entrega de Documentos de Cooperativa Escolar de Producción (Secundarias Técnicas)|
@@ -25,6 +25,6 @@ n/a|
 0|
 0|
 Coordinación de Desarrollo Educativo|
-Fausto Rodríguez|
+Fausto Rodríguez Durán|
 fausto.rodriguez@seppue.gob.mx|
 2296958|

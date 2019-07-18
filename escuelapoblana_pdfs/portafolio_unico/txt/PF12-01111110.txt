@@ -1,7 +1,7 @@
-76|
+﻿76|
 PF12|
 Programas Federales|
-Formato de Alta y BajaPETC|
+Formato de Alta y Baja PETC|
 Documento que firma el Director para solicitar el cambio de personal de su escuela, con el fin de realizar el pago de nómina|
 Coordinación del Programa Escuelas de Tiempo Completo|
 Coordinación Operativa de Programas Federales|

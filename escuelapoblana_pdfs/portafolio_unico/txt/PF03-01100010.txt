@@ -1,7 +1,7 @@
-68|
+﻿68|
 PF03|
 Programas Federales|
-Recibo de Libros de TextoPRONI|
+Recibo de Libros de Texto PRONI|
 Recibo de Libros solicitado a Directores de Centro de Trabajo beneficiados, puede ser modificado dependiendo de los logotipos aplicables al periodo o a las necesidades del programa.|
 Coordinación Programa Nacional de Inglés|
 Coordinación Operativa de Programas Federales|

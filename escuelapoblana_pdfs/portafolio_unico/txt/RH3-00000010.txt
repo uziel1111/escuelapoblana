@@ -1,4 +1,4 @@
-102|
+﻿102|
 RH3|
 Recursos Humanos|
 Plantilla de Personal|
@@ -25,6 +25,6 @@ n/a|
 1|
 0|
 Dirección de Control Escolar|
-Nivel Respectivo|
-n/a|
-2296900|
+María Soledad Román Castañeda|
+solelsa@yahoo.com.mx|
+2297039|

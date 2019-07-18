@@ -1,4 +1,4 @@
-38|
+﻿38|
 COO28|
 Cooperativas y Tiendas Escolares|
 Acta de Asamblea General Ordinaria para la Renovación de los Integrantes de los Órganos de Gobierno y Control de la Cooperativa Escolar de Consumo |
@@ -25,6 +25,6 @@ n/a|
 1|
 0|
 Coordinación de Desarrollo Educativo|
-Fausto Rodríguez|
+Fausto Rodríguez Durán|
 fausto.rodriguez@seppue.gob.mx|
 2296958|

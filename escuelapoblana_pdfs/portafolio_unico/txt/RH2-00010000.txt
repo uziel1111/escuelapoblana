@@ -1,4 +1,4 @@
-101|
+﻿101|
 RH2|
 Recursos Humanos|
 Control, Administración, Operación y Servicio Escolar |
@@ -24,7 +24,7 @@ n/a|
 0|
 0|
 0|
-Nivel respectivo|
-n/a|
-n/a|
-2296900|
+Dirección de Secundarias Generales|
+Alba Alicia Ocharán Ochoa|
+alba_ocharan@hotmail.com|
+2296922|

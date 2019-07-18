@@ -1,4 +1,4 @@
-64|
+﻿64|
 PS06|
 Participación Social|
 Acta de Constitución del Consejo de Administración Central, que aplica para los Centros Escolares y Unidades Educativas.|
@@ -25,6 +25,6 @@ n/a|
 1|
 0|
 Coordinación de Desarrollo Educativo|
-Fausto Rodríguez|
+Fausto Rodríguez Durán|
 fausto.rodriguez@seppue.gob.mx|
 2296958|

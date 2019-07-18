@@ -1,7 +1,7 @@
-79|
+﻿79|
 PF15|
 Programas Federales|
-Formato de Comprobación de PagoPETC|
+Formato de Comprobación de Pago PETC|
 Formato que firma el director de la escuela donde remite la documentación comprobatoria del recurso otorgado a la escuela|
 Coordinación del Programa Escuelas de Tiempo Completo|
 Coordinación Operativa de Programas Federales|

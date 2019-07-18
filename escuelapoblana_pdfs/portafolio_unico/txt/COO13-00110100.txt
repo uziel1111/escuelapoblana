@@ -1,4 +1,4 @@
-23|
+﻿23|
 COO13|
 Cooperativas y Tiendas Escolares|
 Inventario de Mercancía|
@@ -25,6 +25,6 @@ n/a|
 0|
 0|
 Coordinación de Desarrollo Educativo|
-Fausto Rodríguez|
+Fausto Rodríguez Durán|
 fausto.rodriguez@seppue.gob.mx|
 2296958|

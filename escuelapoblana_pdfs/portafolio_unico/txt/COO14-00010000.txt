@@ -1,4 +1,4 @@
-24|
+﻿24|
 COO14|
 Cooperativas y Tiendas Escolares|
 Nómina de Reparto a Socios y Certificados Devueltos de Cooperativas Escolares (Secundarias Técnicas)|
@@ -25,6 +25,6 @@ n/a|
 0|
 0|
 Coordinación de Desarrollo Educativo|
-Fausto Rodríguez|
+Fausto Rodríguez Durán|
 fausto.rodriguez@seppue.gob.mx|
 2296958|

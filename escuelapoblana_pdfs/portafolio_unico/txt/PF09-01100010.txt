@@ -1,7 +1,7 @@
-74|
+﻿74|
 PF09|
 Programas Federales|
-Planeaciones mensualesPRONI|
+Planeaciones mensuales PRONI|
 Planeación solicitada a los AEE firmada y sellada por el director del centro de trabajo asignado a estos. El formato envía la coordinación del PRONI y podrán ser modificados los logotipos de acuerdo al periodo aplicable o las necesidades del programa.|
 Coordinación Programa Nacional de Inglés|
 Coordinación Operativa de Programas Federales|

@@ -1,4 +1,4 @@
-98|
+﻿98|
 RM03|
 Recursos Materiales|
 Revisión Anual Vehicular 2019|
@@ -25,6 +25,6 @@ n/a|
 1|
 0|
 Coordinación de Desarrollo Educativo|
-Fausto Rodríguez|
+Fausto Rodríguez Durán|
 fausto.rodriguez@seppue.gob.mx|
 2296958|

@@ -1,4 +1,4 @@
-65|
+﻿65|
 PS07|
 Participación Social|
 Proyecto de Necesidades para las Asociaciones de Padres de Familia (Proyecto N)|
@@ -25,6 +25,6 @@ n/a|
 1|
 0|
 Coordinación de Desarrollo Educativo|
-Fausto Rodríguez|
+Fausto Rodríguez Durán|
 fausto.rodriguez@seppue.gob.mx|
 2296958|

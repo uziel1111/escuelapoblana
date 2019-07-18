@@ -1,4 +1,4 @@
-100|
+﻿100|
 RH1|
 Recursos Humanos|
 Plantilla de Personal |
@@ -24,7 +24,7 @@ En la entrega impresa se anexan copias de los últimos talones de pago, IFE y de
 0|
 0|
 0|
-Nivel respectivo|
-n/a|
-n/a|
-2296900|
+Dirección de Preescola|
+Juan José Torre Sánchez|
+areaadtva.inicialpreescolar@gnail.com|
+2297123|
