@@ -1,7 +1,7 @@
 ﻿8|
 PF10|
 Programas Federales|
-INEListado de beneficiarios Oficios de comisión PFCE|
+INE, Listado de beneficiarios, Oficios de comisión PFCE|
 Identificación oficialListado de asistencia a las capacitaciones con firma autógrafa del beneficiarioDocumento emitido por directores y/o Supervisores para informar al beneficiario que tomara el curso, taller, capacitación, foro, etc.|
 Supervisión|
 Coordinación Operativa de Programas Federales|

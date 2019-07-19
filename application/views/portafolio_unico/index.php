@@ -508,67 +508,7 @@ a.scroll-top i {
 
 			</div>
 			<div class="modal-body">
-				<table class="table table-striped table-hover">
-					<thead>
-						<tr>
-							<th scope="col">#</th>
-							<th scope="col">Nombre del documento</th>
-							<th scope="col">Tipo de Archivo</th>
-							<th scope="col">Descargar</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">1</th>
-							<td>Acuerdo Específico de Educación Preescolar SEP Puebla 2016</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Básica/3_Acuerdo_Especyfico_de_Educaciyn_Preescolar_SEP_Puebla_2016.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">2</th>
-							<td>Acuerdo Específico de Educación Primaria SEP Puebla 2016</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Básica/4_Acuerdo_Especyfico_de_Educaciyn_Primaria__SEP_Puebla_2016 (1).pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">3</th>
-							<td>Acuerdo Específico de Educación Secundaria SEP Puebla 2016</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Básica/5_Acuerdo_Especyfico_de_Educaciyn_Secundaria_SEP_Puebla_2016.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">4</th>
-							<td>Circular de Actividades Extraescolares</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Básica/Circular_de_Actividades_Extraescolares (2).pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">5</th>
-							<td>Circular de Cursos de Verano 2018</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Básica/Circular_de_Cursos_de_Verano_2018 (1).pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">6</th>
-							<td>Información Jurídico Administrativa de Educación Básica</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Básica/Informaciyn_Jurydico_Administrativa_de_Educaciyn_ByAsica.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">7</th>
-							<td>Profesiograma de Educación Básica</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Básica/Profesiograma_de_Educaciyn_ByAsica.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+
 			</div>
 		</div>
 	</div>
@@ -587,40 +527,7 @@ a.scroll-top i {
 
 			</div>
 			<div class="modal-body">
-				<table class="table table-striped table-hover">
-					<thead>
-						<tr>
-							<th scope="col">#</th>
-							<th scope="col">Nombre del documento</th>
-							<th scope="col">Tipo de Archivo</th>
-							<th scope="col">Descargar</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">1</th>
-							<td>Acuerdo Específico de Educación Inicial SEP Puebla 2016</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Inicial/2_Acuerdo_Especyfico_de_Educaciyn_Inicial_SEP_Puebla_2016.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">2</th>
-							<td>Información Jurídico Administrativa de Educación Inicial</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Inicial/Informacion_Jurydico_Administrativa_de_Educaciyn_Inicial.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">3</th>
-							<td>Modelo de Atención con Enfoque Integral para la Educación Inicial</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Inicial/Modelo_de_Atenciyn_con_Enfoque_Integral_para_la_Educaciyn_Inicial.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
 
-					</tbody>
-				</table>
 			</div>
 		</div>
 	</div>
@@ -639,46 +546,7 @@ a.scroll-top i {
 
 			</div>
 			<div class="modal-body">
-				<table class="table table-striped table-hover">
-					<thead>
-						<tr>
-							<th scope="col">#</th>
-							<th scope="col">Nombre del documento</th>
-							<th scope="col">Tipo de Archivo</th>
-							<th scope="col">Descargar</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">1</th>
-							<td>Acuerdo Específico de Educación Inicial SEP Puebla 2016</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Generales/1_Acuerdo_Bases_Generales_SEP_Puebla_2016 (1).pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">2</th>
-							<td>Información Jurídico Administrativa de Educación Inicial</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Generales/Acuerdo_Cambio_de_domicilio_temporal_-_Periydico_Oficial.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">3</th>
-							<td>Circular Lineamientos para la protección de los derechos humanos de los educandos</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Generales/Circular_Lineamientos_para_la_protecciyn_de_los_derechos_humanos_de_los_educandos_en_situaciones_o_conflictos_de_violenci~1.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">4</th>
-							<td>Circular sobre Entrega de Certificados, Constancias y Diplomas Escolares</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Generales/Circular_sobre_Entrega_de_Certificados_Constancias_y_Diplomas_Escolares.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+
 			</div>
 		</div>
 	</div>
@@ -697,102 +565,7 @@ a.scroll-top i {
 
 			</div>
 			<div class="modal-body">
-				<table class="table table-striped table-hover">
-					<thead>
-						<tr>
-							<th scope="col">#</th>
-							<th scope="col">Nombre del documento</th>
-							<th scope="col">Tipo de Archivo</th>
-							<th scope="col">Descargar</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">1</th>
-							<td>Acuerdo 243 RVOE</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Acuerdo_243_RVOE.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">2</th>
-							<td>Acuerdo 286 Estudios Realizados en el Extranjero</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Acuerdo_286_Estudios_Realizados_en_el_Extranjero (1).pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">3</th>
-							<td>Acuerdo 444 Marco Curricular Común</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Acuerdo_444_Marco_Curricular_Comyn.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">4</th>
-							<td>Acuerdo 445 Modalidad</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Acuerdo_445_Modalidad.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">5</th>
-							<td>Acuerdo 447 Competencias Docentes de Educación Media Superior</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Acuerdo_447_Competencias_Docentes_de_Educaciyn_Media_Superior (1).pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">6</th>
-							<td>Acuerdo 449 Competencias Director Educación Media Superior</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Acuerdo_449_Competencias_Director_Educaciyn_Media_Superior.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">7</th>
-							<td>Acuerdo 450 Lineamientos Particulares Educación Media Superior</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Acuerdo_450_Lineamientos_Particulares_Educaciyn_Media_Superior (2).pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">8</th>
-							<td>Acuerdo Específico de Educación Media Superior SEP Puebla 2016 con Profesiograma</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Acuerdo_Especyfico_de_Educaciyn_Media_Superior_SEP_Puebla_2016_con_Profesiograma.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">9</th>
-							<td>Acuerdo Específico de Educación Media Superior SEP Puebla 2016 sin Profesiograma</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Acuerdo_Especyfico_de_Educaciyn_Media_Superior_SEP_Puebla_2016_sin_Profesiograma.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">10</th>
-							<td>Acuerdo para la obtención de Título Profesional Diploma de Especialidad y Grados Académicos</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Acuerdo_para_la_obtenciyn_de_Tytulo_Profesional_Diploma_de_Especialidad_y_Grados_Acadymicos.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">11</th>
-							<td>Información Jurídico Administrativa de Educación Media Superior</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Informaciyn_Jurydico_Administrativa_de_Educaciyn_Media_Superior (4).pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">12</th>
-							<td>Profesiograma de Educación Media Superior</td>
-							<td>PDF</td>
-							<td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Profesiograma_de_Educaciyn_Media_Superior.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+
 			</div>
 		</div>
 	</div>
@@ -1003,22 +776,6 @@ $( '#Modal_detalle' ).modal( "show" );
 
 path_home = "http://escuelapoblana.org/escuelapoblana_pdfs/";
 
-$( "#EP_a_cat_ep" ).click( function () {
-	window.location = 'http://escuelapoblana.org/escuelapoblana_pdfs/escuelas_particulares/1. Catálogo_de_Nombres_Enero_2018.xlsx';
-} );
-
-
-$( "#EP_btn_manualusuario" ).click( function ( e ) {
-	e.preventDefault();
-	pdf = path_home + "escuelas_particulares/5. Manual del usuario.pdf');?>";
-	muestraPDF( pdf );
-} );
-
-$( "#EP_btn_preguntasfrecuentes" ).click( function ( e ) {
-	e.preventDefault();
-	pdf = path_home + "escuelas_particulares/4. Preguntas frecuentes ante la Ventanilla 2017.pdf');?>";
-	muestraPDF( pdf );
-} );
 
 
 
@@ -1394,4 +1151,4 @@ $(document).ready(
 <script src="<?php echo base_url(); ?>assets/js/escuela/progressbar.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/escuela/graficos_1.js"></script>
 
-<script src="<?php echo base_url(); ?>assets/js/particulares/escuelas_particulares.js"></script>
+<!-- <script src="<?php echo base_url(); ?>assets/js/particulares/escuelas_particulares.js"></script> -->
