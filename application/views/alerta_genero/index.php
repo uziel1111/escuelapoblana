@@ -6,10 +6,10 @@
                 <img src="<?php echo base_url('assets/img/alerta-genero-1.png'); ?>" class="img-fluid" alt="Responsive image">
               </center>
             </div>
-          </div> <!-- row -->	
+          </div> <!-- row -->
   <div class="row">
     <div class="col-sm-12">
-   
+
 
 
 <div class="card card-style-1"  style="margin-bottom: 20px;">
@@ -18,7 +18,7 @@
   </div>
   <div class="card-body">
 
-	  
+
 <table class="table table-striped table-hover">
   <thead>
     <tr>
@@ -49,7 +49,7 @@
       <td>Vídeo</td>
       <td><a href="https://youtu.be/Cu_GX8Xn8vY" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
 		</td>
-    </tr>	  
+    </tr>
     <tr>
       <th scope="row">4</th>
       <td>Mi bienestar es el tuyo </td>
@@ -82,7 +82,7 @@
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/index/alert_genero/Manuallibresdeviolenciasecundaria.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
 		<a href="<?php echo base_url('escuelapoblana_pdfs/index/alert_genero/Manuallibresdeviolenciasecundaria.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i></a>
 		</td>
-    </tr>	
+    </tr>
     <tr>
       <th scope="row">8</th>
       <td>Programa de trabajo de prevención de violencia de género</td>
@@ -90,15 +90,32 @@
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/index/alert_genero/PROGRAMA_DE_TRABAJO_PREVENCION_DE_VIOLENCIA_DE_GENERO.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
 		<a href="<?php echo base_url('escuelapoblana_pdfs/index/alert_genero/PROGRAMA_DE_TRABAJO_PREVENCION_DE_VIOLENCIA_DE_GENERO.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i></a>
 		</td>
-    </tr>	 
-  </tbody>
-</table> 
-	  
-	  
-  </div>
-</div>	
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td>Manual implementación docente</td>
+      <td>PDF</td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/index/alert_genero/MANUAL IMPLEMENTACIOìN DOCENTE-1 SEPpdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
+		<a href="<?php echo base_url('escuelapoblana_pdfs/index/alert_genero/MANUAL IMPLEMENTACIOìN DOCENTE-1 SEP.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i></a>
+		</td>
+    </tr>
 
-   
+    <tr>
+      <th scope="row">10</th>
+      <td>Plan teórico y metodológico</td>
+      <td>PDF</td>
+      <td><a href="<?php echo base_url('escuelapoblana_pdfs/index/alert_genero/PLAN TEOìRICO Y METODOLOìGICO-2 SEP.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a>
+		<a href="<?php echo base_url('escuelapoblana_pdfs/index/alert_genero/PLAN TEOìRICO Y METODOLOìGICO-2 SEP.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i></a>
+		</td>
+    </tr>
+  </tbody>
+</table>
+
+
+  </div>
+</div>
+
+
   </div> <!-- col-xs-12 -->
   </div> <!-- row -->
 </div><!-- container -->
