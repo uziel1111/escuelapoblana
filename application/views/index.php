@@ -662,11 +662,11 @@
                     </a>
                   </div>
 
-                 <!--  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                    <a href="<?php// echo site_url('supervision/index'); ?>">
+                   <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <a href="<?php echo site_url('supervision/index'); ?>">
                     <div style="" class="col-xs-12 col-sm-12 col-md-3 col-lg-3 div_herramientas_turquesa grises">
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
-                          <img src="<?php// echo base_url('assets/img/woman-going-to-work.svg'); ?>" alt="..." class="img_icon" />
+                          <img src="<?php echo base_url('assets/img/woman-going-to-work.svg'); ?>" alt="..." class="img_icon" />
                         </div>
                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 ">
                         <span  class="span_titulo">Supervisión</span>
@@ -674,7 +674,7 @@
                     </div>
                     </a>
                   </div>
- -->
+ 
                   <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                     <a href="<?php echo site_url('EscuelasParticulares/index'); ?>">
                     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 div_herramientas_turquesa grises">
@@ -782,7 +782,7 @@
                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
                     <center>
-                      <div class="fb-page" data-href="https://www.facebook.com/sep.puebla/" data-tabs="timeline" hide_cover="true" small_header="true" data-width="500" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/sep.puebla/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/sep.puebla/">Secretaría de Educación Pública del Estado de Puebla</a></blockquote></div>
+                      <div class="fb-page" data-href="https://www.facebook.com/SEPGobPue/" data-tabs="timeline" hide_cover="true" small_header="true" data-width="500" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/sep.puebla/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/sep.puebla/">Secretaría de Educación Pública del Estado de Puebla</a></blockquote></div>
                       <!-- <div class="fb-page" data-href="https://www.facebook.com/Escuela-Poblana-105983586839543/" data-tabs="timeline" hide_cover="true" small_header="true" data-width="500" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"> -->
 
                   </div>
