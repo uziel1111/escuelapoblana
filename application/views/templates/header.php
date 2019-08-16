@@ -156,31 +156,31 @@ BODY{
 .line {
   width: 100%;
   height: 5px;
-    background: #29c0d4;
-    background-color: #29c0d4;
+    background: #691B31;
+    background-color: #691B31;
 }
 .lineOne {
     width: 5%;
     height: 5px;
-    background-color: #003D6A;
+    background-color: #691B31;
     float: left;
 }
 .lineTwo {
     width: 8%;
     height: 5px;
-    background-color: #00A1BA;
+    background-color: #691B31;
     float: left;
 }
 
 .lineThree {
     width: 12%;
-    background-color: #EB751C;
+    background-color: #691B31;
     height: 5px;
     float: left;
 }
 .lineFour {
     width: 20%;
-    background-color: #F6CA30;
+    background-color: #691B31;
     height: 5px;
     float: left;
 }
@@ -288,7 +288,7 @@ BODY{
                                         <!-- <li><a type="button" href="#" id="por_1er_lugar">¿Por qué Puebla es primer lugar nacional?</a></li>
                                         <li><a type="button" href="http://pueblaconvive.mx/" target="_blank" >Puebla Convive</a></li>
                                         <li><a type="button" href="http://www.primerainfanciapuebla.mx/" target="_blank" >Primera Infancia</a></li> -->
-                                    </ul>
+                                  <!--  </ul>
                                 </li> -->
                                 <!-- <li class="col-xs-12 col-sm-12 col-md-2 col-lg-2 dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-users"></i> Comunidad educativa
