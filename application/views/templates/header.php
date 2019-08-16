@@ -198,7 +198,7 @@ BODY{
                  <div id="omg_hd_idx" class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
                  <center>
                    <a href="http://www.puebla.gob.mx/" target="_blank">
-                     <img src="<?php echo base_url('assets/img/escudo-puebla-blanco.png'); ?>" style="width:50%; height:45%;" class="img-responsive pull-left" title="Ir a Portal del Gobierno del Estado de Puebla">
+                     <img src="<?php echo base_url('assets/img/escudo-puebla-blanco.png'); ?>" style="width:100%; height:100%;" class="img-responsive pull-left" title="Ir a Portal del Gobierno del Estado de Puebla">
                    </a>
                   </center>
                  </div>
