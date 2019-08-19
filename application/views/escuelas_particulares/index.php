@@ -23,26 +23,26 @@
           </div>
 
 
-		  
-		  
-		  
-		  
-		  
+
+
+
+
+
 <div class="card card-style-1">
   <div class="card-header bg-primary text-center">
     <span class="second-txt">Catálogo de Documentos</span>
   </div>
   <div class="card-body">
 
-	  
+
 <div class="accordion accordion-style-1" id="accordionDocs">
   <div class="card">
     <div class="card-header collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="cursor: pointer;">
-       <i class="fas fa-clipboard-list mr-2"></i> <span class="text-primary">Actas</span> 
+       <i class="fas fa-clipboard-list mr-2"></i> <span class="text-primary">Actas</span>
     </div>
 
     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionDocs">
-      <div class="card-body p-0">		  
+      <div class="card-body p-0">
 
                     <div class="col">
 <table class="table table-striped table-hover">
@@ -96,23 +96,23 @@
       <td>Acta de Visita de Inspección Ordinaria (Secundaria General)</td>
       <td>Word</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/2.10. Acta de Insp Ord_Nivel Secundaria General.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
-    </tr>	
+    </tr>
     <tr>
       <th scope="row">8</th>
       <td>Acta de Visita de Inspección Ordinaria (Secundaria Técnica)</td>
       <td>Word</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/2.12. Acta de Insp Ord_Nivel Secundaria Tecnica.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
-    </tr>	
+    </tr>
     <tr>
       <th scope="row">9</th>
-      <td>Acta de Visita de Inspección Ordinaria de Bachilleratos Generales Escolarizados 
+      <td>Acta de Visita de Inspección Ordinaria de Bachilleratos Generales Escolarizados
 </td>
       <td>Word</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/2.14. Visita de inspeccion Ord_Nivel Media Superior Bachilleratos.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">10</th>
-      <td>Acta de Visita de Inspección Ordinaria de Capacitación para el Trabajo, Técnico y Técnico Profesional. 
+      <td>Acta de Visita de Inspección Ordinaria de Capacitación para el Trabajo, Técnico y Técnico Profesional.
 </td>
       <td>Word</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/2.16. Visita de inspeccion Ord_Nivel Media Superior Capacitacion.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
@@ -140,7 +140,7 @@
 </td>
       <td>Word</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/5. Formato - de Visita Inicial - Nivel Secundaria Técnica.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
-    </tr>	
+    </tr>
     <tr>
       <th scope="row">14</th>
       <td>Acta de Visita de Inspección Inicial Bachilleratos Generales Escolarizados y No Escolarizados
@@ -161,17 +161,17 @@
     </tr>
     <tr>
       <th scope="row">16</th>
-      <td>Acta de Visita de Inspección Extraordinaria 
+      <td>Acta de Visita de Inspección Extraordinaria
 
 </td>
       <td>Word</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/actas_visitas/Visita Extraordinaria con Instructivo DEC 2017.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
-    </tr>	  
+    </tr>
   </tbody>
 </table>
                     </div>
 
-		  
+
       </div>
     </div>
   </div>
@@ -181,7 +181,7 @@
     </div>
 
     <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionDocs">
-      <div class="card-body p-0">		  
+      <div class="card-body p-0">
 
                     <div class="col">
 <table class="table table-striped table-hover">
@@ -235,23 +235,23 @@
       <td>Escuelas aprobadas para impartir Cursos de Verano 2017</td>
       <td>PDF</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/altas_bajas_recientes/Escuelas aprobadas para impartir Cursos de Verano 2017.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
-    </tr>	
+    </tr>
     <tr>
       <th scope="row">8</th>
       <td>Escuelas particulares a las que fue otorgada Autorización y RVOE 2016-2017</td>
       <td>PDF</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/altas_bajas_recientes/Escuelas particulares a las que fue otorgada Autorización y RVOE 2016-2017.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
-    </tr>	
+    </tr>
     <tr>
       <th scope="row">9</th>
-      <td>Incorporaciones Ciclo escolar 2015-2016 
+      <td>Incorporaciones Ciclo escolar 2015-2016
 </td>
       <td>PDF</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/altas_bajas_recientes/Incorporacionesc2015 2016.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">10</th>
-      <td>Instituciones en Cierre Definitivo 
+      <td>Instituciones en Cierre Definitivo
 </td>
       <td>PDF</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/altas_bajas_recientes/Instituciones en cierre definitivo.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
@@ -278,7 +278,7 @@
 </td>
       <td>PDF</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/altas_bajas_recientes/Instituciones Sancionadas 2016-17.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
-    </tr>	
+    </tr>
     <tr>
       <th scope="row">14</th>
       <td>Instituciones Sancionadas 2017-2018
@@ -295,12 +295,12 @@
       <td>PDF</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/altas_bajas_recientes/Resolucion Administrativa COLEGIO JUAN DE LA CRUZ 21112017.PDF');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
-	  
+
   </tbody>
 </table>
                     </div>
 
-		  
+
       </div>
     </div>
   </div>
@@ -310,7 +310,7 @@
     </div>
 
     <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionDocs">
-      <div class="card-body p-0">		  
+      <div class="card-body p-0">
 
                     <div class="col">
 <table class="table table-striped table-hover">
@@ -364,16 +364,16 @@
       <td>Invitacion - Afiliación seguro social</td>
       <td>PDF</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/comunicados/Invitacion - Afiliacion seguro social.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
-    </tr>	
-    <tr>
+    </tr>
+    <!-- <tr>
       <th scope="row">8</th>
       <td>Oficio - Primer Requerimiento Supervisor Oct</td>
       <td>Word</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/comunicados/OFICIO_PRIMER_REQUERIMIENTO_SUPERVISOR OCT.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
-    </tr>	
+    </tr>
     <tr>
       <th scope="row">9</th>
-      <td>Oficio - Primer Requerimiento Supervisor 
+      <td>Oficio - Primer Requerimiento Supervisor
 </td>
       <td>Word</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/comunicados/OFICIO_PRIMER_REQUERIMIENTO_SUPERVISOR.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
@@ -401,13 +401,13 @@
 </td>
       <td>PDF</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/comunicados/Profesiograma_Basica.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
-    </tr>
-  
+    </tr> -->
+
   </tbody>
 </table>
                     </div>
 
-		  
+
       </div>
     </div>
   </div>
@@ -417,7 +417,7 @@
     </div>
 
     <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionDocs">
-      <div class="card-body p-0">		  
+      <div class="card-body p-0">
 
                     <div class="col">
 <table class="table table-striped table-hover">
@@ -470,7 +470,7 @@
 </table>
                     </div>
 
-		  
+
       </div>
     </div>
   </div>
@@ -480,7 +480,7 @@
     </div>
 
     <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionDocs">
-      <div class="card-body p-0">		  
+      <div class="card-body p-0">
 
                     <div class="col">
 <table class="table table-striped table-hover">
@@ -538,7 +538,7 @@
 </table>
                     </div>
 
-		  
+
       </div>
     </div>
   </div>
@@ -548,36 +548,145 @@
     </div>
 
     <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionDocs">
-      <div class="card-body p-0">		  
+      <div class="card-body p-0">
 
                     <div class="col">
 <table class="table table-striped table-hover">
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Nombre del documento</th>
-      <th scope="col">Tipo de Archivo</th>
-      <th scope="col">Descargar</th>
+      <th scope="col">Nombre del trámite</th>
+      <th scope="col">Clave</th>
+      <th scope="col">URL</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Formato Programas 2019 V1 Particulares</td>
-      <td>Word</td>
-      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/tramites_especificos/FORMATO_PROGRAMAS_EST_2019_V_1_PARTICULARES.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+      <td>Cursos  de Verano de Escuelas Particulares</td>
+      <td>SEP-150183-T</td>
+      <td><a href="https://tramitapue.puebla.gob.mx/web/inicioWebc.do?opcion=noreg&entidad=&redirige=d2ViL2ZpY2hhQXN1bnRvLmRvP29wY2lvbj0wJmFzYXNfaWRlX2FzdT0yNDM0JnJ1dGE9L3dlYi9hc3VudG9zTWFzVXN1YWxlcy5kbz9vcGNpb249MCFwZXJpb2RvPTA=" target="_blank" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-link" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>Mapa curricular Oficial</td>
-      <td>Word</td>
-      <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/tramites_especificos/Mapa curricular _OFICIAL_SEP_DAST_2019_V1.docx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
-    </tr> 
+      <td>Autorización de Actividades Extraescolares</td>
+      <td>SEP-150125-T</td>
+      <td><a href="https://tramitapue.puebla.gob.mx/web/inicioWebc.do?opcion=noreg&entidad=&redirige=d2ViL2ZpY2hhQXN1bnRvLmRvP29wY2lvbj0wJmFzYXNfaWRlX2FzdT0xOTkyJnJ1dGE9L3dlYi9hc3VudG9zTWFzVXN1YWxlcy5kbz9vcGNpb249MCFwZXJpb2RvPTA=" target="_blank" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-link" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Nombramiento de Director de Escuelas Particulares
+      </td>
+      <td>SEP-150125-T</td>
+      <td><a href="https://tramitapue.puebla.gob.mx/web/inicioWebc.do?opcion=noreg&entidad=&redirige=d2ViL2ZpY2hhQXN1bnRvLmRvP29wY2lvbj0wJmFzYXNfaWRlX2FzdT0xODU2JnJ1dGE9L3dlYi9hc3VudG9zTWFzVXN1YWxlcy5kbz9vcGNpb249MCFwZXJpb2RvPTA=" target="_blank" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-link" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Cambio a la Infraestructura de Escuelas Particulares</td>
+      <td>SEP-150043-T</td>
+      <td><a href="https://tramitapue.puebla.gob.mx/web/inicioWebc.do?opcion=noreg&entidad=&redirige=d2ViL2ZpY2hhQXN1bnRvLmRvP29wY2lvbj0wJmFzYXNfaWRlX2FzdT0xODYyJnJ1dGE9L3dlYi9hc3VudG9zTWFzVXN1YWxlcy5kbz9vcGNpb249MCFwZXJpb2RvPTA=" target="_blank" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-link" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Aprobación de Nombre de Escuelas Particulares</td>
+      <td>SEP-150086-T</td>
+      <td><a href="https://tramitapue.puebla.gob.mx/web/inicioWebc.do?opcion=noreg&entidad=&redirige=d2ViL2ZpY2hhQXN1bnRvLmRvP29wY2lvbj0wJmFzYXNfaWRlX2FzdT0xOTA1JnJ1dGE9L3dlYi9hc3VudG9zTWFzVXN1YWxlcy5kbz9vcGNpb249MCFwZXJpb2RvPTA=" target="_blank" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-link" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Actualización del Acuerdo de Escuelas Particulares</td>
+      <td>SEP-150036-T</td>
+      <td><a href="https://tramitapue.puebla.gob.mx/web/inicioWebc.do?opcion=noreg&entidad=&redirige=d2ViL2ZpY2hhQXN1bnRvLmRvP29wY2lvbj0wJmFzYXNfaWRlX2FzdT0xODU1JnJ1dGE9L3dlYi9hc3VudG9zTWFzVXN1YWxlcy5kbz9vcGNpb249MCFwZXJpb2RvPTA=" target="_blank" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-link" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Actualización del Género Autorizado de Escuelas Particulares</td>
+      <td>SEP-150085-T</td>
+      <td><a href="https://tramitapue.puebla.gob.mx/web/inicioWebc.do?opcion=noreg&entidad=&redirige=d2ViL2ZpY2hhQXN1bnRvLmRvP29wY2lvbj0wJmFzYXNfaWRlX2FzdT0xOTA0JnJ1dGE9L3dlYi9hc3VudG9zTWFzVXN1YWxlcy5kbz9vcGNpb249MCFwZXJpb2RvPTA=" target="_blank" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-link" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Actualización de Planes y Programas de Escuelas Particulares del Nivel Medio Superior</td>
+      <td>SEP-150090-T</td>
+      <td><a href="https://tramitapue.puebla.gob.mx/web/inicioWebc.do?opcion=noreg&entidad=&redirige=d2ViL2ZpY2hhQXN1bnRvLmRvP29wY2lvbj0wJmFzYXNfaWRlX2FzdT0xOTA5JnJ1dGE9L3dlYi9hc3VudG9zTWFzVXN1YWxlcy5kbz9vcGNpb249MCFwZXJpb2RvPTA=" target="_blank" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-link" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td>Corrección de Datos de Escuelas Particulares</td>
+      <td>SEP-150093-T</td>
+      <td><a href="https://tramitapue.puebla.gob.mx/web/inicioWebc.do?opcion=noreg&entidad=&redirige=d2ViL2ZpY2hhQXN1bnRvLmRvP29wY2lvbj0wJmFzYXNfaWRlX2FzdT0xOTEyJnJ1dGE9L3dlYi9hc3VudG9zTWFzVXN1YWxlcy5kbz9vcGNpb249MCFwZXJpb2RvPTA=" target="_blank" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-link" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>Adición de planes y programas de Escuelas Particulares del Nivel Media Superior</td>
+      <td>SEP-150063-T</td>
+      <td><a href="https://tramitapue.puebla.gob.mx/web/inicioWebc.do?opcion=noreg&entidad=&redirige=d2ViL2ZpY2hhQXN1bnRvLmRvP29wY2lvbj0wJmFzYXNfaWRlX2FzdT0xODgyJnJ1dGE9L3dlYi9hc3VudG9zTWFzVXN1YWxlcy5kbz9vcGNpb249MCFwZXJpb2RvPTA=" target="_blank" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-link" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">11</th>
+      <td>Cambio de Director de Escuelas Particulares</td>
+      <td>SEP-150038-T</td>
+      <td><a href="https://tramitapue.puebla.gob.mx/web/inicioWebc.do?opcion=noreg&entidad=&redirige=d2ViL2ZpY2hhQXN1bnRvLmRvP29wY2lvbj0wJmFzYXNfaWRlX2FzdT0xODU3JnJ1dGE9L3dlYi9hc3VudG9zTWFzVXN1YWxlcy5kbz9vcGNpb249MCFwZXJpb2RvPTA=" target="_blank" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-link" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">12</th>
+      <td>Cambio de Titular al Acuerdo de Escuelas Particulares</td>
+      <td>SEP-150049-T</td>
+      <td><a href="https://tramitapue.puebla.gob.mx/web/inicioWebc.do?opcion=noreg&entidad=&redirige=d2ViL2ZpY2hhQXN1bnRvLmRvP29wY2lvbj0wJmFzYXNfaWRlX2FzdT0xODY4JnJ1dGE9L3dlYi9hc3VudG9zTWFzVXN1YWxlcy5kbz9vcGNpb249MCFwZXJpb2RvPTA=" target="_blank" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-link" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">13</th>
+      <td>Cambio de Representante Legal de Escuelas Particulares</td>
+      <td>SEP-150091-T</td>
+      <td><a href="https://tramitapue.puebla.gob.mx/web/inicioWebc.do?opcion=noreg&entidad=&redirige=d2ViL2ZpY2hhQXN1bnRvLmRvP29wY2lvbj0wJmFzYXNfaWRlX2FzdT0xOTEwJnJ1dGE9L3dlYi9hc3VudG9zTWFzVXN1YWxlcy5kbz9vcGNpb249MCFwZXJpb2RvPTA=" target="_blank" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-link" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">14</th>
+      <td>Cambio de Domicilio de Escuelas Particulares</td>
+      <td>SEP-150047-T</td>
+      <td><a href="https://tramitapue.puebla.gob.mx/web/inicioWebc.do?opcion=noreg&entidad=&redirige=d2ViL2ZpY2hhQXN1bnRvLmRvP29wY2lvbj0wJmFzYXNfaWRlX2FzdT0xODY2JnJ1dGE9L3dlYi9hc3VudG9zTWFzVXN1YWxlcy5kbz9vcGNpb249MCFwZXJpb2RvPTA=" target="_blank" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-link" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">16</th>
+      <td>Reapertura de Escuelas Particulares</td>
+      <td>SEP-150044-T</td>
+      <td><a href="https://tramitapue.puebla.gob.mx/web/inicioWebc.do?opcion=noreg&entidad=&redirige=d2ViL2ZpY2hhQXN1bnRvLmRvP29wY2lvbj0wJmFzYXNfaWRlX2FzdT0xODYzJnJ1dGE9L3dlYi9hc3VudG9zTWFzVXN1YWxlcy5kbz9vcGNpb249MCFwZXJpb2RvPTA=" target="_blank" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-link" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">17</th>
+      <td>Cambio de nomenclatura de Escuelas Particulares</td>
+      <td>SEP-150041-T</td>
+      <td><a href="https://tramitapue.puebla.gob.mx/web/inicioWebc.do?opcion=noreg&entidad=&redirige=d2ViL2ZpY2hhQXN1bnRvLmRvP29wY2lvbj0wJmFzYXNfaWRlX2FzdT0xODYwJnJ1dGE9L3dlYi9hc3VudG9zTWFzVXN1YWxlcy5kbz9vcGNpb249MCFwZXJpb2RvPTA=" target="_blank" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-link" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">18</th>
+      <td>Terminación Voluntaria (Cierre Definitivo) de Escuelas Particulares</td>
+      <td>SEP-150094-T</td>
+      <td><a href="https://tramitapue.puebla.gob.mx/web/inicioWebc.do?opcion=noreg&entidad=&redirige=d2ViL2ZpY2hhQXN1bnRvLmRvP29wY2lvbj0wJmFzYXNfaWRlX2FzdT0xOTEzJnJ1dGE9L3dlYi9hc3VudG9zTWFzVXN1YWxlcy5kbz9vcGNpb249MCFwZXJpb2RvPTA=" target="_blank" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-link" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">19</th>
+      <td>Crecimiento gradual de Escuelas Particulares</td>
+      <td>SEP-150055-T</td>
+      <td><a href="https://tramitapue.puebla.gob.mx/web/inicioWebc.do?opcion=noreg&entidad=&redirige=d2ViL2ZpY2hhQXN1bnRvLmRvP29wY2lvbj0wJmFzYXNfaWRlX2FzdT0xODc0JnJ1dGE9L3dlYi9hc3VudG9zTWFzVXN1YWxlcy5kbz9vcGNpb249MCFwZXJpb2RvPTA=" target="_blank" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-link" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">20</th>
+      <td>Cambio de turno de Escuelas Particulares</td>
+      <td>SEP-150050-T</td>
+      <td><a href="https://tramitapue.puebla.gob.mx/web/inicioWebc.do?opcion=noreg&entidad=&redirige=d2ViL2ZpY2hhQXN1bnRvLmRvP29wY2lvbj0wJmFzYXNfaWRlX2FzdT0xODY5JnJ1dGE9L3dlYi9hc3VudG9zTWFzVXN1YWxlcy5kbz9vcGNpb249MCFwZXJpb2RvPTA=" target="_blank" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-link" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">21</th>
+      <td> Incorporación de Escuelas Particulares</td>
+      <td>SEP-150048-T</td>
+      <td><a href="https://tramitapue.puebla.gob.mx/web/inicioWebc.do?opcion=noreg&entidad=&redirige=d2ViL2ZpY2hhQXN1bnRvLmRvP29wY2lvbj0wJmFzYXNfaWRlX2FzdT0xODY3JnJ1dGE9L3dlYi9hc3VudG9zTWFzVXN1YWxlcy5kbz9vcGNpb249MCFwZXJpb2RvPTA=" target="_blank" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-link" aria-hidden="true"></i></a></td>
+    </tr>
   </tbody>
 </table>
                     </div>
 
-		  
+
       </div>
     </div>
   </div>
@@ -587,7 +696,7 @@
     </div>
 
     <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionDocs">
-      <div class="card-body p-0">		  
+      <div class="card-body p-0">
 
                     <div class="col">
 <table class="table table-striped table-hover">
@@ -600,7 +709,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <!-- <tr>
       <th scope="row">1</th>
       <td>Preguntas frecuentes ante la Ventanilla 2017</td>
       <td>PDF</td>
@@ -611,15 +720,15 @@
       <td>Manual de usuario</td>
       <td>Word</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/otros/5. Manual del usuario.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
-    </tr>
+    </tr> -->
     <tr>
-      <th scope="row">3</th>
+      <th scope="row">1</th>
       <td>Catálogo de Nombres Febrero 2019</td>
       <td>Excel</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/otros/Catálogo de Nombres FEBRERO 2019.xlsx');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
     <tr>
-      <th scope="row">4</th>
+      <th scope="row">2</th>
       <td>Instituciones clausuradas</td>
       <td>PDF</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/otros/Instituciones_clausuradas.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
@@ -629,29 +738,29 @@
 </table>
                     </div>
 
-		  
+
       </div>
     </div>
   </div>
 
-	
-</div>	  
-	  
-	  
+
+</div>
+
+
   </div>
-</div>		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
       </div><!-- div_particulares_opciones -->
   </div> <!-- col-xs-12 -->
@@ -762,7 +871,7 @@
       <td>Profesiograma de Educación Básica</td>
       <td>PDF</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Básica/Profesiograma_de_Educaciyn_ByAsica.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
-    </tr>	  
+    </tr>
   </tbody>
 </table>
 					</div>
@@ -810,7 +919,7 @@
       <td>PDF</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Educación Inicial/Modelo_de_Atenciyn_con_Enfoque_Integral_para_la_Educaciyn_Inicial.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
- 
+
   </tbody>
 </table>
 					</div>
@@ -964,7 +1073,7 @@
       <td>Profesiograma de Educación Media Superior</td>
       <td>PDF</td>
       <td><a href="<?php echo base_url('escuelapoblana_pdfs/escuelasparticulares/normatividad/Normatividad Media Superior/Profesiograma_de_Educaciyn_Media_Superior.pdf');?>" class="btn btn-secondary btn-sm" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
-    </tr>	  
+    </tr>
   </tbody>
 </table>
 					</div>
