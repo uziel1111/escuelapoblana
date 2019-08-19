@@ -156,31 +156,31 @@ BODY{
 .line {
   width: 100%;
   height: 5px;
-    background: #691B31;
-    background-color: #691B31;
+    background: #6A1C32;
+    background-color: #6A1C32;
 }
 .lineOne {
     width: 5%;
     height: 5px;
-    background-color: #691B31;
+    background-color: #6A1C32;
     float: left;
 }
 .lineTwo {
     width: 8%;
     height: 5px;
-    background-color: #691B31;
+    background-color: #6A1C32;
     float: left;
 }
 
 .lineThree {
     width: 12%;
-    background-color: #691B31;
+    background-color: #6A1C32;
     height: 5px;
     float: left;
 }
 .lineFour {
     width: 20%;
-    background-color: #691B31;
+    background-color: #6A1C32;
     height: 5px;
     float: left;
 }

@@ -1909,7 +1909,7 @@ to {
 }
 .ms-hero.ms-hero-material {
     color: #f5f5f5;
-    background-color: rgba(2, 119, 189, 0.6);
+    background-color: rgba(169, 18, 63, 0.2);
     min-height: 450px;
     position: relative;
     width: 100%;
@@ -2531,8 +2531,8 @@ to {
 	font-weight: 800;
 
 	padding: 3px 20px 0 20px;
-	
-	
+
+
 }
 .card-1-title {
     font-size: 20px;
@@ -2554,8 +2554,8 @@ to {
 	border: 0 !important;
 	background: transparent;
 	margin-bottom: 10px;
-	
-	
+
+
 }
 .accordion-style-1 .card > div.card-header {
 	font-family: 'Source Sans Pro', sans-serif !important;
@@ -2595,7 +2595,7 @@ to {
     font-size: 18px;
 	font-weight: normal;
     color:#DBD4D4;
-transition: .5s ease-in-out;	  
+transition: .5s ease-in-out;
 background: rgba(73,155,234,1);
 
 }

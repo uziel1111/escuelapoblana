@@ -3,7 +3,7 @@
 }
 .headerlogo {
     padding: 20px 0 20px 0;
-    background-color: #691B31;
+    background-color: #6A1C32;
 }
 .headerlogo img {
     height: 80px;
@@ -30,7 +30,7 @@
 
 /* NAVBAR */
 nav.navbar {
-    background: #691B31;
+    background: #6A1C32;
     color: #8C8C8B;
     border-bottom: none;
     border-radius: 0;
@@ -44,7 +44,7 @@ nav.navbar {
 
 /* Navbar Brand */
 nav.navbar a.navbar-brand {
-    color: #691B31;
+    color: #6A1C32;
     font-weight: 600;
 }
     nav.navbar a.navbar-brand:hover,
@@ -54,14 +54,14 @@ nav.navbar a.navbar-brand {
 
 /* Toggle Button */
 nav.navbar .navbar-toggle {
-    background: #691B31;
+    background: #6A1C32;
     color: #333;
     border: none;
     border-radius: 0;
 }
     nav.navbar .navbar-toggle:hover,
     nav.navbar .navbar-toggle:focus {
-        background: #691B31;
+        background: #6A1C32;
         color: #333;
     }
 
