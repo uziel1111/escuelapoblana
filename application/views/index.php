@@ -750,8 +750,8 @@
                   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 div_herramientas_amarillo grises">
                       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
                         <center>
-                        <img src="<?php echo base_url('assets/img/alerta-genero-1.png'); ?>" alt="..." class=" img_icon" />
-                      </center>
+                          <img src="<?php echo base_url('assets/img/alerta-genero-1.png'); ?>" alt="..." class=" img_icon" />
+                        </center>
                       </div>
                       <!-- <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 "> -->
                       <!-- <span class="span_titulo">Alerta de género</span> -->
@@ -763,9 +763,8 @@
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                   <a type="button" href="#" id="btn_alert_aviso">
                   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 div_herramientas_amarillo grises">
-
                       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                      <span class="span_titulo">Evaluación interna 6° de educación primaria</span>
+                        <span class="span_titulo">Semana Estatal de la Evaluación Diagnóstica Educación Básica y Media Superior</span>
                       </div>
                   </div>
                   </a>
