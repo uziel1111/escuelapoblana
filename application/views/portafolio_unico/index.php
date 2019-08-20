@@ -305,7 +305,7 @@ a.scroll-top i {
 							// print_r($data[$filename]['t_tema']. ",");
 
 									$total = 0;
-							//print_r($m_array);
+							// print_r($m_array);die();
 
 									if ($data[$filename]['t_tema'] != $tf_current and $flag == 1){
 										$flag = 2;
@@ -419,7 +419,7 @@ a.scroll-top i {
 
 																	<?php
 																}else{
-																	print_r('hola');
+																	// print_r('hola');
 																	echo "</tbody>";
 																	echo "</table>";
 																	echo "</div></div></div></div>";
@@ -654,7 +654,12 @@ $('a.scroll-top').click(function(event) {
 
 		var htmlString_pdf = '';
 
-		var sPDF = "http://qual-edu.org/pruebas_qualedu/escuelapoblana/escuelapoblana_pdfs/portafolio_unico/pdf/" + file_pdfId + ".pdf";
+		// var sPDF = "http://qual-edu.org/pruebas_qualedu/escuelapoblana/escuelapoblana_pdfs/portafolio_unico/pdf/" + file_pdfId + ".pdf";
+		var sPDF = "http://escuelapoblana.org/escuelapoblana_pdfs/portafolio_unico/pdf/" + file_pdfId + ".pdf";
+
+		// var sPDF = "http://localhost/escuelapoblana_pdfs/portafolio_unico/pdf/ADE01-11111110.pdf";
+		// console.info(sPDF);
+
 		htmlString_pdf += '<p><a href="' + sPDF + '" class="btn btn-success" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i> Descargar</a></p>';
 		htmlString_pdf += '<iframe width="100%" height="400px" id="pdfId" class="embed-responsive-item" src="' + sPDF + '" allowfullscreen/></iframe>';
 
