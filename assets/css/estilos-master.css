@@ -28,7 +28,7 @@ textarea{
 /******************************************************************************** MODAL */
 .modal_head{
   /*background-color: #36BA78 !important;*/
-  background-color: #225D99 !important;
+  background-color: #6A1C32 !important;
   color: #FFFFFF !important;
   text-align: center;
   font-weight: bold;
@@ -89,7 +89,7 @@ textarea{
 .modal-style-1 .modal-header > button.close:hover {
     background-color: rgba(0, 0, 0, 0.2);
     color: #000;
-	
+
 }
 .modal-style-1 .modal-header h1, h2, h3, h4, h5, h6 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -281,7 +281,7 @@ footer{
     PORTAFOLIO CARDS
 ----------------------------------------------------- */
 .panel-custom{
-border: 2px solid rgba(0,0,0,0.2);	
+border: 2px solid rgba(0,0,0,0.2);
 }
 .panel-custom .inner{
 	overflow: hidden;
@@ -299,7 +299,7 @@ font-size: 16px;
 }
 .panel-custom .panel-body{
 font-size: 18px;
-font-weight: bold;	
+font-weight: bold;
 }
 /* .card-columns {
   @include media-breakpoint-only(md) {

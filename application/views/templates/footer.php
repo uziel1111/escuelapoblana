@@ -1,7 +1,7 @@
 <style>
 .footer_div_gray{
   margin-top: 0px;
-  background-color: #1C2545;
+  background-color: #6A1C32;
   width: 100%;
   /*position: absolute;*/
   /*bottom: 50px;*/
@@ -12,7 +12,7 @@
 }
 
 .footer_div_blue{
-  background-color: #0378BD;
+  background-color: #999999;
   width: 100%;
   height: 50px;
   padding: 15px;
