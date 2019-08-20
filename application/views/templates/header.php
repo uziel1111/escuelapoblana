@@ -512,122 +512,224 @@ BODY{
         </div>
 
         <div id="modal_aviso_elect" class="modal fade modal100 grises" role="dialog" >
-          <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header modal_head">
-              <h3>AVISO IMPORTANTE <button type="button"  id="RA_modal_visorpdf_btnsalir_aviso" class="close bold_white " data-dismiss="modal"  aria-label="Close">X</button></h3>
-
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-header modal_head">
+                <h3> Semana Estatal de la Evaluación Diagnóstica<button type="button"  id="RA_modal_visorpdf_btnsalir_aviso" class="close bold_white " data-dismiss="modal"  aria-label="Close">X</button></h3>
+              </div>
+              <div class="modal-body">
+                <br>
+                <center>
+                  <button id="btn_primaria_avisos" type="button" class="btn btn-lg btn-info" data-toggle="tooltip"  style="width:30%" >Primaria
+                  </button>
+                  
+                  <br>
+                  </br>
+                  <div id="op_primaria_avisos" hidden="hidden">
+                    <label>Documentos de Apoyo</label>
+                    <br>
+                    <a type="button" href="#" id="opcion_primaria_avisos1">Guía para el(la) Director(a) 3° grado</a>
+                    <br>
+                    <a type="button" href="#" id="opcion_primaria_avisos2">Guía para el Docente-Aplicador 3° grado</a>
+                    <br>
+                    <a type="button" href="#" id="opcion_primaria_avisos3">Guía para el(la) Director(a) 6° grado</a>
+                    <br>
+                    <a type="button" href="#" id="opcion_primaria_avisos4">Guía para el Docente-Aplicador 6° grado</a>
+                    <br>
+                    <a type="button" href="#" id="opcion_primaria_avisos5">Tabla descriptiva de contenidos 3° grado</a>
+                    <br>
+                    <a type="button" href="#" id="opcion_primaria_avisos6">Tabla descriptiva de contenidos 6° grado</a>
+                    <br>
+                    <a type="button" href="#" id="opcion_primaria_avisos7">Tren de respuestas de 3° grado</a>
+                    <br></br>
+                    <label>Material para la Aplicación</label>
+                    <br>
+                    <a type="button" href="#" id="opcion_primaria_avisos8">Prueba 3° grado</a>
+                    <br>
+                    <a type="button" href="#" id="opcion_primaria_avisos9">Prueba 6° grado</a>
+                    <br>
+                    <a type="button" href="#" id="opcion_primaria_avisos10">Hoja de respuestas 3° grado</a>
+                    <br>
+                    <a type="button" href="#" id="opcion_primaria_avisos11">Hoja de respuestas 6° grado</a>
+                    <br></br>
+                    <label>Captura y calificación</label>
+                    <br>
+                    <a href="http://localhost/escuelapoblana/escuelapoblana_pdfs/evaluacion_diagnostica/Primaria/Capturaycalificación/Sistema_de_CapturayCalificacion_Digital_por_grupo_3grado.xlsm" role="button" aria-pressed="true" download="" >Sistema de Captura y Calificación Digital por grupo 3° grado</a>
+                    
+                    <br>
+                    <a href="http://localhost/escuelapoblana/escuelapoblana_pdfs/evaluacion_diagnostica/Primaria/Capturaycalificación/Sistema_de_CapturayCalificacion_Digital_por_escuela_3grado.xlsm" role="button" aria-pressed="true" download="">Sistema de Captura y Calificación Digital por escuela 3° grado</a>
+                    <br>
+                    <a href="http://localhost/escuelapoblana/escuelapoblana_pdfs/evaluacion_diagnostica/Primaria/Capturaycalificación/Sistema_de_CapturayCalificacion_Digital_por_grupo_6grado.xlsm" role="button" aria-pressed="true" download="">Sistema de Captura y Calificación Digital por grupo 6° grado</a>
+                    <br>
+                    <a href="http://localhost/escuelapoblana/escuelapoblana_pdfs/evaluacion_diagnostica/Primaria/Capturaycalificación/Sistema_de_CapturayCalificacion_Digital_por_escuela_6grado.xlsm" role="button" aria-pressed="true" download="">Sistema de Captura y Calificación Digital por escuela 6° grado</a>
+                  </div>
+                </center>
+                <br>
+                </br>
+                <center>
+                  <button id="btn_secundaria_avisos" type="button" class="btn btn-lg btn-info" data-toggle="tooltip" style="width:30%">Secundaria
+                  </button>
+                  <br>
+                  </br>
+                  <div id="op_secundaria_avisos" hidden="hidden">
+                    <label>Documentos de Apoyo</label>
+                    <br>
+                    <a type="button" href="#" id="opcion_secundaria_avisos1">Guía para el(la) Director(a)</a><br>
+                    <a type="button" href="#" id="opcion_secundaria_avisos2">Guía para el Docente-Aplicador</a><br>
+                    <a type="button" href="#" id="opcion_secundaria_avisos3">Tabla descriptiva de contenidos</a>
+                    <br></br>
+                    <label>Material para la Aplicación</label>
+                    <br>
+                    <a type="button" href="#" id="opcion_secundaria_avisos4">Prueba</a>
+                    <br>
+                    <a type="button" href="#" id="opcion_secundaria_avisos5">Hoja de respuestas</a>
+                    <br></br>
+                    <label>Captura y calificación</label>
+                    <br>
+                    <a href="http://localhost/escuelapoblana/escuelapoblana_pdfs/evaluacion_diagnostica/Secundaria/Capturaycalificacion/Sistema_de_CapturayCalificacion_Digital_por_grupo.xlsm" role="button" aria-pressed="true" download="">Sistema de Captura y Calificación Digital por grupo</a>
+                    <br>
+                    <a href="http://localhost/escuelapoblana/escuelapoblana_pdfs/evaluacion_diagnostica/Secundaria/Capturaycalificacion/Sistema_de_CapturayCalificacion_Digital_por_escuela.xlsm" role="button" aria-pressed="true" download="">Sistema de Captura y Calificación Digital por escuela</a>
+                  </div>
+                </center>
+                <br>
+                </br>
+                  <center>
+                    <button id="btn_ms_avisos" type="button" class="btn btn-lg btn-info" data-toggle="tooltip" style="width:30%">
+                    Media Superior
+                    </button>
+                  <br>
+                  </br>
+                  <div id="op_ms_avisos" hidden="hidden">
+                    <label>Documentos de Apoyo</label>
+                    <br>
+                    <a type="button" href="#" id="opcion_ms_avisos1">Guía para el(la) Director(a)</a><br>
+                    <a type="button" href="#" id="opcion_ms_avisos2">Guía para el Docente-Aplicador</a><br>
+                    <a type="button" href="#" id="opcion_ms_avisos3">Tabla descriptiva de contenidos</a><br></br>
+                    <label>Material para la Aplicación</label>
+                    <br>
+                    <a type="button" href="#" id="opcion_ms_avisos4">Prueba</a>
+                    <br>
+                    <a type="button" href="#" id="opcion_ms_avisos5">Hoja de respuestas</a>
+                    <br></br>
+                    <label>Captura y calificación</label>
+                    <br>
+                    <a href="http://localhost/escuelapoblana/escuelapoblana_pdfs/evaluacion_diagnostica/Media_Superior/Capturaycalificación/Sistema_de_CapturayCalificacion_Digital_por_grupo.xlsm" role="button" aria-pressed="true" download="">Sistema de Captura y Calificación Digital por grupo</a>
+                    <br>
+                    <a href="http://localhost/escuelapoblana/escuelapoblana_pdfs/evaluacion_diagnostica/Media_Superior/Capturaycalificación/Sistema_de_CapturayCalificacion_Digital_por_grupo.xlsm" role="button" aria-pressed="true" download="">Sistema de Captura y Calificación Digital por escuela</a>
+                  </div>
+                  </center>
+                <br>
+                </br>
+              </div>
             </div>
-            <div class="modal-body">
-                <center>
-                   <a href="http://planea.sep.gob.mx/ba_ei/" target="_blank">
-                  <img style="width:100%" src="<?php echo base_url('assets/img/TALIS_ESCUELA_POBLANA.png'); ?>" alt=""></a>
-
-                <center>
-            </div><!-- modal body -->
-          </div>
           </div>
         </div>
 
+        <div id="modal_primaria_avisos" class="modal fade modal100 grises" role="dialog" >
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-header modal_head">
+                <h3> Primaria <button type="button"  id="close_modal_primaria_avisos" class="close bold_white " data-dismiss="modal"  aria-label="Close">X</button></h3>
+              </div>
+              <div class="modal-body">
+                
+                  
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <div id="md_sismo_md" class="modal fade modal100 grises" role="dialog" >
-      <div class="modal-dialog modal-lg">
+        <div id="modal_secundaria_avisos" class="modal fade modal100 grises" role="dialog" >
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-header modal_head">
+                <h3> Secundaria <button type="button"  id="close_modal_secundaria_avisos" class="close bold_white " data-dismiss="modal"  aria-label="Close">X</button></h3>
+              </div>
+              <div class="modal-body">
+                
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal_ms_avisos" class="modal fade modal100 grises" role="dialog" >
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-header modal_head">
+                <h3> Media Superior<button type="button"  id="close_modal_ms_avisos" class="close bold_white " data-dismiss="modal"  aria-label="Close">X</button></h3>
+              </div>
+              <div class="modal-body">
+                
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+
+  <div id="md_sismo_md" class="modal fade modal100 grises" role="dialog" >
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header modal_head">
           <button type="button"  id="RA_modal_visorpdf_btnsalir" class="close bold_white "  aria-label="Close"  data-dismiss="modal">
             X
           </button>
-        <h4 class="modal-title titulo_none" id="title_din">
-          Sismo
-        </h4>
+          <h4 class="modal-title titulo_none" id="title_din"> Sismo </h4>
         </div>
         <div class="modal-body">
-          <center><b style="">
-      Tu seguridad es nuestra prioridad
-      <br>
-      Han regresado el 100% de las escuelas a clases en el estado de Puebla.
-    </b>
-        </center>
-        <br>
-        <!-- <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-          <a href="<?php echo site_url("Escuela/escuelas_semaforos_sismos")?>">
-          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 div_herramientas_azul">
-            <span class="span_titulo">B&uacute;squeda de escuelas de educaci&oacute;n obligatoria (inicial hasta bachillerato)</span>
-
+          <center><b style="">Tu seguridad es nuestra prioridad<br>
+            Han regresado el 100% de las escuelas a clases en el estado de Puebla.
+            </b>
+          </center>
+          <br>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <a id="herraminetas_dy_s1" href="#" >
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 div_herramientas_azul">
+              <span class="span_titulo">Herramientas para directores y supervisores en zonas afectadas</span>
+            </div>
+            </a>
           </div>
-          </a>
-        </div>
 
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-          <a id="sismo_esc_sup1" href="#" >
-          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 div_herramientas_azul">
-            <span class="span_titulo">Instituciones de educaci&oacute;n superior</span>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <a href="http://www.aprende.edu.mx/Canal/Sismo/index.html" target="_blank">
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 div_herramientas_azul">
+              <span class="span_titulo">&iquest;Qu&eacute; hacer despu&eacute;s del sismo?</span>
+            </div>
+            </a>
           </div>
-          </a>
-        </div> -->
-
-
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-          <a id="herraminetas_dy_s1" href="#" >
-          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 div_herramientas_azul">
-            <span class="span_titulo">Herramientas para directores y supervisores en zonas afectadas</span>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <a id="apoyo_psico_s1" href="#">
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 div_herramientas_azul">
+              <span class="span_titulo">Apoyo psicoemocional niñas, niños y adolescentes después de un terremoto</span>
+            </div>
+            </a>
           </div>
-          </a>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-          <a href="http://www.aprende.edu.mx/Canal/Sismo/index.html" target="_blank">
-          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 div_herramientas_azul">
-            <span class="span_titulo">&iquest;Qu&eacute; hacer despu&eacute;s del sismo?</span>
-          </div>
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-          <a id="apoyo_psico_s1" href="#">
-          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 div_herramientas_azul">
-            <span class="span_titulo">Apoyo psicoemocional niñas, niños y adolescentes después de un terremoto</span>
-          </div>
-          </a>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-
+          <br><br><br><br>
         </div><!-- modal body -->
       </div>
-      </div>
     </div>
+  </div>
 
 
-<div id="md_construc" class="modal fade modal100 grises" role="dialog" >
-      <div class="modal-dialog modal-lg">
+  <div id="md_construc" class="modal fade modal100 grises" role="dialog" >
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header modal_head">
           <button type="button"  id="RA_md_construc" class="close bold_white "  aria-label="Close"  data-dismiss="modal">
             X
           </button>
-        <h4 class="modal-title titulo_none" id="title_din">
+          <h4 class="modal-title titulo_none" id="title_din">
           Sección en construcción
-        </h4>
+          </h4>
         </div>
         <div class="modal-body">
           <center><b style="">
-      Esta sección se encuentra en proceso de mantenimiento.
-      <br>
-
-    </b>
-        </center>
-        <br>
-
-
-
-        <br>
-        <br>
-        <br>
-        <br>
-
+            Esta sección se encuentra en proceso de mantenimiento.
+            <br>
+            </b>
+          </center>
+          <br><br><br><br><br>
         </div><!-- modal body -->
       </div>
-      </div>
     </div>
+  </div>
