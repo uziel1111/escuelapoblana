@@ -658,7 +658,7 @@ $('a.scroll-top').click(function(event) {
 		var sPDF = "http://escuelapoblana.org/escuelapoblana_pdfs/portafolio_unico/pdf/" + file_pdfId + ".pdf";
 
 		// var sPDF = "http://localhost/escuelapoblana_pdfs/portafolio_unico/pdf/ADE01-11111110.pdf";
-		// console.info(sPDF);
+		console.info(sPDF);
 
 		htmlString_pdf += '<p><a href="' + sPDF + '" class="btn btn-success" role="button" aria-pressed="true" download><i class="fa fa-download" aria-hidden="true"></i> Descargar</a></p>';
 		htmlString_pdf += '<iframe width="100%" height="400px" id="pdfId" class="embed-responsive-item" src="' + sPDF + '" allowfullscreen/></iframe>';
