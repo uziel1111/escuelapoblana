@@ -213,7 +213,7 @@ BODY{
              <div class="row" >
                  <div id="omg_hd_idx" class="col-xs-12 col-sm-12 col-md-2 col-lg-3">
                  
-                   <a href="http://www.puebla.gob.mx/" target="_blank">
+                   <a href="<?php echo base_url(); ?>">
                      <img src="<?php echo base_url('assets/img/logo-educacion02.png'); ?>" class="img-responsive pull-left" title="Ir a Portal del Gobierno del Estado de Puebla">
                    </a>
                   
