@@ -20,8 +20,6 @@
   <script src="<?php echo base_url('assets/js/messages.js'); ?>"></script>
   <script src="<?php echo base_url('assets/js/regularexpressions.js'); ?>"></script>
   <script src="<?php echo base_url('assets/js/load.js'); ?>"></script>
-  <!-- Font 2019 -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">	
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112793645-1"></script> -->
   <script>
@@ -68,7 +66,7 @@ else
 BODY{
 
 
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans',sans-serif;
 
 
 }
@@ -159,48 +157,34 @@ BODY{
   width: 100%;
   height: 5px;
     background: #6A1C32;
-    background-color:rgba(0,0,0,0.5);
+    background-color: #6A1C32;
 }
 .lineOne {
     width: 5%;
     height: 5px;
-    background-color: #B38E5D;
+    background-color: #6A1C32;
     float: left;
 }
 .lineTwo {
     width: 8%;
     height: 5px;
-    background-color: #D4C19C;
+    background-color: #6A1C32;
     float: left;
 }
 
 .lineThree {
     width: 12%;
-    background-color: #621132;
+    background-color: #6A1C32;
     height: 5px;
     float: left;
 }
 .lineFour {
     width: 20%;
-    background-color: #9D2449;
+    background-color: #6A1C32;
     height: 5px;
     float: left;
 }
-/**** COLORS 2019  ****/
-.color-1 {
-    background-color: #B38E5D;
-}
-.color-2 {
-    background-color: #D4C19C;
-}
 
-.color-3 {
-    background-color: #621132;
-}
-.color-4 {
-    background-color: #9D2449;
-}	
-	
 
 
 
@@ -208,25 +192,26 @@ BODY{
 </style>
 
 <!-- Header Logo -->
-        <div class="headerlogo">
-          <div class="container"  style="vertical-align: middle;float: none;">
-             <div class="row" >
-                 <div id="omg_hd_idx" class="col-xs-12 col-sm-12 col-md-2 col-lg-3">
-                 
+        <div class="headerlogo grises">
+          <div class="container">
+             <div class="row">
+                 <div id="omg_hd_idx" class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                 <center>
                    <a href="http://www.puebla.gob.mx/" target="_blank">
-                     <img src="<?php echo base_url('assets/img/logo-educacion02.png'); ?>" class="img-responsive pull-left" title="Ir a Portal del Gobierno del Estado de Puebla">
+                     <img src="<?php echo base_url('assets/img/escudo-puebla-blanco.png'); ?>" style="width:100%; height:100%;" class="img-responsive pull-left" title="Ir a Portal del Gobierno del Estado de Puebla">
                    </a>
-                  
+                  </center>
                  </div>
 
-                 <div class="col-xs-12 col-sm-12 col-md-10 col-lg-9">
+                 <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
 
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border-left-style: solid; border-left-color: rgba(255,255,255,0.3); margin-top: 20px;">
-
-          					   <h2 class="text-left" style="color: white; font-size:4vh;">Escuela Poblana</h2>
-								  <div style="border-left-style: solid; border-left-color: white;"></div>
-							<p class="text-left" style="color: #FFFFFF; font-size:2vh">Portal del Servicio de Asistencia Técnica a la Escuela de Puebla<br> (SATEP)</p>	  
-          					  
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+          					  <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 ">
+          					   <h2 class="text-left" style="color: white; font-size:5vh;">Escuela Poblana</h2>
+          					  </div>
+          					  <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+          					   <div style="border-left-style: solid; border-left-color: white;"><p class="text-left" style="padding-left: 20px; color: white; font-size:3vh">Portal del Servicio de Asistencia Técnica a la Escuela de Puebla<br> (SATEP)</p></div>
+          					  </div>
           					</div>
 
 
@@ -241,7 +226,7 @@ BODY{
         <!-- Header Logo END -->
         <!-- NAVBAR -->
                 <nav align="center" class="navbar ">
-                      <div class="row hidden-md hidden-lg">
+                      <div class="row hidden-md hidden-lg grises">
                         <div class="navbar-header hidden-md hidden-lg">
 
                             <button type="button" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 navbar-toggle-my collapsed " data-toggle="collapse" data-target="#NavComponents" aria-expanded="false">
@@ -268,7 +253,7 @@ BODY{
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Estadísticas e indicadores
                                         <span class="caret"></span>
                                     </a>
-                                    <ul align="center" class="dropdown-menu">  <!--  -->
+                                    <ul align="center" class="dropdown-menu grises">  <!--  -->
                                         <li><a type="button" id="modal_estadis_const_old" href="<?php echo site_url('Estadistica/estad_indi_generales'); ?>">Estadística por estado, municipio y zona</a></li>
                                         <li><a href="<?php echo site_url('Estadistica/estad_indi_xescuela'); ?>">Estadística por escuela</a></li>
                                         <li><a href="<?php echo site_url('Escuela/busqueda_xmapa'); ?>">Localiza tu escuela en el mapa</a></li>
@@ -279,7 +264,7 @@ BODY{
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios
                                         <span class="caret"></span>
                                     </a>
-                                    <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu grises">
                                         <!-- <li><a href="http://dsate.mx/cursos/" target="_blank">Oferta de formación continua</a></li> -->
                                         <!-- href="http://spdpuebla.net/" target="_blank"-->
                                         <!-- href="http://escuelapoblana.org/escuelas_particulares/"-->
@@ -346,15 +331,15 @@ BODY{
                             </ul>
                         </div>
 
-                    <div class="lineOne"></div>
-                    <div class="lineTwo"></div>
-                    <div class="lineThree"></div>
-                    <div class="lineFour"></div>
+                    <div class="lineOne grises"></div>
+                    <div class="lineTwo grises"></div>
+                    <div class="lineThree grises"></div>
+                    <div class="lineFour grises"></div>
 
-                    <div class="lineOne"></div>
-                    <div class="lineTwo"></div>
-                    <div class="lineThree"></div>
-                    <div class="lineFour"></div>
+                    <div class="lineOne grises"></div>
+                    <div class="lineTwo grises"></div>
+                    <div class="lineThree grises"></div>
+                    <div class="lineFour grises"></div>
 
 
                     <div class="lineTwo grises"></div>

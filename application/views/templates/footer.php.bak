@@ -29,11 +29,10 @@
 </style>
 
 <footer>
-  <div class="footer_div">
+  <div class="footer_div_gray grises">
     <div class="container">
       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="color:white;">
         <center>
-		<img src="<?php echo base_url('assets/img/escudo-PIE.png'); ?>" alt="Escudo del Estado de Puebla">	
         <h3 style="font-size:1.9vw;">Sentlamachtilistli Tlayekanko</h3>
         <h4 style="font-size:1.3vw;">Secretaría de Educación Pública de Puebla</h4>
 
