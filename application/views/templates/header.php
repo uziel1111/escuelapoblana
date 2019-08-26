@@ -628,9 +628,11 @@ BODY{
                     <br></br>
                     <label>Captura y calificación</label>
                     <br>
-                    <a href="http://localhost/escuelapoblana/escuelapoblana_pdfs/evaluacion_diagnostica/Media_Superior/Capturaycalificación/Sistema_de_CapturayCalificacion_Digital_por_grupo.xlsm" role="button" aria-pressed="true" download="">Sistema de Captura y Calificación Digital por grupo</a>
+                    <a href="http://localhost/escuelapoblana/escuelapoblana_pdfs/evaluacion_diagnostica/Media_Superior/Capturaycalificacion/Sistema_de_CapturayCalificacion_Digital_por_grupo.xlsm" role="button" aria-pressed="true" download="">Sistema de Captura y Calificación Digital por grupo</a>
                     <br>
-                    <a href="http://localhost/escuelapoblana/escuelapoblana_pdfs/evaluacion_diagnostica/Media_Superior/Capturaycalificación/Sistema_de_CapturayCalificacion_Digital_por_grupo.xlsm" role="button" aria-pressed="true" download="">Sistema de Captura y Calificación Digital por escuela</a>
+                    <a href="http://localhost/escuelapoblana/escuelapoblana_pdfs/evaluacion_diagnostica/Media_Superior/Capturaycalificacion/Sistema_de_CapturayCalificacion_Digital_por_escuela.xlsm" role="button" aria-pressed="true" download="">
+
+                    Sistema de Captura y Calificación Digital por escuela</a>
                   </div>
                   </center>
                 <br>

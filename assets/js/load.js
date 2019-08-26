@@ -333,10 +333,10 @@ $("#btn_secundaria_avisos").click(function(e){
 
 $("#btn_ms_avisos").click(function(e){
   e.preventDefault();
-  alert("Información no disponible");
-  // $("#op_secundaria_avisos").hide();
-  // $("#op_primaria_avisos").hide();
-  // $("#op_ms_avisos").show();
+  // alert("Información no disponible");
+  $("#op_secundaria_avisos").hide();
+  $("#op_primaria_avisos").hide();
+  $("#op_ms_avisos").show();
 
 });
 
@@ -493,7 +493,7 @@ $("#opcion_secundaria_avisos5").click(function(e){
 
 $("#opcion_ms_avisos1").click(function(e){
   e.preventDefault();
-  let pdf = "http://escuelapoblana.org/escuelapoblana_pdfs/evaluacion_diagnostica/Media_Superior/Documentos_de_Apoyo/";
+  let pdf = "http://escuelapoblana.org/escuelapoblana_pdfs/evaluacion_diagnostica/Media_Superior/Documentos_de_Apoyo/Guia_para_el(la)_Director(a).pdf";
   let dom = '<iframe src="https://docs.google.com/viewer?url='+pdf+'&embedded=true" width="100%" height="500" style="border: none;"></iframe>';
   $('#modal_ms_avisos .modal-body').empty();
   $('#modal_ms_avisos .modal-body').html(dom);
@@ -502,7 +502,7 @@ $("#opcion_ms_avisos1").click(function(e){
 
 $("#opcion_ms_avisos2").click(function(e){
   e.preventDefault();
-  let pdf = "http://escuelapoblana.org/escuelapoblana_pdfs/evaluacion_diagnostica/Media_Superior/Documentos_de_Apoyo/";
+  let pdf = "http://escuelapoblana.org/escuelapoblana_pdfs/evaluacion_diagnostica/Media_Superior/Documentos_de_Apoyo/Guia_para_el_Docente_Aplicador.pdf";
   let dom = '<iframe src="https://docs.google.com/viewer?url='+pdf+'&embedded=true" width="100%" height="500" style="border: none;"></iframe>';
   $('#modal_ms_avisos .modal-body').empty();
   $('#modal_ms_avisos .modal-body').html(dom);
@@ -511,7 +511,7 @@ $("#opcion_ms_avisos2").click(function(e){
 
 $("#opcion_ms_avisos3").click(function(e){
   e.preventDefault();
-  let pdf = "http://escuelapoblana.org/escuelapoblana_pdfs/evaluacion_diagnostica/Media_Superior/Documentos_de_Apoyo/";
+  let pdf = "http://escuelapoblana.org/escuelapoblana_pdfs/evaluacion_diagnostica/Media_Superior/Documentos_de_Apoyo/Tabla_descriptiva_de_contenidos.pdf";
   let dom = '<iframe src="https://docs.google.com/viewer?url='+pdf+'&embedded=true" width="100%" height="500" style="border: none;"></iframe>';
   $('#modal_ms_avisos .modal-body').empty();
   $('#modal_ms_avisos .modal-body').html(dom);
@@ -520,7 +520,7 @@ $("#opcion_ms_avisos3").click(function(e){
 
 $("#opcion_ms_avisos4").click(function(e){
   e.preventDefault();
-  let pdf = "http://escuelapoblana.org/escuelapoblana_pdfs/evaluacion_diagnostica/Media_Superior/Material_para_la_Aplicacion/";
+  let pdf = "http://escuelapoblana.org/escuelapoblana_pdfs/evaluacion_diagnostica/Media_Superior/Material_para_la_Aplicacion/Prueba.pdf";
   let dom = '<iframe src="https://docs.google.com/viewer?url='+pdf+'&embedded=true" width="100%" height="500" style="border: none;"></iframe>';
   $('#modal_ms_avisos .modal-body').empty();
   $('#modal_ms_avisos .modal-body').html(dom);
@@ -529,7 +529,7 @@ $("#opcion_ms_avisos4").click(function(e){
 
 $("#opcion_ms_avisos5").click(function(e){
   e.preventDefault();
-  let pdf = "http://escuelapoblana.org/escuelapoblana_pdfs/evaluacion_diagnostica/Media_Superior/Material_para_la_Aplicacion/";
+  let pdf = "http://escuelapoblana.org/escuelapoblana_pdfs/evaluacion_diagnostica/Media_Superior/Material_para_la_Aplicacion/Hoja_de_respuestas.pdf";
   let dom = '<iframe src="https://docs.google.com/viewer?url='+pdf+'&embedded=true" width="100%" height="500" style="border: none;"></iframe>';
   $('#modal_ms_avisos .modal-body').empty();
   $('#modal_ms_avisos .modal-body').html(dom);
