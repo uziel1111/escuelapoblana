@@ -14,6 +14,7 @@ class Contacto extends CI_Controller {
 			$action = $this->input->post('action');
 			switch ($action) {
 	         case 'reporte':
+					 
 	            //  $to="escuelasparticulares@puebla.gob.mx";
 	            // $to="buzon.sugerencias@escuelapoblana.org";
 	             $to = "escuelasparticulares@puebla.gob.mx";
